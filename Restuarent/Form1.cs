@@ -205,7 +205,7 @@ namespace Restuarent
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text=="")
+            if(textBox1.Text=="") 
             {
 
                 MessageBox.Show("Table number is empty");
