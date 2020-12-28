@@ -38,7 +38,13 @@ namespace Restuarent
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
-            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+            Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+
+
         }
 
 
