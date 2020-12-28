@@ -1,6 +1,6 @@
 ﻿namespace Restuarent
 {
-    partial class Restuarent
+    partial class Customer
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Restuarent));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Burger = new System.Windows.Forms.Button();
@@ -52,6 +52,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Signinbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -361,13 +362,25 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // Restuarent
+            // Signinbutton
+            // 
+            this.Signinbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.Signinbutton.Location = new System.Drawing.Point(1141, 621);
+            this.Signinbutton.Name = "Signinbutton";
+            this.Signinbutton.Size = new System.Drawing.Size(75, 23);
+            this.Signinbutton.TabIndex = 23;
+            this.Signinbutton.Text = "Back";
+            this.Signinbutton.UseVisualStyleBackColor = true;
+            this.Signinbutton.Click += new System.EventHandler(this.Signinbutton_Click);
+            // 
+            // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1241, 715);
+            this.Controls.Add(this.Signinbutton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -392,7 +405,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Restuarent";
+            this.Name = "Customer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Restuarent";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -426,6 +440,7 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Signinbutton;
     }
 }
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Restuarent
 {
-    public partial class Restuarent : Form
+    public partial class Customer : Form
     {
-        public Restuarent()
+        public Customer()
         {
             InitializeComponent();
         }
@@ -278,6 +278,13 @@ namespace Restuarent
             Menu mn = new Menu();
             mn.Show();
             
+        }
+
+        private void Signinbutton_Click(object sender, EventArgs e)
+        {
+            LogIn lg = new LogIn();
+            lg.Show();
+            this.Hide();
         }
     }
 }
