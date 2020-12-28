@@ -94,6 +94,7 @@
             this.SignUpButton.TabIndex = 16;
             this.SignUpButton.Text = "SIGN UP";
             this.SignUpButton.UseVisualStyleBackColor = true;
+            this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
             // comboBox1
             // 

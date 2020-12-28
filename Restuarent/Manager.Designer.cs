@@ -134,6 +134,7 @@
             this.Addbutton.TabIndex = 5;
             this.Addbutton.Text = "Add";
             this.Addbutton.UseVisualStyleBackColor = true;
+            this.Addbutton.Click += new System.EventHandler(this.Addbutton_Click);
             // 
             // label3
             // 

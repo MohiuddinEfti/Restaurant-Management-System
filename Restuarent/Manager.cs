@@ -21,5 +21,12 @@ namespace Restuarent
         {
             Application.Exit();
         }
+
+        private void Addbutton_Click(object sender, EventArgs e)
+        {
+            AddEmployee AE = new AddEmployee();
+            AE.Show();
+            this.Hide();
+        }
     }
 }
