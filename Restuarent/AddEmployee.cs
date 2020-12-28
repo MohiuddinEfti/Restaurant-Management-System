@@ -24,7 +24,7 @@ namespace Restuarent
             Application.Exit();
         }
 
-        private void SignUpButton_Click(object sender, EventArgs e)
+        private void AddEmployeeButton_Click(object sender, EventArgs e)
         {
             string gen = null;
             if (radioButton1.Checked)
@@ -38,7 +38,7 @@ namespace Restuarent
 
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employees"].ConnectionString);
             connection.Open();
-            string sql = "INSERT INTO Employees(Name,Email,PhoneNo,DateOfBirth,Gender,BloodGroup) VALUES('" + NameTextBox.Text + "','" +EmailTextBox.Text+ "','" + Phonetextbox.Text + "','" + dateTimePicker1.Text + "','" + gen + "','" + comboBox1.Text + "')";
+            string sql = "INSERT INTO Employees(Name,Email,PhoneNo,DateOfBirth,Gender,BloodGroup) VALUES('" + NameTextBox.Text + "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','" + dateTimePicker1.Text + "','" + gen + "','" + comboBox1.Text + "')";
             SqlCommand command = new SqlCommand(sql, connection);
             int result = command.ExecuteNonQuery();
             connection.Close();
@@ -51,7 +51,7 @@ namespace Restuarent
 
                         MessageBox.Show("You have not given any name in the provided space");
                     }
-                    
+
                     else if (Phonetextbox.Text == "")
                     {
 
@@ -65,14 +65,14 @@ namespace Restuarent
                     {
                         MessageBox.Show("Error!!\nThe password you have typed does not match with the password you have confirmed.\nPlease type again.");
                     }
-                   
+
                     else
                     {
                         MessageBox.Show("All employee details have been successfully added.");
                         Manager M = new Manager();
                         M.Show();
                         this.Hide();
-                       
+
 
                     }
                 }

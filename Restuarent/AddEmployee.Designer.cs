@@ -31,7 +31,7 @@
             this.SignUpGroupBox = new System.Windows.Forms.GroupBox();
             this.Phonetextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.SignUpButton = new System.Windows.Forms.Button();
+            this.AddEmployeeButton = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.BloodGroupLabel = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -50,7 +50,7 @@
             // 
             this.SignUpGroupBox.Controls.Add(this.Phonetextbox);
             this.SignUpGroupBox.Controls.Add(this.label1);
-            this.SignUpGroupBox.Controls.Add(this.SignUpButton);
+            this.SignUpGroupBox.Controls.Add(this.AddEmployeeButton);
             this.SignUpGroupBox.Controls.Add(this.comboBox1);
             this.SignUpGroupBox.Controls.Add(this.BloodGroupLabel);
             this.SignUpGroupBox.Controls.Add(this.radioButton2);
@@ -86,15 +86,15 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Phone Number";
             // 
-            // SignUpButton
+            // AddEmployeeButton
             // 
-            this.SignUpButton.Location = new System.Drawing.Point(194, 337);
-            this.SignUpButton.Name = "SignUpButton";
-            this.SignUpButton.Size = new System.Drawing.Size(107, 40);
-            this.SignUpButton.TabIndex = 16;
-            this.SignUpButton.Text = "SIGN UP";
-            this.SignUpButton.UseVisualStyleBackColor = true;
-            this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
+            this.AddEmployeeButton.Location = new System.Drawing.Point(152, 347);
+            this.AddEmployeeButton.Name = "AddEmployeeButton";
+            this.AddEmployeeButton.Size = new System.Drawing.Size(208, 40);
+            this.AddEmployeeButton.TabIndex = 16;
+            this.AddEmployeeButton.Text = "ADD EMPLOYEE";
+            this.AddEmployeeButton.UseVisualStyleBackColor = true;
+            this.AddEmployeeButton.Click += new System.EventHandler(this.AddEmployeeButton_Click);
             // 
             // comboBox1
             // 
@@ -222,7 +222,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox SignUpGroupBox;
-        private System.Windows.Forms.Button SignUpButton;
+        private System.Windows.Forms.Button AddEmployeeButton;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label BloodGroupLabel;
         private System.Windows.Forms.RadioButton radioButton2;
