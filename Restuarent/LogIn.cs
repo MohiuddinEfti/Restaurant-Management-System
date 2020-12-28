@@ -30,6 +30,12 @@ namespace Restuarent
                 cm.Show();
                 this.Hide();
             }
+            else if(Namebox.Text=="Manager" && PasswordBox.Text=="Manager")
+            {
+                Manager mg = new Manager();
+                mg.Show();
+                this.Hide();
+            }
         }
     }
 }

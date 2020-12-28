@@ -153,7 +153,7 @@
             this.Addbutton.Name = "Addbutton";
             this.Addbutton.Size = new System.Drawing.Size(151, 26);
             this.Addbutton.TabIndex = 5;
-            this.Addbutton.Text = "Add Employee";
+            this.Addbutton.Text = "Employee";
             this.Addbutton.UseVisualStyleBackColor = true;
             this.Addbutton.Click += new System.EventHandler(this.Addbutton_Click);
             // 
@@ -205,7 +205,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1241, 715);
+            this.ClientSize = new System.Drawing.Size(1135, 715);
             this.Controls.Add(this.groupBox1);
             this.Name = "Manager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
