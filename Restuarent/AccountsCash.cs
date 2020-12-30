@@ -8,6 +8,6 @@ namespace Restuarent
 {
     class AccountsCash
     {
-        public int taka { get; set; }
+        public int taka { get; set; } 
     }
 }
