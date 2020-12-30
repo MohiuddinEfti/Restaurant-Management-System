@@ -36,6 +36,12 @@ namespace Restuarent
                 mg.Show();
                 this.Hide();
             }
+            else if(Namebox.Text=="Chef"&& PasswordBox.Text=="Chef")
+            {
+                Chef cf = new Chef();
+                cf.Show();
+                this.Hide();
+            }
         }
     }
 }

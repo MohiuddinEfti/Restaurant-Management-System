@@ -39,13 +39,15 @@ namespace Restuarent
                 CS.Burger = reader["Burger"].ToString();
                 CS.RiceBowl = reader["RiceBowl"].ToString();
                 CS.Pizza = reader["Pizza"].ToString();
+                CS.Sawrma = reader["Sawrma"].ToString();
+                CS.Dumplings = reader["Dumplings"].ToString();
                 CS.Pastry = reader["Pastry"].ToString();
                 CS.Coke = reader["Coke"].ToString();
                 CS.Water = reader["Water"].ToString();
                 CS.Price = reader["Price"].ToString();
-                CS.OrderTime = reader["OrdetTime"].ToString();
-                CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
-                CS.CustomerRecievedTime = reader["CustomerRecievedTime"].ToString();
+                CS.OrderTime = reader["OrderTime"].ToString();
+                CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
 
 
               
@@ -54,6 +56,11 @@ namespace Restuarent
                 list.Add(CS);
             }
             dataGridView1.DataSource = list;
+        }
+
+        private void Chef_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
