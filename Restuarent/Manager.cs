@@ -38,7 +38,7 @@ namespace Restuarent
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
-            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            
 
         }
 
@@ -46,6 +46,43 @@ namespace Restuarent
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
+
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connection.Open();
+            string sql = "SELECT * FROM CustomerOrders";
+            SqlCommand command = new SqlCommand(sql, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            List<CustomerOrders> list = new List<CustomerOrders>();
+            while (reader.Read())
+            {
+                CustomerOrders CS = new CustomerOrders();
+
+                CS.Id = (int)reader["Id"];
+                CS.CustomerName = reader["CustomerName"].ToString();
+                CS.TableNo = (int)reader["Id"];
+                CS.AddOn = reader["AddOn"].ToString();
+                CS.Burger = reader["Burger"].ToString();
+                CS.RiceBowl = reader["RiceBowl"].ToString();
+                CS.Pizza = reader["Pizza"].ToString();
+                CS.Sawrma = reader["Sawrma"].ToString();
+                CS.Dumplings = reader["Dumplings"].ToString();
+                CS.Pastry = reader["Pastry"].ToString();
+                CS.Coke = reader["Coke"].ToString();
+                CS.Water = reader["Water"].ToString();
+                CS.Price = reader["Price"].ToString();
+                CS.OrderTime = reader["OrderTime"].ToString();
+                CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
+                list.Add(CS);
+            }
+            dataGridView1.DataSource = list;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Accounts ac = new Accounts();
+            ac.Show();
+            this.Hide();
         }
     }
 }
