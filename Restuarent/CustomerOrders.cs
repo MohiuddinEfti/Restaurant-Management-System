@@ -9,7 +9,7 @@ namespace Restuarent
     class CustomerOrders
     {
         public int Id { get; set; }
-        
+
         public string CustomerName { get; set; }
 
         public int TableNo { get; set; }
