@@ -23,7 +23,7 @@ namespace Restuarent
 
         private void Chef_Load(object sender, EventArgs e)
         {
-
+            
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
             string sql = "SELECT * FROM CustomerOrders";
@@ -48,11 +48,8 @@ namespace Restuarent
                 CS.Water = reader["Water"].ToString();
                 CS.Price = reader["Price"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
-                CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
-                CS.CustomerRecievedTime = reader["CustomerRecievedTime"].ToString();
-
-
-
+                CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
                 list.Add(CS);
             }
             dataGridView1.DataSource = list;
@@ -61,7 +58,114 @@ namespace Restuarent
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
-            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+          
+        }
+
+        private void FoodReadyButton_Click(object sender, EventArgs e)
+        {
+            DateTime time = DateTime.Now;
+            string ab = time.ToString("h:mm tt"+" Done");
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connection.Open();
+            string sql = "UPDATE CustomerOrders SET ChefOrderDoneTime='" + ab + "'WHERE Id=" + Id;
+           
+           
+            SqlCommand command = new SqlCommand(sql, connection);
+            
+
+            int diary = command.ExecuteNonQuery();
+            
+
+            if (diary > 0)
+            {
+                MessageBox.Show("Order is Succefully Done");
+                string sq2 = "SELECT * FROM CustomerOrders";
+                SqlCommand commands = new SqlCommand(sq2, connection);
+                SqlDataReader reader = commands.ExecuteReader();
+                List<CustomerOrders> list = new List<CustomerOrders>();
+                while (reader.Read())
+                {
+                    CustomerOrders CS = new CustomerOrders();
+
+                    CS.Id = (int)reader["Id"];
+                    CS.CustomerName = reader["CustomerName"].ToString();
+                    CS.TableNo = (int)reader["Id"];
+                    CS.AddOn = reader["AddOn"].ToString();
+                    CS.Burger = reader["Burger"].ToString();
+                    CS.RiceBowl = reader["RiceBowl"].ToString();
+                    CS.Pizza = reader["Pizza"].ToString();
+                    CS.Sawrma = reader["Sawrma"].ToString();
+                    CS.Dumplings = reader["Dumplings"].ToString();
+                    CS.Pastry = reader["Pastry"].ToString();
+                    CS.Coke = reader["Coke"].ToString();
+                    CS.Water = reader["Water"].ToString();
+                    CS.Price = reader["Price"].ToString();
+                    CS.OrderTime = reader["OrderTime"].ToString();
+                    CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                    CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
+                    list.Add(CS);
+                }
+                dataGridView1.DataSource = list;
+
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+        }
+
+        private void Chef_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FoodRecievedButton_Click(object sender, EventArgs e)
+        {
+            DateTime time = DateTime.Now;
+            string ab = time.ToString("h:mm tt ");
+            string ba = "Recived";
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connection.Open();
+            string sql = "UPDATE CustomerOrders SET CustomerRecieved='" + ab+ba + "'WHERE Id=" + Id;
+
+
+            SqlCommand command = new SqlCommand(sql, connection);
+
+
+            int diary = command.ExecuteNonQuery();
+
+
+            if (diary > 0)
+            {
+                MessageBox.Show("Order is Succefully Done");
+                string sq2 = "SELECT * FROM CustomerOrders";
+                SqlCommand commands = new SqlCommand(sq2, connection);
+                SqlDataReader reader = commands.ExecuteReader();
+                List<CustomerOrders> list = new List<CustomerOrders>();
+                while (reader.Read())
+                {
+                    CustomerOrders CS = new CustomerOrders();
+
+                    CS.Id = (int)reader["Id"];
+                    CS.CustomerName = reader["CustomerName"].ToString();
+                    CS.TableNo = (int)reader["Id"];
+                    CS.AddOn = reader["AddOn"].ToString();
+                    CS.Burger = reader["Burger"].ToString();
+                    CS.RiceBowl = reader["RiceBowl"].ToString();
+                    CS.Pizza = reader["Pizza"].ToString();
+                    CS.Sawrma = reader["Sawrma"].ToString();
+                    CS.Dumplings = reader["Dumplings"].ToString();
+                    CS.Pastry = reader["Pastry"].ToString();
+                    CS.Coke = reader["Coke"].ToString();
+                    CS.Water = reader["Water"].ToString();
+                    CS.Price = reader["Price"].ToString();
+                    CS.OrderTime = reader["OrderTime"].ToString();
+                    CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                    CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
+                    list.Add(CS);
+                }
+                dataGridView1.DataSource = list;
+            }
         }
     }
 }
