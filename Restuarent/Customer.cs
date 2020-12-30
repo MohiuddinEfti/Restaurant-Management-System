@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -42,7 +44,7 @@ namespace Restuarent
         {
             
         }
-
+        
         private void button10_Click(object sender, EventArgs e)
         {
             if(i+n+a+b+c+d+ye+f==0)
@@ -53,6 +55,7 @@ namespace Restuarent
             {
                 int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
                 taka.Text = cash.ToString();
+               
             }
             
         }
@@ -220,18 +223,40 @@ namespace Restuarent
             }
             else
             {
-                MessageBox.Show("Order Taken");
-                i = n = a = b = c = d = ye = f = 0;
-                textBox1.Text = textBox2.Text = textBox3.Text = string.Empty;
-                taka.Text = 0.ToString();
-                Burger.Text = "Burger";
-                RiceBowl.Text = "Rice Bowl";
-                Pizza.Text = "PIZZA";
-                Sawrma.Text = "Sawrma";
-                Dumplings.Text = "Dumplings";
-                Pastry.Text = "Pastry";
-                Coke.Text = "Coke";
-                Water.Text = "Water";
+                int tk = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                DateTime time = DateTime.Now;
+                string ab = time.ToString("h:mm:ss tt");
+                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+                connection.Open();
+                string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,OrderTime,Price) VALUES('" + textBox2.Text + "','" + textBox1.Text + "','" + textBox3.Text + "','" + i.ToString() + "','" + n.ToString() + "','" + a.ToString() + "','" + b.ToString() + "','"+c.ToString()+ "','"+d.ToString()+ "','"+ye.ToString()+ "','"+f.ToString()+ "','"+ab+ "','"+tk+"')";
+
+                SqlCommand command = new SqlCommand(sq1, connection);
+                int diary = command.ExecuteNonQuery();
+                connection.Close();
+                if (diary > 0)
+                {
+                    MessageBox.Show("Order Taken");
+                    i = n = a = b = c = d = ye = f = 0;
+                    textBox1.Text = textBox2.Text = textBox3.Text = string.Empty;
+                    taka.Text = 0.ToString();
+                    Burger.Text = "Burger";
+                    RiceBowl.Text = "Rice Bowl";
+                    Pizza.Text = "PIZZA";
+                    Sawrma.Text = "Sawrma";
+                    Dumplings.Text = "Dumplings";
+                    Pastry.Text = "Pastry";
+                    Coke.Text = "Coke";
+                    Water.Text = "Water";
+
+
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+                
               
 
             }
