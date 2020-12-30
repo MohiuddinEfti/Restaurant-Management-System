@@ -18,6 +18,7 @@ namespace Restuarent
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LogIn());
             
+
         }
     }
 }

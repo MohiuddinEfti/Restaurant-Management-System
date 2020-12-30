@@ -14,6 +14,8 @@ namespace Restuarent
 {
     public partial class Chef : Form
     {
+        int Id;
+
         public Chef()
         {
             InitializeComponent();
@@ -43,17 +45,21 @@ namespace Restuarent
                 CS.Coke = reader["Coke"].ToString();
                 CS.Water = reader["Water"].ToString();
                 CS.Price = reader["Price"].ToString();
-                CS.OrderTime = reader["OrdetTime"].ToString();
-                CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
-                CS.CustomerRecievedTime = reader["CustomerRecievedTime"].ToString();
-
-
-              
+                CS.OrderTime = reader["OrderTime"].ToString();
+                CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
 
 
                 list.Add(CS);
             }
             dataGridView1.DataSource = list;
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+
         }
     }
 }
