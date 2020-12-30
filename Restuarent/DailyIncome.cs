@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Restuarent
 {
-    class AccountsCash
+    class DailyIncome
     {
-        public int Cash { get; set; } 
+        public int Id { get; set; }
+        public int TotalCash { get; set; }
         public string Date { get; set; }
+        public string Time { get; set; }
+        public string UpdatedTime { get; set; }
     }
 }
