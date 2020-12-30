@@ -41,6 +41,8 @@ namespace Restuarent
                 CS.Burger = reader["Burger"].ToString();
                 CS.RiceBowl = reader["RiceBowl"].ToString();
                 CS.Pizza = reader["Pizza"].ToString();
+                CS.Sawrma = reader["Sawrma"].ToString();
+                CS.Dumplings = reader["Dumplings"].ToString();
                 CS.Pastry = reader["Pastry"].ToString();
                 CS.Coke = reader["Coke"].ToString();
                 CS.Water = reader["Water"].ToString();
@@ -50,15 +52,22 @@ namespace Restuarent
                 CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
 
 
+
                 list.Add(CS);
             }
             dataGridView1.DataSource = list;
         }
 
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
             textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+
+        }
+        private void Chef_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
 
         }
     }
