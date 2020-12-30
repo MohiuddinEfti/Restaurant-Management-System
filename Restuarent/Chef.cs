@@ -47,9 +47,9 @@ namespace Restuarent
                 CS.Coke = reader["Coke"].ToString();
                 CS.Water = reader["Water"].ToString();
                 CS.Price = reader["Price"].ToString();
-                CS.OrderTime = reader["OrderTime"].ToString();
-                CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
-                CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
+                CS.OrderTime = reader["OrdetTime"].ToString();
+                CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
+                CS.CustomerRecievedTime = reader["CustomerRecievedTime"].ToString();
 
 
 
@@ -69,6 +69,11 @@ namespace Restuarent
         {
             Application.Exit();
 
+        }
+
+        private void Chef_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

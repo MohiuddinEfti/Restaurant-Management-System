@@ -31,7 +31,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.FoodReadyButton = new System.Windows.Forms.Button();
             this.FoodRecievedButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,14 +39,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(33, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(733, 367);
+            this.dataGridView1.Size = new System.Drawing.Size(1171, 367);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // FoodReadyButton
             // 
             this.FoodReadyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FoodReadyButton.Location = new System.Drawing.Point(201, 404);
+            this.FoodReadyButton.Location = new System.Drawing.Point(446, 478);
             this.FoodReadyButton.Name = "FoodReadyButton";
             this.FoodReadyButton.Size = new System.Drawing.Size(168, 23);
             this.FoodReadyButton.TabIndex = 1;
@@ -57,35 +55,27 @@
             // FoodRecievedButton
             // 
             this.FoodRecievedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FoodRecievedButton.Location = new System.Drawing.Point(410, 404);
+            this.FoodRecievedButton.Location = new System.Drawing.Point(655, 478);
             this.FoodRecievedButton.Name = "FoodRecievedButton";
             this.FoodRecievedButton.Size = new System.Drawing.Size(160, 23);
             this.FoodRecievedButton.TabIndex = 2;
             this.FoodRecievedButton.Text = "Food is recieved.";
             this.FoodRecievedButton.UseVisualStyleBackColor = true;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(33, 404);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 20);
-            this.textBox1.TabIndex = 3;
-            // 
             // Chef
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1241, 715);
             this.Controls.Add(this.FoodRecievedButton);
             this.Controls.Add(this.FoodReadyButton);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Chef";
             this.Text = "Chef";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Chef_FormClosed);
             this.Load += new System.EventHandler(this.Chef_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -94,6 +84,5 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button FoodReadyButton;
         private System.Windows.Forms.Button FoodRecievedButton;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

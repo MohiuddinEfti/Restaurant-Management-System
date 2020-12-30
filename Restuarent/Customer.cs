@@ -19,7 +19,7 @@ namespace Restuarent
             InitializeComponent();
         }
         
-        private static int f = 0;
+        public static int f = 0;
 
         private void button7_Click(object sender, EventArgs e)
         {
@@ -59,8 +59,8 @@ namespace Restuarent
             }
             
         }
-        
-        private static int ye = 0;
+
+        public static int ye = 0;
         private void button8_Click(object sender, EventArgs e)
         {
             if (button11.Text == "Add")
@@ -79,8 +79,8 @@ namespace Restuarent
             }
             
         }
-        
-        private static int d = 0;
+
+        public static int d = 0;
        
         private void button5_Click(object sender, EventArgs e)
         {
@@ -101,8 +101,8 @@ namespace Restuarent
 
            
         }
-        
-        private static int c = 0;
+
+        public static int c = 0;
         private void button6_Click(object sender, EventArgs e)
         {
             if (button11.Text == "Add")
@@ -121,8 +121,8 @@ namespace Restuarent
             }
             
         }
-        
-        private static int b = 0;
+
+        public static int b = 0;
         private void button3_Click(object sender, EventArgs e)
         {
             if (button11.Text == "Add")
@@ -142,8 +142,8 @@ namespace Restuarent
             
             
         }
-        
-        private static int a = 0;
+
+        public static int a = 0;
         private void button4_Click(object sender, EventArgs e)
         {
             if (button11.Text == "Add")
@@ -162,7 +162,7 @@ namespace Restuarent
             }
             
         }
-        private static int i = 0;
+        public static int i = 0;
         
         private void button1_Click(object sender, EventArgs e)
         {
@@ -186,7 +186,7 @@ namespace Restuarent
             }
             
         }
-        private static int n = 0;
+        public static int n = 0;
         private void button2_Click(object sender, EventArgs e)
         {
             if (button11.Text == "Add")
@@ -228,7 +228,7 @@ namespace Restuarent
                 string ab = time.ToString("h:mm:ss tt");
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
                 connection.Open();
-                string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,OrderTime,Price) VALUES('" + textBox2.Text + "','" + textBox1.Text + "','" + textBox3.Text + "','" + i.ToString() + "','" + n.ToString() + "','" + a.ToString() + "','" + b.ToString() + "','"+c.ToString()+ "','"+d.ToString()+ "','"+ye.ToString()+ "','"+f.ToString()+ "','"+ab+ "','"+tk+"')";
+                string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,OrderTime,Price) VALUES('" + textBox2.Text + "','" + textBox1.Text + "','" + textBox3.Text + "','" + i.ToString() + "','" + n.ToString() + "','" + a.ToString() + "','" + b.ToString() + "','" + c.ToString() + "','"+d.ToString()+ "','"+ye.ToString()+ "','"+f.ToString()+ "','"+ab+ "','"+tk+"')";
 
                 SqlCommand command = new SqlCommand(sq1, connection);
                 int diary = command.ExecuteNonQuery();
