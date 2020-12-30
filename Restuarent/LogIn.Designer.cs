@@ -48,7 +48,7 @@ namespace Restuarent
             this.groupBox1.Controls.Add(this.Passwordlabel);
             this.groupBox1.Controls.Add(this.Namelabel1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(440, 183);
+            this.groupBox1.Location = new System.Drawing.Point(313, 70);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(360, 348);
             this.groupBox1.TabIndex = 8;

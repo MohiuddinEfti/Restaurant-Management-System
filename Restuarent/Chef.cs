@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,43 @@ namespace Restuarent
         public Chef()
         {
             InitializeComponent();
+        }
+
+        private void Chef_Load(object sender, EventArgs e)
+        {
+
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connection.Open();
+            string sql = "SELECT * FROM CustomerOrders";
+            SqlCommand command = new SqlCommand(sql, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            List<CustomerOrders> list = new List<CustomerOrders>();
+            while (reader.Read())
+            {
+                CustomerOrders CS = new CustomerOrders();
+
+                CS.Id = (int)reader["Id"];
+                CS.CustomerName= reader["CustomerName"].ToString();
+                CS.TableNo = (int)reader["Id"];               
+                CS.AddOn = reader["AddOn"].ToString();
+                CS.Burger = reader["Burger"].ToString();
+                CS.RiceBowl = reader["RiceBowl"].ToString();
+                CS.Pizza = reader["Pizza"].ToString();
+                CS.Pastry = reader["Pastry"].ToString();
+                CS.Coke = reader["Coke"].ToString();
+                CS.Water = reader["Water"].ToString();
+                CS.Price = reader["Price"].ToString();
+                CS.OrderTime = reader["OrdetTime"].ToString();
+                CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
+                CS.CustomerRecievedTime = reader["CustomerRecievedTime"].ToString();
+
+
+              
+
+
+                list.Add(CS);
+            }
+            dataGridView1.DataSource = list;
         }
     }
 }
