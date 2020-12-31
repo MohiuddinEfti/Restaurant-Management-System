@@ -14,9 +14,13 @@ namespace Restuarent
 {
     public partial class AddEmployee : Form
     {
-        public AddEmployee()
+        public string names;
+        public string positions;
+        public AddEmployee(string a ,string b)
         {
             InitializeComponent();
+            names = a;
+            positions = b;
         }
 
         private void AddEmployee_FormClosing(object sender, FormClosingEventArgs e)
@@ -26,64 +30,107 @@ namespace Restuarent
 
         private void AddEmployeeButton_Click(object sender, EventArgs e)
         {
-            string gen;
-            if (radioButton1.Checked)
+            if(comboBox2.Text=="")
             {
-                gen = "Male";
+                MessageBox.Show("ERROR Position is Blank");
+            }
+            else if (NameTextBox.Text=="")
+            {
+                MessageBox.Show("ERROR Name is Blank");
+
+            }
+            else if(textBox2.Text=="")
+            {
+                MessageBox.Show("ERROR Employee Id is Blank");
+
+            }
+            else if(EmailTextBox.Text=="")
+            {
+                MessageBox.Show("ERROR Email is Blank");
+
+            }
+            else if(Phonetextbox.Text=="")
+            {
+                MessageBox.Show("ERROR Phone Number is Blank");
+
+            }
+            else if(comboBox1.Text=="")
+            {
+                MessageBox.Show("ERROR Blood Group is Blank");
+
+            }
+            else if(Salarytextbox.Text=="")
+            {
+                MessageBox.Show("ERROR Salary is Blank");
+
+            }
+            else if (PasswordtextBox2.Text=="")
+            {
+                MessageBox.Show("ERROR Password is Blank");
+
             }
             else
             {
-                gen = "Female";
-            }
-
-            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
-            connection.Open();
-            string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password,EmpID) VALUES('"+comboBox2.Text+"','" + NameTextBox.Text+ "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','"+dateTimePicker1.Text+ "','"+gen+ "','"+comboBox1.Text+ "','"+Int32.Parse(Salarytextbox.Text) +"','"+abc+"','"+PasswordtextBox2.Text+"','"+textBox2.Text+"')";
-
-            SqlCommand command = new SqlCommand(sq1, connection);
-            int diary = command.ExecuteNonQuery();
-
-            if (diary > 0)
-            {
-                MessageBox.Show("Inserted");
-
-                textBox2.Text= comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
-                pictureBox1.ImageLocation = null;
-                abc = string.Empty;
-                string sq2 = "SELECT * FROM Employee";
-                SqlCommand command1 = new SqlCommand(sq2, connection);
-                SqlDataReader reader2 = command1.ExecuteReader();
-                List<EmployeeAdding> list2 = new List<EmployeeAdding>();
-                while (reader2.Read())
+                string gen;
+                if (radioButton1.Checked)
                 {
-                    EmployeeAdding CS = new EmployeeAdding();
-
-                    CS.ID = (int)reader2["Id"];
-                    CS.Position = reader2["Position"].ToString();
-                    CS.Name = reader2["Name"].ToString();
-                    CS.EmployeeID = reader2["EmpID"].ToString();
-                    CS.Email = reader2["Email"].ToString();
-                    CS.Phone = reader2["Phone"].ToString();
-                    CS.DateOfBirth = reader2["DateOfBirth"].ToString();
-                    CS.Gender = reader2["Gender"].ToString();
-                    CS.BloodGroup = reader2["BloodGroup"].ToString();
-                    CS.Salary = (int)reader2["Salary"];
-                    CS.Picture = reader2["Picture"].ToString();
-                    CS.Password = reader2["Password"].ToString();
-                    list2.Add(CS);
+                    gen = "Female";
                 }
-                dataGridView1.DataSource = list2;
+                else
+                {
+                    gen = "Male";
+                }
 
+                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+                connection.Open();
+                string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password,EmpID) VALUES('" + comboBox2.Text + "','" + NameTextBox.Text + "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','" + dateTimePicker1.Text + "','" + gen + "','" + comboBox1.Text + "','" + Int32.Parse(Salarytextbox.Text) + "','" + abc + "','" + PasswordtextBox2.Text + "','" + textBox2.Text + "')";
+
+                SqlCommand command = new SqlCommand(sq1, connection);
+                int diary = command.ExecuteNonQuery();
+
+                if (diary > 0)
+                {
+                    MessageBox.Show("Inserted");
+
+                    textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                    pictureBox1.ImageLocation = null;
+                    abc = string.Empty;
+                    string sq2 = "SELECT * FROM Employee";
+                    SqlCommand command1 = new SqlCommand(sq2, connection);
+                    SqlDataReader reader2 = command1.ExecuteReader();
+                    List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+                    while (reader2.Read())
+                    {
+                        EmployeeAdding CS = new EmployeeAdding();
+
+                        CS.ID = (int)reader2["Id"];
+                        CS.Position = reader2["Position"].ToString();
+                        CS.Name = reader2["Name"].ToString();
+                        CS.EmployeeID = reader2["EmpID"].ToString();
+                        CS.Email = reader2["Email"].ToString();
+                        CS.Phone = reader2["Phone"].ToString();
+                        CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                        CS.Gender = reader2["Gender"].ToString();
+                        CS.BloodGroup = reader2["BloodGroup"].ToString();
+                        CS.Salary = (int)reader2["Salary"];
+                        CS.Picture = reader2["Picture"].ToString();
+                        CS.Password = reader2["Password"].ToString();
+                        list2.Add(CS);
+                    }
+                    dataGridView1.DataSource = list2;
+
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
             }
-            else
-            {
-                MessageBox.Show("Error");
-            }
+            
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
-            Manager mg = new Manager();
+            Manager mg = new Manager(names,positions);
             mg.Show();
             this.Hide();
         }
@@ -177,7 +224,7 @@ namespace Restuarent
             {
                 MessageBox.Show("Deleted");
 
-                comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
                 pictureBox1.ImageLocation = null;
                 abc = string.Empty;
                 string sq2 = "SELECT * FROM Employee";
@@ -209,77 +256,81 @@ namespace Restuarent
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(abc=="")
-            {
-                pictureBox1.ImageLocation = null;
-                abc = string.Empty;
-            }
-            else
-            {
-                string pic = abc;
-                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
-                connection.Open();
-
-                string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "'WHERE Id=" + id1;
-                string sq4 = "UPDATE Employee SET Email='" + EmailTextBox.Text + "'WHERE Id=" + id1;
-                string sq5 = "UPDATE Employee SET Phone='" + Phonetextbox.Text + "'WHERE Id=" + id1;
-                string sq6 = "UPDATE Employee SET DateOfBirth='" + dateTimePicker1.Text + "'WHERE Id=" + id1;
-                string sq7 = "UPDATE Employee SET Picture='" + pic + "'WHERE Id=" + id1;
-                string sq8 = "UPDATE Employee SET Position='" + comboBox2.Text + "'WHERE Id=" + id1;
-                string sq9 = "UPDATE Employee SET Salary='" + Salarytextbox.Text + "'WHERE Id=" + id1;
-                string sq10 = "UPDATE Employee SET EmpID='" + textBox2.Text + "'WHERE Id=" + id1;
-
-                SqlCommand command3 = new SqlCommand(sq3, connection);
-                SqlCommand command4 = new SqlCommand(sq4, connection);
-                SqlCommand command5 = new SqlCommand(sq5, connection);
-                SqlCommand command6 = new SqlCommand(sq6, connection);
-                SqlCommand command7 = new SqlCommand(sq7, connection);
-                SqlCommand command8 = new SqlCommand(sq8, connection);
-                SqlCommand command9 = new SqlCommand(sq9, connection);
-                SqlCommand command10 = new SqlCommand(sq10, connection);
-
-                int diary3 = command3.ExecuteNonQuery();
-                int diary4 = command4.ExecuteNonQuery();
-                int diary5 = command5.ExecuteNonQuery();
-                int diary6 = command6.ExecuteNonQuery();
-                int diary7 = command7.ExecuteNonQuery();
-                int diary8 = command8.ExecuteNonQuery();
-                int diary9 = command9.ExecuteNonQuery();
-                int diary10 = command10.ExecuteNonQuery();
-
-                if (diary3 > 0)
+            
+                if (abc == "")
                 {
-                    MessageBox.Show("Updated");
-
-                    comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
-
-                    string sq2 = "SELECT * FROM Employee";
-                    SqlCommand command1 = new SqlCommand(sq2, connection);
-                    SqlDataReader reader2 = command1.ExecuteReader();
-                    List<EmployeeAdding> list2 = new List<EmployeeAdding>();
-                    while (reader2.Read())
-                    {
-                        EmployeeAdding CS = new EmployeeAdding();
-
-                        CS.ID = (int)reader2["Id"];
-                        CS.Position = reader2["Position"].ToString();
-                        CS.Name = reader2["Name"].ToString();
-                        CS.EmployeeID = reader2["EmpID"].ToString();
-                        CS.Email = reader2["Email"].ToString();
-                        CS.Phone = reader2["Phone"].ToString();
-                        CS.DateOfBirth = reader2["DateOfBirth"].ToString();
-                        CS.Gender = reader2["Gender"].ToString();
-                        CS.BloodGroup = reader2["BloodGroup"].ToString();
-                        CS.Salary = (int)reader2["Salary"];
-                        CS.Picture = reader2["Picture"].ToString();
-                        CS.Password = reader2["Password"].ToString();
-                        list2.Add(CS);
-                    }
-                    dataGridView1.DataSource = list2;
                     pictureBox1.ImageLocation = null;
-                    pic = string.Empty;
+                    abc = string.Empty;
                 }
-            }
+                else
+                {
+                    string pic = abc;
+                    SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+                    connection.Open();
+
+                    string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "'WHERE Id=" + id1;
+                    string sq4 = "UPDATE Employee SET Email='" + EmailTextBox.Text + "'WHERE Id=" + id1;
+                    string sq5 = "UPDATE Employee SET Phone='" + Phonetextbox.Text + "'WHERE Id=" + id1;
+                    string sq6 = "UPDATE Employee SET DateOfBirth='" + dateTimePicker1.Text + "'WHERE Id=" + id1;
+                    string sq7 = "UPDATE Employee SET Picture='" + pic + "'WHERE Id=" + id1;
+                    string sq8 = "UPDATE Employee SET Position='" + comboBox2.Text + "'WHERE Id=" + id1;
+                    string sq9 = "UPDATE Employee SET Salary='" + Salarytextbox.Text + "'WHERE Id=" + id1;
+                    string sq10 = "UPDATE Employee SET EmpID='" + textBox2.Text + "'WHERE Id=" + id1;
+
+                    SqlCommand command3 = new SqlCommand(sq3, connection);
+                    SqlCommand command4 = new SqlCommand(sq4, connection);
+                    SqlCommand command5 = new SqlCommand(sq5, connection);
+                    SqlCommand command6 = new SqlCommand(sq6, connection);
+                    SqlCommand command7 = new SqlCommand(sq7, connection);
+                    SqlCommand command8 = new SqlCommand(sq8, connection);
+                    SqlCommand command9 = new SqlCommand(sq9, connection);
+                    SqlCommand command10 = new SqlCommand(sq10, connection);
+
+                    int diary3 = command3.ExecuteNonQuery();
+                    int diary4 = command4.ExecuteNonQuery();
+                    int diary5 = command5.ExecuteNonQuery();
+                    int diary6 = command6.ExecuteNonQuery();
+                    int diary7 = command7.ExecuteNonQuery();
+                    int diary8 = command8.ExecuteNonQuery();
+                    int diary9 = command9.ExecuteNonQuery();
+                    int diary10 = command10.ExecuteNonQuery();
+
+                    if (diary3 > 0)
+                    {
+                        MessageBox.Show("Updated");
+
+                        textBox2.Text= comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+
+                        string sq2 = "SELECT * FROM Employee";
+                        SqlCommand command1 = new SqlCommand(sq2, connection);
+                        SqlDataReader reader2 = command1.ExecuteReader();
+                        List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+                        while (reader2.Read())
+                        {
+                            EmployeeAdding CS = new EmployeeAdding();
+
+                            CS.ID = (int)reader2["Id"];
+                            CS.Position = reader2["Position"].ToString();
+                            CS.Name = reader2["Name"].ToString();
+                            CS.EmployeeID = reader2["EmpID"].ToString();
+                            CS.Email = reader2["Email"].ToString();
+                            CS.Phone = reader2["Phone"].ToString();
+                            CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                            CS.Gender = reader2["Gender"].ToString();
+                            CS.BloodGroup = reader2["BloodGroup"].ToString();
+                            CS.Salary = (int)reader2["Salary"];
+                            CS.Picture = reader2["Picture"].ToString();
+                            CS.Password = reader2["Password"].ToString();
+                            list2.Add(CS);
+                        }
+                        dataGridView1.DataSource = list2;
+                        pictureBox1.ImageLocation = null;
+                        pic = string.Empty;
+                    }
+                
+                }
+
+            
             
         }
 

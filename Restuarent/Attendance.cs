@@ -86,19 +86,19 @@ namespace Restuarent
                 MessageBox.Show("Already Present Welcome " + Name + " Sir Id= " + Empid);
                 if (Position == "Manager")
                 {
-                    Manager mg = new Manager();
+                    Manager mg = new Manager(Name, Position);
                     mg.Show();
                     this.Hide();
                 }
                 else if (Position == "Chef")
                 {
-                    Chef cf = new Chef();
+                    Chef cf = new Chef(Name, Position);
                     cf.Show();
                     this.Hide();
                 }
                 else if (Position == "Waiter")
                 {
-                    Waiter wt = new Waiter();
+                    Waiter wt = new Waiter(Name);
                     wt.Show();
                     this.Hide();
                 }
@@ -151,13 +151,13 @@ namespace Restuarent
                     dataGridView1.DataSource = list;
                     if (Position == "Manager")
                     {
-                        Manager mg = new Manager();
+                        Manager mg = new Manager(Name,Position);
                         mg.Show();
                         this.Hide();
                     }
                     else if (Position == "Chef")
                     {
-                        Chef cf = new Chef();
+                        Chef cf = new Chef(Name, Position);
                         cf.Show();
                         this.Hide();
                     }
@@ -175,7 +175,7 @@ namespace Restuarent
                     }
                     else if (Position == "Waiter")
                     {
-                        Waiter wt = new Waiter();
+                        Waiter wt = new Waiter(Name);
                         wt.Show();
                         this.Hide();
                     }

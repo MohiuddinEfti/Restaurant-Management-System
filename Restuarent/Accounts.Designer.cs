@@ -428,6 +428,7 @@ namespace Restuarent
             this.Controls.Add(this.button21);
             this.Controls.Add(this.groupBox2);
             this.Name = "Accounts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accounts";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Accounts_FormClosed);
             this.Load += new System.EventHandler(this.Accounts_Load);

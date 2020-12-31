@@ -17,10 +17,14 @@ namespace Restuarent
         public int id1;
         public int c;
         public int d;
-        public Accounts()
+        public string name;
+        public string position;
+        public Accounts(string a,string b)
         {
             InitializeComponent();
             dateTimePicker1.MaxDate = DateTime.Today;
+            name = a;
+            position = b;
         }
 
         private void Accounts_Load(object sender, EventArgs e)
@@ -563,7 +567,7 @@ namespace Restuarent
 
         private void button21_Click(object sender, EventArgs e)
         {
-            Manager mg = new Manager();
+            Manager mg = new Manager(name,position);
             mg.Show();
             this.Hide();
         }

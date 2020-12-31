@@ -51,7 +51,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 60);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(966, 588);
+            this.groupBox1.Size = new System.Drawing.Size(1217, 563);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Welcome Manager";
@@ -60,7 +60,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(717, 475);
+            this.button4.Location = new System.Drawing.Point(849, 438);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(178, 47);
             this.button4.TabIndex = 17;
@@ -71,7 +71,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(504, 475);
+            this.button3.Location = new System.Drawing.Point(636, 438);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(178, 47);
             this.button3.TabIndex = 16;
@@ -82,7 +82,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(291, 475);
+            this.button2.Location = new System.Drawing.Point(423, 438);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(178, 47);
             this.button2.TabIndex = 15;
@@ -93,7 +93,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(81, 475);
+            this.button1.Location = new System.Drawing.Point(213, 438);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 47);
             this.button1.TabIndex = 14;
@@ -104,7 +104,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(379, 34);
+            this.label6.Location = new System.Drawing.Point(513, 35);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(178, 24);
             this.label6.TabIndex = 13;
@@ -115,14 +115,14 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 77);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(954, 296);
+            this.dataGridView1.Size = new System.Drawing.Size(1205, 296);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // Logoutbutton1
             // 
             this.Logoutbutton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Logoutbutton1.Location = new System.Drawing.Point(878, 31);
+            this.Logoutbutton1.Location = new System.Drawing.Point(1110, 22);
             this.Logoutbutton1.Name = "Logoutbutton1";
             this.Logoutbutton1.Size = new System.Drawing.Size(75, 23);
             this.Logoutbutton1.TabIndex = 6;
@@ -134,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(981, 715);
+            this.ClientSize = new System.Drawing.Size(1241, 715);
             this.Controls.Add(this.Logoutbutton1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Manager";

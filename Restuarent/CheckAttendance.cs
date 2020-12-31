@@ -14,9 +14,13 @@ namespace Restuarent
 {
     public partial class CheckAttendance : Form
     {
-        public CheckAttendance()
+        public string names;
+        public string positions;
+        public CheckAttendance(string a,string b)
         {
             InitializeComponent();
+            names = a;
+            positions = b;
         }
 
         private void CheckAttendance_Load(object sender, EventArgs e)
@@ -54,7 +58,7 @@ namespace Restuarent
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Manager mg = new Manager();
+            Manager mg = new Manager(names,positions);
             mg.Show();
             this.Hide();
         }

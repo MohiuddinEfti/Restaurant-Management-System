@@ -15,10 +15,11 @@ namespace Restuarent
     public partial class Waiter : Form
     {
        public int Id;
-
-        public Waiter()
+        public string ab;
+        public Waiter(string a)
         {
             InitializeComponent();
+            ab = a;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -83,7 +84,7 @@ namespace Restuarent
         {
             DateTime time = DateTime.Now;
             string ab = time.ToString("h:mm tt ");
-            string ba = "Recived";
+            string ba = "Served by "+ab;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
             string sql = "UPDATE CustomerOrders SET CustomerRecieved='" + ab + ba + "'WHERE Id=" + Id;

@@ -50,20 +50,20 @@ namespace Restuarent
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(936, 358);
+            this.dataGridView1.Size = new System.Drawing.Size(1188, 358);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(410, 399);
+            this.button2.Location = new System.Drawing.Point(560, 485);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 38);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Serve";
+            this.button2.Text = "Served";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

@@ -14,11 +14,14 @@ namespace Restuarent
 {
     public partial class Manager : Form
     {
-        int Id;
-
-        public Manager()
+        public int Id;
+        public string Positions;
+        public string names;
+        public Manager(string a,string b)
         {
             InitializeComponent();
+            Positions = b;
+            names = a;
         }
 
         private void Manager_FormClosing(object sender, FormClosingEventArgs e)
@@ -28,7 +31,7 @@ namespace Restuarent
 
         private void Addbutton_Click(object sender, EventArgs e)
         {
-            AddEmployee AE = new AddEmployee();
+            AddEmployee AE = new AddEmployee(names,Positions);
             AE.Show();
             this.Hide();
         }
@@ -80,14 +83,14 @@ namespace Restuarent
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Accounts ac = new Accounts();
+            Accounts ac = new Accounts(names,Positions);
             ac.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AddEmployee ae = new AddEmployee();
+            AddEmployee ae = new AddEmployee(names,Positions);
             ae.Show();
             this.Hide();
         }
@@ -109,14 +112,14 @@ namespace Restuarent
 
         private void button4_Click(object sender, EventArgs e)
         {
-            CheckAttendance ca = new CheckAttendance();
+            CheckAttendance ca = new CheckAttendance(names,Positions);
             ca.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Stock S = new Stock();
+            Stock S = new Stock(names,Positions);
             S.Show();
             this.Hide();
         }
