@@ -96,6 +96,24 @@ namespace Restuarent
                     cf.Show();
                     this.Hide();
                 }
+                else if (Position == "Waiter")
+                {
+                    Waiter wt = new Waiter();
+                    wt.Show();
+                    this.Hide();
+                }
+                else if(Position == "Cleaner")
+                {
+                    LogIn lg = new LogIn();
+                    lg.Show();
+                    this.Hide();
+                }
+                else if(Position=="Guard")
+                {
+                    LogIn lg = new LogIn();
+                    lg.Show();
+                    this.Hide();
+                }
             }
             else
             {
@@ -141,6 +159,24 @@ namespace Restuarent
                     {
                         Chef cf = new Chef();
                         cf.Show();
+                        this.Hide();
+                    }
+                    else if (Position == "Cleaner")
+                    {
+                        LogIn lg = new LogIn();
+                        lg.Show();
+                        this.Hide();
+                    }
+                    else if (Position == "Guard")
+                    {
+                        LogIn lg = new LogIn();
+                        lg.Show();
+                        this.Hide();
+                    }
+                    else if (Position == "Waiter")
+                    {
+                        Waiter wt = new Waiter();
+                        wt.Show();
                         this.Hide();
                     }
 
