@@ -113,5 +113,12 @@ namespace Restuarent
             ca.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Stock S = new Stock();
+            S.Show();
+            this.Hide();
+        }
     }
 }

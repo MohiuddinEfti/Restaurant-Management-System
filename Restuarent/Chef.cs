@@ -182,5 +182,12 @@ namespace Restuarent
                 this.Show();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Stock S = new Stock();
+            S.Show();
+            this.Hide();
+        }
     }
 }

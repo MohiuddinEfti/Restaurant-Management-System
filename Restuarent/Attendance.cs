@@ -138,7 +138,7 @@ namespace Restuarent
                     {
                         AttendanceAdd CS = new AttendanceAdd();
 
-                        CS.ID = (int)reader["Id"];
+                        CS.ID = (int)reader["ID"];
                         CS.Name = reader["Name"].ToString();
                         CS.Position = reader["Position"].ToString();
                         CS.Present = reader["Present"].ToString();
