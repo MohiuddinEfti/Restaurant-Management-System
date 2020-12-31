@@ -84,5 +84,12 @@ namespace Restuarent
             ac.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddEmployee ae = new AddEmployee();
+            ae.Show();
+            this.Hide();
+        }
     }
 }

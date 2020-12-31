@@ -74,6 +74,7 @@
     <Compile Include="CustomerOrders.cs" />
     <Compile Include="DailyIncome.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeAdding.cs" />
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>

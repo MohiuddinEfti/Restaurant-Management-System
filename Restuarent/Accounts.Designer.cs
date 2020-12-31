@@ -49,18 +49,19 @@ namespace Restuarent
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button19 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button21 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -282,6 +283,16 @@ namespace Restuarent
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Calculator";
             // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(188, 140);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(58, 33);
+            this.button19.TabIndex = 40;
+            this.button19.Text = "ADD";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -299,7 +310,7 @@ namespace Restuarent
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.Location = new System.Drawing.Point(25, 13);
+            this.groupBox2.Location = new System.Drawing.Point(23, 58);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1192, 548);
             this.groupBox2.TabIndex = 13;
@@ -324,60 +335,15 @@ namespace Restuarent
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Daily Income";
             // 
-            // dataGridView2
+            // button20
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(27, 25);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(456, 300);
-            this.dataGridView2.TabIndex = 14;
-            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(119, 355);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 22);
-            this.textBox3.TabIndex = 40;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(34, 358);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 16);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Total Cash";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker1.Location = new System.Drawing.Point(315, 355);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(149, 22);
-            this.dateTimePicker1.TabIndex = 41;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(272, 358);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "Date";
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(34, 414);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(132, 33);
-            this.button17.TabIndex = 40;
-            this.button17.Text = "Insert";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.button20.Location = new System.Drawing.Point(346, 414);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(132, 33);
+            this.button20.TabIndex = 44;
+            this.button20.Text = "Delete";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button18
             // 
@@ -389,31 +355,77 @@ namespace Restuarent
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
-            // button19
+            // button17
             // 
-            this.button19.Location = new System.Drawing.Point(188, 140);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(58, 33);
-            this.button19.TabIndex = 40;
-            this.button19.Text = "ADD";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.button17.Location = new System.Drawing.Point(34, 414);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(132, 33);
+            this.button17.TabIndex = 40;
+            this.button17.Text = "Insert";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
-            // button20
+            // label3
             // 
-            this.button20.Location = new System.Drawing.Point(346, 414);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(132, 33);
-            this.button20.TabIndex = 44;
-            this.button20.Text = "Delete";
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(272, 358);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 16);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Date";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dateTimePicker1.Location = new System.Drawing.Point(315, 355);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(149, 22);
+            this.dateTimePicker1.TabIndex = 41;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(34, 358);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 16);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Total Cash";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.textBox3.Location = new System.Drawing.Point(119, 355);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(132, 22);
+            this.textBox3.TabIndex = 40;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(27, 25);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(456, 300);
+            this.dataGridView2.TabIndex = 14;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(1094, 12);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(76, 27);
+            this.button21.TabIndex = 41;
+            this.button21.Text = "Back";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // Accounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 715);
+            this.Controls.Add(this.button21);
             this.Controls.Add(this.groupBox2);
             this.Name = "Accounts";
             this.Text = "Accounts";
@@ -465,5 +477,6 @@ namespace Restuarent
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
     }
 }

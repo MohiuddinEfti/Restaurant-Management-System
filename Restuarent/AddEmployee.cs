@@ -26,9 +26,249 @@ namespace Restuarent
 
         private void AddEmployeeButton_Click(object sender, EventArgs e)
         {
-            
+            string gen;
+            if (radioButton1.Checked)
+            {
+                gen = "Male";
+            }
+            else
+            {
+                gen = "Female";
+            }
 
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+            connection.Open();
+            string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password) VALUES('"+comboBox2.Text+"','" + NameTextBox.Text+ "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','"+dateTimePicker1.Text+ "','"+gen+ "','"+comboBox1.Text+ "','"+Int32.Parse(Salarytextbox.Text) +"','"+abc+"','"+PasswordtextBox2.Text+"')";
+
+            SqlCommand command = new SqlCommand(sq1, connection);
+            int diary = command.ExecuteNonQuery();
+
+            if (diary > 0)
+            {
+                MessageBox.Show("Inserted");
+
+                comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                pictureBox1.ImageLocation = null;
+                abc = string.Empty;
+                string sq2 = "SELECT * FROM Employee";
+                SqlCommand command1 = new SqlCommand(sq2, connection);
+                SqlDataReader reader2 = command1.ExecuteReader();
+                List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+                while (reader2.Read())
+                {
+                    EmployeeAdding CS = new EmployeeAdding();
+
+                    CS.ID = (int)reader2["Id"];
+                    CS.Position = reader2["Position"].ToString();
+                    CS.Name = reader2["Name"].ToString();
+                    CS.Email = reader2["Email"].ToString();
+                    CS.Phone = reader2["Phone"].ToString();
+                    CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                    CS.Gender = reader2["Gender"].ToString();
+                    CS.BloodGroup = reader2["BloodGroup"].ToString();
+                    CS.Salary = (int)reader2["Salary"];
+                    CS.Picture = reader2["Picture"].ToString();
+                    CS.Password = reader2["Password"].ToString();
+                    list2.Add(CS);
+                }
+                dataGridView1.DataSource = list2;
+
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Manager mg = new Manager();
+            mg.Show();
+            this.Hide();
+        }
+
+        private void AddEmployee_Load(object sender, EventArgs e)
+        {
+
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+            connection.Open();
+            string sql = "SELECT * FROM Employee";
+            SqlCommand command = new SqlCommand(sql, connection);
+            SqlDataReader reader2 = command.ExecuteReader();
+            List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+            while (reader2.Read())
+            {
+                EmployeeAdding CS = new EmployeeAdding();
+
+                CS.ID = (int)reader2["Id"];
+                CS.Position = reader2["Position"].ToString();
+                CS.Name = reader2["Name"].ToString();
+                CS.Email = reader2["Email"].ToString();
+                CS.Phone = reader2["Phone"].ToString();
+                CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                CS.Gender = reader2["Gender"].ToString();
+                CS.BloodGroup = reader2["BloodGroup"].ToString();
+                CS.Salary = (int)reader2["Salary"];
+                CS.Picture = reader2["Picture"].ToString();
+                CS.Password = reader2["Password"].ToString();
+                list2.Add(CS);
+            }
+            dataGridView1.DataSource = list2;
+        }
+        public string abc;
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string img;
+            try
+            {
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "jpg files(*.jpg)|*.jpg| PNG files(*.png)|*.png| All files(*.*)|*.*";
+                if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    img = ofd.FileName;
+                    if (img != "")
+                    {
+                        abc = img;
+                    }
+                    else
+                    {
+                        abc = string.Empty;
+                    }
+
+                    pictureBox1.ImageLocation = img;
+
+
+
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("An ERROR Occured");
+            }
+        }
+        public int id1;
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id1 = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            NameTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            EmailTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            Phonetextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            pictureBox1.ImageLocation = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+            comboBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            Salarytextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+            connection.Open();
+            string sql = "DELETE FROM Employee WHERE Id='" + id1 + "' ";
+
+
+            SqlCommand command = new SqlCommand(sql, connection);
+            int diary = command.ExecuteNonQuery();
+
+            if (diary > 0)
+            {
+                MessageBox.Show("Deleted");
+
+                comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                pictureBox1.ImageLocation = null;
+                abc = string.Empty;
+                string sq2 = "SELECT * FROM Employee";
+                SqlCommand command1 = new SqlCommand(sq2, connection);
+                SqlDataReader reader2 = command1.ExecuteReader();
+                List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+                while (reader2.Read())
+                {
+                    EmployeeAdding CS = new EmployeeAdding();
+
+                    CS.ID = (int)reader2["Id"];
+                    CS.Position = reader2["Position"].ToString();
+                    CS.Name = reader2["Name"].ToString();
+                    CS.Email = reader2["Email"].ToString();
+                    CS.Phone = reader2["Phone"].ToString();
+                    CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                    CS.Gender = reader2["Gender"].ToString();
+                    CS.BloodGroup = reader2["BloodGroup"].ToString();
+                    CS.Salary = (int)reader2["Salary"];
+                    CS.Picture = reader2["Picture"].ToString();
+                    CS.Password = reader2["Password"].ToString();
+                    list2.Add(CS);
+                }
+                dataGridView1.DataSource = list2;
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(abc=="")
+            {
+                pictureBox1.ImageLocation = null;
+                abc = string.Empty;
+            }
+            else
+            {
+                string pic = abc;
+                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+                connection.Open();
+
+                string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "'WHERE Id=" + id1;
+                string sq4 = "UPDATE Employee SET Email='" + EmailTextBox.Text + "'WHERE Id=" + id1;
+                string sq5 = "UPDATE Employee SET Phone='" + Phonetextbox.Text + "'WHERE Id=" + id1;
+                string sq6 = "UPDATE Employee SET DateOfBirth='" + dateTimePicker1.Text + "'WHERE Id=" + id1;
+                string sq7 = "UPDATE Employee SET Picture='" + pic + "'WHERE Id=" + id1;
+                string sq8 = "UPDATE Employee SET Position='" + comboBox2.Text + "'WHERE Id=" + id1;
+                string sq9 = "UPDATE Employee SET Salary='" + Salarytextbox.Text + "'WHERE Id=" + id1;
+
+                SqlCommand command3 = new SqlCommand(sq3, connection);
+                SqlCommand command4 = new SqlCommand(sq4, connection);
+                SqlCommand command5 = new SqlCommand(sq5, connection);
+                SqlCommand command6 = new SqlCommand(sq6, connection);
+                SqlCommand command7 = new SqlCommand(sq7, connection);
+                SqlCommand command8 = new SqlCommand(sq8, connection);
+                SqlCommand command9 = new SqlCommand(sq9, connection);
+
+                int diary3 = command3.ExecuteNonQuery();
+                int diary4 = command4.ExecuteNonQuery();
+                int diary5 = command5.ExecuteNonQuery();
+                int diary6 = command6.ExecuteNonQuery();
+                int diary7 = command7.ExecuteNonQuery();
+                int diary8 = command8.ExecuteNonQuery();
+                int diary9 = command9.ExecuteNonQuery();
+                if (diary3 > 0)
+                {
+                    MessageBox.Show("Updated");
+
+                    comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+
+                    string sq2 = "SELECT * FROM Employee";
+                    SqlCommand command1 = new SqlCommand(sq2, connection);
+                    SqlDataReader reader2 = command1.ExecuteReader();
+                    List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+                    while (reader2.Read())
+                    {
+                        EmployeeAdding CS = new EmployeeAdding();
+
+                        CS.ID = (int)reader2["Id"];
+                        CS.Position = reader2["Position"].ToString();
+                        CS.Name = reader2["Name"].ToString();
+                        CS.Email = reader2["Email"].ToString();
+                        CS.Phone = reader2["Phone"].ToString();
+                        CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                        CS.Gender = reader2["Gender"].ToString();
+                        CS.BloodGroup = reader2["BloodGroup"].ToString();
+                        CS.Salary = (int)reader2["Salary"];
+                        CS.Picture = reader2["Picture"].ToString();
+                        CS.Password = reader2["Password"].ToString();
+                        list2.Add(CS);
+                    }
+                    dataGridView1.DataSource = list2;
+                    pictureBox1.ImageLocation = null;
+                    pic = string.Empty;
+                }
+            }
+            
         }
     }
-    }
+}
 

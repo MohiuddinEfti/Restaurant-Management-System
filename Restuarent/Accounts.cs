@@ -560,5 +560,12 @@ namespace Restuarent
                 dataGridView2.DataSource = list2;
                 textBox3.Text = dateTimePicker1.Text = string.Empty;
         }   }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Manager mg = new Manager();
+            mg.Show();
+            this.Hide();
+        }
     }
 }
