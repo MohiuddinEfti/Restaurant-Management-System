@@ -34,21 +34,24 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Logoutbutton1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 60);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(966, 636);
+            this.groupBox1.Size = new System.Drawing.Size(966, 588);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Welcome Manager";
@@ -57,7 +60,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(596, 475);
+            this.button3.Location = new System.Drawing.Point(504, 475);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(178, 47);
             this.button3.TabIndex = 16;
@@ -67,7 +70,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(383, 475);
+            this.button2.Location = new System.Drawing.Point(291, 475);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(178, 47);
             this.button2.TabIndex = 15;
@@ -78,7 +81,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(173, 475);
+            this.button1.Location = new System.Drawing.Point(81, 475);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 47);
             this.button1.TabIndex = 14;
@@ -104,11 +107,34 @@
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // Logoutbutton1
+            // 
+            this.Logoutbutton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Logoutbutton1.Location = new System.Drawing.Point(878, 31);
+            this.Logoutbutton1.Name = "Logoutbutton1";
+            this.Logoutbutton1.Size = new System.Drawing.Size(75, 23);
+            this.Logoutbutton1.TabIndex = 6;
+            this.Logoutbutton1.Text = "Log out";
+            this.Logoutbutton1.UseVisualStyleBackColor = true;
+            this.Logoutbutton1.Click += new System.EventHandler(this.Logoutbutton1_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(717, 475);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(178, 47);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Attendance";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(981, 715);
+            this.Controls.Add(this.Logoutbutton1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Manager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -129,5 +155,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Logoutbutton1;
+        private System.Windows.Forms.Button button4;
     }
 }

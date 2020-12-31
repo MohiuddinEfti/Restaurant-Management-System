@@ -38,7 +38,7 @@ namespace Restuarent
 
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
             connection.Open();
-            string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password) VALUES('"+comboBox2.Text+"','" + NameTextBox.Text+ "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','"+dateTimePicker1.Text+ "','"+gen+ "','"+comboBox1.Text+ "','"+Int32.Parse(Salarytextbox.Text) +"','"+abc+"','"+PasswordtextBox2.Text+"')";
+            string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password,EmpID) VALUES('"+comboBox2.Text+"','" + NameTextBox.Text+ "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','"+dateTimePicker1.Text+ "','"+gen+ "','"+comboBox1.Text+ "','"+Int32.Parse(Salarytextbox.Text) +"','"+abc+"','"+PasswordtextBox2.Text+"','"+textBox2.Text+"')";
 
             SqlCommand command = new SqlCommand(sq1, connection);
             int diary = command.ExecuteNonQuery();
@@ -47,7 +47,7 @@ namespace Restuarent
             {
                 MessageBox.Show("Inserted");
 
-                comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                textBox2.Text= comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
                 pictureBox1.ImageLocation = null;
                 abc = string.Empty;
                 string sq2 = "SELECT * FROM Employee";
@@ -61,6 +61,7 @@ namespace Restuarent
                     CS.ID = (int)reader2["Id"];
                     CS.Position = reader2["Position"].ToString();
                     CS.Name = reader2["Name"].ToString();
+                    CS.EmployeeID = reader2["EmpID"].ToString();
                     CS.Email = reader2["Email"].ToString();
                     CS.Phone = reader2["Phone"].ToString();
                     CS.DateOfBirth = reader2["DateOfBirth"].ToString();
@@ -73,6 +74,10 @@ namespace Restuarent
                 }
                 dataGridView1.DataSource = list2;
 
+            }
+            else
+            {
+                MessageBox.Show("Error");
             }
         }
 
@@ -99,6 +104,7 @@ namespace Restuarent
                 CS.ID = (int)reader2["Id"];
                 CS.Position = reader2["Position"].ToString();
                 CS.Name = reader2["Name"].ToString();
+                CS.EmployeeID = reader2["EmpID"].ToString();
                 CS.Email = reader2["Email"].ToString();
                 CS.Phone = reader2["Phone"].ToString();
                 CS.DateOfBirth = reader2["DateOfBirth"].ToString();
@@ -148,12 +154,13 @@ namespace Restuarent
         {
             id1 = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
             NameTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            EmailTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-            Phonetextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-            dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-            pictureBox1.ImageLocation = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+            EmailTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            Phonetextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            pictureBox1.ImageLocation = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
             comboBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            Salarytextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
+            Salarytextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+            textBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -184,6 +191,7 @@ namespace Restuarent
                     CS.ID = (int)reader2["Id"];
                     CS.Position = reader2["Position"].ToString();
                     CS.Name = reader2["Name"].ToString();
+                    CS.EmployeeID = reader2["EmpID"].ToString();
                     CS.Email = reader2["Email"].ToString();
                     CS.Phone = reader2["Phone"].ToString();
                     CS.DateOfBirth = reader2["DateOfBirth"].ToString();
@@ -219,6 +227,7 @@ namespace Restuarent
                 string sq7 = "UPDATE Employee SET Picture='" + pic + "'WHERE Id=" + id1;
                 string sq8 = "UPDATE Employee SET Position='" + comboBox2.Text + "'WHERE Id=" + id1;
                 string sq9 = "UPDATE Employee SET Salary='" + Salarytextbox.Text + "'WHERE Id=" + id1;
+                string sq10 = "UPDATE Employee SET EmpID='" + textBox2.Text + "'WHERE Id=" + id1;
 
                 SqlCommand command3 = new SqlCommand(sq3, connection);
                 SqlCommand command4 = new SqlCommand(sq4, connection);
@@ -227,6 +236,7 @@ namespace Restuarent
                 SqlCommand command7 = new SqlCommand(sq7, connection);
                 SqlCommand command8 = new SqlCommand(sq8, connection);
                 SqlCommand command9 = new SqlCommand(sq9, connection);
+                SqlCommand command10 = new SqlCommand(sq10, connection);
 
                 int diary3 = command3.ExecuteNonQuery();
                 int diary4 = command4.ExecuteNonQuery();
@@ -235,6 +245,8 @@ namespace Restuarent
                 int diary7 = command7.ExecuteNonQuery();
                 int diary8 = command8.ExecuteNonQuery();
                 int diary9 = command9.ExecuteNonQuery();
+                int diary10 = command10.ExecuteNonQuery();
+
                 if (diary3 > 0)
                 {
                     MessageBox.Show("Updated");
@@ -252,6 +264,7 @@ namespace Restuarent
                         CS.ID = (int)reader2["Id"];
                         CS.Position = reader2["Position"].ToString();
                         CS.Name = reader2["Name"].ToString();
+                        CS.EmployeeID = reader2["EmpID"].ToString();
                         CS.Email = reader2["Email"].ToString();
                         CS.Phone = reader2["Phone"].ToString();
                         CS.DateOfBirth = reader2["DateOfBirth"].ToString();
@@ -268,6 +281,38 @@ namespace Restuarent
                 }
             }
             
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+            connection.Open();
+            string sq1 = "SELECT * FROM Employee WHERE EmpID LIKE '" + textBox1.Text + "%'  ";
+
+            SqlCommand command1 = new SqlCommand(sq1, connection);
+            SqlDataReader reader2 = command1.ExecuteReader();
+            List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+            while (reader2.Read())
+            {
+                EmployeeAdding CS = new EmployeeAdding();
+
+                CS.ID = (int)reader2["Id"];
+                CS.Position = reader2["Position"].ToString();
+                CS.Name = reader2["Name"].ToString();
+                CS.EmployeeID = reader2["EmpID"].ToString();
+                CS.Email = reader2["Email"].ToString();
+                CS.Phone = reader2["Phone"].ToString();
+                CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                CS.Gender = reader2["Gender"].ToString();
+                CS.BloodGroup = reader2["BloodGroup"].ToString();
+                CS.Salary = (int)reader2["Salary"];
+                CS.Picture = reader2["Picture"].ToString();
+                CS.Password = reader2["Password"].ToString();
+                list2.Add(CS);
+            }
+            dataGridView1.DataSource = list2;
+
+            connection.Close();
         }
     }
 }

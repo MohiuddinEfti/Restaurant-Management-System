@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,18 +32,59 @@ namespace Restuarent
                 cm.Show();
                 this.Hide();
             }
-            else if(Namebox.Text=="Manager" && PasswordBox.Text=="Manager")
+            else if (Namebox.Text == "")
             {
-                Manager mg = new Manager();
-                mg.Show();
-                this.Hide();
+                MessageBox.Show("ERROR Username Is Empty");
+
             }
-            else if(Namebox.Text=="Chef"&& PasswordBox.Text=="Chef")
+            else if (PasswordBox.Text == "")
             {
-                Chef cf = new Chef();
-                cf.Show();
-                this.Hide();
+                MessageBox.Show("ERROR Password Is Empty");
+
             }
-        }
+            else
+            {
+
+
+
+
+
+                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+
+
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Employee WHERE Name = '" + Namebox.Text + "' AND [Password] = '" + PasswordBox.Text + "' ", connection);
+
+
+
+                connection.Open();
+
+
+                SqlDataReader sdr = cmd.ExecuteReader();
+                if ((sdr.Read() == true))
+
+                {
+                    string emp;
+                    string eid;
+                    string po;
+                    string pi;
+                    string sq1 = "SELECT * FROM Employee WHERE Name = '" + Namebox.Text + "'";
+                    SqlCommand commands = new SqlCommand(sq1, connection);
+
+                    emp = sdr["Name"].ToString();
+                    eid = sdr["EmpID"].ToString();
+                    po = sdr["Position"].ToString();
+                    pi = sdr["Picture"].ToString();
+
+                    Attendance at = new Attendance(emp,eid,po,pi);
+                    at.Show();
+                    this.Hide();
+                }             
+                else
+                {
+
+                    MessageBox.Show("Invalid username or password!");
+
+                }
+        }  }
     }
 }

@@ -13,6 +13,8 @@ namespace Restuarent
         public string Position { get; set; }
 
         public string Name { get; set; }
+        public string EmployeeID { get; set; }
+
         public string Email { get; set; }
         public string Phone { get; set; }
         public string DateOfBirth { get; set; }

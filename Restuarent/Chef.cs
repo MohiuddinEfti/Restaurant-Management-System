@@ -167,5 +167,20 @@ namespace Restuarent
                 dataGridView1.DataSource = list;
             }
         }
+
+        private void Logoutbutton1_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are You Sure", "Log Out", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                LogIn lg = new LogIn();
+                lg.Show();
+                this.Hide();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                this.Show();
+            }
+        }
     }
 }

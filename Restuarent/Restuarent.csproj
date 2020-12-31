@@ -59,6 +59,19 @@
     <Compile Include="AddEmployee.Designer.cs">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance.Designer.cs">
+      <DependentUpon>Attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceAdd.cs" />
+    <Compile Include="CheckAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckAttendance.Designer.cs">
+      <DependentUpon>CheckAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Chef.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +113,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance.resx">
+      <DependentUpon>Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckAttendance.resx">
+      <DependentUpon>CheckAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Chef.resx">
       <DependentUpon>Chef.cs</DependentUpon>
