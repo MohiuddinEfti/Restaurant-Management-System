@@ -140,7 +140,7 @@ namespace Restuarent
                 }
                 else
                 {
-                    MessageBox.Show("Error\nStock could not be added!!");
+                    MessageBox.Show("Error Stock could not be added!!");
                 }
             }
             
