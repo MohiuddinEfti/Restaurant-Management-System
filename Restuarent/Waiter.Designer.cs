@@ -29,6 +29,7 @@ namespace Restuarent
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Waiter));
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
@@ -59,7 +60,7 @@ namespace Restuarent
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(560, 485);
+            this.button2.Location = new System.Drawing.Point(556, 508);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 38);
             this.button2.TabIndex = 7;
@@ -71,10 +72,13 @@ namespace Restuarent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1241, 715);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Waiter";
             this.Text = "Waiter";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Waiter_FormClosing);

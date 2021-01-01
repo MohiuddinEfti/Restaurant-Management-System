@@ -26,7 +26,8 @@ namespace Restuarent
 
         private void Signinbutton_Click(object sender, EventArgs e)
         {
-            if(Namebox.Text=="Customer" && PasswordBox.Text=="Customer")
+            
+            if (Namebox.Text=="Customer" && PasswordBox.Text=="Customer")
             {
                 Customer cm = new Customer();
                 cm.Show();
