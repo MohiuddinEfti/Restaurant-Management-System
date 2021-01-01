@@ -79,6 +79,7 @@ namespace Restuarent
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Waiter";
             this.Text = "Waiter";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Waiter_FormClosing);

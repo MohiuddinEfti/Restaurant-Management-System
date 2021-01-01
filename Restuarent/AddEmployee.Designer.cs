@@ -398,6 +398,7 @@
             this.Controls.Add(this.SignUpGroupBox);
             this.Controls.Add(this.AddEmployeeButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "AddEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddEmployee";
