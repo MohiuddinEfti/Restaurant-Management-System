@@ -83,7 +83,7 @@ namespace Restuarent
             SqlDataReader sdr = cmd.ExecuteReader();
             if ((sdr.Read() == true))
             {
-                MessageBox.Show("Already Present Welcome " + Name + " Sir Id= " + Empid);
+                MessageBox.Show("You Are Already Present " + Name + " Id= " + Empid);
                 if (Position == "Manager")
                 {
                     Manager mg = new Manager(Name, Position);
@@ -127,7 +127,7 @@ namespace Restuarent
 
                 if (diary > 0)
                 {
-                    MessageBox.Show("Present Welcome " + Name + " Sir " + Empid);
+                    MessageBox.Show("Present, WELCOME " + Name + " ID= " + Empid);
 
 
                     string sq2 = "SELECT * FROM Attendance";

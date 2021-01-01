@@ -28,6 +28,8 @@ namespace Restuarent
         public string OrderTime { get; set; }
         public string ChefOrderDone { get; set; }
         public string CustomerRecievedTime { get; set; }
+        public string Date { get; set; }
+
 
 
     }

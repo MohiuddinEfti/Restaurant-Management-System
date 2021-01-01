@@ -526,6 +526,7 @@ namespace Restuarent
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            
             id1 = (int)dataGridView2.Rows[e.RowIndex].Cells[0].Value;
             int cash = (int)dataGridView2.Rows[e.RowIndex].Cells[1].Value;
             textBox3.Text = cash.ToString();
