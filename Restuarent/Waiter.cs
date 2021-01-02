@@ -66,6 +66,8 @@ namespace Restuarent
                 CS.OrderTime = reader["OrderTime"].ToString();
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
                 CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
+                CS.Payment = reader["Payment"].ToString();
+
                 list.Add(CS);
             }
             dataGridView1.DataSource = list;
@@ -145,12 +147,84 @@ namespace Restuarent
                         CS.OrderTime = readers["OrderTime"].ToString();
                         CS.ChefOrderDone = readers["ChefOrderDoneTime"].ToString();
                         CS.CustomerRecievedTime = readers["CustomerRecieved"].ToString();
+                        CS.Payment = readers["Payment"].ToString();
+
                         list.Add(CS);
                     }
                     dataGridView1.DataSource = list;
                 }
             }
             
+        }
+        public string checks;
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connection.Open();
+            string sql = "SELECT * FROM CustomerOrders WHERE Id=" + Id;
+            SqlCommand command = new SqlCommand(sql, connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+
+
+                checks = reader["CustomerRecieved"].ToString();
+
+
+            }
+            connection.Close();
+            if (checks == "")
+            {
+                MessageBox.Show("First You Need To Serve The Food...");
+            }
+            else
+            {
+                SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+                connections.Open();
+                string sqls = "UPDATE CustomerOrders SET Payment='" + comboBox1.Text + "'WHERE Id=" + Id;
+
+
+                SqlCommand commands = new SqlCommand(sqls, connections);
+
+
+                int diary = commands.ExecuteNonQuery();
+
+
+                if (diary > 0)
+                {
+                    MessageBox.Show("Order is Succefully Done");
+                    string sq2 = "SELECT * FROM CustomerOrders";
+                    SqlCommand commandss = new SqlCommand(sq2, connections);
+                    SqlDataReader readers = commandss.ExecuteReader();
+                    List<CustomerOrders> list = new List<CustomerOrders>();
+                    while (readers.Read())
+                    {
+                        CustomerOrders CS = new CustomerOrders();
+
+                        CS.Id = (int)readers["Id"];
+                        CS.CustomerName = readers["CustomerName"].ToString();
+                        CS.TableNo = (int)readers["Id"];
+                        CS.AddOn = readers["AddOn"].ToString();
+                        CS.Burger = readers["Burger"].ToString();
+                        CS.RiceBowl = readers["RiceBowl"].ToString();
+                        CS.Pizza = readers["Pizza"].ToString();
+                        CS.Sawrma = readers["Sawrma"].ToString();
+                        CS.Dumplings = readers["Dumplings"].ToString();
+                        CS.Pastry = readers["Pastry"].ToString();
+                        CS.Coke = readers["Coke"].ToString();
+                        CS.Water = readers["Water"].ToString();
+                        CS.Price = readers["Price"].ToString();
+                        CS.OrderTime = readers["OrderTime"].ToString();
+                        CS.ChefOrderDone = readers["ChefOrderDoneTime"].ToString();
+                        CS.CustomerRecievedTime = readers["CustomerRecieved"].ToString();
+                        CS.Payment = readers["Payment"].ToString();
+
+                        list.Add(CS);
+                    }
+                    dataGridView1.DataSource = list;
+                }
+            }
         }
     }
 }

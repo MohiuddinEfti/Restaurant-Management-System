@@ -76,6 +76,8 @@ namespace Restuarent
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
                 CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
                 CS.Date = reader["Date"].ToString();
+                CS.Payment = reader["Payment"].ToString();
+
                 list.Add(CS);
             }
             dataGridView1.DataSource = list;
@@ -159,6 +161,8 @@ namespace Restuarent
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
                 CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
                 CS.Date = reader["Date"].ToString();
+                CS.Payment = reader["Payment"].ToString();
+
 
                 list.Add(CS);
             }
