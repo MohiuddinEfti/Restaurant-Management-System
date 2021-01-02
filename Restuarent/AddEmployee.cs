@@ -24,10 +24,10 @@ namespace Restuarent
             positions = b;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
             connection.Open();
-            string sq1 = "SELECT * FROM Employee WHERE Position LIKE '" + "Manager" + "%'  ";
+            string sq2 = "SELECT * FROM Employee WHERE Position LIKE '" + "Manager" + "%'  ";
 
-            SqlCommand command1 = new SqlCommand(sq1, connection);
-            SqlDataReader reader2 = command1.ExecuteReader();
+            SqlCommand command12 = new SqlCommand(sq2, connection);
+            SqlDataReader reader2 = command12.ExecuteReader();
            
             while (reader2.Read())
             {
@@ -40,6 +40,7 @@ namespace Restuarent
            
 
             connection.Close();
+            
         }
 
         private void AddEmployee_FormClosing(object sender, FormClosingEventArgs e)
@@ -49,9 +50,10 @@ namespace Restuarent
         
         private void AddEmployeeButton_Click(object sender, EventArgs e)
         {
+            
 
 
-            if(comboBox2.Text=="")
+            if (comboBox2.Text=="")
             {
                 MessageBox.Show("ERROR Position is Blank");
             }
@@ -89,18 +91,18 @@ namespace Restuarent
             {
                 MessageBox.Show("ERROR Password is Blank");
 
-            }                     
+            } 
+            else if (ManagerPos == "Manager" && comboBox2.Text== "Manager")
+            {
+                MessageBox.Show("ERROR There Is Already A Manager In This Restuarant");
+                textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                pictureBox1.ImageLocation = null;
+                
+                abc = string.Empty;
+            }
             else
             {
-                if (ManagerPos == "Manager")
-                {
-                    MessageBox.Show("ERROR There Is Already A Manager In This Restuarant");
-                    textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
-                    pictureBox1.ImageLocation = null;
-                    abc = string.Empty;
-                }
-                else
-                {
+                
                     string gen;
                     if (radioButton1.Checked)
                     {
@@ -120,10 +122,11 @@ namespace Restuarent
 
                     if (diary > 0)
                     {
-                        MessageBox.Show("Inserted");
+                        MessageBox.Show("Employee Added");
 
                         textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
                         pictureBox1.ImageLocation = null;
+                        
                         abc = string.Empty;
                         string sq2 = "SELECT * FROM Employee";
                         SqlCommand command1 = new SqlCommand(sq2, connection);
@@ -154,7 +157,7 @@ namespace Restuarent
                     {
                         MessageBox.Show("Error");
                     }
-                }
+                
                
             }
             
@@ -254,10 +257,11 @@ namespace Restuarent
 
             if (diary > 0)
             {
-                MessageBox.Show("Deleted");
+                MessageBox.Show("Employee Deleted");
 
                 textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
                 pictureBox1.ImageLocation = null;
+           
                 abc = string.Empty;
                 string sq2 = "SELECT * FROM Employee";
                 SqlCommand command1 = new SqlCommand(sq2, connection);
@@ -332,7 +336,9 @@ namespace Restuarent
                         MessageBox.Show("Updated");
 
                         textBox2.Text= comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
-
+                        pictureBox1.ImageLocation = null;
+                   
+                        abc = string.Empty;
                         string sq2 = "SELECT * FROM Employee";
                         SqlCommand command1 = new SqlCommand(sq2, connection);
                         SqlDataReader reader2 = command1.ExecuteReader();
@@ -400,16 +406,21 @@ namespace Restuarent
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (button1.BackColor == Color.White)
+            if (button4.BackColor == Color.White)
             {
                 PasswordtextBox2.PasswordChar = '\0';
-                button1.BackColor = Color.Gray;
+                button4.BackColor = Color.Gray;
             }
             else
             {
                 PasswordtextBox2.PasswordChar = '*';
-                button1.BackColor = Color.White;
+                button4.BackColor = Color.White;
             }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
