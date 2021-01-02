@@ -60,6 +60,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SignUpGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -68,6 +69,7 @@
             // SignUpGroupBox
             // 
             this.SignUpGroupBox.BackColor = System.Drawing.Color.Transparent;
+            this.SignUpGroupBox.Controls.Add(this.button4);
             this.SignUpGroupBox.Controls.Add(this.textBox2);
             this.SignUpGroupBox.Controls.Add(this.label6);
             this.SignUpGroupBox.Controls.Add(this.comboBox2);
@@ -117,6 +119,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Manager",
@@ -142,6 +145,7 @@
             // 
             this.PasswordtextBox2.Location = new System.Drawing.Point(162, 448);
             this.PasswordtextBox2.Name = "PasswordtextBox2";
+            this.PasswordtextBox2.PasswordChar = '*';
             this.PasswordtextBox2.Size = new System.Drawing.Size(189, 26);
             this.PasswordtextBox2.TabIndex = 45;
             // 
@@ -382,6 +386,18 @@
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(317, 450);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(33, 23);
+            this.button4.TabIndex = 43;
+            this.button4.Text = "Show";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -446,5 +462,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button4;
     }
 }

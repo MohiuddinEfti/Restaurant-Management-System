@@ -33,6 +33,12 @@ namespace Restuarent
                 cm.Show();
                 this.Hide();
             }
+            else if (Namebox.Text == "Manager" && PasswordBox.Text == "Manager")
+            {
+                Manager cm = new Manager(Namebox.Text, Namebox.Text);
+                cm.Show();
+                this.Hide();
+            }
             else if (Namebox.Text == "")
             {
                 MessageBox.Show("ERROR Username Is Empty");
@@ -87,5 +93,20 @@ namespace Restuarent
 
                 }
         }  }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(button1.BackColor==Color.White)
+            {
+                PasswordBox.PasswordChar = '\0';
+                button1.BackColor = Color.Gray;
+            }
+            else
+            {
+                PasswordBox.PasswordChar = '*';
+                button1.BackColor = Color.White;
+            }
+
+        }
     }
 }

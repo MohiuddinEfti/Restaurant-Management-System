@@ -16,20 +16,41 @@ namespace Restuarent
     {
         public string names;
         public string positions;
+        public string ManagerPos;
         public AddEmployee(string a ,string b)
         {
             InitializeComponent();
             names = a;
             positions = b;
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+            connection.Open();
+            string sq1 = "SELECT * FROM Employee WHERE Position LIKE '" + "Manager" + "%'  ";
+
+            SqlCommand command1 = new SqlCommand(sq1, connection);
+            SqlDataReader reader2 = command1.ExecuteReader();
+           
+            while (reader2.Read())
+            {
+                
+
+                ManagerPos = reader2["Position"].ToString();
+                
+                
+            }
+           
+
+            connection.Close();
         }
 
         private void AddEmployee_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
+        
         private void AddEmployeeButton_Click(object sender, EventArgs e)
         {
+
+
             if(comboBox2.Text=="")
             {
                 MessageBox.Show("ERROR Position is Blank");
@@ -68,62 +89,73 @@ namespace Restuarent
             {
                 MessageBox.Show("ERROR Password is Blank");
 
-            }
+            }                     
             else
             {
-                string gen;
-                if (radioButton1.Checked)
+                if (ManagerPos == "Manager")
                 {
-                    gen = "Female";
-                }
-                else
-                {
-                    gen = "Male";
-                }
-
-                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
-                connection.Open();
-                string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password,EmpID) VALUES('" + comboBox2.Text + "','" + NameTextBox.Text + "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','" + dateTimePicker1.Text + "','" + gen + "','" + comboBox1.Text + "','" + Int32.Parse(Salarytextbox.Text) + "','" + abc + "','" + PasswordtextBox2.Text + "','" + textBox2.Text + "')";
-
-                SqlCommand command = new SqlCommand(sq1, connection);
-                int diary = command.ExecuteNonQuery();
-
-                if (diary > 0)
-                {
-                    MessageBox.Show("Inserted");
-
+                    MessageBox.Show("ERROR There Is Already A Manager In This Restuarant");
                     textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
                     pictureBox1.ImageLocation = null;
                     abc = string.Empty;
-                    string sq2 = "SELECT * FROM Employee";
-                    SqlCommand command1 = new SqlCommand(sq2, connection);
-                    SqlDataReader reader2 = command1.ExecuteReader();
-                    List<EmployeeAdding> list2 = new List<EmployeeAdding>();
-                    while (reader2.Read())
-                    {
-                        EmployeeAdding CS = new EmployeeAdding();
-
-                        CS.ID = (int)reader2["Id"];
-                        CS.Position = reader2["Position"].ToString();
-                        CS.Name = reader2["Name"].ToString();
-                        CS.EmployeeID = reader2["EmpID"].ToString();
-                        CS.Email = reader2["Email"].ToString();
-                        CS.Phone = reader2["Phone"].ToString();
-                        CS.DateOfBirth = reader2["DateOfBirth"].ToString();
-                        CS.Gender = reader2["Gender"].ToString();
-                        CS.BloodGroup = reader2["BloodGroup"].ToString();
-                        CS.Salary = (int)reader2["Salary"];
-                        CS.Picture = reader2["Picture"].ToString();
-                        CS.Password = reader2["Password"].ToString();
-                        list2.Add(CS);
-                    }
-                    dataGridView1.DataSource = list2;
-
                 }
                 else
                 {
-                    MessageBox.Show("Error");
+                    string gen;
+                    if (radioButton1.Checked)
+                    {
+                        gen = "Female";
+                    }
+                    else
+                    {
+                        gen = "Male";
+                    }
+
+                    SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+                    connection.Open();
+                    string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password,EmpID) VALUES('" + comboBox2.Text + "','" + NameTextBox.Text + "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','" + dateTimePicker1.Text + "','" + gen + "','" + comboBox1.Text + "','" + Int32.Parse(Salarytextbox.Text) + "','" + abc + "','" + PasswordtextBox2.Text + "','" + textBox2.Text + "')";
+
+                    SqlCommand command = new SqlCommand(sq1, connection);
+                    int diary = command.ExecuteNonQuery();
+
+                    if (diary > 0)
+                    {
+                        MessageBox.Show("Inserted");
+
+                        textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                        pictureBox1.ImageLocation = null;
+                        abc = string.Empty;
+                        string sq2 = "SELECT * FROM Employee";
+                        SqlCommand command1 = new SqlCommand(sq2, connection);
+                        SqlDataReader reader2 = command1.ExecuteReader();
+                        List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+                        while (reader2.Read())
+                        {
+                            EmployeeAdding CS = new EmployeeAdding();
+
+                            CS.ID = (int)reader2["Id"];
+                            CS.Position = reader2["Position"].ToString();
+                            CS.Name = reader2["Name"].ToString();
+                            CS.EmployeeID = reader2["EmpID"].ToString();
+                            CS.Email = reader2["Email"].ToString();
+                            CS.Phone = reader2["Phone"].ToString();
+                            CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                            CS.Gender = reader2["Gender"].ToString();
+                            CS.BloodGroup = reader2["BloodGroup"].ToString();
+                            CS.Salary = (int)reader2["Salary"];
+                            CS.Picture = reader2["Picture"].ToString();
+                            CS.Password = reader2["Password"].ToString();
+                            list2.Add(CS);
+                        }
+                        dataGridView1.DataSource = list2;
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error");
+                    }
                 }
+               
             }
             
         }
@@ -364,6 +396,20 @@ namespace Restuarent
             dataGridView1.DataSource = list2;
 
             connection.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (button1.BackColor == Color.White)
+            {
+                PasswordtextBox2.PasswordChar = '\0';
+                button1.BackColor = Color.Gray;
+            }
+            else
+            {
+                PasswordtextBox2.PasswordChar = '*';
+                button1.BackColor = Color.White;
+            }
         }
     }
 }

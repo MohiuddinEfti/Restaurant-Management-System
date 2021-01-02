@@ -29,12 +29,7 @@ namespace Restuarent
             Application.Exit();
         }
 
-        private void Addbutton_Click(object sender, EventArgs e)
-        {
-            AddEmployee AE = new AddEmployee(names,Positions);
-            AE.Show();
-            this.Hide();
-        }
+        
 
        
 
@@ -85,16 +80,34 @@ namespace Restuarent
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Accounts ac = new Accounts(names,Positions);
-            ac.Show();
-            this.Hide();
+            if(names=="Manager")
+            {
+                MessageBox.Show("You are Default user you have no permission For this option");
+            }
+            else
+            {
+                Accounts ac = new Accounts(names, Positions);
+                ac.Show();
+                this.Hide();
+            }
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AddEmployee ae = new AddEmployee(names,Positions);
-            ae.Show();
-            this.Hide();
+            if (names == "Manager")
+            {
+                AddEmployee ae = new AddEmployee(names, "No Position");
+                ae.Show();
+                this.Hide();
+            }
+            else
+            {
+                AddEmployee ae = new AddEmployee(names, Positions);
+                ae.Show();
+                this.Hide();
+            }
+            
         }
 
         private void Logoutbutton1_Click(object sender, EventArgs e)
@@ -114,16 +127,32 @@ namespace Restuarent
 
         private void button4_Click(object sender, EventArgs e)
         {
-            CheckAttendance ca = new CheckAttendance(names,Positions);
-            ca.Show();
-            this.Hide();
+            if (names == "Manager")
+            {
+                MessageBox.Show("You are Default user you have no permission For this option");
+            }
+            else
+            {
+                CheckAttendance ca = new CheckAttendance(names, Positions);
+                ca.Show();
+                this.Hide();
+            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Stock S = new Stock(names,Positions);
-            S.Show();
-            this.Hide();
+            if (names == "Manager")
+            {
+                MessageBox.Show("You are Default user you have no permission For this option");
+            }
+            else
+            {
+                Stock S = new Stock(names, Positions);
+                S.Show();
+                this.Hide();
+            }
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

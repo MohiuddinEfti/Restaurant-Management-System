@@ -66,6 +66,7 @@ namespace Restuarent
                 CS.OrderTime = reader["OrderTime"].ToString();
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
                 CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
+                CS.Date = reader["Date"].ToString();
                 CS.Payment = reader["Payment"].ToString();
 
                 list.Add(CS);
@@ -85,6 +86,8 @@ namespace Restuarent
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
             string sql = "SELECT * FROM CustomerOrders WHERE Id=" + Id;
@@ -147,6 +150,7 @@ namespace Restuarent
                         CS.OrderTime = readers["OrderTime"].ToString();
                         CS.ChefOrderDone = readers["ChefOrderDoneTime"].ToString();
                         CS.CustomerRecievedTime = readers["CustomerRecieved"].ToString();
+                        CS.Date = reader["Date"].ToString();
                         CS.Payment = readers["Payment"].ToString();
 
                         list.Add(CS);
@@ -218,6 +222,7 @@ namespace Restuarent
                         CS.OrderTime = readers["OrderTime"].ToString();
                         CS.ChefOrderDone = readers["ChefOrderDoneTime"].ToString();
                         CS.CustomerRecievedTime = readers["CustomerRecieved"].ToString();
+                        CS.Date = reader["Date"].ToString();
                         CS.Payment = readers["Payment"].ToString();
 
                         list.Add(CS);
@@ -225,6 +230,16 @@ namespace Restuarent
                     dataGridView1.DataSource = list;
                 }
             }
+        }
+
+        private void button2_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void button3_Paint(object sender, PaintEventArgs e)
+        {
+           
         }
     }
 }

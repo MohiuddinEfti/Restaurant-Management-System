@@ -33,6 +33,7 @@ namespace Restuarent
             this.Namebox = new System.Windows.Forms.TextBox();
             this.PasswordBox = new System.Windows.Forms.TextBox();
             this.Signinbutton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Namebox
@@ -67,6 +68,18 @@ namespace Restuarent
             this.Signinbutton.UseVisualStyleBackColor = false;
             this.Signinbutton.Click += new System.EventHandler(this.Signinbutton_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(977, 316);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(33, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Show";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -74,6 +87,7 @@ namespace Restuarent
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1241, 715);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Signinbutton);
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.Namebox);
@@ -93,5 +107,6 @@ namespace Restuarent
         private System.Windows.Forms.TextBox Namebox;
         private System.Windows.Forms.TextBox PasswordBox;
         private System.Windows.Forms.Button Signinbutton;
+        private System.Windows.Forms.Button button1;
     }
 }
