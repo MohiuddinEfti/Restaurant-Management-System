@@ -18,5 +18,8 @@ namespace Restuarent
         public string Coke { get; set; }
         public string Tomato { get; set; }
         public string Salt { get; set; }
+        public string AddingDate { get; set; }
+        public string UpdateDate { get; set; }
+
     }
 }
