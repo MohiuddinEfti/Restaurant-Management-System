@@ -16,7 +16,7 @@ namespace Restuarent
     {
         public string da;
         public string na;
-        public string Name;
+        public string Names;
         public string Empid;
         public string Position;
         public string Present = "Yes";
@@ -26,7 +26,7 @@ namespace Restuarent
         {
             InitializeComponent();
             Empid = e;
-            Name = n;
+            Names = n;
             Position = p;
             picture = pi;
             Date = DateTime.Now.ToString("dddd , MMM dd yyyy,hh:mm:ss");
@@ -73,7 +73,7 @@ namespace Restuarent
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Attendance"].ConnectionString);
 
 
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Attendance WHERE Name = '" + Name + "' AND [Date] = '" + Date + "' ", connection);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Attendance WHERE Name = '" + Names + "' AND [Date] = '" + Date + "' ", connection);
 
 
 
@@ -83,22 +83,22 @@ namespace Restuarent
             SqlDataReader sdr = cmd.ExecuteReader();
             if ((sdr.Read() == true))
             {
-                MessageBox.Show("You Are Already Present " + Name + " Id= " + Empid);
+                MessageBox.Show("You Are Already Present " + Names + " Id= " + Empid);
                 if (Position == "Manager")
                 {
-                    Manager mg = new Manager(Name, Position);
+                    Manager mg = new Manager(Names, Position);
                     mg.Show();
                     this.Hide();
                 }
                 else if (Position == "Chef")
                 {
-                    Chef cf = new Chef(Name, Position);
+                    Chef cf = new Chef(Names, Position);
                     cf.Show();
                     this.Hide();
                 }
                 else if (Position == "Waiter")
                 {
-                    Waiter wt = new Waiter(Name);
+                    Waiter wt = new Waiter(Names);
                     wt.Show();
                     this.Hide();
                 }
@@ -120,14 +120,14 @@ namespace Restuarent
 
                 SqlConnection connection1 = new SqlConnection(ConfigurationManager.ConnectionStrings["Attendance"].ConnectionString);
                 connection1.Open();
-                string sq1 = "INSERT INTO Attendance(Name,Position,Present,EmpID,Date,Picture) VALUES('" + Name + "','" + Position + "','" + Present + "','" + Empid + "','" + Date + "','" + picture + "')";
+                string sq1 = "INSERT INTO Attendance(Name,Position,Present,EmpID,Date,Picture) VALUES('" + Names + "','" + Position + "','" + Present + "','" + Empid + "','" + Date + "','" + picture + "')";
 
                 SqlCommand command = new SqlCommand(sq1, connection1);
                 int diary = command.ExecuteNonQuery();
 
                 if (diary > 0)
                 {
-                    MessageBox.Show("Present, WELCOME " + Name + " ID= " + Empid);
+                    MessageBox.Show("Present, WELCOME " + Names + " ID= " + Empid);
 
 
                     string sq2 = "SELECT * FROM Attendance";
@@ -151,13 +151,13 @@ namespace Restuarent
                     dataGridView1.DataSource = list;
                     if (Position == "Manager")
                     {
-                        Manager mg = new Manager(Name,Position);
+                        Manager mg = new Manager(Names,Position);
                         mg.Show();
                         this.Hide();
                     }
                     else if (Position == "Chef")
                     {
-                        Chef cf = new Chef(Name, Position);
+                        Chef cf = new Chef(Names, Position);
                         cf.Show();
                         this.Hide();
                     }
@@ -175,7 +175,7 @@ namespace Restuarent
                     }
                     else if (Position == "Waiter")
                     {
-                        Waiter wt = new Waiter(Name);
+                        Waiter wt = new Waiter(Names);
                         wt.Show();
                         this.Hide();
                     }
