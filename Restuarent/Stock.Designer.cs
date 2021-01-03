@@ -216,7 +216,7 @@
             // AddStockButton
             // 
             this.AddStockButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddStockButton.Location = new System.Drawing.Point(448, 517);
+            this.AddStockButton.Location = new System.Drawing.Point(407, 516);
             this.AddStockButton.Name = "AddStockButton";
             this.AddStockButton.Size = new System.Drawing.Size(137, 38);
             this.AddStockButton.TabIndex = 19;
@@ -227,7 +227,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(616, 517);
+            this.button1.Location = new System.Drawing.Point(575, 516);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 38);
             this.button1.TabIndex = 20;
@@ -278,7 +278,7 @@
             // DeleteButton
             // 
             this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteButton.Location = new System.Drawing.Point(774, 517);
+            this.DeleteButton.Location = new System.Drawing.Point(743, 516);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(137, 38);
             this.DeleteButton.TabIndex = 23;

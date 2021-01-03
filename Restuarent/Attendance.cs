@@ -29,7 +29,7 @@ namespace Restuarent
             Name = n;
             Position = p;
             picture = pi;
-            Date = DateTime.Today.ToString();
+            Date = DateTime.Now.ToString("dddd , MMM dd yyyy,hh:mm:ss");
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
