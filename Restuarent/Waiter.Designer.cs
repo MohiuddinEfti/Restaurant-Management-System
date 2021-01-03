@@ -141,6 +141,7 @@ namespace Restuarent
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Waiter";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Waiter";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Waiter_FormClosing);
             this.Load += new System.EventHandler(this.Waiter_Load);
