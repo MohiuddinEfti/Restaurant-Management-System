@@ -66,8 +66,9 @@ namespace Restuarent
                 CS.OrderTime = reader["OrderTime"].ToString();
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
                 CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
-                CS.Date = reader["Date"].ToString();
+                
                 CS.Payment = reader["Payment"].ToString();
+                CS.Date = reader["Date"].ToString();
 
                 list.Add(CS);
             }
@@ -150,8 +151,9 @@ namespace Restuarent
                         CS.OrderTime = readers["OrderTime"].ToString();
                         CS.ChefOrderDone = readers["ChefOrderDoneTime"].ToString();
                         CS.CustomerRecievedTime = readers["CustomerRecieved"].ToString();
-                        CS.Date = reader["Date"].ToString();
                         CS.Payment = readers["Payment"].ToString();
+                        CS.Date = readers["Date"].ToString();
+
 
                         list.Add(CS);
                     }
@@ -222,13 +224,15 @@ namespace Restuarent
                         CS.OrderTime = readers["OrderTime"].ToString();
                         CS.ChefOrderDone = readers["ChefOrderDoneTime"].ToString();
                         CS.CustomerRecievedTime = readers["CustomerRecieved"].ToString();
-                        CS.Date = reader["Date"].ToString();
                         CS.Payment = readers["Payment"].ToString();
+                        CS.Date = readers["Date"].ToString();
+                        
 
                         list.Add(CS);
                     }
                     dataGridView1.DataSource = list;
                 }
+                connections.Close();
             }
         }
 

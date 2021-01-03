@@ -54,6 +54,7 @@ namespace Restuarent
                 CS.OrderTime = reader["OrderTime"].ToString();
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
                 CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
+                CS.Date = reader["Date"].ToString();
                 CS.Payment = reader["Payment"].ToString();
 
                 list.Add(CS);
@@ -110,6 +111,7 @@ namespace Restuarent
                     CS.OrderTime = reader["OrderTime"].ToString();
                     CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
                     CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
+                    CS.Date = reader["Date"].ToString();
                     CS.Payment = reader["Payment"].ToString();
 
                     list.Add(CS);

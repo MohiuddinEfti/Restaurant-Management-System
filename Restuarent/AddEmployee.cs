@@ -92,7 +92,7 @@ namespace Restuarent
                 MessageBox.Show("ERROR Password is Blank");
 
             } 
-            else if (ManagerPos == "Manager")
+            else if (ManagerPos == "Manager" && comboBox2.Text=="Manager")
             {
                 MessageBox.Show("ERROR There Is Already A Manager In This Restuarant");
                 textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
