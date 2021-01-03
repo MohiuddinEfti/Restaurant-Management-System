@@ -63,39 +63,39 @@ namespace Restuarent
         {
             if (ChickenTextBox.Text=="")
             {
-                MessageBox.Show("ERROR TextBox is Empty");
+                ChickenTextBox.Text = "0";
             }
             else if (BeefTextBox.Text == "")
             {
-                MessageBox.Show("ERROR TextBox is Empty");
+                BeefTextBox.Text = "0";
             }
             else if (CheeseTextBox.Text == "")
             {
-                MessageBox.Show("ERROR TextBox is Empty");
+                CheeseTextBox.Text = "0";
             }
             else if (FlourTextBox.Text == "")
             {
-                MessageBox.Show("ERROR TextBox is Empty");
+                FlourTextBox.Text = "0";
             }
             else if (MilkTextBox.Text == "")
             {
-                MessageBox.Show("ERROR TextBox is Empty");
+                MilkTextBox.Text = "0";
             }
             else if (ChocolateTextBox.Text == "")
             {
-                MessageBox.Show("ERROR TextBox is Empty");
+                ChocolateTextBox.Text = "0";
             }
             else if (CokeTextBox.Text == "")
             {
-                MessageBox.Show("ERROR TextBox is Empty");
+                CokeTextBox.Text = "0";
             }
             else if (TomatoTextBox.Text == "")
             {
-                MessageBox.Show("ERROR TextBox is Empty");
+                TomatoTextBox.Text = "0";
             }
             else if (SaltTextBox.Text == "")
             {
-                MessageBox.Show("ERROR TextBox is Empty");
+                SaltTextBox.Text = "0";
             }
             else
             {
