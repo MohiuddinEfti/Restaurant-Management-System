@@ -177,5 +177,10 @@ namespace Restuarent
 
             connection.Close();
         }
+
+        private void Manager_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
