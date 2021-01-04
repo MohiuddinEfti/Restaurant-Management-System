@@ -62,7 +62,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(737, 101);
+            this.label1.Location = new System.Drawing.Point(749, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(361, 117);
             this.label1.TabIndex = 0;
@@ -74,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Mistral", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(133, 52);
+            this.label2.Location = new System.Drawing.Point(145, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(271, 76);
             this.label2.TabIndex = 1;
@@ -88,7 +88,7 @@
             this.Burger.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Burger.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Burger.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.Burger.Location = new System.Drawing.Point(135, 150);
+            this.Burger.Location = new System.Drawing.Point(147, 133);
             this.Burger.Name = "Burger";
             this.Burger.Size = new System.Drawing.Size(119, 99);
             this.Burger.TabIndex = 2;
@@ -104,7 +104,7 @@
             this.RiceBowl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RiceBowl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RiceBowl.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.RiceBowl.Location = new System.Drawing.Point(275, 150);
+            this.RiceBowl.Location = new System.Drawing.Point(287, 133);
             this.RiceBowl.Name = "RiceBowl";
             this.RiceBowl.Size = new System.Drawing.Size(118, 99);
             this.RiceBowl.TabIndex = 3;
@@ -120,7 +120,7 @@
             this.Sawrma.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Sawrma.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sawrma.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.Sawrma.Location = new System.Drawing.Point(275, 272);
+            this.Sawrma.Location = new System.Drawing.Point(287, 255);
             this.Sawrma.Name = "Sawrma";
             this.Sawrma.Size = new System.Drawing.Size(118, 99);
             this.Sawrma.TabIndex = 5;
@@ -136,7 +136,7 @@
             this.Pizza.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Pizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pizza.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.Pizza.Location = new System.Drawing.Point(135, 272);
+            this.Pizza.Location = new System.Drawing.Point(147, 255);
             this.Pizza.Name = "Pizza";
             this.Pizza.Size = new System.Drawing.Size(119, 99);
             this.Pizza.TabIndex = 4;
@@ -153,7 +153,7 @@
             this.Pastry.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Pastry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pastry.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.Pastry.Location = new System.Drawing.Point(275, 391);
+            this.Pastry.Location = new System.Drawing.Point(287, 374);
             this.Pastry.Name = "Pastry";
             this.Pastry.Size = new System.Drawing.Size(118, 99);
             this.Pastry.TabIndex = 7;
@@ -169,7 +169,7 @@
             this.Dumplings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Dumplings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dumplings.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.Dumplings.Location = new System.Drawing.Point(135, 391);
+            this.Dumplings.Location = new System.Drawing.Point(147, 374);
             this.Dumplings.Name = "Dumplings";
             this.Dumplings.Size = new System.Drawing.Size(119, 99);
             this.Dumplings.TabIndex = 6;
@@ -184,7 +184,7 @@
             this.Water.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Water.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Water.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Water.Location = new System.Drawing.Point(275, 510);
+            this.Water.Location = new System.Drawing.Point(287, 493);
             this.Water.Name = "Water";
             this.Water.Size = new System.Drawing.Size(118, 99);
             this.Water.TabIndex = 9;
@@ -200,7 +200,7 @@
             this.Coke.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Coke.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Coke.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.Coke.Location = new System.Drawing.Point(135, 510);
+            this.Coke.Location = new System.Drawing.Point(147, 493);
             this.Coke.Name = "Coke";
             this.Coke.Size = new System.Drawing.Size(119, 99);
             this.Coke.TabIndex = 8;
@@ -212,7 +212,7 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(784, 258);
+            this.textBox1.Location = new System.Drawing.Point(796, 241);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(279, 31);
             this.textBox1.TabIndex = 10;
@@ -222,7 +222,7 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(784, 326);
+            this.textBox2.Location = new System.Drawing.Point(796, 309);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(279, 31);
             this.textBox2.TabIndex = 11;
@@ -231,7 +231,7 @@
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(784, 395);
+            this.textBox3.Location = new System.Drawing.Point(796, 378);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(279, 31);
             this.textBox3.TabIndex = 12;
@@ -242,7 +242,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(661, 261);
+            this.label3.Location = new System.Drawing.Point(673, 244);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 25);
             this.label3.TabIndex = 13;
@@ -254,7 +254,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(681, 330);
+            this.label4.Location = new System.Drawing.Point(693, 313);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 25);
             this.label4.TabIndex = 14;
@@ -266,7 +266,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(671, 398);
+            this.label5.Location = new System.Drawing.Point(683, 381);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 25);
             this.label5.TabIndex = 15;
@@ -278,7 +278,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(680, 461);
+            this.label6.Location = new System.Drawing.Point(692, 444);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 25);
             this.label6.TabIndex = 16;
@@ -290,7 +290,7 @@
             this.taka.AutoSize = true;
             this.taka.BackColor = System.Drawing.Color.Transparent;
             this.taka.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taka.Location = new System.Drawing.Point(779, 461);
+            this.taka.Location = new System.Drawing.Point(791, 444);
             this.taka.Name = "taka";
             this.taka.Size = new System.Drawing.Size(25, 25);
             this.taka.TabIndex = 17;
@@ -303,7 +303,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(908, 461);
+            this.label7.Location = new System.Drawing.Point(920, 444);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 25);
             this.label7.TabIndex = 18;
@@ -314,7 +314,7 @@
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button9.BackColor = System.Drawing.Color.Red;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(686, 538);
+            this.button9.Location = new System.Drawing.Point(698, 521);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(185, 44);
             this.button9.TabIndex = 19;
@@ -327,7 +327,7 @@
             this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button10.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(913, 538);
+            this.button10.Location = new System.Drawing.Point(925, 521);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(185, 44);
             this.button10.TabIndex = 20;
@@ -340,7 +340,7 @@
             this.button11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button11.BackColor = System.Drawing.Color.Lime;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Location = new System.Drawing.Point(226, 121);
+            this.button11.Location = new System.Drawing.Point(238, 104);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 21;
@@ -379,7 +379,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1241, 715);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.Signinbutton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button11);

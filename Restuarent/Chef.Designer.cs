@@ -43,7 +43,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(33, 72);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1171, 367);
+            this.dataGridView1.Size = new System.Drawing.Size(1205, 367);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -61,7 +61,7 @@
             // Logoutbutton1
             // 
             this.Logoutbutton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Logoutbutton1.Location = new System.Drawing.Point(1129, 23);
+            this.Logoutbutton1.Location = new System.Drawing.Point(1141, 6);
             this.Logoutbutton1.Name = "Logoutbutton1";
             this.Logoutbutton1.Size = new System.Drawing.Size(75, 23);
             this.Logoutbutton1.TabIndex = 7;
@@ -86,7 +86,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1241, 715);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Logoutbutton1);
             this.Controls.Add(this.FoodReadyButton);

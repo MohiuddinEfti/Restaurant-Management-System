@@ -348,7 +348,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(638, 119);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(574, 206);
+            this.dataGridView1.Size = new System.Drawing.Size(591, 206);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -406,7 +406,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1241, 715);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

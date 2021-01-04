@@ -292,7 +292,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1241, 715);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);

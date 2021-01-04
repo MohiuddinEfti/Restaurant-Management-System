@@ -56,7 +56,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 60);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1217, 563);
+            this.groupBox1.Size = new System.Drawing.Size(1240, 563);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Welcome Manager";
@@ -134,7 +134,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1205, 296);
+            this.dataGridView1.Size = new System.Drawing.Size(1228, 296);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -153,7 +153,7 @@
             // Logoutbutton1
             // 
             this.Logoutbutton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Logoutbutton1.Location = new System.Drawing.Point(1110, 22);
+            this.Logoutbutton1.Location = new System.Drawing.Point(1122, 5);
             this.Logoutbutton1.Name = "Logoutbutton1";
             this.Logoutbutton1.Size = new System.Drawing.Size(75, 23);
             this.Logoutbutton1.TabIndex = 6;
@@ -167,7 +167,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1241, 715);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.Logoutbutton1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
