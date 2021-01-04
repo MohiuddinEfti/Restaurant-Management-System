@@ -25,11 +25,11 @@ namespace Restuarent
         public Attendance(string n, string e, string p, string pi)
         {
             InitializeComponent();
-            Empid = e;
             Names = n;
+            Empid = e;           
             Position = p;
             picture = pi;
-            Date = DateTime.Now.ToString("dddd , MMM dd yyyy,hh:mm:ss");
+            Date = DateTime.Today.ToString("dddd , MMM dd yyyy");
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -53,12 +53,14 @@ namespace Restuarent
                 AttendanceAdd CS = new AttendanceAdd();
                 da = reader["Date"].ToString();
                 na = reader["Name"].ToString();
-                CS.ID = (int)reader["Id"];
+
+                CS.ID = (int)reader["ID"];
                 CS.Name = reader["Name"].ToString();
                 CS.Position = reader["Position"].ToString();
                 CS.Present = reader["Present"].ToString();
                 CS.EmployeeID = reader["EmpID"].ToString();
                 CS.Date = reader["Date"].ToString();
+                CS.Time = reader["Time"].ToString();
                 CS.Picture = reader["Picture"].ToString();
 
                 list.Add(CS);
@@ -83,6 +85,7 @@ namespace Restuarent
             SqlDataReader sdr = cmd.ExecuteReader();
             if ((sdr.Read() == true))
             {
+                
                 MessageBox.Show("You Are Already Present " + Names + " Id= " + Empid);
                 if (Position == "Manager")
                 {
@@ -113,14 +116,16 @@ namespace Restuarent
                     LogIn lg = new LogIn();
                     lg.Show();
                     this.Hide();
+
                 }
             }
             else
             {
+                string timing = DateTime.Today.ToString("h:mm tt");
 
                 SqlConnection connection1 = new SqlConnection(ConfigurationManager.ConnectionStrings["Attendance"].ConnectionString);
                 connection1.Open();
-                string sq1 = "INSERT INTO Attendance(Name,Position,Present,EmpID,Date,Picture) VALUES('" + Names + "','" + Position + "','" + Present + "','" + Empid + "','" + Date + "','" + picture + "')";
+                string sq1 = "INSERT INTO Attendance(Name,Position,Present,EmpID,Date,Picture,Time) VALUES('" + Names + "','" + Position + "','" + Present + "','" + Empid + "','" + Date + "','" + picture + "','"+timing+"')";
 
                 SqlCommand command = new SqlCommand(sq1, connection1);
                 int diary = command.ExecuteNonQuery();
@@ -144,6 +149,7 @@ namespace Restuarent
                         CS.Present = reader["Present"].ToString();
                         CS.EmployeeID = reader["EmpID"].ToString();
                         CS.Date = reader["Date"].ToString();
+                        CS.Time = reader["Time"].ToString();
                         CS.Picture = reader["Picture"].ToString();
 
                         list.Add(CS);
