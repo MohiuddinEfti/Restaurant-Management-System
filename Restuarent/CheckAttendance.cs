@@ -53,7 +53,7 @@ namespace Restuarent
             textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-            pictureBox1.ImageLocation = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            pictureBox1.ImageLocation = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
