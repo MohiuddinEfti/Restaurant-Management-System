@@ -225,7 +225,7 @@ namespace Restuarent
             {
                 
                 int tk = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
-                string Today = DateTime.Today.ToString();
+                string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
                 DateTime time = DateTime.Now;
                 string ab = time.ToString("h:mm:ss tt ");
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
