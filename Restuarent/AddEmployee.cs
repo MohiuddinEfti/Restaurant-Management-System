@@ -17,15 +17,27 @@ namespace Restuarent
         public string names;
         public string positions;
         public string ManagerPos;
+        
+        
         public AddEmployee(string a ,string b)
         {
             InitializeComponent();
             names = a;
             positions = b;
-            
+
+            if(positions=="Manager")
+            {
+                AddEmployeeButton.Visible = false;
+                button2.Visible = false;
+            }
+            else if(positions=="admin")
+            {
+                AddEmployeeButton.Visible = true;
+                button2.Visible = true;
+            }
             
         }
-
+        
         private void AddEmployee_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -168,9 +180,19 @@ namespace Restuarent
 
         private void button21_Click(object sender, EventArgs e)
         {
-            Manager mg = new Manager(names,positions);
-            mg.Show();
-            this.Hide();
+            if(positions=="admin")
+            {
+                Admin ad = new Admin("admin", "admin");
+                    ad.Show();
+                this.Hide();
+            }
+            else if(positions=="Manager")
+            {
+                Manager mg = new Manager(names, positions);
+                mg.Show();
+                this.Hide();
+            }
+            
         }
 
         private void AddEmployee_Load(object sender, EventArgs e)

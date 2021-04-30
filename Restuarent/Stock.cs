@@ -249,15 +249,21 @@ namespace Restuarent
         private void button2_Click(object sender, EventArgs e)
         {
             
-            if (Position == "Chef")
+            if (abc == "Chef")
             {
-                Chef cf = new Chef(abc, Position);
+                Chef cf = new Chef(Position, abc);
                 cf.Show();
                 this.Hide();
             }
-            else
+            else if(abc=="admin")
             {
-                Manager mg = new Manager(abc, Position);
+                Admin ad = new Admin(Position, abc);
+                ad.Show();
+                this.Hide();
+            }
+            else if(abc=="Manager")
+            {
+                Manager mg = new Manager(Position, abc);
                 mg.Show();
                 this.Hide();
             }

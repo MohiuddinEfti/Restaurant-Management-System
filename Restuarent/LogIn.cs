@@ -33,6 +33,12 @@ namespace Restuarent
                 cm.Show();
                 this.Hide();
             }
+            else if (Namebox.Text == "admin" && PasswordBox.Text == "admin")
+            {
+                Admin cm = new Admin("admin","admin");
+                cm.Show();
+                this.Hide();
+            }
             else if (Namebox.Text == "Manager" && PasswordBox.Text == "Manager")
             {
                 Manager cm = new Manager(Namebox.Text, Namebox.Text);

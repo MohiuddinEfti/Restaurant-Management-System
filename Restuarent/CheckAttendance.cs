@@ -58,9 +58,18 @@ namespace Restuarent
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Manager mg = new Manager(names,positions);
-            mg.Show();
-            this.Hide();
+            if (positions == "admin")
+            {
+                Admin ad = new Admin("admin", "admin");
+                ad.Show();
+                this.Hide();
+            }
+            else if (positions == "Manager")
+            {
+                Manager mg = new Manager(names, positions);
+                mg.Show();
+                this.Hide();
+            }
         }
 
         private void CheckAttendance_FormClosed(object sender, FormClosedEventArgs e)

@@ -340,6 +340,7 @@ namespace Restuarent
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Daily Income";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // button20
             // 
@@ -415,6 +416,7 @@ namespace Restuarent
             this.dataGridView2.Size = new System.Drawing.Size(456, 300);
             this.dataGridView2.TabIndex = 14;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // button21
             // 
