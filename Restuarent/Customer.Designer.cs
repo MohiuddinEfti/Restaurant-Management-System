@@ -247,6 +247,7 @@
             this.label3.Size = new System.Drawing.Size(114, 25);
             this.label3.TabIndex = 13;
             this.label3.Text = "Table No.";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -318,7 +319,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(185, 44);
             this.button9.TabIndex = 19;
-            this.button9.Text = "Take Order";
+            this.button9.Text = "Take Payment";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 

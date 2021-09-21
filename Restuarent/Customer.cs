@@ -44,7 +44,7 @@ namespace Restuarent
         {
             
         }
-        
+        int amount;
         private void button10_Click(object sender, EventArgs e)
         {
             if(i+n+a+b+c+d+ye+f==0)
@@ -55,6 +55,7 @@ namespace Restuarent
             {
                 int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
                 taka.Text = cash.ToString();
+                amount = cash;
                
             }
             
@@ -237,7 +238,7 @@ namespace Restuarent
                 connection.Close();
                 if (diary > 0)
                 {
-                    MessageBox.Show("Order Taken");
+                    /*MessageBox.Show("Order Taken");
                     i = n = a = b = c = d = ye = f = 0;
                     textBox1.Text = textBox2.Text = textBox3.Text = string.Empty;
                     taka.Text = 0.ToString();
@@ -248,8 +249,11 @@ namespace Restuarent
                     Dumplings.Text = "Dumplings";
                     Pastry.Text = "Pastry";
                     Coke.Text = "Coke";
-                    Water.Text = "Water";
-
+                    Water.Text = "Water";*/
+                    Payment pm = new Payment(Int32.Parse(textBox1.Text), amount);
+                   
+                    pm.ShowDialog(this);
+                    
 
 
 
@@ -262,8 +266,12 @@ namespace Restuarent
               
 
             }
+           
         }
-
+        public void DoEnable()
+        {
+            this.Enabled = true;
+        }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -316,6 +324,11 @@ namespace Restuarent
             LogIn lg = new LogIn();
             lg.Show();
             this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
