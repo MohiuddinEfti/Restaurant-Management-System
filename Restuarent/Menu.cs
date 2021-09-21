@@ -26,5 +26,10 @@ namespace Restuarent
         {
             this.Hide();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
