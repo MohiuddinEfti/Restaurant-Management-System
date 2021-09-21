@@ -222,12 +222,16 @@ namespace Restuarent
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.HotPink;
+            this.button4.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button4.Location = new System.Drawing.Point(355, 364);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(83, 38);
             this.button4.TabIndex = 43;
             this.button4.Text = "Paid";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Payment
             // 

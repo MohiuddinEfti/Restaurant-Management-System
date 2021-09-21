@@ -91,5 +91,16 @@ namespace Restuarent
                 button4.Visible = true;
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = string.Empty;
+            groupBox1.Visible = false;
+            pictureBox1.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            button4.Visible = false;
+            this.Hide();
+        }
     }
 }
