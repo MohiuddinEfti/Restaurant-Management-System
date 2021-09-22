@@ -19,7 +19,7 @@ namespace Restuarent
             InitializeComponent();
         }
         public string abc;
-        public int num;
+        public Int32 num;
         private void button1_Click(object sender, EventArgs e)
         {
             string img;
@@ -57,7 +57,7 @@ namespace Restuarent
             if (System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[^0-9]"))
             {
                 MessageBox.Show("Please enter only numbers.");
-                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
+                textBox1.Text = String.Empty;
             }
         }
 
@@ -67,16 +67,18 @@ namespace Restuarent
             {
 
                 MessageBox.Show("Phone number must be 11 digits");
+                textBox1.Text = String.Empty;
             }
             else
             {
                 
-                num = Int32.Parse(textBox1.Text);
+                num = Convert.ToInt32(textBox1.Text);
                 label7.Text = textBox1.Text;
                 pictureBox1.Visible = true;
                 button1.Visible = true;
             }
         }
+        public int id = 1;
         public string picture;
         public int number;
         private void Bkash_Load(object sender, EventArgs e)
@@ -84,7 +86,7 @@ namespace Restuarent
             
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Bkash"].ConnectionString);
             connection.Open();
-            string sql = "SELECT * FROM Bkash";
+            string sql = "SELECT * FROM Bkash WHERE Id=" + id;
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
 
@@ -97,7 +99,7 @@ namespace Restuarent
             }
 
             connection.Close();
-            textBox1.Text = number.ToString();
+            label7.Text = number.ToString();
             pictureBox1.ImageLocation = picture;
             pictureBox1.Visible = false;
             button1.Visible = false;
@@ -106,16 +108,19 @@ namespace Restuarent
 
         private void button4_Click(object sender, EventArgs e)
         {
+            
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Bkash"].ConnectionString);
             connection.Open();
-            string sq1 = "INSERT INTO Bkash(Phone,QR) VALUES('" + Int32.Parse(textBox1.Text) + "','" + abc + "')";
-
-            SqlCommand command = new SqlCommand(sq1, connection);
+            string sql = "UPDATE Bkash SET Phone='" + textBox1.Text + "',QR='" + pictureBox1.ImageLocation + "'WHERE Id=" + id;
+           // string sq2 = "UPDATE Bkash SET QR='" + pictureBox1.ImageLocation + "'WHERE Id=" + id;
+            SqlCommand command = new SqlCommand(sql, connection);
+            //SqlCommand command1 = new SqlCommand(sq2, connection);
+            
             int diary = command.ExecuteNonQuery();
-
+            //int diary1 = command1.ExecuteNonQuery();
             if (diary > 0)
             {
-                MessageBox.Show("Inserted");
+                MessageBox.Show("Updated");
                 Account ac = new Account();
                 ac.Show();
                 this.Hide();
@@ -124,6 +129,11 @@ namespace Restuarent
             {
                 MessageBox.Show("Error");
             }
+        }
+
+        private void Bkash_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

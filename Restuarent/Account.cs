@@ -20,7 +20,9 @@ namespace Restuarent
         {
             InitializeComponent();
         }
-
+        public string picture;
+        public int number;
+        public int id = 1;
         private void Account_Load(object sender, EventArgs e)
         {
             SqlConnection connection2 = new SqlConnection(ConfigurationManager.ConnectionStrings["Accounts"].ConnectionString);
@@ -42,6 +44,23 @@ namespace Restuarent
                 list2.Add(CS);
             }
             dataGridView1.DataSource = list2;
+            connection2.Close();
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Bkash"].ConnectionString);
+            connection.Open();
+            string sql = "SELECT * FROM Bkash WHERE Id=" + id;
+            SqlCommand command = new SqlCommand(sql, connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                number = (int)reader["Phone"];
+                picture = reader["QR"].ToString();
+
+
+            }
+            connection.Close();
+            label7.Text = number.ToString();
+            pictureBox1.ImageLocation = picture;
         }
 
         private void button21_Click(object sender, EventArgs e)

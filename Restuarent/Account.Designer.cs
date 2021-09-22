@@ -124,7 +124,7 @@ namespace Restuarent
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.dataGridView1);
-            this.ForeColor = System.Drawing.Color.HotPink;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Account";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Account";

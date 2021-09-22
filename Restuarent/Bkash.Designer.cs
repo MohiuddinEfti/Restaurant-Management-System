@@ -122,8 +122,11 @@ namespace Restuarent
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label7);
+            this.DoubleBuffered = true;
             this.Name = "Bkash";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bkash";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Bkash_FormClosing);
             this.Load += new System.EventHandler(this.Bkash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

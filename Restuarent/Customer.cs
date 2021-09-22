@@ -21,191 +21,32 @@ namespace Restuarent
         
         public static int f = 0;
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            if (button11.Text == "Add")
-            {
-                f++;
-                Water.Text = f.ToString();
-            }
-            else if (Water.Text == "Water" && button11.Text == "Deduct")
-            {
-                MessageBox.Show("ERROR you did not select anything from this section");
-            }
-            else if (Int32.Parse(Water.Text) > 0 && button11.Text == "Deduct")
-            {
-                f--;
-                Water.Text = f.ToString();
-            }
-         
-        }
+        
 
         private void taka_Click(object sender, EventArgs e)
         {
             
         }
         int amount;
-        private void button10_Click(object sender, EventArgs e)
-        {
-            if(i+n+a+b+c+d+ye+f==0)
-            {
-                MessageBox.Show("You Did Not Order Anything");
-            }
-            else
-            {
-                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
-                taka.Text = cash.ToString();
-                amount = cash;
-               
-            }
-            
-        }
+        
 
         public static int ye = 0;
-        private void button8_Click(object sender, EventArgs e)
-        {
-            if (button11.Text == "Add")
-            {
-                ye++;
-                Coke.Text = ye.ToString();
-            }
-            else if (Coke.Text == "Coke" && button11.Text == "Deduct")
-            {
-                MessageBox.Show("ERROR you did not select anything from this section");
-            }
-            else if (Int32.Parse(Coke.Text) > 0 && button11.Text == "Deduct")
-            {
-                ye--;
-                Coke.Text = ye.ToString();
-            }
-            
-        }
+        
 
         public static int d = 0;
        
-        private void button5_Click(object sender, EventArgs e)
-        {
-            if (button11.Text == "Add")
-            {
-                d++;
-                Pastry.Text = d.ToString();
-            }
-            else if (Pastry.Text == "Pastry" && button11.Text == "Deduct")
-            {
-                MessageBox.Show("ERROR you did not select anything from this section");
-            }
-            else if (Int32.Parse(Pastry.Text) > 0 && button11.Text == "Deduct")
-            {
-                d--;
-                Pastry.Text = d.ToString();
-            }
-
-           
-        }
-
         public static int c = 0;
-        private void button6_Click(object sender, EventArgs e)
-        {
-            if (button11.Text == "Add")
-            {
-                c++;
-                Dumplings.Text = c.ToString();
-            }
-            else if (Dumplings.Text == "Dumplings" && button11.Text == "Deduct")
-            {
-                MessageBox.Show("ERROR you did not select anything from this section");
-            }
-            else if (Int32.Parse(Dumplings.Text) > 0 && button11.Text == "Deduct")
-            {
-                c--;
-                Dumplings.Text = c.ToString();
-            }
-            
-        }
+        
 
         public static int b = 0;
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (button11.Text == "Add")
-            {
-                b++;
-                Sawrma.Text = b.ToString();
-            }
-            else if (Sawrma.Text == "Sawrma" && button11.Text == "Deduct")
-            {
-                MessageBox.Show("ERROR you did not select anything from this section");
-            }
-            else if (Int32.Parse(Sawrma.Text) > 0 && button11.Text == "Deduct")
-            {
-                b--;
-                Sawrma.Text = b.ToString();
-            }
-            
-            
-        }
+        
 
         public static int a = 0;
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (button11.Text == "Add")
-            {
-                a++;
-                Pizza.Text = a.ToString();
-            }
-            else if (Pizza.Text == "PIZZA" && button11.Text == "Deduct")
-            {
-                MessageBox.Show("ERROR you did not select anything from this section");
-            }
-            else if (Int32.Parse(Pizza.Text) > 0 && button11.Text == "Deduct")
-            {
-                a--;
-                Pizza.Text = a.ToString();
-            }
-            
-        }
+        
         public static int i = 0;
         
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if(button11.Text=="Add")
-            {
-                i++;
-                Burger.Text = i.ToString();
-            }
-            else if (Burger.Text == "Burger" && button11.Text == "Deduct")
-            {
-                MessageBox.Show("ERROR you did not select anything from this section");
-            }
-            else if(Int32.Parse(Burger.Text) > 0 && button11.Text == "Deduct")
-            {
-                
-              
-                    i--;
-                    Burger.Text = i.ToString();
-                
-                
-            }
-            
-        }
         public static int n = 0;
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (button11.Text == "Add")
-            {
-                n++;
-                RiceBowl.Text = n.ToString();
-            }
-            else if (RiceBowl.Text == "Rice Bowl" && button11.Text == "Deduct")
-            {
-                MessageBox.Show("ERROR you did not select anything from this section");
-            }
-            else if (Int32.Parse(RiceBowl.Text) > 0 && button11.Text == "Deduct")
-            {
-                n--;
-                RiceBowl.Text = n.ToString();
-            }
-            
-        }
+        
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -250,7 +91,7 @@ namespace Restuarent
                     Pastry.Text = "Pastry";
                     Coke.Text = "Coke";
                     Water.Text = "Water";*/
-                    Payment pm = new Payment(Int32.Parse(textBox1.Text), amount);
+                    Payment pm = new Payment(Int32.Parse(textBox1.Text), amount,textBox2.Text.ToString());
                    
                     pm.ShowDialog(this);
                     
@@ -277,21 +118,7 @@ namespace Restuarent
             Application.Exit();
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            
-            if(button11.Text== "Add")
-            {
-                button11.Text = "Deduct";
-                button11.BackColor = Color.Red;
-                
-            }
-            else
-            {
-                button11.Text = "Add";
-                button11.BackColor = Color.Lime;
-            }
-        }
+        
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -309,7 +136,14 @@ namespace Restuarent
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Burgers.Text = 0.ToString();
+            RiceBowls.Text = 0.ToString();
+            Pizzas.Text = 0.ToString();
+            Sawrmas.Text = 0.ToString();
+            Dumplings.Text = 0.ToString();
+            Pastrys.Text = 0.ToString();
+            Cokes.Text = 0.ToString();
+            Waters.Text = 0.ToString();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -327,6 +161,182 @@ namespace Restuarent
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            i++;
+            Burgers.Text = i.ToString();
+            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            taka.Text = cash.ToString();
+            amount = cash;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if (Int32.Parse(Burgers.Text) > 0)
+            {
+
+
+                i--;
+                Burgers.Text = i.ToString();
+                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                taka.Text = cash.ToString();
+                amount = cash;
+
+            }
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            n++;
+            RiceBowls.Text = n.ToString();
+            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            taka.Text = cash.ToString();
+            amount = cash;
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            if (Int32.Parse(RiceBowls.Text) > 0)
+            {
+                n--;
+                RiceBowls.Text = n.ToString();
+                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                taka.Text = cash.ToString();
+                amount = cash;
+            }
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            a++;
+            Pizzas.Text = a.ToString();
+            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            taka.Text = cash.ToString();
+            amount = cash;
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            if (Int32.Parse(Pizzas.Text) > 0)
+            {
+                a--;
+                Pizzas.Text = a.ToString();
+                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                taka.Text = cash.ToString();
+                amount = cash;
+            }
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            b++;
+            Sawrmas.Text = b.ToString();
+            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            taka.Text = cash.ToString();
+            amount = cash;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (Int32.Parse(Sawrmas.Text) > 0 )
+            {
+                b--;
+                Sawrmas.Text = b.ToString();
+                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                taka.Text = cash.ToString();
+                amount = cash;
+            }
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            c++;
+            Dumplings.Text = c.ToString();
+            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            taka.Text = cash.ToString();
+            amount = cash;
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            if (Int32.Parse(Dumplings.Text) > 0 )
+            {
+                c--;
+                Dumplings.Text = c.ToString();
+                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                taka.Text = cash.ToString();
+                amount = cash;
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            d++;
+            Pastrys.Text = d.ToString();
+            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            taka.Text = cash.ToString();
+            amount = cash;
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            if (Int32.Parse(Pastrys.Text) > 0)
+            {
+                d--;
+                Pastrys.Text = d.ToString();
+                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                taka.Text = cash.ToString();
+                amount = cash;
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            f++;
+            Waters.Text = f.ToString();
+            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            taka.Text = cash.ToString();
+            amount = cash;
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            if (Int32.Parse(Waters.Text) > 0 )
+            {
+                f--;
+                Waters.Text = f.ToString();
+                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                taka.Text = cash.ToString();
+                amount = cash;
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            ye++;
+            Cokes.Text = ye.ToString();
+            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            taka.Text = cash.ToString();
+            amount = cash;
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            if (Int32.Parse(Cokes.Text) > 0 )
+            {
+                ye--;
+                Cokes.Text = ye.ToString();
+                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                taka.Text = cash.ToString();
+                amount = cash;
+            }
+        }
+
+        private void Burgers_TextChanged(object sender, EventArgs e)
         {
 
         }
