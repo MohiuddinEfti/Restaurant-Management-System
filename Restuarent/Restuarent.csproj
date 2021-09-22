@@ -78,6 +78,13 @@
       <DependentUpon>Attendance.cs</DependentUpon>
     </Compile>
     <Compile Include="AttendanceAdd.cs" />
+    <Compile Include="Bkash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bkash.Designer.cs">
+      <DependentUpon>Bkash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bkashs.cs" />
     <Compile Include="CheckAttendance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Attendance.resx">
       <DependentUpon>Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bkash.resx">
+      <DependentUpon>Bkash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckAttendance.resx">
       <DependentUpon>CheckAttendance.cs</DependentUpon>

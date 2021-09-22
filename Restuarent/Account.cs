@@ -57,5 +57,12 @@ namespace Restuarent
         {
             Application.Exit();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Bkash bk = new Bkash();
+            bk.Show();
+            this.Hide();
+        }
     }
 }
