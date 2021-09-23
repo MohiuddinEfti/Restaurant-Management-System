@@ -62,6 +62,7 @@ namespace Restuarent
             this.Namelab1 = new System.Windows.Forms.Label();
             this.Pricelab1 = new System.Windows.Forms.Label();
             this.Update1 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -339,10 +340,12 @@ namespace Restuarent
             this.textBox8.Size = new System.Drawing.Size(118, 22);
             this.textBox8.TabIndex = 40;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // groupbox1
             // 
             this.groupbox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupbox1.BackgroundImage")));
             this.groupbox1.Controls.Add(this.Update1);
             this.groupbox1.Controls.Add(this.Pricelab1);
             this.groupbox1.Controls.Add(this.Namelab1);
@@ -351,7 +354,7 @@ namespace Restuarent
             this.groupbox1.Controls.Add(this.button9);
             this.groupbox1.Controls.Add(this.pictureBox9);
             this.groupbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupbox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupbox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupbox1.Location = new System.Drawing.Point(776, 42);
             this.groupbox1.Name = "groupbox1";
             this.groupbox1.Size = new System.Drawing.Size(436, 529);
@@ -361,6 +364,7 @@ namespace Restuarent
             // 
             // pictureBox9
             // 
+            this.pictureBox9.BackColor = System.Drawing.Color.White;
             this.pictureBox9.Location = new System.Drawing.Point(148, 62);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(172, 159);
@@ -416,14 +420,26 @@ namespace Restuarent
             // 
             // Update1
             // 
+            this.Update1.BackColor = System.Drawing.Color.OldLace;
+            this.Update1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Update1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Update1.Location = new System.Drawing.Point(191, 412);
             this.Update1.Name = "Update1";
             this.Update1.Size = new System.Drawing.Size(80, 35);
             this.Update1.TabIndex = 6;
             this.Update1.Text = "Update";
-            this.Update1.UseVisualStyleBackColor = true;
+            this.Update1.UseVisualStyleBackColor = false;
             this.Update1.Click += new System.EventHandler(this.Update1_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(1148, 13);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 42;
+            this.button10.Text = "Back";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // FoodItem
             // 
@@ -432,6 +448,8 @@ namespace Restuarent
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ControlBox = false;
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.groupbox1);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -512,5 +530,6 @@ namespace Restuarent
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Button Update1;
+        private System.Windows.Forms.Button button10;
     }
 }

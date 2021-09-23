@@ -64,8 +64,7 @@ namespace Restuarent
         private void button1_Click(object sender, EventArgs e)
         {
             Account ac = new Account();
-            ac.Show();
-            this.Hide();
+            ac.ShowDialog(this);
         }
 
         private void Admin_Load(object sender, EventArgs e)
@@ -122,8 +121,8 @@ namespace Restuarent
         private void Food_Click(object sender, EventArgs e)
         {
             FoodItem fi = new FoodItem();
-            fi.Show();
-            this.Hide();
+            fi.ShowDialog(this);
+            
         }
     }
 }

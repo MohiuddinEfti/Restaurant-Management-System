@@ -52,7 +52,7 @@ namespace Restuarent
 
         private void FoodItem_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+           
         }
 
         private void FoodItem_Load(object sender, EventArgs e)
@@ -555,7 +555,25 @@ namespace Restuarent
             connection8.Close();
             pictureBox8.ImageLocation = pic8;
             button8.Text = "Update " + name8;
-            textBox8.Text = name8 + " " + price7 + " tk";
+            textBox8.Text = name8 + " " + price8 + " tk";
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+            textBox9.Text = textBox10.Text = String.Empty;
+            groupbox1.Visible = false;
+            Namelab1.Visible = false;
+            Pricelab1.Visible = false;
+            textBox9.Visible = false;
+            textBox10.Visible = false;
+            Update1.Visible = false;
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

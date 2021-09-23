@@ -65,16 +65,13 @@ namespace Restuarent
 
         private void button21_Click(object sender, EventArgs e)
         {
-            a = "admin";
-            b = "admin";
-            Admin ad = new Admin(a, b);
-            ad.Show();
+            
             this.Hide();
         }
 
         private void Account_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            
         }
 
         private void button4_Click(object sender, EventArgs e)

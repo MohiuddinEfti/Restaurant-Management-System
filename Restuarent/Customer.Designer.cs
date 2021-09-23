@@ -254,7 +254,7 @@
             this.Signinbutton.Name = "Signinbutton";
             this.Signinbutton.Size = new System.Drawing.Size(75, 23);
             this.Signinbutton.TabIndex = 23;
-            this.Signinbutton.Text = "Back";
+            this.Signinbutton.Text = "Log Out";
             this.Signinbutton.UseVisualStyleBackColor = true;
             this.Signinbutton.Click += new System.EventHandler(this.Signinbutton_Click);
             // 
@@ -300,6 +300,7 @@
             this.Burgers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Burgers.Location = new System.Drawing.Point(186, 215);
             this.Burgers.Name = "Burgers";
+            this.Burgers.ReadOnly = true;
             this.Burgers.Size = new System.Drawing.Size(40, 29);
             this.Burgers.TabIndex = 27;
             this.Burgers.TextChanged += new System.EventHandler(this.Burgers_TextChanged);
@@ -309,6 +310,7 @@
             this.RiceBowls.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RiceBowls.Location = new System.Drawing.Point(326, 215);
             this.RiceBowls.Name = "RiceBowls";
+            this.RiceBowls.ReadOnly = true;
             this.RiceBowls.Size = new System.Drawing.Size(40, 29);
             this.RiceBowls.TabIndex = 30;
             // 
@@ -343,6 +345,7 @@
             this.Pizzas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pizzas.Location = new System.Drawing.Point(187, 336);
             this.Pizzas.Name = "Pizzas";
+            this.Pizzas.ReadOnly = true;
             this.Pizzas.Size = new System.Drawing.Size(40, 29);
             this.Pizzas.TabIndex = 33;
             // 
@@ -377,6 +380,7 @@
             this.Sawrmas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sawrmas.Location = new System.Drawing.Point(326, 336);
             this.Sawrmas.Name = "Sawrmas";
+            this.Sawrmas.ReadOnly = true;
             this.Sawrmas.Size = new System.Drawing.Size(40, 29);
             this.Sawrmas.TabIndex = 36;
             // 
@@ -411,6 +415,7 @@
             this.Waters.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Waters.Location = new System.Drawing.Point(325, 576);
             this.Waters.Name = "Waters";
+            this.Waters.ReadOnly = true;
             this.Waters.Size = new System.Drawing.Size(40, 29);
             this.Waters.TabIndex = 48;
             // 
@@ -445,6 +450,7 @@
             this.Cokes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cokes.Location = new System.Drawing.Point(186, 576);
             this.Cokes.Name = "Cokes";
+            this.Cokes.ReadOnly = true;
             this.Cokes.Size = new System.Drawing.Size(40, 29);
             this.Cokes.TabIndex = 45;
             // 
@@ -479,6 +485,7 @@
             this.Pastrys.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pastrys.Location = new System.Drawing.Point(325, 455);
             this.Pastrys.Name = "Pastrys";
+            this.Pastrys.ReadOnly = true;
             this.Pastrys.Size = new System.Drawing.Size(40, 29);
             this.Pastrys.TabIndex = 42;
             // 
@@ -513,6 +520,7 @@
             this.Dumplings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dumplings.Location = new System.Drawing.Point(186, 455);
             this.Dumplings.Name = "Dumplings";
+            this.Dumplings.ReadOnly = true;
             this.Dumplings.Size = new System.Drawing.Size(40, 29);
             this.Dumplings.TabIndex = 39;
             // 
@@ -723,6 +731,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ControlBox = false;
             this.Controls.Add(this.Waterlab);
             this.Controls.Add(this.Cokelab);
             this.Controls.Add(this.Waterpic);

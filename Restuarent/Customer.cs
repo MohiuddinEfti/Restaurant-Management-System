@@ -20,8 +20,33 @@ namespace Restuarent
         }
         
         public static int f = 0;
+        public int price1;
+        public int price2;
+        public int price3;
+        public int price4;
+        public int price5;
+        public int price6;
+        public int price7;
+        public int price8;
 
-        
+        public string name1;
+        public string name2;
+        public string name3;
+        public string name4;
+        public string name5;
+        public string name6;
+        public string name7;
+        public string name8;
+
+        public string pic1;
+        public string pic2;
+        public string pic3;
+        public string pic4;
+        public string pic5;
+        public string pic6;
+        public string pic7;
+        public string pic8;
+
 
         private void taka_Click(object sender, EventArgs e)
         {
@@ -66,7 +91,7 @@ namespace Restuarent
             else
             {
                 
-                int tk = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                int tk = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
                 DateTime time = DateTime.Now;
                 string ab = time.ToString("h:mm:ss tt ");
@@ -133,7 +158,7 @@ namespace Restuarent
         {
 
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             Burgers.Text = 0.ToString();
@@ -144,6 +169,161 @@ namespace Restuarent
             Pastrys.Text = 0.ToString();
             Cokes.Text = 0.ToString();
             Waters.Text = 0.ToString();
+
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+            connection.Open();
+            string sql = "SELECT * FROM Food Where Id=1";
+            SqlCommand command = new SqlCommand(sql, connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+
+
+                price1 = (int)reader["FoodPrice"];
+                name1 = reader["FoodName"].ToString();
+                pic1 = reader["FoodPic"].ToString();
+
+
+
+            }
+            connection.Close();
+            BurgerLab.Text = name1;
+            Burgerpic.ImageLocation = pic1;
+
+            SqlConnection connection2 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+            connection2.Open();
+            string sq2 = "SELECT * FROM Food Where Id=2";
+            SqlCommand command2 = new SqlCommand(sq2, connection2);
+            SqlDataReader reader2 = command2.ExecuteReader();
+
+            while (reader2.Read())
+            {
+
+                price2 = (int)reader2["FoodPrice"];
+                name2 = reader2["FoodName"].ToString();
+                pic2 = reader2["FoodPic"].ToString();
+
+
+
+            }
+            connection2.Close();
+            pictureBox1.ImageLocation = pic2;
+            RicebowlLab.Text = name2;
+            SqlConnection connection3 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+            connection3.Open();
+            string sq3 = "SELECT * FROM Food Where Id=3";
+            SqlCommand command3 = new SqlCommand(sq3, connection3);
+            SqlDataReader reader3 = command3.ExecuteReader();
+
+            while (reader3.Read())
+            {
+
+                price3 = (int)reader3["FoodPrice"];
+                name3 = reader3["FoodName"].ToString();
+                pic3 = reader3["FoodPic"].ToString();
+
+
+
+            }
+            connection3.Close();
+            pizzapic.ImageLocation = pic3;
+            Pizzalab.Text = name3;
+            SqlConnection connection4 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+            connection4.Open();
+            string sq4 = "SELECT * FROM Food Where Id=4";
+            SqlCommand command4 = new SqlCommand(sq4, connection4);
+            SqlDataReader reader4 = command4.ExecuteReader();
+
+            while (reader4.Read())
+            {
+
+                price4 = (int)reader4["FoodPrice"];
+                name4 = reader4["FoodName"].ToString();
+                pic4 = reader4["FoodPic"].ToString();
+
+
+
+            }
+            connection4.Close();
+            sawrmapic.ImageLocation = pic4;
+            Sawrmalab.Text = name4;
+            SqlConnection connection5 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+            connection5.Open();
+            string sq5 = "SELECT * FROM Food Where Id=5";
+            SqlCommand command5 = new SqlCommand(sq5, connection5);
+            SqlDataReader reader5 = command5.ExecuteReader();
+
+            while (reader5.Read())
+            {
+
+                price5 = (int)reader5["FoodPrice"];
+                name5 = reader5["FoodName"].ToString();
+                pic5 = reader5["FoodPic"].ToString();
+
+
+
+            }
+            connection5.Close();
+            Dumplingpic.ImageLocation = pic5;
+            Dumplinglab.Text = name5;
+            SqlConnection connection6 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+            connection6.Open();
+            string sq6 = "SELECT * FROM Food Where Id=6";
+            SqlCommand command6 = new SqlCommand(sq6, connection6);
+            SqlDataReader reader6 = command6.ExecuteReader();
+
+            while (reader6.Read())
+            {
+
+                price6 = (int)reader6["FoodPrice"];
+                name6 = reader6["FoodName"].ToString();
+                pic6 = reader6["FoodPic"].ToString();
+
+
+
+            }
+            connection6.Close();
+            Pastrypic.ImageLocation = pic6;
+            Pastrylab.Text = name6;
+            SqlConnection connection7 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+            connection7.Open();
+            string sq7 = "SELECT * FROM Food Where Id=7";
+            SqlCommand command7 = new SqlCommand(sq7, connection7);
+            SqlDataReader reader7 = command7.ExecuteReader();
+
+            while (reader7.Read())
+            {
+
+                price7 = (int)reader7["FoodPrice"];
+                name7 = reader7["FoodName"].ToString();
+                pic7 = reader7["FoodPic"].ToString();
+
+
+
+            }
+            connection7.Close();
+            Cokepic.ImageLocation = pic7;
+            Cokelab.Text = name7;
+            SqlConnection connection8 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+            connection8.Open();
+            string sq8 = "SELECT * FROM Food Where Id=8";
+            SqlCommand command8 = new SqlCommand(sq8, connection8);
+            SqlDataReader reader8 = command8.ExecuteReader();
+
+            while (reader8.Read())
+            {
+
+                price8 = (int)reader8["FoodPrice"];
+                name8 = reader8["FoodName"].ToString();
+                pic8 = reader8["FoodPic"].ToString();
+
+
+
+            }
+            connection8.Close();
+            Waterpic.ImageLocation = pic8;
+            Waterlab.Text = name8;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -155,9 +335,19 @@ namespace Restuarent
 
         private void Signinbutton_Click(object sender, EventArgs e)
         {
-            LogIn lg = new LogIn();
-            lg.Show();
-            this.Hide();
+            Burgers.Text = Pizzas.Text = RiceBowls.Text = Sawrmas.Text = Dumplings.Text = Pastrys.Text = Cokes.Text = Waters.Text = textBox1.Text = textBox2.Text = textBox3.Text = taka.Text = String.Empty;
+            amount = 0;
+            DialogResult dialogResult = MessageBox.Show("Are You Sure", "Log Out", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                LogIn lg = new LogIn();
+                lg.Show();
+                this.Hide();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                this.Show();
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -169,7 +359,7 @@ namespace Restuarent
         {
             i++;
             Burgers.Text = i.ToString();
-            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            int cash =  i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
         }
@@ -182,7 +372,7 @@ namespace Restuarent
 
                 i--;
                 Burgers.Text = i.ToString();
-                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
 
@@ -193,7 +383,7 @@ namespace Restuarent
         {
             n++;
             RiceBowls.Text = n.ToString();
-            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
         }
@@ -204,7 +394,7 @@ namespace Restuarent
             {
                 n--;
                 RiceBowls.Text = n.ToString();
-                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
             }
@@ -214,7 +404,7 @@ namespace Restuarent
         {
             a++;
             Pizzas.Text = a.ToString();
-            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
         }
@@ -225,7 +415,7 @@ namespace Restuarent
             {
                 a--;
                 Pizzas.Text = a.ToString();
-                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
             }
@@ -235,7 +425,7 @@ namespace Restuarent
         {
             b++;
             Sawrmas.Text = b.ToString();
-            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
         }
@@ -246,7 +436,7 @@ namespace Restuarent
             {
                 b--;
                 Sawrmas.Text = b.ToString();
-                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
             }
@@ -256,7 +446,7 @@ namespace Restuarent
         {
             c++;
             Dumplings.Text = c.ToString();
-            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
         }
@@ -267,7 +457,7 @@ namespace Restuarent
             {
                 c--;
                 Dumplings.Text = c.ToString();
-                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
             }
@@ -277,7 +467,7 @@ namespace Restuarent
         {
             d++;
             Pastrys.Text = d.ToString();
-            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
         }
@@ -288,7 +478,7 @@ namespace Restuarent
             {
                 d--;
                 Pastrys.Text = d.ToString();
-                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
             }
@@ -298,7 +488,7 @@ namespace Restuarent
         {
             f++;
             Waters.Text = f.ToString();
-            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
         }
@@ -309,7 +499,7 @@ namespace Restuarent
             {
                 f--;
                 Waters.Text = f.ToString();
-                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
             }
@@ -319,7 +509,7 @@ namespace Restuarent
         {
             ye++;
             Cokes.Text = ye.ToString();
-            int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+            int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
         }
@@ -330,7 +520,7 @@ namespace Restuarent
             {
                 ye--;
                 Cokes.Text = ye.ToString();
-                int cash = i * 150 + n * 200 + a * 500 + b * 120 + c * 100 + d * 70 + ye * 30 + f * 15;
+                int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
             }
