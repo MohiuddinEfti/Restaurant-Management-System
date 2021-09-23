@@ -340,5 +340,10 @@ namespace Restuarent
         {
 
         }
+
+        private void Burgerpic_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

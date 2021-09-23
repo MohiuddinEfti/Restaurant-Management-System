@@ -118,5 +118,12 @@ namespace Restuarent
         {
 
         }
+
+        private void Food_Click(object sender, EventArgs e)
+        {
+            FoodItem fi = new FoodItem();
+            fi.Show();
+            this.Hide();
+        }
     }
 }

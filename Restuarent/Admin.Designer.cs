@@ -41,6 +41,7 @@ namespace Restuarent
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Food = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -158,6 +159,7 @@ namespace Restuarent
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.Food);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
@@ -186,6 +188,19 @@ namespace Restuarent
             this.textBox2.TabIndex = 32;
             this.textBox2.Text = "ADMIN";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Food
+            // 
+            this.Food.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Food.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Food.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Food.Location = new System.Drawing.Point(0, 249);
+            this.Food.Name = "Food";
+            this.Food.Size = new System.Drawing.Size(200, 47);
+            this.Food.TabIndex = 33;
+            this.Food.Text = "Food Items";
+            this.Food.UseVisualStyleBackColor = true;
+            this.Food.Click += new System.EventHandler(this.Food_Click);
             // 
             // Admin
             // 
@@ -226,5 +241,6 @@ namespace Restuarent
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button Food;
     }
 }

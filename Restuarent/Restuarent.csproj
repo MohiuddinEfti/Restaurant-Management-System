@@ -107,6 +107,12 @@
     <Compile Include="DailyIncome.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeAdding.cs" />
+    <Compile Include="FoodItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodItem.Designer.cs">
+      <DependentUpon>FoodItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodItem.resx">
+      <DependentUpon>FoodItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>

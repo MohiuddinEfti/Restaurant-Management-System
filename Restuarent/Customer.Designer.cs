@@ -267,6 +267,7 @@
             this.Burgerpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Burgerpic.TabIndex = 24;
             this.Burgerpic.TabStop = false;
+            this.Burgerpic.Click += new System.EventHandler(this.Burgerpic_Click);
             // 
             // button2
             // 
