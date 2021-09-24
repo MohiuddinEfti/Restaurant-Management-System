@@ -29,7 +29,7 @@ namespace Restuarent
             
             if (Namebox.Text=="Customer" && PasswordBox.Text=="Customer")
             {
-                Customer cm = new Customer();
+                TableNo cm = new TableNo();
                 cm.Show();
                 this.Hide();
             }

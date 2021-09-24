@@ -55,7 +55,7 @@ namespace Restuarent
 
         private void FoodItem_FormClosing(object sender, FormClosingEventArgs e)
         {
-           
+            Application.Exit();
         }
 
         private void FoodItem_Load(object sender, EventArgs e)
@@ -375,16 +375,7 @@ namespace Restuarent
 
         private void Update1_Click(object sender, EventArgs e)
         {
-            
-            
-            SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
-            connections.Open();
-            string sql55 = "ALTER TABLE CustomerOrders RENAME COLUMN FROM'" + realname1 + "'TO'" + textBox9.Text.ToString()+ "'";
-            SqlCommand command55 = new SqlCommand(sql55, connections);
-            
-            int diary55 = command55.ExecuteNonQuery();
-            if (diary55 > 0)
-            {
+           
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
                 connection.Open();
                 string sql = "UPDATE Food SET FoodName='" + textBox9.Text + "',FoodPic='" + pictureBox9.ImageLocation + "',FoodPrice='" + textBox10.Text + "'WHERE Id=" + powerid;
@@ -407,7 +398,7 @@ namespace Restuarent
                 {
                     MessageBox.Show("Error");
                 }
-            }
+            
                 SqlConnection connection11 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
             connection11.Open();
             string sql1 = "SELECT * FROM Food Where Id=1";
@@ -582,7 +573,8 @@ namespace Restuarent
 
         private void button10_Click(object sender, EventArgs e)
         {
-            
+            Admin ad = new Admin("admin","admin");
+            ad.Show();
             this.Hide();
             textBox9.Text = textBox10.Text = String.Empty;
             groupbox1.Visible = false;

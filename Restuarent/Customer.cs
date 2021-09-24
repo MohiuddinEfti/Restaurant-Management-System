@@ -14,8 +14,10 @@ namespace Restuarent
 {
     public partial class Customer : Form
     {
-        public Customer()
+        public int tbno;
+        public Customer(int a)
         {
+            tbno = a;
             InitializeComponent();
         }
         
@@ -75,12 +77,7 @@ namespace Restuarent
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text=="") 
-            {
-
-                MessageBox.Show("Table number is empty");
-            }
-            else if(textBox2.Text=="")
+            if(textBox2.Text=="")
             {
                 MessageBox.Show("Customer name is empty");
             }
@@ -97,7 +94,7 @@ namespace Restuarent
                 string ab = time.ToString("h:mm:ss tt ");
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
                 connection.Open();
-                string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,OrderTime,Price,Date) VALUES('" + textBox2.Text + "','" + textBox1.Text + "','" + textBox3.Text + "','" + i.ToString() + "','" + n.ToString() + "','" + a.ToString() + "','" + b.ToString() + "','" + c.ToString() + "','"+d.ToString()+ "','"+ye.ToString()+ "','"+f.ToString()+ "','"+ab+ "','"+tk+"','"+Today+"')";
+                string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,OrderTime,Price,Date) VALUES('" + textBox2.Text + "','" + tbno + "','" + textBox3.Text + "','" + i.ToString() + "','" + n.ToString() + "','" + a.ToString() + "','" + b.ToString() + "','" + c.ToString() + "','"+d.ToString()+ "','"+ye.ToString()+ "','"+f.ToString()+ "','"+ab+ "','"+tk+"','"+Today+"')";
 
                 SqlCommand command = new SqlCommand(sq1, connection);
                 int diary = command.ExecuteNonQuery();
@@ -116,7 +113,7 @@ namespace Restuarent
                     Pastry.Text = "Pastry";
                     Coke.Text = "Coke";
                     Water.Text = "Water";*/
-                    Payment pm = new Payment(Int32.Parse(textBox1.Text), amount,textBox2.Text.ToString());
+                    Payment pm = new Payment(tbno, amount,textBox2.Text.ToString());
                    
                     pm.ShowDialog(this);
                     
@@ -145,14 +142,7 @@ namespace Restuarent
 
         
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            if (System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[^0-9]"))
-            {
-                MessageBox.Show("Please enter only numbers.");
-                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            }
-        }
+        
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -161,6 +151,7 @@ namespace Restuarent
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            label8.Text = tbno.ToString();
             Burgers.Text = 0.ToString();
             RiceBowls.Text = 0.ToString();
             Pizzas.Text = 0.ToString();
@@ -335,11 +326,12 @@ namespace Restuarent
 
         private void Signinbutton_Click(object sender, EventArgs e)
         {
-            Burgers.Text = Pizzas.Text = RiceBowls.Text = Sawrmas.Text = Dumplings.Text = Pastrys.Text = Cokes.Text = Waters.Text = textBox1.Text = textBox2.Text = textBox3.Text = taka.Text = String.Empty;
-            amount = 0;
+           
             DialogResult dialogResult = MessageBox.Show("Are You Sure", "Log Out", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
+                Burgers.Text = Pizzas.Text = RiceBowls.Text = Sawrmas.Text = Dumplings.Text = Pastrys.Text = Cokes.Text = Waters.Text = textBox2.Text = textBox3.Text = taka.Text = String.Empty;
+                amount = 0;
                 LogIn lg = new LogIn();
                 lg.Show();
                 this.Hide();
@@ -532,6 +524,11 @@ namespace Restuarent
         }
 
         private void Burgerpic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

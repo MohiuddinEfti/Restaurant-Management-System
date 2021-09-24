@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Siticone.Desktop.UI, Version=2.0.8.0, Culture=neutral, PublicKeyToken=422d444a8a9fa6db, processorArchitecture=MSIL">
+      <HintPath>..\packages\Siticone.Desktop.UI.2.0.8\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -146,6 +149,12 @@
       <DependentUpon>Stock.cs</DependentUpon>
     </Compile>
     <Compile Include="Stocks.cs" />
+    <Compile Include="TableNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableNo.Designer.cs">
+      <DependentUpon>TableNo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Waiter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,9 +215,13 @@
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TableNo.resx">
+      <DependentUpon>TableNo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Waiter.resx">
       <DependentUpon>Waiter.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
