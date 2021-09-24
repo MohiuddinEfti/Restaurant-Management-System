@@ -69,6 +69,7 @@ namespace Restuarent
 
         private void Admin_Load(object sender, EventArgs e)
         {
+            
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
             string sql = "SELECT * FROM CustomerOrders";
@@ -122,6 +123,11 @@ namespace Restuarent
         {
             FoodItem fi = new FoodItem();
             fi.ShowDialog(this);
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
             
         }
     }

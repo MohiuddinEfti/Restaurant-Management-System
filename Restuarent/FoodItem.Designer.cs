@@ -55,13 +55,13 @@ namespace Restuarent
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.groupbox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.Namelab1 = new System.Windows.Forms.Label();
-            this.Pricelab1 = new System.Windows.Forms.Label();
             this.Update1 = new System.Windows.Forms.Button();
+            this.Pricelab1 = new System.Windows.Forms.Label();
+            this.Namelab1 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -362,15 +362,52 @@ namespace Restuarent
             this.groupbox1.TabStop = false;
             this.groupbox1.Text = "Update Panel";
             // 
-            // pictureBox9
+            // Update1
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.White;
-            this.pictureBox9.Location = new System.Drawing.Point(148, 62);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(172, 159);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
+            this.Update1.BackColor = System.Drawing.Color.OldLace;
+            this.Update1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Update1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Update1.Location = new System.Drawing.Point(191, 412);
+            this.Update1.Name = "Update1";
+            this.Update1.Size = new System.Drawing.Size(80, 35);
+            this.Update1.TabIndex = 6;
+            this.Update1.Text = "Update";
+            this.Update1.UseVisualStyleBackColor = false;
+            this.Update1.Click += new System.EventHandler(this.Update1_Click);
+            // 
+            // Pricelab1
+            // 
+            this.Pricelab1.AutoSize = true;
+            this.Pricelab1.Location = new System.Drawing.Point(69, 331);
+            this.Pricelab1.Name = "Pricelab1";
+            this.Pricelab1.Size = new System.Drawing.Size(49, 20);
+            this.Pricelab1.TabIndex = 5;
+            this.Pricelab1.Text = "Price";
+            // 
+            // Namelab1
+            // 
+            this.Namelab1.AutoSize = true;
+            this.Namelab1.Location = new System.Drawing.Point(63, 284);
+            this.Namelab1.Name = "Namelab1";
+            this.Namelab1.Size = new System.Drawing.Size(55, 20);
+            this.Namelab1.TabIndex = 4;
+            this.Namelab1.Text = "Name";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(148, 325);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(172, 26);
+            this.textBox10.TabIndex = 3;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(148, 281);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(172, 26);
+            this.textBox9.TabIndex = 2;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // button9
             // 
@@ -384,52 +421,15 @@ namespace Restuarent
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // textBox9
+            // pictureBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(148, 281);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(172, 26);
-            this.textBox9.TabIndex = 2;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(148, 325);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(172, 26);
-            this.textBox10.TabIndex = 3;
-            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
-            // 
-            // Namelab1
-            // 
-            this.Namelab1.AutoSize = true;
-            this.Namelab1.Location = new System.Drawing.Point(63, 284);
-            this.Namelab1.Name = "Namelab1";
-            this.Namelab1.Size = new System.Drawing.Size(55, 20);
-            this.Namelab1.TabIndex = 4;
-            this.Namelab1.Text = "Name";
-            // 
-            // Pricelab1
-            // 
-            this.Pricelab1.AutoSize = true;
-            this.Pricelab1.Location = new System.Drawing.Point(69, 331);
-            this.Pricelab1.Name = "Pricelab1";
-            this.Pricelab1.Size = new System.Drawing.Size(49, 20);
-            this.Pricelab1.TabIndex = 5;
-            this.Pricelab1.Text = "Price";
-            // 
-            // Update1
-            // 
-            this.Update1.BackColor = System.Drawing.Color.OldLace;
-            this.Update1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Update1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Update1.Location = new System.Drawing.Point(191, 412);
-            this.Update1.Name = "Update1";
-            this.Update1.Size = new System.Drawing.Size(80, 35);
-            this.Update1.TabIndex = 6;
-            this.Update1.Text = "Update";
-            this.Update1.UseVisualStyleBackColor = false;
-            this.Update1.Click += new System.EventHandler(this.Update1_Click);
+            this.pictureBox9.BackColor = System.Drawing.Color.White;
+            this.pictureBox9.Location = new System.Drawing.Point(148, 62);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(172, 159);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
             // 
             // button10
             // 

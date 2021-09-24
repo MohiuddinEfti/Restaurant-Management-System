@@ -43,6 +43,9 @@ namespace Restuarent
         public string pic7;
         public string pic8;
 
+        public string realname1;
+       
+
         public string abc;
 
         public FoodItem()
@@ -258,6 +261,7 @@ namespace Restuarent
             groupbox1.Visible = true;
             pictureBox9.ImageLocation = pic1;
             textBox9.Text = name1;
+            realname1 = name1;
             textBox10.Text = price1.ToString();
             powerid = 1;
         }
@@ -304,6 +308,7 @@ namespace Restuarent
             powerid = 2;
             groupbox1.Visible = true;
             textBox9.Text = name2;
+            realname1 = name2;
             textBox10.Text = price2.ToString();
             pictureBox9.ImageLocation = pic2;
         }
@@ -312,6 +317,7 @@ namespace Restuarent
         {
             groupbox1.Visible = true;
             textBox9.Text = name3;
+            realname1 = name3;
             textBox10.Text = price3.ToString();
             pictureBox9.ImageLocation = pic3; 
             powerid = 3;
@@ -321,6 +327,7 @@ namespace Restuarent
         {
             groupbox1.Visible = true;
             textBox9.Text = name4;
+            realname1 = name4;
             textBox10.Text = price4.ToString();
             pictureBox9.ImageLocation = pic4; 
             powerid = 4;
@@ -330,6 +337,7 @@ namespace Restuarent
         {
             groupbox1.Visible = true;
             textBox9.Text = name5;
+            realname1 = name5;
             textBox10.Text = price5.ToString();
             pictureBox9.ImageLocation = pic5; 
             powerid = 5;
@@ -339,6 +347,7 @@ namespace Restuarent
         {
             groupbox1.Visible = true;
             textBox9.Text = name6;
+            realname1 = name6;
             textBox10.Text = price6.ToString();
             pictureBox9.ImageLocation = pic6; 
             powerid = 6;
@@ -348,6 +357,7 @@ namespace Restuarent
         {
             groupbox1.Visible = true;
             textBox9.Text = name7;
+            realname1 = name7;
             textBox10.Text = price7.ToString();
             pictureBox9.ImageLocation = pic7; 
             powerid = 7;
@@ -357,6 +367,7 @@ namespace Restuarent
         {
             groupbox1.Visible = true;
             textBox9.Text = name8;
+            realname1 = name8;
             textBox10.Text = price8.ToString();
             pictureBox9.ImageLocation = pic8; 
             powerid = 8;
@@ -364,30 +375,40 @@ namespace Restuarent
 
         private void Update1_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
-            connection.Open();
-            string sql = "UPDATE Food SET FoodName='" + textBox9.Text + "',FoodPic='" + pictureBox9.ImageLocation + "',FoodPrice='" + textBox10.Text + "'WHERE Id=" + powerid;
-            SqlCommand command = new SqlCommand(sql, connection);
-            int diary = command.ExecuteNonQuery();
             
-            if (diary > 0)
+            
+            SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connections.Open();
+            string sql55 = "ALTER TABLE CustomerOrders RENAME COLUMN FROM'" + realname1 + "'TO'" + textBox9.Text.ToString()+ "'";
+            SqlCommand command55 = new SqlCommand(sql55, connections);
+            
+            int diary55 = command55.ExecuteNonQuery();
+            if (diary55 > 0)
             {
-                MessageBox.Show("Updated");
-                textBox9.Text= textBox10.Text = String.Empty;
-                groupbox1.Visible = false;
-                Namelab1.Visible = false;
-                Pricelab1.Visible = false;
-                textBox9.Visible = false;
-                textBox10.Visible = false;
-                Update1.Visible = false;
+                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+                connection.Open();
+                string sql = "UPDATE Food SET FoodName='" + textBox9.Text + "',FoodPic='" + pictureBox9.ImageLocation + "',FoodPrice='" + textBox10.Text + "'WHERE Id=" + powerid;
+                SqlCommand command = new SqlCommand(sql, connection);
+                int diary = command.ExecuteNonQuery();
 
-            }
-            else
-            {
-                MessageBox.Show("Error");
-            }
+                if (diary > 0)
+                {
+                    MessageBox.Show("Updated");
+                    textBox9.Text = textBox10.Text = String.Empty;
+                    groupbox1.Visible = false;
+                    Namelab1.Visible = false;
+                    Pricelab1.Visible = false;
+                    textBox9.Visible = false;
+                    textBox10.Visible = false;
+                    Update1.Visible = false;
 
-            SqlConnection connection11 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+            }
+                SqlConnection connection11 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
             connection11.Open();
             string sql1 = "SELECT * FROM Food Where Id=1";
             SqlCommand command11 = new SqlCommand(sql1, connection11);

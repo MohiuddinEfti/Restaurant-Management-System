@@ -40,8 +40,8 @@ namespace Restuarent
             this.Logoutbutton1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.Food = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +117,7 @@ namespace Restuarent
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1021, 296);
             this.dataGridView1.TabIndex = 23;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label6
             // 
@@ -172,6 +173,19 @@ namespace Restuarent
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             // 
+            // Food
+            // 
+            this.Food.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Food.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Food.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Food.Location = new System.Drawing.Point(0, 249);
+            this.Food.Name = "Food";
+            this.Food.Size = new System.Drawing.Size(200, 47);
+            this.Food.TabIndex = 33;
+            this.Food.Text = "Food Items";
+            this.Food.UseVisualStyleBackColor = true;
+            this.Food.Click += new System.EventHandler(this.Food_Click);
+            // 
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -188,19 +202,6 @@ namespace Restuarent
             this.textBox2.TabIndex = 32;
             this.textBox2.Text = "ADMIN";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // Food
-            // 
-            this.Food.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Food.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Food.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Food.Location = new System.Drawing.Point(0, 249);
-            this.Food.Name = "Food";
-            this.Food.Size = new System.Drawing.Size(200, 47);
-            this.Food.TabIndex = 33;
-            this.Food.Text = "Food Items";
-            this.Food.UseVisualStyleBackColor = true;
-            this.Food.Click += new System.EventHandler(this.Food_Click);
             // 
             // Admin
             // 
