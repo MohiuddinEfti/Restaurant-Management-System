@@ -330,8 +330,17 @@ namespace Restuarent
             DialogResult dialogResult = MessageBox.Show("Are You Sure", "Log Out", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
+               
                 Burgers.Text = Pizzas.Text = RiceBowls.Text = Sawrmas.Text = Dumplings.Text = Pastrys.Text = Cokes.Text = Waters.Text = textBox2.Text = textBox3.Text = taka.Text = String.Empty;
-                amount = 0;
+                i = 0;
+                n = 0;
+                a = 0;
+                b = 0;
+                c = 0;
+                d = 0;
+                ye = 0;
+                f = 0;
+                
                 LogIn lg = new LogIn();
                 lg.Show();
                 this.Hide();
@@ -529,6 +538,11 @@ namespace Restuarent
         }
 
         private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RiceBowls_TextChanged(object sender, EventArgs e)
         {
 
         }

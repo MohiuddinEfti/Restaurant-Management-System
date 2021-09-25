@@ -303,6 +303,7 @@
             this.RiceBowls.ReadOnly = true;
             this.RiceBowls.Size = new System.Drawing.Size(40, 29);
             this.RiceBowls.TabIndex = 30;
+            this.RiceBowls.TextChanged += new System.EventHandler(this.RiceBowls_TextChanged);
             // 
             // button4
             // 
