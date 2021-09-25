@@ -52,7 +52,7 @@ namespace Restuarent
 
                 CS.Id = (int)reader["Id"];
                 CS.CustomerName = reader["CustomerName"].ToString();
-                CS.TableNo = (int)reader["Id"];
+                CS.TableNo = (int)reader["TableNo"];
                 CS.AddOn = reader["AddOn"].ToString();
                 CS.Burger = reader["Burger"].ToString();
                 CS.RiceBowl = reader["RiceBowl"].ToString();
@@ -137,7 +137,7 @@ namespace Restuarent
 
                         CS.Id = (int)readers["Id"];
                         CS.CustomerName = readers["CustomerName"].ToString();
-                        CS.TableNo = (int)readers["Id"];
+                        CS.TableNo = (int)readers["TableNo"];
                         CS.AddOn = readers["AddOn"].ToString();
                         CS.Burger = readers["Burger"].ToString();
                         CS.RiceBowl = readers["RiceBowl"].ToString();
@@ -210,7 +210,7 @@ namespace Restuarent
 
                         CS.Id = (int)readers["Id"];
                         CS.CustomerName = readers["CustomerName"].ToString();
-                        CS.TableNo = (int)readers["Id"];
+                        CS.TableNo = (int)readers["TableNo"];
                         CS.AddOn = readers["AddOn"].ToString();
                         CS.Burger = readers["Burger"].ToString();
                         CS.RiceBowl = readers["RiceBowl"].ToString();

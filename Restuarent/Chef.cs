@@ -317,7 +317,7 @@ namespace Restuarent
 
                     CS.Id = (int)reader["Id"];
                     CS.CustomerName = reader["CustomerName"].ToString();
-                    CS.TableNo = (int)reader["Id"];
+                    CS.TableNo = (int)reader["TableNo"];
                     CS.AddOn = reader["AddOn"].ToString();
                     CS.Burger = reader["Burger"].ToString();
                     CS.RiceBowl = reader["RiceBowl"].ToString();

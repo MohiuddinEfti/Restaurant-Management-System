@@ -368,6 +368,7 @@ namespace Restuarent
         {
             if(timer1.Enabled==true)
             {
+                label2.ForeColor = Color.Green;
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
                 connection.Open();
                 string sql = "SELECT Id,CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,Price,OrderTime,ChefOrderDoneTime,CustomerRecieved,Date,Payment FROM CustomerOrders";
@@ -411,6 +412,7 @@ namespace Restuarent
                 dataGridView1.DataSource = list;
             }
             
+            
                
             
         }
@@ -418,6 +420,7 @@ namespace Restuarent
         private void button6_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Live Order Viewer Is Off");
+            label2.ForeColor = Color.Red;
             timer1.Enabled = false;
         }
 
@@ -479,6 +482,51 @@ namespace Restuarent
             {
                 MessageBox.Show("There is No Data");
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connection.Open();
+            string sq1 = "SELECT * FROM CustomerOrders WHERE CustomerName LIKE '" + textBox1.Text + "%'  ";
+
+            SqlCommand command = new SqlCommand(sq1, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            List<CustomerOrders> list = new List<CustomerOrders>();
+            while (reader.Read())
+            {
+                CustomerOrders CS = new CustomerOrders();
+
+                CS.Id = (int)reader["Id"];
+                CS.CustomerName = reader["CustomerName"].ToString();
+                CS.TableNo = (int)reader["TableNo"];
+                CS.AddOn = reader["AddOn"].ToString();
+                CS.Burger = reader["Burger"].ToString();
+                CS.RiceBowl = reader["RiceBowl"].ToString();
+                CS.Pizza = reader["Pizza"].ToString();
+                CS.Sawrma = reader["Sawrma"].ToString();
+                CS.Dumplings = reader["Dumplings"].ToString();
+                CS.Pastry = reader["Pastry"].ToString();
+                CS.Coke = reader["Coke"].ToString();
+                CS.Water = reader["Water"].ToString();
+                CS.Price = reader["Price"].ToString();
+                CS.OrderTime = reader["OrderTime"].ToString();
+                CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
+                CS.Date = reader["Date"].ToString();
+                CS.Payment = reader["Payment"].ToString();
+
+
+                list.Add(CS);
+            }
+            dataGridView1.DataSource = list;
+
+            connection.Close();
         }
     }
 }
