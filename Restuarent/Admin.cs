@@ -87,10 +87,16 @@ namespace Restuarent
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            
+            label3.Visible = false;
+            panel1.Visible = false;
+            Kidmovies.Visible = false;
+            button12.Visible = false;
+            Movies.Visible = false;
+            button11.Visible = false;
+            button14.Visible = false;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
                 connection.Open();
-                string sql = "SELECT Id,CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,Price,OrderTime,ChefOrderDoneTime,CustomerRecieved,Date,Payment FROM CustomerOrders";
+                string sql = "SELECT * FROM CustomerOrders";
                 SqlCommand command = new SqlCommand(sql, connection);
                 SqlDataReader reader = command.ExecuteReader();
                 List<CustomerOrders> list = new List<CustomerOrders>();
@@ -527,6 +533,166 @@ namespace Restuarent
             dataGridView1.DataSource = list;
 
             connection.Close();
+        }
+        public string movie;
+        public string kidmovie;
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+          
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Movie"].ConnectionString);
+            connection.Open();
+            string sql = "SELECT * FROM Movie WHERE Id=1";
+            SqlCommand command = new SqlCommand(sql, connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                CustomerOrders CS = new CustomerOrders();
+
+                CS.Id = (int)reader["Id"];
+                movie = reader["Movie"].ToString();
+
+                kidmovie = reader["KidsMovie"].ToString();
+
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.URL = movie;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.URL = kidmovie;
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            label3.Visible = true;
+            Movies.Visible = true;
+            button11.Visible = true;
+            Kidmovies.Visible = false;
+            button12.Visible = false;
+            button14.Visible = false;
+        }
+        public string abc;
+        public string abc2;
+        private void button11_Click(object sender, EventArgs e)
+        {
+           
+            string img;
+            try
+            {
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "mkv files(*.mkv)|*.mkv| mp4 files(*.mp4)|*.mp4| All files(*.*)|*.*";
+                if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    img = ofd.FileName;
+                    if (img != "")
+                    {
+                        abc = img;
+                    }
+                    else
+                    {
+                        abc = string.Empty;
+                    }
+                    Movies.Text = img;
+                    axWindowsMediaPlayer1.URL = img;
+                    Kidmovies.Visible = true;
+                    button12.Visible = true;
+
+
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("An ERROR Occured");
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+           
+            string img;
+            try
+            {
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "mkv files(*.mkv)|*.mkv| mp4 files(*.mp4)|*.mp4| All files(*.*)|*.*";
+                if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    img = ofd.FileName;
+                    if (img != "")
+                    {
+                        abc2 = img;
+                    }
+                    else
+                    {
+                        abc2 = string.Empty;
+                    }
+                    Movies.Text = img;
+                    axWindowsMediaPlayer1.URL = img;
+                    button14.Visible = true;
+
+
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("An ERROR Occured");
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Movie"].ConnectionString);
+            connection.Open();
+            string sql = "UPDATE Movie SET Movie='" + abc + "',KidsMovie='" + abc2+ "'WHERE Id=1";
+            SqlCommand command = new SqlCommand(sql, connection);
+            int diary = command.ExecuteNonQuery();
+
+            if (diary > 0)
+            {
+                MessageBox.Show("Movie Updated");
+                Movies.Visible = false;
+                button11.Visible = false;
+                Kidmovies.Visible = false;
+                button12.Visible = false;
+                button14.Visible = false;
+                label3.Visible = false;
+                Movies.Text = "Movie";
+                Kidmovies.Text = "Kids Movie";
+
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            timer1.Enabled = false;
+        }
+
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            Movies.Visible = false;
+            button11.Visible = false;
+            Kidmovies.Visible = false;
+            button12.Visible = false;
+            button14.Visible = false;
+            panel1.Visible = false;
+            axWindowsMediaPlayer1.URL = "";
         }
     }
 }

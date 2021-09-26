@@ -159,6 +159,7 @@ namespace Restuarent
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            label9.Visible = false;
             richTextBox1.Visible = false;
             label8.Text = tbno.ToString();
             Burgers.Text = 0.ToString();
@@ -751,7 +752,14 @@ namespace Restuarent
         private void button10_Click(object sender, EventArgs e)
         {
             richTextBox1.Visible = true;
+            label9.Visible = true;
             richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Entertainment en = new Entertainment();
+            en.Show();
         }
     }
 }

@@ -375,14 +375,7 @@ namespace Restuarent
 
         private void Update1_Click(object sender, EventArgs e)
         {
-            SqlConnection connection55 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
-            connection55.Open();
-            string sql55 = "ALTER TABLE CustomerOrders RENAME COLUMN FROM '" + realname1 + "'TO'" + textBox9.Text.ToString() + "'";
-            SqlCommand command55 = new SqlCommand(sql55, connection55);
-            int diary55 = command55.ExecuteNonQuery();
-
-            if (diary55 > 0)
-            {
+            
 
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
                 connection.Open();
@@ -406,11 +399,7 @@ namespace Restuarent
                 {
                     MessageBox.Show("Error");
                 }
-            }
-            else
-            {
-                MessageBox.Show("Error");
-            }
+           
 
             SqlConnection connection11 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
             connection11.Open();
