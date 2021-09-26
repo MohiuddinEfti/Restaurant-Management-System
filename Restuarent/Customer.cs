@@ -49,7 +49,14 @@ namespace Restuarent
         public string pic7;
         public string pic8;
 
-
+        public string addorder1 ="";
+        public string addorder2 = "";
+        public string addorder3 = "";
+        public string addorder4 = "";
+        public string addorder5 = "";
+        public string addorder6 = "";
+        public string addorder7 = "";
+        public string addorder8 = "";
         private void taka_Click(object sender, EventArgs e)
         {
             
@@ -113,6 +120,7 @@ namespace Restuarent
                     Pastry.Text = "Pastry";
                     Coke.Text = "Coke";
                     Water.Text = "Water";*/
+                    
                     Payment pm = new Payment(tbno, amount,textBox2.Text.ToString());
                    
                     pm.ShowDialog(this);
@@ -151,6 +159,7 @@ namespace Restuarent
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            richTextBox1.Visible = false;
             label8.Text = tbno.ToString();
             Burgers.Text = 0.ToString();
             RiceBowls.Text = 0.ToString();
@@ -358,11 +367,25 @@ namespace Restuarent
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+           
             i++;
             Burgers.Text = i.ToString();
             int cash =  i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
+            if (i > 0)
+            {
+
+
+                addorder1 = name1 + "**********" + i.ToString() + " Quantity, Price: " + (i * price1).ToString() + "\n";
+
+
+            }
+            else
+            {
+                addorder1 = "";
+            }
+            
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -370,128 +393,271 @@ namespace Restuarent
             if (Int32.Parse(Burgers.Text) > 0)
             {
 
-
+                
                 i--;
                 Burgers.Text = i.ToString();
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
+                if (i > 0)
+                {
+                    
+
+                    addorder1 = name1 + "**********" + i.ToString() + " Quantity, Price: " + (i * price1).ToString() + "\n";
+                   
+
+                }
+                else
+                {
+                    addorder1 = "";
+                }
 
             }
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
+            
             n++;
             RiceBowls.Text = n.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
+            if (n > 0)
+            {
+
+
+                addorder2 = name2 + "**********" + n.ToString() + " Quantity, Price: " + (n * price2).ToString() + "\n";
+
+            }
+            else
+            {
+                addorder2 = "";
+            }
         }
 
         private void button5_Click_1(object sender, EventArgs e)
         {
             if (Int32.Parse(RiceBowls.Text) > 0)
             {
+                
                 n--;
                 RiceBowls.Text = n.ToString();
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
+                if (n > 0)
+                {
+                  
+
+                    addorder2 = name2 + "**********" + n.ToString() + " Quantity, Price: " + (n * price2).ToString() + "\n";
+                
+                }
+                else
+                {
+                    addorder2 = "";
+                }
             }
         }
 
         private void button6_Click_1(object sender, EventArgs e)
         {
+            
             a++;
             Pizzas.Text = a.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
+            if (a > 0)
+            {
+
+
+                addorder3 = name3 + "**********" + a.ToString() + " Quantity, Price: " + (a * price2).ToString() + "\n";
+
+            }
+            else
+            {
+                addorder3 = "";
+            }
         }
 
         private void button7_Click_1(object sender, EventArgs e)
         {
             if (Int32.Parse(Pizzas.Text) > 0)
             {
+               
                 a--;
                 Pizzas.Text = a.ToString();
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
+                if (a > 0)
+                {
+                    
+
+                    addorder3 = name3 + "**********" + a.ToString() + " Quantity, Price: " + (a * price2).ToString() + "\n";
+                    
+                }
+                else
+                {
+                    addorder3 = "";
+                }
             }
         }
 
         private void button8_Click_1(object sender, EventArgs e)
         {
+           
             b++;
             Sawrmas.Text = b.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
+            if (b > 0)
+            {
+
+
+                addorder4 = name4 + "**********" + b.ToString() + " Quantity, Price: " + (b * price4).ToString() + "\n";
+
+            }
+            else
+            {
+                addorder4 = "";
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             if (Int32.Parse(Sawrmas.Text) > 0 )
             {
+                
                 b--;
                 Sawrmas.Text = b.ToString();
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
+                if (b > 0)
+                {
+                  
+
+                    addorder4 = name4 + "**********" + b.ToString() + " Quantity, Price: " + (b * price4).ToString() + "\n";
+                    
+                }
+                else
+                {
+                    addorder4 = "";
+                }
             }
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
+            
             c++;
             Dumplings.Text = c.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
+            if (c > 0)
+            {
+
+
+                addorder5 = name5 + "**********" + c.ToString() + " Quantity, Price: " + (c * price5).ToString() + "\n";
+
+            }
+            else
+            {
+                addorder5 = "";
+            }
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
             if (Int32.Parse(Dumplings.Text) > 0 )
             {
+               
                 c--;
                 Dumplings.Text = c.ToString();
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
+                if (c > 0)
+                {
+                   
+
+                    addorder5 = name5 + "**********" + c.ToString() + " Quantity, Price: " + (c * price5).ToString() + "\n";
+                    
+                }
+                else
+                {
+                    addorder5 = "";
+                }
             }
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
+            
             d++;
             Pastrys.Text = d.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
+            if (d > 0)
+            {
+
+
+                addorder6 = name6 + "**********" + d.ToString() + " Quantity, Price: " + (d * price6).ToString() + "\n";
+
+            }
+            else
+            {
+                addorder6 = "";
+            }
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
             if (Int32.Parse(Pastrys.Text) > 0)
             {
+                
                 d--;
                 Pastrys.Text = d.ToString();
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
+                if (d > 0)
+                {
+                    
+
+                    addorder6 = name6 + "**********" + d.ToString() + " Quantity, Price: " + (d * price6).ToString() + "\n";
+                   
+                }
+                else
+                {
+                    addorder6 = "";
+                }
             }
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
+           
             f++;
             Waters.Text = f.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
+            if (f > 0)
+            {
+
+
+                addorder8 = name8 + "**********" + f.ToString() + " Quantity, Price: " + (f * price8).ToString() + "\n";
+            }
+            else
+            {
+                addorder8 = "";
+            }
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -503,27 +669,62 @@ namespace Restuarent
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
+                if (f > 0)
+                {
+                   
+
+                    addorder8 = name8 + "**********" + f.ToString() + " Quantity, Price: " + (f * price8).ToString() + "\n";
+                    
+                }
+                else
+                {
+                    addorder8 = "";
+                }
             }
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
+           
             ye++;
             Cokes.Text = ye.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
             amount = cash;
+            if (ye > 0)
+            {
+                
+
+                addorder7 = name7 + "**********" + ye.ToString() + " Quantity, Price: " + (ye * price7).ToString() + "\n";
+                
+            }
+            else
+            {
+                addorder7 = "";
+            }
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             if (Int32.Parse(Cokes.Text) > 0 )
             {
+               
                 ye--;
                 Cokes.Text = ye.ToString();
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
                 amount = cash;
+                if (ye > 0)
+                {
+                  
+
+                    addorder7 = name7 + "**********" + ye.ToString() +" Quantity, Price: "+ (ye * price7).ToString() + "\n";
+                  
+                }
+                else
+                {
+                    addorder7 = "";
+                }
             }
         }
 
@@ -545,6 +746,12 @@ namespace Restuarent
         private void RiceBowls_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Visible = true;
+            richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
         }
     }
 }

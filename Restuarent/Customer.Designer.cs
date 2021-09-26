@@ -83,6 +83,8 @@
             this.Waterlab = new System.Windows.Forms.Label();
             this.Cokelab = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Burgerpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sawrmapic)).BeginInit();
@@ -124,7 +126,7 @@
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(796, 309);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(279, 31);
+            this.textBox2.Size = new System.Drawing.Size(209, 31);
             this.textBox2.TabIndex = 11;
             // 
             // textBox3
@@ -133,7 +135,7 @@
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(796, 378);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(279, 31);
+            this.textBox3.Size = new System.Drawing.Size(209, 31);
             this.textBox3.TabIndex = 12;
             // 
             // label3
@@ -215,7 +217,7 @@
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button9.BackColor = System.Drawing.Color.Red;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(833, 520);
+            this.button9.Location = new System.Drawing.Point(792, 543);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(185, 44);
             this.button9.TabIndex = 19;
@@ -728,6 +730,29 @@
             this.label8.Text = "0";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(1011, 226);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(241, 243);
+            this.richTextBox1.TabIndex = 65;
+            this.richTextBox1.Text = "";
+            // 
+            // button10
+            // 
+            this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button10.BackColor = System.Drawing.Color.LightGreen;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(792, 493);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(185, 44);
+            this.button10.TabIndex = 66;
+            this.button10.Text = "Total Order";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -736,6 +761,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Waterlab);
             this.Controls.Add(this.Cokelab);
@@ -865,6 +892,8 @@
         private System.Windows.Forms.Label Waterlab;
         private System.Windows.Forms.Label Cokelab;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button button10;
     }
 }
 
