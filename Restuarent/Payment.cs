@@ -17,13 +17,15 @@ namespace Restuarent
         public int formtname;
         public int formamount;
         public string formcname;
-        public Payment(int tbName,int amount,string cname)
+        public string formorder;
+        public Payment(int tbName,int amount,string cname,string order)
         {
             
             InitializeComponent();
             formtname = tbName;
             formamount = amount;
             formcname = cname;
+            formorder = order;
         }
         
         
@@ -140,7 +142,19 @@ namespace Restuarent
             label5.Visible = false;
             label7.Visible = false;
             button4.Visible = false;
-            this.Hide();
+            
+            string to = textBox1.Text;
+            
+            //string api = "https://api.whatsapp.com/send?phones="+to+"&text="+ formorder.ToString();
+            try
+            {
+                System.Diagnostics.Process.Start("https://api.whatsapp.com/send?phones=" + to + "&text=" + formorder);
+            }
+            catch
+            {
+
+            }
+            //this.Hide();
         }
     }
 }

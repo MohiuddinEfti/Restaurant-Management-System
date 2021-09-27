@@ -44,42 +44,24 @@ namespace Restuarent
 
         private void Chef_Load(object sender, EventArgs e)
         {
+            dataGridView1.ReadOnly = true;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
-            string sql = "SELECT Id,CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,Price,OrderTime,ChefOrderDoneTime,CustomerRecieved,Date,Payment FROM CustomerOrders";
+            string sql = "SELECT * FROM CustomerOrders WHERE ChefOrderDoneTime IS NULL";
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
-            List<CustomerOrders> list = new List<CustomerOrders>();
+            List<ChefCheck> list = new List<ChefCheck>();
             while (reader.Read())
             {
-                CustomerOrders CS = new CustomerOrders();
+                ChefCheck CS = new ChefCheck();
 
                 CS.Id = (int)reader["Id"];
                 CS.CustomerName = reader["CustomerName"].ToString();
                 CS.TableNo = (int)reader["TableNo"];
                 CS.AddOn = reader["AddOn"].ToString();
-                CS.Burger = reader["Burger"].ToString();
-                real1 = reader["Burger"].ToString();
-                CS.RiceBowl = reader["RiceBowl"].ToString();
-                real2 = reader["RiceBowl"].ToString();
-                CS.Pizza = reader["Pizza"].ToString();
-                real3 = reader["Pizza"].ToString();
-                CS.Sawrma = reader["Sawrma"].ToString();
-                real4 = reader["Sawrma"].ToString();
-                CS.Dumplings = reader["Dumplings"].ToString();
-                real5 = reader["Dumplings"].ToString();
-                CS.Pastry = reader["Pastry"].ToString();
-                real6 = reader["Pastry"].ToString();
-                CS.Coke = reader["Coke"].ToString();
-                real7 = reader["Coke"].ToString();
-                CS.Water = reader["Water"].ToString();
-                real8 = reader["Water"].ToString();
-                CS.Price = reader["Price"].ToString();
+                CS.Order = reader["TotalOrder"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
-                CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
-                CS.Date = reader["Date"].ToString();
-                CS.Payment = reader["Payment"].ToString();
 
                 list.Add(CS);
             }
@@ -87,7 +69,7 @@ namespace Restuarent
             dataGridView1.DataSource = list;
 
 
-            SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+            /*SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
             connections.Open();
             string sqls = "SELECT * FROM Food Where Id=1";
             SqlCommand commands = new SqlCommand(sqls, connections);
@@ -279,12 +261,17 @@ namespace Restuarent
             {
                 this.dataGridView1.Columns[11].HeaderText = name8;
 
-            }
+            }*/
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex == -1) return;
             Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            
+                richTextBox1.Text = String.Empty;
+                richTextBox1.Text= (string)dataGridView1.Rows[e.RowIndex].Cells[4].Value;
+            
           
         }
 
@@ -307,36 +294,27 @@ namespace Restuarent
             if (diary > 0)
             {
                 MessageBox.Show("Order is Succefully Done");
-                string sq2 = "SELECT * FROM CustomerOrders";
+                string sq2 = "SELECT * FROM CustomerOrders WHERE ChefOrderDoneTime IS NULL";
                 SqlCommand commands = new SqlCommand(sq2, connection);
                 SqlDataReader reader = commands.ExecuteReader();
-                List<CustomerOrders> list = new List<CustomerOrders>();
+                List<ChefCheck> list = new List<ChefCheck>();
                 while (reader.Read())
                 {
-                    CustomerOrders CS = new CustomerOrders();
+                    ChefCheck CS = new ChefCheck();
 
                     CS.Id = (int)reader["Id"];
                     CS.CustomerName = reader["CustomerName"].ToString();
                     CS.TableNo = (int)reader["TableNo"];
                     CS.AddOn = reader["AddOn"].ToString();
-                    CS.Burger = reader["Burger"].ToString();
-                    CS.RiceBowl = reader["RiceBowl"].ToString();
-                    CS.Pizza = reader["Pizza"].ToString();
-                    CS.Sawrma = reader["Sawrma"].ToString();
-                    CS.Dumplings = reader["Dumplings"].ToString();
-                    CS.Pastry = reader["Pastry"].ToString();
-                    CS.Coke = reader["Coke"].ToString();
-                    CS.Water = reader["Water"].ToString();
-                    CS.Price = reader["Price"].ToString();
+                    CS.Order = reader["TotalOrder"].ToString();
                     CS.OrderTime = reader["OrderTime"].ToString();
                     CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
-                    CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
-                    CS.Date = reader["Date"].ToString();
-                    CS.Payment = reader["Payment"].ToString();
+                    
 
                     list.Add(CS);
                 }
                 dataGridView1.DataSource = list;
+                richTextBox1.Text = String.Empty;
 
             }
             else
@@ -393,46 +371,34 @@ namespace Restuarent
             {
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
                 connection.Open();
-                string sql = "SELECT Id,CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,Price,OrderTime,ChefOrderDoneTime,CustomerRecieved,Date,Payment FROM CustomerOrders";
+                string sql = "SELECT * FROM CustomerOrders WHERE ChefOrderDoneTime IS NULL";
                 SqlCommand command = new SqlCommand(sql, connection);
                 SqlDataReader reader = command.ExecuteReader();
-                List<CustomerOrders> list = new List<CustomerOrders>();
+                List<ChefCheck> list = new List<ChefCheck>();
                 while (reader.Read())
                 {
-                    CustomerOrders CS = new CustomerOrders();
+                    ChefCheck CS = new ChefCheck();
 
                     CS.Id = (int)reader["Id"];
                     CS.CustomerName = reader["CustomerName"].ToString();
                     CS.TableNo = (int)reader["TableNo"];
                     CS.AddOn = reader["AddOn"].ToString();
-                    CS.Burger = reader["Burger"].ToString();
-                    real1 = reader["Burger"].ToString();
-                    CS.RiceBowl = reader["RiceBowl"].ToString();
-                    real2 = reader["RiceBowl"].ToString();
-                    CS.Pizza = reader["Pizza"].ToString();
-                    real3 = reader["Pizza"].ToString();
-                    CS.Sawrma = reader["Sawrma"].ToString();
-                    real4 = reader["Sawrma"].ToString();
-                    CS.Dumplings = reader["Dumplings"].ToString();
-                    real5 = reader["Dumplings"].ToString();
-                    CS.Pastry = reader["Pastry"].ToString();
-                    real6 = reader["Pastry"].ToString();
-                    CS.Coke = reader["Coke"].ToString();
-                    real7 = reader["Coke"].ToString();
-                    CS.Water = reader["Water"].ToString();
-                    real8 = reader["Water"].ToString();
-                    CS.Price = reader["Price"].ToString();
+                    CS.Order = reader["TotalOrder"].ToString();
                     CS.OrderTime = reader["OrderTime"].ToString();
                     CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
-                    CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
-                    CS.Date = reader["Date"].ToString();
-                    CS.Payment = reader["Payment"].ToString();
+
+
 
                     list.Add(CS);
                 }
-
+                dataGridView1.ReadOnly = true;
                 dataGridView1.DataSource = list;
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

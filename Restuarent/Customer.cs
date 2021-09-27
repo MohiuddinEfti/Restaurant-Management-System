@@ -57,6 +57,15 @@ namespace Restuarent
         public string addorder6 = "";
         public string addorder7 = "";
         public string addorder8 = "";
+
+        public string Data1 = "";
+        public string Data2 = "";
+        public string Data3 = "";
+        public string Data4 = "";
+        public string Data5 = "";
+        public string Data6 = "";
+        public string Data7 = "";
+        public string Data8 = "";
         private void taka_Click(object sender, EventArgs e)
         {
             
@@ -80,7 +89,7 @@ namespace Restuarent
         public static int i = 0;
         
         public static int n = 0;
-        
+        public string orders;
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -94,50 +103,14 @@ namespace Restuarent
             }
             else
             {
-                
-                int tk = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
-                string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
-                DateTime time = DateTime.Now;
-                string ab = time.ToString("h:mm:ss tt ");
-                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
-                connection.Open();
-                string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,OrderTime,Price,Date) VALUES('" + textBox2.Text + "','" + tbno + "','" + textBox3.Text + "','" + i.ToString() + "','" + n.ToString() + "','" + a.ToString() + "','" + b.ToString() + "','" + c.ToString() + "','"+d.ToString()+ "','"+ye.ToString()+ "','"+f.ToString()+ "','"+ab+ "','"+tk+"','"+Today+"')";
-
-                SqlCommand command = new SqlCommand(sq1, connection);
-                int diary = command.ExecuteNonQuery();
-                connection.Close();
-                if (diary > 0)
-                {
-                    /*MessageBox.Show("Order Taken");
-                    i = n = a = b = c = d = ye = f = 0;
-                    textBox1.Text = textBox2.Text = textBox3.Text = string.Empty;
-                    taka.Text = 0.ToString();
-                    Burger.Text = "Burger";
-                    RiceBowl.Text = "Rice Bowl";
-                    Pizza.Text = "PIZZA";
-                    Sawrma.Text = "Sawrma";
-                    Dumplings.Text = "Dumplings";
-                    Pastry.Text = "Pastry";
-                    Coke.Text = "Coke";
-                    Water.Text = "Water";*/
-                    
-                    Payment pm = new Payment(tbno, amount,textBox2.Text.ToString());
-                   
-                    pm.ShowDialog(this);
-                    
+                panel1.Visible = true;
+                orders= Data1 + Data2 + Data3 + Data4 + Data5 + Data6 + Data7 + Data8 ;
 
 
 
-                }
-                else
-                {
-                    MessageBox.Show("Error");
-                }
-                
-              
 
             }
-           
+
         }
         public void DoEnable()
         {
@@ -151,16 +124,18 @@ namespace Restuarent
         
 
         
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            panel1.Visible = false;
             label9.Visible = false;
             richTextBox1.Visible = false;
+            groupBox1.Visible = false;
+            pictureBox2.Visible = false;
+            label14.Visible = false;
+            label15.Visible = false;
+            label13.Visible = false;
+            button22.Visible = false;
             label8.Text = tbno.ToString();
             Burgers.Text = 0.ToString();
             RiceBowls.Text = 0.ToString();
@@ -379,12 +354,14 @@ namespace Restuarent
 
 
                 addorder1 = name1 + "**********" + i.ToString() + " Quantity, Price: " + (i * price1).ToString() + "\n";
+                Data1 = name1 + "**********" + i.ToString() + "\n";
 
 
             }
             else
             {
                 addorder1 = "";
+                Data1 = "";
             }
             
         }
@@ -405,12 +382,13 @@ namespace Restuarent
                     
 
                     addorder1 = name1 + "**********" + i.ToString() + " Quantity, Price: " + (i * price1).ToString() + "\n";
-                   
+                    Data1 = name1 + "**********" + i.ToString() + "\n";
 
                 }
                 else
                 {
                     addorder1 = "";
+                    Data1 = "";
                 }
 
             }
@@ -429,11 +407,12 @@ namespace Restuarent
 
 
                 addorder2 = name2 + "**********" + n.ToString() + " Quantity, Price: " + (n * price2).ToString() + "\n";
-
+                Data2 = name2 + "**********" + n.ToString() + "\n";
             }
             else
             {
                 addorder2 = "";
+                Data2 = "";
             }
         }
 
@@ -452,11 +431,12 @@ namespace Restuarent
                   
 
                     addorder2 = name2 + "**********" + n.ToString() + " Quantity, Price: " + (n * price2).ToString() + "\n";
-                
+                    Data2 = name2 + "**********" + n.ToString() + "\n";
                 }
                 else
                 {
                     addorder2 = "";
+                    Data2 = "";
                 }
             }
         }
@@ -474,11 +454,12 @@ namespace Restuarent
 
 
                 addorder3 = name3 + "**********" + a.ToString() + " Quantity, Price: " + (a * price2).ToString() + "\n";
-
+                Data3= name3 + "**********" + a.ToString() + "\n";
             }
             else
             {
                 addorder3 = "";
+                Data3 = "";
             }
         }
 
@@ -497,11 +478,12 @@ namespace Restuarent
                     
 
                     addorder3 = name3 + "**********" + a.ToString() + " Quantity, Price: " + (a * price2).ToString() + "\n";
-                    
+                    Data3 = name3 + "**********" + a.ToString() + "\n";
                 }
                 else
                 {
                     addorder3 = "";
+                    Data3 = "";
                 }
             }
         }
@@ -519,11 +501,12 @@ namespace Restuarent
 
 
                 addorder4 = name4 + "**********" + b.ToString() + " Quantity, Price: " + (b * price4).ToString() + "\n";
-
+                Data4= name4 + "**********" + b.ToString() + "\n";
             }
             else
             {
                 addorder4 = "";
+                Data4 = "";
             }
         }
 
@@ -542,11 +525,12 @@ namespace Restuarent
                   
 
                     addorder4 = name4 + "**********" + b.ToString() + " Quantity, Price: " + (b * price4).ToString() + "\n";
-                    
+                    Data4 = name4 + "**********" + b.ToString() + "\n";
                 }
                 else
                 {
                     addorder4 = "";
+                    Data4 ="";
                 }
             }
         }
@@ -564,11 +548,12 @@ namespace Restuarent
 
 
                 addorder5 = name5 + "**********" + c.ToString() + " Quantity, Price: " + (c * price5).ToString() + "\n";
-
+                Data5= name5 + "**********" + c.ToString() + "\n";
             }
             else
             {
                 addorder5 = "";
+                Data5 = "";
             }
         }
 
@@ -587,11 +572,12 @@ namespace Restuarent
                    
 
                     addorder5 = name5 + "**********" + c.ToString() + " Quantity, Price: " + (c * price5).ToString() + "\n";
-                    
+                    Data5 = name5 + "**********" + c.ToString() + "\n";
                 }
                 else
                 {
                     addorder5 = "";
+                    Data5 = "";
                 }
             }
         }
@@ -609,11 +595,12 @@ namespace Restuarent
 
 
                 addorder6 = name6 + "**********" + d.ToString() + " Quantity, Price: " + (d * price6).ToString() + "\n";
-
+                Data6= name6 + "**********" + d.ToString() + "\n";
             }
             else
             {
                 addorder6 = "";
+                Data6 = "";
             }
         }
 
@@ -632,11 +619,12 @@ namespace Restuarent
                     
 
                     addorder6 = name6 + "**********" + d.ToString() + " Quantity, Price: " + (d * price6).ToString() + "\n";
-                   
+                    Data6 = name6 + "**********" + d.ToString() + "\n";
                 }
                 else
                 {
                     addorder6 = "";
+                    Data6 = "";
                 }
             }
         }
@@ -654,10 +642,12 @@ namespace Restuarent
 
 
                 addorder8 = name8 + "**********" + f.ToString() + " Quantity, Price: " + (f * price8).ToString() + "\n";
+                Data8= name8 + "**********" + f.ToString() + "\n";
             }
             else
             {
                 addorder8 = "";
+                Data8 = "";
             }
         }
 
@@ -675,11 +665,12 @@ namespace Restuarent
                    
 
                     addorder8 = name8 + "**********" + f.ToString() + " Quantity, Price: " + (f * price8).ToString() + "\n";
-                    
+                    Data8 = name8 + "**********" + f.ToString() + "\n";
                 }
                 else
                 {
                     addorder8 = "";
+                    Data8 = "";
                 }
             }
         }
@@ -697,11 +688,12 @@ namespace Restuarent
                 
 
                 addorder7 = name7 + "**********" + ye.ToString() + " Quantity, Price: " + (ye * price7).ToString() + "\n";
-                
+                Data7= name7 + "**********" + ye.ToString() + "\n";
             }
             else
             {
                 addorder7 = "";
+                Data7 = "";
             }
         }
 
@@ -720,11 +712,12 @@ namespace Restuarent
                   
 
                     addorder7 = name7 + "**********" + ye.ToString() +" Quantity, Price: "+ (ye * price7).ToString() + "\n";
-                  
+                    Data7 = name7 + "**********" + ye.ToString() + "\n";
                 }
                 else
                 {
                     addorder7 = "";
+                    Data7 = "";
                 }
             }
         }
@@ -754,12 +747,147 @@ namespace Restuarent
             richTextBox1.Visible = true;
             label9.Visible = true;
             richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+            orders= addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
             Entertainment en = new Entertainment();
             en.Show();
+        }
+        public string picture;
+        public int number;
+        public int id = 1;
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Bkash"].ConnectionString);
+            connection.Open();
+            string sql = "SELECT * FROM Bkash WHERE Id=" + id;
+            SqlCommand command = new SqlCommand(sql, connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                number = (int)reader["Phone"];
+                picture = reader["QR"].ToString();
+
+
+            }
+            connection.Close();
+            label13.Text = number.ToString();
+            pictureBox2.ImageLocation = picture;
+            
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length != 11)
+            {
+
+                MessageBox.Show("Phone number must be 11 digits");
+            }
+            else
+            {
+                pictureBox2.Visible = true;
+                label14.Visible = true;
+                label15.Visible = true;
+                label13.Visible = true;
+                button22.Visible = true;
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            string bkash = "Bkash Paid Not Confirmed";
+            int tk = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
+            string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
+            DateTime time = DateTime.Now;
+            string ab = time.ToString("h:mm:ss tt ");
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connection.Open();
+            string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + textBox3.Text + "','" + i.ToString() + "','" + n.ToString() + "','" + a.ToString() + "','" + b.ToString() + "','" + c.ToString() + "','" + d.ToString() + "','" + ye.ToString() + "','" + f.ToString() + "','" + orders + "','" + ab + "','" + tk + "','" + Today + "','" +bkash+ "','" + textBox1.Text.ToString() + "')";
+
+            SqlCommand command = new SqlCommand(sq1, connection);
+            int diary = command.ExecuteNonQuery();
+            connection.Close();
+            if (diary > 0)
+            {
+                /*MessageBox.Show("Order Taken");
+                i = n = a = b = c = d = ye = f = 0;
+                textBox1.Text = textBox2.Text = textBox3.Text = string.Empty;
+                taka.Text = 0.ToString();
+                Burger.Text = "Burger";
+                RiceBowl.Text = "Rice Bowl";
+                Pizza.Text = "PIZZA";
+                Sawrma.Text = "Sawrma";
+                Dumplings.Text = "Dumplings";
+                Pastry.Text = "Pastry";
+                Coke.Text = "Coke";
+                Water.Text = "Water";*/
+                textBox1.Text = string.Empty;
+                groupBox1.Visible = false;
+                pictureBox2.Visible = false;
+                label14.Visible = false;
+                label15.Visible = false;
+                label13.Visible = false;
+                button22.Visible = false;
+                panel1.Visible = false;
+                string to = textBox1.Text;
+
+                //string api = "https://api.whatsapp.com/send?phones="+to+"&text="+ formorder.ToString();
+               /* try
+                {
+                    System.Diagnostics.Process.Start("https://api.whatsapp.com/send?phones=" + to + "&text=h"+orders );
+                    
+                }
+                catch
+                {
+
+                }*/
+
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+            
+        }
+
+        
+
+        private void Bkash_Click_1(object sender, EventArgs e)
+        {
+            groupBox1.Visible = true;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cash_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = string.Empty;
+            groupBox1.Visible = false;
+            pictureBox2.Visible = false;
+            label14.Visible = false;
+            label15.Visible = false;
+            label13.Visible = false;
+            button22.Visible = false;
         }
     }
 }
