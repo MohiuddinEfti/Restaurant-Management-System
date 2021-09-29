@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -88,12 +89,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button21 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.Cash = new System.Windows.Forms.Button();
-            this.Bkash = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.button22 = new System.Windows.Forms.Button();
@@ -104,6 +99,16 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button24 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Cash = new System.Windows.Forms.Button();
+            this.Bkash = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label17 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Burgerpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sawrmapic)).BeginInit();
@@ -813,84 +818,11 @@
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.Cash);
             this.panel1.Controls.Add(this.Bkash);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 16);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1240, 632);
+            this.panel1.Size = new System.Drawing.Size(1240, 641);
             this.panel1.TabIndex = 69;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.Transparent;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Location = new System.Drawing.Point(1140, 29);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 23);
-            this.button21.TabIndex = 40;
-            this.button21.Text = "Close";
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(738, 421);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 33);
-            this.label10.TabIndex = 39;
-            this.label10.Text = "Cash";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(547, 421);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 33);
-            this.label11.TabIndex = 38;
-            this.label11.Text = "Bkash";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(608, 136);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(130, 57);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "Pay by";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Cash
-            // 
-            this.Cash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Cash.BackgroundImage")));
-            this.Cash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Cash.Location = new System.Drawing.Point(686, 237);
-            this.Cash.Name = "Cash";
-            this.Cash.Size = new System.Drawing.Size(163, 178);
-            this.Cash.TabIndex = 36;
-            this.Cash.UseVisualStyleBackColor = true;
-            this.Cash.Click += new System.EventHandler(this.Cash_Click);
-            // 
-            // Bkash
-            // 
-            this.Bkash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bkash.BackgroundImage")));
-            this.Bkash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bkash.Location = new System.Drawing.Point(496, 237);
-            this.Bkash.Name = "Bkash";
-            this.Bkash.Size = new System.Drawing.Size(163, 178);
-            this.Bkash.TabIndex = 35;
-            this.Bkash.UseVisualStyleBackColor = true;
-            this.Bkash.Click += new System.EventHandler(this.Bkash_Click_1);
             // 
             // groupBox1
             // 
@@ -1016,6 +948,114 @@
             this.button24.UseVisualStyleBackColor = false;
             this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.Transparent;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Location = new System.Drawing.Point(1140, 29);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(75, 23);
+            this.button21.TabIndex = 40;
+            this.button21.Text = "Close";
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(738, 421);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 33);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Cash";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(547, 421);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 33);
+            this.label11.TabIndex = 38;
+            this.label11.Text = "Bkash";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(608, 136);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(130, 57);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Pay by";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cash
+            // 
+            this.Cash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Cash.BackgroundImage")));
+            this.Cash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Cash.Location = new System.Drawing.Point(686, 237);
+            this.Cash.Name = "Cash";
+            this.Cash.Size = new System.Drawing.Size(163, 178);
+            this.Cash.TabIndex = 36;
+            this.Cash.UseVisualStyleBackColor = true;
+            this.Cash.Click += new System.EventHandler(this.Cash_Click);
+            // 
+            // Bkash
+            // 
+            this.Bkash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bkash.BackgroundImage")));
+            this.Bkash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bkash.Location = new System.Drawing.Point(496, 237);
+            this.Bkash.Name = "Bkash";
+            this.Bkash.Size = new System.Drawing.Size(163, 178);
+            this.Bkash.TabIndex = 35;
+            this.Bkash.UseVisualStyleBackColor = true;
+            this.Bkash.Click += new System.EventHandler(this.Bkash_Click_1);
+            // 
+            // button25
+            // 
+            this.button25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button25.BackColor = System.Drawing.Color.PaleGreen;
+            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.Location = new System.Drawing.Point(507, 209);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(185, 74);
+            this.button25.TabIndex = 70;
+            this.button25.Text = "Your Order Is Ready";
+            this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Mistral", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(501, 72);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 42);
+            this.label17.TabIndex = 71;
+            this.label17.Text = "Time";
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1024,6 +1064,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.button25);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.label9);
@@ -1184,6 +1226,10 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 

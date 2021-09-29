@@ -105,7 +105,7 @@ namespace Restuarent
             {
                 panel1.Visible = true;
                 orders= Data1 + Data2 + Data3 + Data4 + Data5 + Data6 + Data7 + Data8 ;
-
+                label17.Visible = false;
 
 
 
@@ -127,6 +127,8 @@ namespace Restuarent
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            timer2.Enabled = true;
+            button25.Visible = false;
             panel1.Visible = false;
             label9.Visible = false;
             richTextBox1.Visible = false;
@@ -325,7 +327,7 @@ namespace Restuarent
                 d = 0;
                 ye = 0;
                 f = 0;
-                
+                timer1.Enabled = timer2.Enabled = false;
                 LogIn lg = new LogIn();
                 lg.Show();
                 this.Hide();
@@ -818,6 +820,7 @@ namespace Restuarent
             connection.Close();
             if (diary > 0)
             {
+                timer1.Enabled = true;
                 /*MessageBox.Show("Order Taken");
                 i = n = a = b = c = d = ye = f = 0;
                 textBox1.Text = textBox2.Text = textBox3.Text = string.Empty;
@@ -839,7 +842,7 @@ namespace Restuarent
                 button22.Visible = false;
                 panel1.Visible = false;
                 string to = textBox1.Text;
-
+                label17.Visible = true;
                 //string api = "https://api.whatsapp.com/send?phones="+to+"&text="+ formorder.ToString();
                /* try
                 {
@@ -888,6 +891,83 @@ namespace Restuarent
             label15.Visible = false;
             label13.Visible = false;
             button22.Visible = false;
+            label17.Visible = true;
+        }
+        public string mynoti;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+            SqlConnection connection7 = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connection7.Open();
+            string sq7 = "SELECT CustomerRecieved FROM CustomerOrders Where TableNo='" + label8.Text+ "' AND TotalOrder='"+orders+ "'AND CustomerName='"+textBox2.Text+"'";
+            SqlCommand command7 = new SqlCommand(sq7, connection7);
+            SqlDataReader reader7 = command7.ExecuteReader();
+
+            while (reader7.Read())
+            {
+
+                
+                mynoti = reader7["CustomerRecieved"].ToString();
+               
+
+
+
+            }
+            if(mynoti=="Ready")
+            {
+                button25.Visible = true;
+               
+            }
+            else
+            {
+                button25.Visible = false;
+            }
+
+            if(button25.BackColor == Color.Red)
+            {
+                button25.BackColor = Color.PaleGreen;
+               
+            }
+            else if(button25.BackColor == Color.PaleGreen)
+            {
+                button25.BackColor = Color.Red;
+                
+            }
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            button25.Visible = false;
+            timer1.Enabled = false;
+            i = 0;
+            n = 0;
+            a = 0;
+            b = 0;
+            c = 0;
+            d = 0;
+            ye = 0;
+            f = 0;
+            label8.Text = tbno.ToString();
+            Burgers.Text = 0.ToString();
+            RiceBowls.Text = 0.ToString();
+            Pizzas.Text = 0.ToString();
+            Sawrmas.Text = 0.ToString();
+            Dumplings.Text = 0.ToString();
+            Pastrys.Text = 0.ToString();
+            Cokes.Text = 0.ToString();
+            Waters.Text = 0.ToString();
+            taka.Text = 0.ToString();
+            textBox2.Text = textBox3.Text = String.Empty;
+
+           
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            DateTime time = DateTime.Now;
+            
+            label17.Text = time.ToString("h:mm:ss tt");
         }
     }
 }
