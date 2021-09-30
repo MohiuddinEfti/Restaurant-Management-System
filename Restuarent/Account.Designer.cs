@@ -45,6 +45,7 @@ namespace Restuarent
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(122, 86);
             this.dataGridView1.Name = "dataGridView1";
@@ -54,6 +55,7 @@ namespace Restuarent
             // 
             // button21
             // 
+            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button21.ForeColor = System.Drawing.Color.Black;
             this.button21.Location = new System.Drawing.Point(1143, 25);
             this.button21.Name = "button21";
@@ -101,6 +103,7 @@ namespace Restuarent
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.button4);

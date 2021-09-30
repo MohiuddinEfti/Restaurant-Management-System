@@ -77,6 +77,7 @@ namespace Restuarent
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -91,6 +92,7 @@ namespace Restuarent
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,6 +106,7 @@ namespace Restuarent
             // 
             // button3
             // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -117,6 +120,7 @@ namespace Restuarent
             // 
             // button4
             // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,6 +134,7 @@ namespace Restuarent
             // 
             // button5
             // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -143,6 +148,7 @@ namespace Restuarent
             // 
             // button6
             // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -156,6 +162,7 @@ namespace Restuarent
             // 
             // button7
             // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -169,6 +176,7 @@ namespace Restuarent
             // 
             // button8
             // 
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,6 +190,7 @@ namespace Restuarent
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(79, 143);
             this.pictureBox1.Name = "pictureBox1";
@@ -192,6 +201,7 @@ namespace Restuarent
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(230, 143);
             this.pictureBox2.Name = "pictureBox2";
@@ -202,6 +212,7 @@ namespace Restuarent
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(385, 143);
             this.pictureBox3.Name = "pictureBox3";
@@ -212,6 +223,7 @@ namespace Restuarent
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Location = new System.Drawing.Point(535, 143);
             this.pictureBox4.Name = "pictureBox4";
@@ -223,6 +235,7 @@ namespace Restuarent
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Location = new System.Drawing.Point(79, 344);
             this.pictureBox5.Name = "pictureBox5";
@@ -233,6 +246,7 @@ namespace Restuarent
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Location = new System.Drawing.Point(227, 344);
             this.pictureBox6.Name = "pictureBox6";
@@ -243,6 +257,7 @@ namespace Restuarent
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7.Location = new System.Drawing.Point(385, 344);
             this.pictureBox7.Name = "pictureBox7";
@@ -253,6 +268,7 @@ namespace Restuarent
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8.Location = new System.Drawing.Point(535, 344);
             this.pictureBox8.Name = "pictureBox8";
@@ -263,6 +279,7 @@ namespace Restuarent
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(79, 121);
             this.textBox1.Name = "textBox1";
@@ -273,6 +290,7 @@ namespace Restuarent
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(230, 121);
             this.textBox2.Name = "textBox2";
@@ -283,6 +301,7 @@ namespace Restuarent
             // 
             // textBox3
             // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(385, 121);
             this.textBox3.Name = "textBox3";
@@ -293,6 +312,7 @@ namespace Restuarent
             // 
             // textBox4
             // 
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(535, 121);
             this.textBox4.Name = "textBox4";
@@ -303,6 +323,7 @@ namespace Restuarent
             // 
             // textBox5
             // 
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(79, 322);
             this.textBox5.Name = "textBox5";
@@ -313,6 +334,7 @@ namespace Restuarent
             // 
             // textBox6
             // 
+            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(227, 322);
             this.textBox6.Name = "textBox6";
@@ -323,6 +345,7 @@ namespace Restuarent
             // 
             // textBox7
             // 
+            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(385, 322);
             this.textBox7.Name = "textBox7";
@@ -333,6 +356,7 @@ namespace Restuarent
             // 
             // textBox8
             // 
+            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(535, 322);
             this.textBox8.Name = "textBox8";
@@ -344,6 +368,7 @@ namespace Restuarent
             // 
             // groupbox1
             // 
+            this.groupbox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.groupbox1.BackColor = System.Drawing.Color.Transparent;
             this.groupbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupbox1.BackgroundImage")));
             this.groupbox1.Controls.Add(this.Update1);
@@ -433,6 +458,7 @@ namespace Restuarent
             // 
             // button10
             // 
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button10.Location = new System.Drawing.Point(1148, 13);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);

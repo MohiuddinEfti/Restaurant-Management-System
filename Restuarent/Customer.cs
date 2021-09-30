@@ -357,6 +357,8 @@ namespace Restuarent
 
                 addorder1 = name1 + "**********" + i.ToString() + " Quantity, Price: " + (i * price1).ToString() + "\n";
                 Data1 = name1 + "**********" + i.ToString() + "\n";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
 
 
             }
@@ -364,8 +366,10 @@ namespace Restuarent
             {
                 addorder1 = "";
                 Data1 = "";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
-            
+
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -385,12 +389,16 @@ namespace Restuarent
 
                     addorder1 = name1 + "**********" + i.ToString() + " Quantity, Price: " + (i * price1).ToString() + "\n";
                     Data1 = name1 + "**********" + i.ToString() + "\n";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
 
                 }
                 else
                 {
                     addorder1 = "";
                     Data1 = "";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
 
             }
@@ -410,11 +418,15 @@ namespace Restuarent
 
                 addorder2 = name2 + "**********" + n.ToString() + " Quantity, Price: " + (n * price2).ToString() + "\n";
                 Data2 = name2 + "**********" + n.ToString() + "\n";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
             else
             {
                 addorder2 = "";
                 Data2 = "";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
         }
 
@@ -434,11 +446,15 @@ namespace Restuarent
 
                     addorder2 = name2 + "**********" + n.ToString() + " Quantity, Price: " + (n * price2).ToString() + "\n";
                     Data2 = name2 + "**********" + n.ToString() + "\n";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
                 else
                 {
                     addorder2 = "";
                     Data2 = "";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
             }
         }
@@ -457,11 +473,15 @@ namespace Restuarent
 
                 addorder3 = name3 + "**********" + a.ToString() + " Quantity, Price: " + (a * price2).ToString() + "\n";
                 Data3= name3 + "**********" + a.ToString() + "\n";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
             else
             {
                 addorder3 = "";
                 Data3 = "";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
         }
 
@@ -481,11 +501,15 @@ namespace Restuarent
 
                     addorder3 = name3 + "**********" + a.ToString() + " Quantity, Price: " + (a * price2).ToString() + "\n";
                     Data3 = name3 + "**********" + a.ToString() + "\n";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
                 else
                 {
                     addorder3 = "";
                     Data3 = "";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
             }
         }
@@ -504,11 +528,15 @@ namespace Restuarent
 
                 addorder4 = name4 + "**********" + b.ToString() + " Quantity, Price: " + (b * price4).ToString() + "\n";
                 Data4= name4 + "**********" + b.ToString() + "\n";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
             else
             {
                 addorder4 = "";
                 Data4 = "";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
         }
 
@@ -528,11 +556,15 @@ namespace Restuarent
 
                     addorder4 = name4 + "**********" + b.ToString() + " Quantity, Price: " + (b * price4).ToString() + "\n";
                     Data4 = name4 + "**********" + b.ToString() + "\n";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
                 else
                 {
                     addorder4 = "";
                     Data4 ="";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
             }
         }
@@ -551,11 +583,15 @@ namespace Restuarent
 
                 addorder5 = name5 + "**********" + c.ToString() + " Quantity, Price: " + (c * price5).ToString() + "\n";
                 Data5= name5 + "**********" + c.ToString() + "\n";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
             else
             {
                 addorder5 = "";
                 Data5 = "";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
         }
 
@@ -575,11 +611,15 @@ namespace Restuarent
 
                     addorder5 = name5 + "**********" + c.ToString() + " Quantity, Price: " + (c * price5).ToString() + "\n";
                     Data5 = name5 + "**********" + c.ToString() + "\n";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
                 else
                 {
                     addorder5 = "";
                     Data5 = "";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
             }
         }
@@ -598,11 +638,15 @@ namespace Restuarent
 
                 addorder6 = name6 + "**********" + d.ToString() + " Quantity, Price: " + (d * price6).ToString() + "\n";
                 Data6= name6 + "**********" + d.ToString() + "\n";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
             else
             {
                 addorder6 = "";
                 Data6 = "";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
         }
 
@@ -622,11 +666,15 @@ namespace Restuarent
 
                     addorder6 = name6 + "**********" + d.ToString() + " Quantity, Price: " + (d * price6).ToString() + "\n";
                     Data6 = name6 + "**********" + d.ToString() + "\n";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
                 else
                 {
                     addorder6 = "";
                     Data6 = "";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
             }
         }
@@ -645,11 +693,15 @@ namespace Restuarent
 
                 addorder8 = name8 + "**********" + f.ToString() + " Quantity, Price: " + (f * price8).ToString() + "\n";
                 Data8= name8 + "**********" + f.ToString() + "\n";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
             else
             {
                 addorder8 = "";
                 Data8 = "";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
         }
 
@@ -668,11 +720,15 @@ namespace Restuarent
 
                     addorder8 = name8 + "**********" + f.ToString() + " Quantity, Price: " + (f * price8).ToString() + "\n";
                     Data8 = name8 + "**********" + f.ToString() + "\n";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
                 else
                 {
                     addorder8 = "";
                     Data8 = "";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
             }
         }
@@ -691,11 +747,15 @@ namespace Restuarent
 
                 addorder7 = name7 + "**********" + ye.ToString() + " Quantity, Price: " + (ye * price7).ToString() + "\n";
                 Data7= name7 + "**********" + ye.ToString() + "\n";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
             else
             {
                 addorder7 = "";
                 Data7 = "";
+                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
             }
         }
 
@@ -715,11 +775,15 @@ namespace Restuarent
 
                     addorder7 = name7 + "**********" + ye.ToString() +" Quantity, Price: "+ (ye * price7).ToString() + "\n";
                     Data7 = name7 + "**********" + ye.ToString() + "\n";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
                 else
                 {
                     addorder7 = "";
                     Data7 = "";
+                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
                 }
             }
         }
@@ -843,16 +907,17 @@ namespace Restuarent
                 panel1.Visible = false;
                 string to = textBox1.Text;
                 label17.Visible = true;
+                richTextBox1.Text = String.Empty;
                 //string api = "https://api.whatsapp.com/send?phones="+to+"&text="+ formorder.ToString();
-               /* try
-                {
-                    System.Diagnostics.Process.Start("https://api.whatsapp.com/send?phones=" + to + "&text=h"+orders );
-                    
-                }
-                catch
-                {
+                /* try
+                 {
+                     System.Diagnostics.Process.Start("https://api.whatsapp.com/send?phones=" + to + "&text=h"+orders );
 
-                }*/
+                 }
+                 catch
+                 {
+
+                 }*/
 
 
 
@@ -879,7 +944,40 @@ namespace Restuarent
 
         private void Cash_Click(object sender, EventArgs e)
         {
+            string bkash = "Cash Payment";
+            int tk = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
+            string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
+            DateTime time = DateTime.Now;
+            string ab = time.ToString("h:mm:ss tt ");
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connection.Open();
+            string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + textBox3.Text + "','" + i.ToString() + "','" + n.ToString() + "','" + a.ToString() + "','" + b.ToString() + "','" + c.ToString() + "','" + d.ToString() + "','" + ye.ToString() + "','" + f.ToString() + "','" + orders + "','" + ab + "','" + tk + "','" + Today + "','" + bkash + "','" + textBox1.Text.ToString() + "')";
 
+            SqlCommand command = new SqlCommand(sq1, connection);
+            int diary = command.ExecuteNonQuery();
+            connection.Close();
+            if (diary > 0)
+            {
+                MessageBox.Show("Clear Payment When Order Is Ready");
+                timer1.Enabled = true;
+                textBox1.Text = string.Empty;
+                groupBox1.Visible = false;
+                pictureBox2.Visible = false;
+                label14.Visible = false;
+                label15.Visible = false;
+                label13.Visible = false;
+                button22.Visible = false;
+                panel1.Visible = false;
+                string to = textBox1.Text;
+                label17.Visible = true;
+                richTextBox1.Text = String.Empty;
+
+
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -958,8 +1056,9 @@ namespace Restuarent
             Waters.Text = 0.ToString();
             taka.Text = 0.ToString();
             textBox2.Text = textBox3.Text = String.Empty;
+            addorder1 = addorder2 = addorder3 = addorder4 = addorder5 = addorder6 = addorder7 = addorder8 = "";
 
-           
+
 
         }
 

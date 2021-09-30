@@ -41,6 +41,7 @@ namespace Restuarent
             this.Logoutbutton1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -48,19 +49,18 @@ namespace Restuarent
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.Movies = new System.Windows.Forms.TextBox();
-            this.Kidmovies = new System.Windows.Forms.TextBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.Kidmovies = new System.Windows.Forms.TextBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.Movies = new System.Windows.Forms.TextBox();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -136,9 +136,7 @@ namespace Restuarent
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(225, 160);
@@ -151,9 +149,6 @@ namespace Restuarent
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -211,6 +206,20 @@ namespace Restuarent
             this.groupBox1.Size = new System.Drawing.Size(200, 636);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button8.Location = new System.Drawing.Point(-1, 295);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(200, 47);
+            this.button8.TabIndex = 37;
+            this.button8.Text = "Movie Control";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -301,22 +310,9 @@ namespace Restuarent
             this.label2.Text = "O";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button8
-            // 
-            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button8.Location = new System.Drawing.Point(-1, 295);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 47);
-            this.button8.TabIndex = 37;
-            this.button8.Text = "Movie Control";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button15);
@@ -329,94 +325,32 @@ namespace Restuarent
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.Movies);
             this.panel1.Controls.Add(this.button9);
-            this.panel1.Location = new System.Drawing.Point(225, 80);
+            this.panel1.Location = new System.Drawing.Point(225, 108);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1027, 508);
             this.panel1.TabIndex = 35;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button9
+            // label3
             // 
-            this.button9.Location = new System.Drawing.Point(329, 414);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "Movie";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(819, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(121, 22);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Movie Update";
             // 
-            // button10
+            // button15
             // 
-            this.button10.Location = new System.Drawing.Point(410, 414);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "Kids Movie";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(80, 5);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(645, 361);
-            this.axWindowsMediaPlayer1.TabIndex = 2;
-            this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
-            // 
-            // Movies
-            // 
-            this.Movies.AccessibleName = "";
-            this.Movies.Location = new System.Drawing.Point(786, 126);
-            this.Movies.Name = "Movies";
-            this.Movies.ReadOnly = true;
-            this.Movies.Size = new System.Drawing.Size(126, 20);
-            this.Movies.TabIndex = 0;
-            this.Movies.Text = "Movie";
-            // 
-            // Kidmovies
-            // 
-            this.Kidmovies.Location = new System.Drawing.Point(786, 181);
-            this.Kidmovies.Name = "Kidmovies";
-            this.Kidmovies.ReadOnly = true;
-            this.Kidmovies.Size = new System.Drawing.Size(126, 20);
-            this.Kidmovies.TabIndex = 1;
-            this.Kidmovies.Text = "Kids Movie";
-            // 
-            // button11
-            // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(922, 125);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(60, 23);
-            this.button11.TabIndex = 2;
-            this.button11.Text = "Browse";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // button12
-            // 
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(922, 180);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(60, 23);
-            this.button12.TabIndex = 3;
-            this.button12.Text = "Browse";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(329, 453);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(156, 23);
-            this.button13.TabIndex = 4;
-            this.button13.Text = "Upload New Movie";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.button15.Location = new System.Drawing.Point(943, 14);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(75, 23);
+            this.button15.TabIndex = 5;
+            this.button15.Text = "Back";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
@@ -431,26 +365,88 @@ namespace Restuarent
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
-            // button15
+            // button13
             // 
-            this.button15.Location = new System.Drawing.Point(943, 14);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 23);
-            this.button15.TabIndex = 5;
-            this.button15.Text = "Back";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.button13.Location = new System.Drawing.Point(329, 453);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(156, 23);
+            this.button13.TabIndex = 4;
+            this.button13.Text = "Upload New Movie";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // label3
+            // button12
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(819, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 22);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Movie Update";
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.Black;
+            this.button12.Location = new System.Drawing.Point(922, 180);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(60, 23);
+            this.button12.TabIndex = 3;
+            this.button12.Text = "Browse";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.Black;
+            this.button11.Location = new System.Drawing.Point(922, 125);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(60, 23);
+            this.button11.TabIndex = 2;
+            this.button11.Text = "Browse";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(80, 5);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(645, 361);
+            this.axWindowsMediaPlayer1.TabIndex = 2;
+            this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
+            // 
+            // Kidmovies
+            // 
+            this.Kidmovies.Location = new System.Drawing.Point(786, 181);
+            this.Kidmovies.Name = "Kidmovies";
+            this.Kidmovies.ReadOnly = true;
+            this.Kidmovies.Size = new System.Drawing.Size(126, 20);
+            this.Kidmovies.TabIndex = 1;
+            this.Kidmovies.Text = "Kids Movie";
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(410, 414);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 1;
+            this.button10.Text = "Kids Movie";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // Movies
+            // 
+            this.Movies.AccessibleName = "";
+            this.Movies.Location = new System.Drawing.Point(786, 126);
+            this.Movies.Name = "Movies";
+            this.Movies.ReadOnly = true;
+            this.Movies.Size = new System.Drawing.Size(126, 20);
+            this.Movies.TabIndex = 0;
+            this.Movies.Text = "Movie";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(329, 414);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 0;
+            this.button9.Text = "Movie";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Admin
             // 

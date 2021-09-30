@@ -198,6 +198,7 @@
     <Compile Include="Waiter.Designer.cs">
       <DependentUpon>Waiter.cs</DependentUpon>
     </Compile>
+    <Compile Include="WaiterChek.cs" />
     <EmbeddedResource Include="Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
     </EmbeddedResource>

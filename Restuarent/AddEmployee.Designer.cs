@@ -68,6 +68,7 @@
             // 
             // SignUpGroupBox
             // 
+            this.SignUpGroupBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.SignUpGroupBox.BackColor = System.Drawing.Color.Transparent;
             this.SignUpGroupBox.Controls.Add(this.button4);
             this.SignUpGroupBox.Controls.Add(this.textBox2);
@@ -333,6 +334,7 @@
             // 
             // AddEmployeeButton
             // 
+            this.AddEmployeeButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.AddEmployeeButton.Location = new System.Drawing.Point(717, 436);
             this.AddEmployeeButton.Name = "AddEmployeeButton";
             this.AddEmployeeButton.Size = new System.Drawing.Size(125, 60);
@@ -345,6 +347,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(638, 119);
             this.dataGridView1.Name = "dataGridView1";
@@ -355,6 +358,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox1.Location = new System.Drawing.Point(638, 84);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(189, 20);
@@ -363,6 +367,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(835, 88);
@@ -373,6 +378,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button1.Location = new System.Drawing.Point(855, 436);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 60);
@@ -383,6 +389,7 @@
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button2.Location = new System.Drawing.Point(995, 436);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 60);
@@ -393,6 +400,7 @@
             // 
             // button21
             // 
+            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button21.Location = new System.Drawing.Point(1117, 21);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(76, 27);

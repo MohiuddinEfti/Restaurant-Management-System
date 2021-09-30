@@ -38,7 +38,7 @@ namespace Restuarent
             // 
             // Namebox
             // 
-            this.Namebox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Namebox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Namebox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Namebox.Location = new System.Drawing.Point(679, 263);
             this.Namebox.Name = "Namebox";
@@ -47,7 +47,7 @@ namespace Restuarent
             // 
             // PasswordBox
             // 
-            this.PasswordBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PasswordBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.PasswordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordBox.Location = new System.Drawing.Point(681, 314);
             this.PasswordBox.Name = "PasswordBox";
@@ -57,7 +57,7 @@ namespace Restuarent
             // 
             // Signinbutton
             // 
-            this.Signinbutton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Signinbutton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Signinbutton.BackColor = System.Drawing.Color.Coral;
             this.Signinbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.Signinbutton.Location = new System.Drawing.Point(732, 388);
@@ -70,6 +70,7 @@ namespace Restuarent
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(977, 316);

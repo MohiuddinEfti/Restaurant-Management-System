@@ -249,9 +249,9 @@ namespace Restuarent
         private void button2_Click(object sender, EventArgs e)
         {
             
-            if (abc == "Chef")
+            if (Position == "Chef")
             {
-                Chef cf = new Chef(Position, abc);
+                Chef cf = new Chef(abc, Position);
                 cf.Show();
                 this.Hide();
             }

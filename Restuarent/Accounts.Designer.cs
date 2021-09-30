@@ -310,6 +310,9 @@ namespace Restuarent
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Controls.Add(this.groupBox1);
@@ -420,7 +423,8 @@ namespace Restuarent
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(1094, 12);
+            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button21.Location = new System.Drawing.Point(1158, 12);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(76, 27);
             this.button21.TabIndex = 41;
