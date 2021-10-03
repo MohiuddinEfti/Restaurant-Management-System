@@ -25,6 +25,7 @@ namespace Restuarent
 
         private void CheckAttendance_Load(object sender, EventArgs e)
         {
+            dataGridView1.ReadOnly = true;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Attendance"].ConnectionString);
             connection.Open();
             string sql = "SELECT * FROM Attendance";
@@ -50,6 +51,7 @@ namespace Restuarent
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex == -1) return;
             textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();

@@ -29,6 +29,8 @@ namespace Restuarent
 
         private void Accounts_Load(object sender, EventArgs e)
         {
+            dataGridView1.ReadOnly = true;
+            dataGridView2.ReadOnly = true;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
             string sql = "SELECT * FROM CustomerOrders";
@@ -526,7 +528,7 @@ namespace Restuarent
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            if (e.RowIndex == -1) return;
             id1 = (int)dataGridView2.Rows[e.RowIndex].Cells[0].Value;
             int cash = (int)dataGridView2.Rows[e.RowIndex].Cells[1].Value;
             textBox3.Text = cash.ToString();

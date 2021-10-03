@@ -80,7 +80,9 @@ namespace Restuarent
         {
             if (e.RowIndex == -1) return;
             Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
-           
+            richTextBox1.Text = String.Empty;
+            richTextBox1.Text = "Table No: "+ (int)dataGridView1.Rows[e.RowIndex].Cells[2].Value+"\n"+"Customer Name: "+ (string)dataGridView1.Rows[e.RowIndex].Cells[1].Value +"\n\n" +(string)dataGridView1.Rows[e.RowIndex].Cells[4].Value;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
