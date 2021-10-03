@@ -133,7 +133,7 @@ namespace Restuarent
 
         private void Bkash_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            
         }
     }
 }
