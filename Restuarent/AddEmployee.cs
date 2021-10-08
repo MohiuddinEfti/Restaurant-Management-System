@@ -350,22 +350,15 @@ namespace Restuarent
 
         private void button1_Click(object sender, EventArgs e)
         {
-                if (abc == "")
-                {
-                    pictureBox1.ImageLocation = null;
-                    abc = string.Empty;
+               
 
-                }
-                else
-                {
-
-                    string pic = abc;
+                    
 
                     SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
 
                     connection.Open();
 
-                    string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "',Email='" + EmailTextBox.Text + "',Phone='" + Phonetextbox.Text + "',DateOfBirth='" + dateTimePicker1.Text + "',Picture='" + pic + "',Position='" + comboBox2.Text + "',Salary='" + Salarytextbox.Text + "'WHERE Id=" + id1;
+                    string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "',Email='" + EmailTextBox.Text + "',Phone='" + Phonetextbox.Text + "',DateOfBirth='" + dateTimePicker1.Text + "',Picture='" + pictureBox1.ImageLocation.ToString() + "',Position='" + comboBox2.Text + "',Salary='" + Salarytextbox.Text + "'WHERE Id=" + id1;
 
 
 
@@ -385,9 +378,7 @@ namespace Restuarent
                         MessageBox.Show("Updated");
 
 
-                    textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
                     
-                    pictureBox1.ImageLocation = null;
 
 
 
@@ -437,14 +428,16 @@ namespace Restuarent
 
                         dataGridView1.DataSource = list2;
 
+                    textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+
+                    pictureBox1.ImageLocation = null;
 
 
 
-
-                    }
+                }
 
                     connection.Close();
-                }
+                
 
             
 
