@@ -289,7 +289,7 @@ namespace Restuarent
             pictureBox1.ImageLocation = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
             comboBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             Salarytextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
-            textBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            //textBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -350,19 +350,6 @@ namespace Restuarent
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
-
-
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Employee WHERE EmpID = '" + textBox2.Text + "'", connections);
-
-
-
-            connections.Open();
-
-
-            SqlDataReader sdr = cmd.ExecuteReader();
-            if ((sdr.Read() == false))
-            {
                 if (abc == "")
                 {
                     pictureBox1.ImageLocation = null;
@@ -378,7 +365,7 @@ namespace Restuarent
 
                     connection.Open();
 
-                    string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "',Email='" + EmailTextBox.Text + "',Phone='" + Phonetextbox.Text + "',DateOfBirth='" + dateTimePicker1.Text + "',Picture='" + pic + "',Position='" + comboBox2.Text + "',Salary='" + Salarytextbox.Text + "',EmpID='" + textBox2.Text + "'WHERE Id=" + id1;
+                    string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "',Email='" + EmailTextBox.Text + "',Phone='" + Phonetextbox.Text + "',DateOfBirth='" + dateTimePicker1.Text + "',Picture='" + pic + "',Position='" + comboBox2.Text + "',Salary='" + Salarytextbox.Text + "'WHERE Id=" + id1;
 
 
 
@@ -459,12 +446,7 @@ namespace Restuarent
                     connection.Close();
                 }
 
-            }
-            else
-            {
-                MessageBox.Show("Employee ID Already Taken\nPlease Choose Another ID");
-                textBox2.Text = String.Empty;
-            }
+            
 
         }
 
@@ -472,7 +454,7 @@ namespace Restuarent
         {
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
             connection.Open();
-            string sq1 = "SELECT * FROM Employee WHERE EmpID LIKE '" + textBox1.Text + "%'  ";
+            string sq1 = "SELECT * FROM Employee WHERE EmpID LIKE '" + textBox1.Text + "%' OR Name LIKE '" + textBox1.Text + "%'  ";
 
             SqlCommand command1 = new SqlCommand(sq1, connection);
             SqlDataReader reader2 = command1.ExecuteReader();
