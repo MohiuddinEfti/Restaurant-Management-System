@@ -186,7 +186,7 @@
             // Logoutbutton1
             // 
             this.Logoutbutton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Logoutbutton1.Location = new System.Drawing.Point(1122, 5);
+            this.Logoutbutton1.Location = new System.Drawing.Point(1177, 12);
             this.Logoutbutton1.Name = "Logoutbutton1";
             this.Logoutbutton1.Size = new System.Drawing.Size(75, 23);
             this.Logoutbutton1.TabIndex = 6;

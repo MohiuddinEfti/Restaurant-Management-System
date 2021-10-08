@@ -145,6 +145,7 @@ namespace Restuarent
             {
                 LogIn lg = new LogIn();
                 lg.Show();
+                timer1.Enabled = false;
                 this.Hide();
             }
             else if (dialogResult == DialogResult.No)
