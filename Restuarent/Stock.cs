@@ -29,24 +29,18 @@ namespace Restuarent
 
         private void Stock_Load(object sender, EventArgs e)
         {
-           
-           
+            dataGridView1.ReadOnly = true;
+
+
             if (Position == "Chef")
             {
                 button1.Text = "Total Used";
                 groupBox1.Text = "Stock Item Used By Chef";
-            }
-            if (Position == "admin")
-            {
-                AddStockButton.Visible = true;
-                DeleteButton.Visible = true;
-            }
-            else
-            {
                 AddStockButton.Visible = false;
                 DeleteButton.Visible = false;
             }
-            if (dataGridView1.Rows != null && dataGridView1.Rows.Count != 0)
+      
+            if ( Position == "admin")
             {
                 AddStockButton.Visible = true;
                 button1.Location = new System.Drawing.Point(570, 516);
@@ -57,6 +51,7 @@ namespace Restuarent
                 AddStockButton.Visible = false; 
                 button1.Location = new System.Drawing.Point(506, 516);
                 DeleteButton.Location = new System.Drawing.Point(674, 516);
+                DeleteButton.Visible = false;
             }
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Stock"].ConnectionString);
             connection.Open();
@@ -432,7 +427,7 @@ namespace Restuarent
 
         public void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+            if (e.RowIndex == -1) return;
             ID = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
             if (Position == "Chef")
             {
