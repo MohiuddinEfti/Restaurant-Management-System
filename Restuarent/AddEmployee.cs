@@ -386,8 +386,7 @@ namespace Restuarent
 
 
                     textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
-                    comboBox2.Text = "";
-
+                    
                     pictureBox1.ImageLocation = null;
 
 
