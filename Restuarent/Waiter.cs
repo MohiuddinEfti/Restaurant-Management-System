@@ -41,7 +41,7 @@ namespace Restuarent
         
         private void Waiter_Load(object sender, EventArgs e)
         {
-            dataGridView1.ReadOnly = true;
+           
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
             string sql = "SELECT * FROM CustomerOrders WHERE CustomerRecieved IS NULL AND ChefOrderDoneTime IS NOT NULL";
@@ -113,6 +113,7 @@ namespace Restuarent
                 {
                     comboBox1.Text = String.Empty;
                     MessageBox.Show("Order is Succefully Done");
+                    richTextBox1.Text = String.Empty;
                     string sq2 = "SELECT * FROM CustomerOrders WHERE CustomerRecieved IS NULL AND ChefOrderDoneTime IS NOT NULL";
                     SqlCommand commandss = new SqlCommand(sq2, connections);
                     SqlDataReader readers = commandss.ExecuteReader();
