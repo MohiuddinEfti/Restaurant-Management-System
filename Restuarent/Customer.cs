@@ -127,6 +127,7 @@ namespace Restuarent
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            panel5.Visible = false;
             timer2.Enabled = true;
             button25.Visible = false;
             panel1.Visible = false;

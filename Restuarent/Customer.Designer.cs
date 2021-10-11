@@ -864,7 +864,7 @@
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.Cash);
             this.panel1.Controls.Add(this.Bkash);
-            this.panel1.Location = new System.Drawing.Point(29, 21);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1240, 648);
             this.panel1.TabIndex = 69;
@@ -1144,6 +1144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
