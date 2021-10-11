@@ -84,9 +84,9 @@ namespace Restuarent
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(114, 213);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 25);
+            this.label7.Size = new System.Drawing.Size(19, 25);
             this.label7.TabIndex = 45;
-            this.label7.Text = "01902405706";
+            this.label7.Text = " ";
             // 
             // button4
             // 
