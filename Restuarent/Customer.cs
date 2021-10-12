@@ -103,9 +103,10 @@ namespace Restuarent
             }
             else
             {
+                flowLayoutPanel1.Visible = false;
                 panel1.Visible = true;
                 orders= Data1 + Data2 + Data3 + Data4 + Data5 + Data6 + Data7 + Data8 ;
-                label17.Visible = false;
+             
 
 
 
@@ -127,7 +128,36 @@ namespace Restuarent
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer2.Enabled = true;
+           
+            
+          
+            SqlConnection connection15 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
+            connection15.Open();
+            string sql1 = "SELECT * FROM Food";
+            SqlCommand command15 = new SqlCommand(sql1, connection15);
+            SqlDataReader reader15 = command15.ExecuteReader();
+            
+            while (reader15.Read())
+            {
+                
+
+                
+
+                List<string> my = new List<string> { reader15["FoodName"].ToString() };
+                List<string> ac= new List<string> { reader15["FoodStatus"].ToString() };
+
+                if (my.Contains("Burger")==true&& ac.Contains("active"))
+                {
+                    label2.Text = "Burger";
+                }
+                if (my.Contains("RiceBowl") == true && ac.Contains("active"))
+                {
+                    label1.Text = "Rice";
+                }
+
+            }
+           
+         
             button25.Visible = false;
             panel1.Visible = false;
             label9.Visible = false;
@@ -327,7 +357,7 @@ namespace Restuarent
                 d = 0;
                 ye = 0;
                 f = 0;
-                timer1.Enabled = timer2.Enabled = false;
+                timer1.Enabled = false;
                 LogIn lg = new LogIn();
                 lg.Show();
                 this.Hide();
@@ -848,6 +878,7 @@ namespace Restuarent
 
         private void button21_Click(object sender, EventArgs e)
         {
+            flowLayoutPanel1.Visible = true;
             panel1.Visible = false;
         }
 
@@ -906,7 +937,7 @@ namespace Restuarent
                 button22.Visible = false;
                 panel1.Visible = false;
                 string to = textBox1.Text;
-                label17.Visible = true;
+                flowLayoutPanel1.Visible = true;
                 richTextBox1.Text = String.Empty;
                 //string api = "https://api.whatsapp.com/send?phones="+to+"&text="+ formorder.ToString();
                 /* try
@@ -969,7 +1000,7 @@ namespace Restuarent
                 button22.Visible = false;
                 panel1.Visible = false;
                 string to = textBox1.Text;
-                label17.Visible = true;
+                flowLayoutPanel1.Visible = true;
                 richTextBox1.Text = String.Empty;
 
 
@@ -989,7 +1020,7 @@ namespace Restuarent
             label15.Visible = false;
             label13.Visible = false;
             button22.Visible = false;
-            label17.Visible = true;
+            
         }
         public string mynoti;
         private void timer1_Tick(object sender, EventArgs e)
@@ -1062,11 +1093,7 @@ namespace Restuarent
 
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            DateTime time = DateTime.Now;
-            
-            label17.Text = time.ToString("h:mm:ss tt");
-        }
+        
+        
     }
 }

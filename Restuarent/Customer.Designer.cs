@@ -107,8 +107,16 @@
             this.Bkash = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label17 = new System.Windows.Forms.Label();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.Burgerpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sawrmapic)).BeginInit();
@@ -120,6 +128,15 @@
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -282,7 +299,7 @@
             // 
             this.Burgerpic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Burgerpic.Image = ((System.Drawing.Image)(resources.GetObject("Burgerpic.Image")));
-            this.Burgerpic.Location = new System.Drawing.Point(147, 115);
+            this.Burgerpic.Location = new System.Drawing.Point(20, 24);
             this.Burgerpic.Name = "Burgerpic";
             this.Burgerpic.Size = new System.Drawing.Size(118, 80);
             this.Burgerpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -295,7 +312,7 @@
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(147, 193);
+            this.button2.Location = new System.Drawing.Point(20, 102);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 36);
             this.button2.TabIndex = 25;
@@ -309,7 +326,7 @@
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button3.BackColor = System.Drawing.Color.PaleGreen;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(225, 193);
+            this.button3.Location = new System.Drawing.Point(98, 102);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(40, 36);
             this.button3.TabIndex = 26;
@@ -322,7 +339,7 @@
             // 
             this.Burgers.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Burgers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Burgers.Location = new System.Drawing.Point(186, 197);
+            this.Burgers.Location = new System.Drawing.Point(59, 106);
             this.Burgers.Name = "Burgers";
             this.Burgers.ReadOnly = true;
             this.Burgers.Size = new System.Drawing.Size(40, 29);
@@ -333,7 +350,7 @@
             // 
             this.RiceBowls.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.RiceBowls.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RiceBowls.Location = new System.Drawing.Point(326, 197);
+            this.RiceBowls.Location = new System.Drawing.Point(59, 107);
             this.RiceBowls.Name = "RiceBowls";
             this.RiceBowls.ReadOnly = true;
             this.RiceBowls.Size = new System.Drawing.Size(40, 29);
@@ -345,7 +362,7 @@
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button4.BackColor = System.Drawing.Color.PaleGreen;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(365, 193);
+            this.button4.Location = new System.Drawing.Point(98, 103);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(40, 36);
             this.button4.TabIndex = 29;
@@ -359,7 +376,7 @@
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(287, 193);
+            this.button5.Location = new System.Drawing.Point(20, 103);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(40, 36);
             this.button5.TabIndex = 28;
@@ -372,7 +389,7 @@
             // 
             this.Pizzas.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Pizzas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pizzas.Location = new System.Drawing.Point(187, 332);
+            this.Pizzas.Location = new System.Drawing.Point(60, 112);
             this.Pizzas.Name = "Pizzas";
             this.Pizzas.ReadOnly = true;
             this.Pizzas.Size = new System.Drawing.Size(40, 29);
@@ -383,7 +400,7 @@
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button6.BackColor = System.Drawing.Color.PaleGreen;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(226, 328);
+            this.button6.Location = new System.Drawing.Point(99, 108);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(40, 36);
             this.button6.TabIndex = 32;
@@ -397,7 +414,7 @@
             this.button7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(148, 328);
+            this.button7.Location = new System.Drawing.Point(21, 108);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(40, 36);
             this.button7.TabIndex = 31;
@@ -410,7 +427,7 @@
             // 
             this.Sawrmas.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sawrmas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sawrmas.Location = new System.Drawing.Point(326, 332);
+            this.Sawrmas.Location = new System.Drawing.Point(60, 112);
             this.Sawrmas.Name = "Sawrmas";
             this.Sawrmas.ReadOnly = true;
             this.Sawrmas.Size = new System.Drawing.Size(40, 29);
@@ -421,7 +438,7 @@
             this.button8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button8.BackColor = System.Drawing.Color.PaleGreen;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(365, 328);
+            this.button8.Location = new System.Drawing.Point(99, 108);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(40, 36);
             this.button8.TabIndex = 35;
@@ -435,7 +452,7 @@
             this.button12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(287, 328);
+            this.button12.Location = new System.Drawing.Point(21, 108);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(40, 36);
             this.button12.TabIndex = 34;
@@ -448,7 +465,7 @@
             // 
             this.Waters.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Waters.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Waters.Location = new System.Drawing.Point(325, 611);
+            this.Waters.Location = new System.Drawing.Point(62, 106);
             this.Waters.Name = "Waters";
             this.Waters.ReadOnly = true;
             this.Waters.Size = new System.Drawing.Size(40, 29);
@@ -459,7 +476,7 @@
             this.button13.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button13.BackColor = System.Drawing.Color.PaleGreen;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(364, 607);
+            this.button13.Location = new System.Drawing.Point(101, 102);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(40, 36);
             this.button13.TabIndex = 47;
@@ -473,7 +490,7 @@
             this.button14.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(286, 607);
+            this.button14.Location = new System.Drawing.Point(23, 102);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(40, 36);
             this.button14.TabIndex = 46;
@@ -486,7 +503,7 @@
             // 
             this.Cokes.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Cokes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cokes.Location = new System.Drawing.Point(186, 611);
+            this.Cokes.Location = new System.Drawing.Point(58, 105);
             this.Cokes.Name = "Cokes";
             this.Cokes.ReadOnly = true;
             this.Cokes.Size = new System.Drawing.Size(40, 29);
@@ -497,7 +514,7 @@
             this.button15.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button15.BackColor = System.Drawing.Color.PaleGreen;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(225, 607);
+            this.button15.Location = new System.Drawing.Point(97, 101);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(40, 36);
             this.button15.TabIndex = 44;
@@ -511,7 +528,7 @@
             this.button16.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(147, 607);
+            this.button16.Location = new System.Drawing.Point(19, 101);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(40, 36);
             this.button16.TabIndex = 43;
@@ -524,7 +541,7 @@
             // 
             this.Pastrys.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Pastrys.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pastrys.Location = new System.Drawing.Point(325, 472);
+            this.Pastrys.Location = new System.Drawing.Point(58, 108);
             this.Pastrys.Name = "Pastrys";
             this.Pastrys.ReadOnly = true;
             this.Pastrys.Size = new System.Drawing.Size(40, 29);
@@ -535,7 +552,7 @@
             this.button17.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button17.BackColor = System.Drawing.Color.PaleGreen;
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(364, 468);
+            this.button17.Location = new System.Drawing.Point(97, 104);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(40, 36);
             this.button17.TabIndex = 41;
@@ -549,7 +566,7 @@
             this.button18.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(286, 468);
+            this.button18.Location = new System.Drawing.Point(19, 104);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(40, 36);
             this.button18.TabIndex = 40;
@@ -562,7 +579,7 @@
             // 
             this.Dumplings.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Dumplings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dumplings.Location = new System.Drawing.Point(186, 472);
+            this.Dumplings.Location = new System.Drawing.Point(59, 106);
             this.Dumplings.Name = "Dumplings";
             this.Dumplings.ReadOnly = true;
             this.Dumplings.Size = new System.Drawing.Size(40, 29);
@@ -573,7 +590,7 @@
             this.button19.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button19.BackColor = System.Drawing.Color.PaleGreen;
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(225, 468);
+            this.button19.Location = new System.Drawing.Point(98, 102);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(40, 36);
             this.button19.TabIndex = 38;
@@ -587,7 +604,7 @@
             this.button20.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(147, 468);
+            this.button20.Location = new System.Drawing.Point(20, 102);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(40, 36);
             this.button20.TabIndex = 37;
@@ -604,7 +621,7 @@
             this.BurgerLab.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BurgerLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BurgerLab.ForeColor = System.Drawing.Color.Black;
-            this.BurgerLab.Location = new System.Drawing.Point(144, 94);
+            this.BurgerLab.Location = new System.Drawing.Point(17, 3);
             this.BurgerLab.Name = "BurgerLab";
             this.BurgerLab.Size = new System.Drawing.Size(63, 20);
             this.BurgerLab.TabIndex = 49;
@@ -618,7 +635,7 @@
             this.RicebowlLab.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RicebowlLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RicebowlLab.ForeColor = System.Drawing.Color.Black;
-            this.RicebowlLab.Location = new System.Drawing.Point(283, 98);
+            this.RicebowlLab.Location = new System.Drawing.Point(16, 8);
             this.RicebowlLab.Name = "RicebowlLab";
             this.RicebowlLab.Size = new System.Drawing.Size(88, 20);
             this.RicebowlLab.TabIndex = 50;
@@ -628,7 +645,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(287, 119);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 29);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 76);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -639,7 +656,7 @@
             // 
             this.sawrmapic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.sawrmapic.Image = ((System.Drawing.Image)(resources.GetObject("sawrmapic.Image")));
-            this.sawrmapic.Location = new System.Drawing.Point(287, 253);
+            this.sawrmapic.Location = new System.Drawing.Point(21, 33);
             this.sawrmapic.Name = "sawrmapic";
             this.sawrmapic.Size = new System.Drawing.Size(118, 76);
             this.sawrmapic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -650,7 +667,7 @@
             // 
             this.pizzapic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pizzapic.Image = ((System.Drawing.Image)(resources.GetObject("pizzapic.Image")));
-            this.pizzapic.Location = new System.Drawing.Point(147, 249);
+            this.pizzapic.Location = new System.Drawing.Point(20, 29);
             this.pizzapic.Name = "pizzapic";
             this.pizzapic.Size = new System.Drawing.Size(118, 80);
             this.pizzapic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -665,7 +682,7 @@
             this.Pizzalab.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Pizzalab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pizzalab.ForeColor = System.Drawing.Color.Black;
-            this.Pizzalab.Location = new System.Drawing.Point(143, 228);
+            this.Pizzalab.Location = new System.Drawing.Point(16, 8);
             this.Pizzalab.Name = "Pizzalab";
             this.Pizzalab.Size = new System.Drawing.Size(52, 20);
             this.Pizzalab.TabIndex = 54;
@@ -679,7 +696,7 @@
             this.Sawrmalab.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Sawrmalab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sawrmalab.ForeColor = System.Drawing.Color.Black;
-            this.Sawrmalab.Location = new System.Drawing.Point(282, 232);
+            this.Sawrmalab.Location = new System.Drawing.Point(16, 12);
             this.Sawrmalab.Name = "Sawrmalab";
             this.Sawrmalab.Size = new System.Drawing.Size(73, 20);
             this.Sawrmalab.TabIndex = 55;
@@ -689,7 +706,7 @@
             // 
             this.Pastrypic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Pastrypic.Image = ((System.Drawing.Image)(resources.GetObject("Pastrypic.Image")));
-            this.Pastrypic.Location = new System.Drawing.Point(287, 393);
+            this.Pastrypic.Location = new System.Drawing.Point(20, 29);
             this.Pastrypic.Name = "Pastrypic";
             this.Pastrypic.Size = new System.Drawing.Size(118, 76);
             this.Pastrypic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -700,7 +717,7 @@
             // 
             this.Dumplingpic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Dumplingpic.Image = ((System.Drawing.Image)(resources.GetObject("Dumplingpic.Image")));
-            this.Dumplingpic.Location = new System.Drawing.Point(147, 389);
+            this.Dumplingpic.Location = new System.Drawing.Point(20, 23);
             this.Dumplingpic.Name = "Dumplingpic";
             this.Dumplingpic.Size = new System.Drawing.Size(118, 80);
             this.Dumplingpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -715,7 +732,7 @@
             this.Dumplinglab.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Dumplinglab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dumplinglab.ForeColor = System.Drawing.Color.Black;
-            this.Dumplinglab.Location = new System.Drawing.Point(143, 369);
+            this.Dumplinglab.Location = new System.Drawing.Point(16, 3);
             this.Dumplinglab.Name = "Dumplinglab";
             this.Dumplinglab.Size = new System.Drawing.Size(84, 20);
             this.Dumplinglab.TabIndex = 58;
@@ -729,7 +746,7 @@
             this.Pastrylab.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Pastrylab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pastrylab.ForeColor = System.Drawing.Color.Black;
-            this.Pastrylab.Location = new System.Drawing.Point(283, 372);
+            this.Pastrylab.Location = new System.Drawing.Point(16, 8);
             this.Pastrylab.Name = "Pastrylab";
             this.Pastrylab.Size = new System.Drawing.Size(59, 20);
             this.Pastrylab.TabIndex = 59;
@@ -739,7 +756,7 @@
             // 
             this.Waterpic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Waterpic.Image = ((System.Drawing.Image)(resources.GetObject("Waterpic.Image")));
-            this.Waterpic.Location = new System.Drawing.Point(287, 532);
+            this.Waterpic.Location = new System.Drawing.Point(24, 27);
             this.Waterpic.Name = "Waterpic";
             this.Waterpic.Size = new System.Drawing.Size(118, 76);
             this.Waterpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -750,7 +767,7 @@
             // 
             this.Cokepic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Cokepic.Image = ((System.Drawing.Image)(resources.GetObject("Cokepic.Image")));
-            this.Cokepic.Location = new System.Drawing.Point(147, 528);
+            this.Cokepic.Location = new System.Drawing.Point(19, 22);
             this.Cokepic.Name = "Cokepic";
             this.Cokepic.Size = new System.Drawing.Size(118, 80);
             this.Cokepic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -765,7 +782,7 @@
             this.Waterlab.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Waterlab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Waterlab.ForeColor = System.Drawing.Color.Black;
-            this.Waterlab.Location = new System.Drawing.Point(282, 511);
+            this.Waterlab.Location = new System.Drawing.Point(19, 6);
             this.Waterlab.Name = "Waterlab";
             this.Waterlab.Size = new System.Drawing.Size(57, 20);
             this.Waterlab.TabIndex = 63;
@@ -779,7 +796,7 @@
             this.Cokelab.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Cokelab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cokelab.ForeColor = System.Drawing.Color.Black;
-            this.Cokelab.Location = new System.Drawing.Point(143, 509);
+            this.Cokelab.Location = new System.Drawing.Point(15, 3);
             this.Cokelab.Name = "Cokelab";
             this.Cokelab.Size = new System.Drawing.Size(50, 20);
             this.Cokelab.TabIndex = 62;
@@ -886,7 +903,7 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button24);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.groupBox1.Location = new System.Drawing.Point(38, 24);
+            this.groupBox1.Location = new System.Drawing.Point(30, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1185, 595);
             this.groupBox1.TabIndex = 41;
@@ -1123,22 +1140,126 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label17
+            // flowLayoutPanel1
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Mistral", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(501, 72);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 42);
-            this.label17.TabIndex = 71;
-            this.label17.Text = "Time";
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Controls.Add(this.panel2);
+            this.flowLayoutPanel1.Controls.Add(this.panel4);
+            this.flowLayoutPanel1.Controls.Add(this.panel5);
+            this.flowLayoutPanel1.Controls.Add(this.panel6);
+            this.flowLayoutPanel1.Controls.Add(this.panel7);
+            this.flowLayoutPanel1.Controls.Add(this.panel8);
+            this.flowLayoutPanel1.Controls.Add(this.panel9);
+            this.flowLayoutPanel1.Controls.Add(this.panel10);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(181, 135);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(195, 501);
+            this.flowLayoutPanel1.TabIndex = 72;
             // 
-            // timer2
+            // panel3
             // 
-            this.timer2.Interval = 1000;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.panel3.Controls.Add(this.Burgerpic);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.BurgerLab);
+            this.panel3.Controls.Add(this.Burgers);
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(159, 145);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.RicebowlLab);
+            this.panel2.Controls.Add(this.RiceBowls);
+            this.panel2.Controls.Add(this.button4);
+            this.panel2.Location = new System.Drawing.Point(3, 154);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(159, 145);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.pizzapic);
+            this.panel4.Controls.Add(this.button7);
+            this.panel4.Controls.Add(this.button6);
+            this.panel4.Controls.Add(this.Pizzas);
+            this.panel4.Controls.Add(this.Pizzalab);
+            this.panel4.Location = new System.Drawing.Point(3, 305);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(159, 145);
+            this.panel4.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.sawrmapic);
+            this.panel5.Controls.Add(this.button12);
+            this.panel5.Controls.Add(this.button8);
+            this.panel5.Controls.Add(this.Sawrmas);
+            this.panel5.Controls.Add(this.Sawrmalab);
+            this.panel5.Location = new System.Drawing.Point(3, 456);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(159, 145);
+            this.panel5.TabIndex = 4;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.Dumplingpic);
+            this.panel6.Controls.Add(this.button20);
+            this.panel6.Controls.Add(this.button19);
+            this.panel6.Controls.Add(this.Dumplings);
+            this.panel6.Controls.Add(this.Dumplinglab);
+            this.panel6.Location = new System.Drawing.Point(3, 607);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(159, 145);
+            this.panel6.TabIndex = 5;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.Pastrypic);
+            this.panel7.Controls.Add(this.button18);
+            this.panel7.Controls.Add(this.button17);
+            this.panel7.Controls.Add(this.Pastrys);
+            this.panel7.Controls.Add(this.Pastrylab);
+            this.panel7.Location = new System.Drawing.Point(3, 758);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(159, 145);
+            this.panel7.TabIndex = 6;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.Cokepic);
+            this.panel8.Controls.Add(this.button16);
+            this.panel8.Controls.Add(this.button15);
+            this.panel8.Controls.Add(this.Cokes);
+            this.panel8.Controls.Add(this.Cokelab);
+            this.panel8.Location = new System.Drawing.Point(3, 909);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(159, 145);
+            this.panel8.TabIndex = 7;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.Waterpic);
+            this.panel9.Controls.Add(this.button14);
+            this.panel9.Controls.Add(this.button13);
+            this.panel9.Controls.Add(this.Waters);
+            this.panel9.Controls.Add(this.Waterlab);
+            this.panel9.Location = new System.Drawing.Point(3, 1060);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(159, 145);
+            this.panel9.TabIndex = 8;
+            // 
+            // panel10
+            // 
+            this.panel10.Location = new System.Drawing.Point(3, 1211);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(159, 145);
+            this.panel10.TabIndex = 9;
             // 
             // Customer
             // 
@@ -1149,7 +1270,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button11);
@@ -1157,46 +1278,6 @@
             this.Controls.Add(this.button10);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.Waterlab);
-            this.Controls.Add(this.Cokelab);
-            this.Controls.Add(this.Waterpic);
-            this.Controls.Add(this.Cokepic);
-            this.Controls.Add(this.Pastrylab);
-            this.Controls.Add(this.Dumplinglab);
-            this.Controls.Add(this.Pastrypic);
-            this.Controls.Add(this.Dumplingpic);
-            this.Controls.Add(this.Sawrmalab);
-            this.Controls.Add(this.Pizzalab);
-            this.Controls.Add(this.sawrmapic);
-            this.Controls.Add(this.pizzapic);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.RicebowlLab);
-            this.Controls.Add(this.BurgerLab);
-            this.Controls.Add(this.Waters);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.Cokes);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.Pastrys);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.Dumplings);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.Sawrmas);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.Pizzas);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.RiceBowls);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.Burgers);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.Burgerpic);
             this.Controls.Add(this.Signinbutton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button9);
@@ -1229,6 +1310,23 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1313,8 +1411,16 @@
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
     }
 }
 
