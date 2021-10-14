@@ -435,7 +435,7 @@ namespace Restuarent
             button8.Text = "Update " + name8;
             textBox8.Text = name8 + " " + price8 + " tk";
 
-            panel9.Visible = false;
+          
             if (add.ElementAt(9)=="added")
             {
                 panel9.Visible = true;
@@ -455,7 +455,7 @@ namespace Restuarent
 
 
                 }
-                connection8.Close();
+                connection9.Close();
                 pictureBox10.ImageLocation = pic9;
                 button12.Text = "Update " + name9;
                 textBox11.Text = name9 + " " + price9 + " tk";
@@ -465,7 +465,7 @@ namespace Restuarent
                 panel9.Visible = false;
             }
 
-            panel10.Visible = false;
+           
             if (add.ElementAt(10) == "added")
             {
                 panel10.Visible = true;
