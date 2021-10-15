@@ -74,95 +74,140 @@ namespace Restuarent
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.panel37 = new System.Windows.Forms.Panel();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button12 = new System.Windows.Forms.Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.button13 = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.button14 = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.button15 = new System.Windows.Forms.Button();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.button17 = new System.Windows.Forms.Button();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.panel15 = new System.Windows.Forms.Panel();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.button18 = new System.Windows.Forms.Button();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.button19 = new System.Windows.Forms.Button();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.panel17 = new System.Windows.Forms.Panel();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.button20 = new System.Windows.Forms.Button();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.panel21 = new System.Windows.Forms.Panel();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.button21 = new System.Windows.Forms.Button();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.panel24 = new System.Windows.Forms.Panel();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.button22 = new System.Windows.Forms.Button();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.panel25 = new System.Windows.Forms.Panel();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.button23 = new System.Windows.Forms.Button();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.panel26 = new System.Windows.Forms.Panel();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.button24 = new System.Windows.Forms.Button();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.panel27 = new System.Windows.Forms.Panel();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.button25 = new System.Windows.Forms.Button();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.panel28 = new System.Windows.Forms.Panel();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.button26 = new System.Windows.Forms.Button();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.panel32 = new System.Windows.Forms.Panel();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.button27 = new System.Windows.Forms.Button();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.panel33 = new System.Windows.Forms.Panel();
             this.textBox27 = new System.Windows.Forms.TextBox();
             this.button28 = new System.Windows.Forms.Button();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.panel34 = new System.Windows.Forms.Panel();
             this.textBox28 = new System.Windows.Forms.TextBox();
             this.button29 = new System.Windows.Forms.Button();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.panel35 = new System.Windows.Forms.Panel();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.button30 = new System.Windows.Forms.Button();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.panel36 = new System.Windows.Forms.Panel();
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.button31 = new System.Windows.Forms.Button();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.panel37 = new System.Windows.Forms.Panel();
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.button32 = new System.Windows.Forms.Button();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.textBox32 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.button35 = new System.Windows.Forms.Button();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.button36 = new System.Windows.Forms.Button();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.button37 = new System.Windows.Forms.Button();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.button38 = new System.Windows.Forms.Button();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.button39 = new System.Windows.Forms.Button();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.button40 = new System.Windows.Forms.Button();
+            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.button41 = new System.Windows.Forms.Button();
+            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.panel38 = new System.Windows.Forms.Panel();
+            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.button42 = new System.Windows.Forms.Button();
+            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.panel39 = new System.Windows.Forms.Panel();
+            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.button43 = new System.Windows.Forms.Button();
+            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.button44 = new System.Windows.Forms.Button();
+            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.button45 = new System.Windows.Forms.Button();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -183,49 +228,71 @@ namespace Restuarent
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.panel32.SuspendLayout();
-            this.panel33.SuspendLayout();
-            this.panel34.SuspendLayout();
-            this.panel35.SuspendLayout();
-            this.panel36.SuspendLayout();
-            this.panel37.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            this.panel21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            this.panel24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            this.panel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            this.panel26.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            this.panel27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            this.panel28.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            this.panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            this.panel33.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            this.panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            this.panel35.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            this.panel36.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            this.panel37.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            this.panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            this.panel22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            this.panel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            this.panel29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            this.panel30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
+            this.panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+            this.panel38.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            this.panel39.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
+            this.panel40.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            this.panel41.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -539,6 +606,8 @@ namespace Restuarent
             this.groupbox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.groupbox1.BackColor = System.Drawing.Color.Transparent;
             this.groupbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupbox1.BackgroundImage")));
+            this.groupbox1.Controls.Add(this.label2);
+            this.groupbox1.Controls.Add(this.comboBox1);
             this.groupbox1.Controls.Add(this.Update1);
             this.groupbox1.Controls.Add(this.Pricelab1);
             this.groupbox1.Controls.Add(this.Namelab1);
@@ -554,13 +623,14 @@ namespace Restuarent
             this.groupbox1.TabIndex = 41;
             this.groupbox1.TabStop = false;
             this.groupbox1.Text = "Update Panel";
+            this.groupbox1.Enter += new System.EventHandler(this.groupbox1_Enter);
             // 
             // Update1
             // 
             this.Update1.BackColor = System.Drawing.Color.OldLace;
             this.Update1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Update1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Update1.Location = new System.Drawing.Point(191, 412);
+            this.Update1.Location = new System.Drawing.Point(188, 471);
             this.Update1.Name = "Update1";
             this.Update1.Size = new System.Drawing.Size(80, 35);
             this.Update1.TabIndex = 6;
@@ -678,6 +748,17 @@ namespace Restuarent
             this.flowLayoutPanel1.Controls.Add(this.panel35);
             this.flowLayoutPanel1.Controls.Add(this.panel36);
             this.flowLayoutPanel1.Controls.Add(this.panel37);
+            this.flowLayoutPanel1.Controls.Add(this.panel19);
+            this.flowLayoutPanel1.Controls.Add(this.panel20);
+            this.flowLayoutPanel1.Controls.Add(this.panel22);
+            this.flowLayoutPanel1.Controls.Add(this.panel23);
+            this.flowLayoutPanel1.Controls.Add(this.panel29);
+            this.flowLayoutPanel1.Controls.Add(this.panel30);
+            this.flowLayoutPanel1.Controls.Add(this.panel31);
+            this.flowLayoutPanel1.Controls.Add(this.panel38);
+            this.flowLayoutPanel1.Controls.Add(this.panel39);
+            this.flowLayoutPanel1.Controls.Add(this.panel40);
+            this.flowLayoutPanel1.Controls.Add(this.panel41);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(33, 74);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 516);
@@ -773,206 +854,6 @@ namespace Restuarent
             this.panel9.Size = new System.Drawing.Size(149, 153);
             this.panel9.TabIndex = 8;
             // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.textBox12);
-            this.panel10.Controls.Add(this.button13);
-            this.panel10.Controls.Add(this.pictureBox11);
-            this.panel10.Location = new System.Drawing.Point(3, 1434);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(149, 153);
-            this.panel10.TabIndex = 9;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.textBox13);
-            this.panel11.Controls.Add(this.button14);
-            this.panel11.Controls.Add(this.pictureBox12);
-            this.panel11.Location = new System.Drawing.Point(3, 1593);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(149, 153);
-            this.panel11.TabIndex = 10;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.textBox14);
-            this.panel12.Controls.Add(this.button15);
-            this.panel12.Controls.Add(this.pictureBox13);
-            this.panel12.Location = new System.Drawing.Point(3, 1752);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(149, 153);
-            this.panel12.TabIndex = 11;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.textBox15);
-            this.panel13.Controls.Add(this.button16);
-            this.panel13.Controls.Add(this.pictureBox14);
-            this.panel13.Location = new System.Drawing.Point(3, 1911);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(149, 153);
-            this.panel13.TabIndex = 12;
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.textBox16);
-            this.panel14.Controls.Add(this.button17);
-            this.panel14.Controls.Add(this.pictureBox15);
-            this.panel14.Location = new System.Drawing.Point(3, 2070);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(149, 153);
-            this.panel14.TabIndex = 13;
-            // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.textBox17);
-            this.panel15.Controls.Add(this.button18);
-            this.panel15.Controls.Add(this.pictureBox16);
-            this.panel15.Location = new System.Drawing.Point(3, 2229);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(149, 153);
-            this.panel15.TabIndex = 14;
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.textBox18);
-            this.panel16.Controls.Add(this.button19);
-            this.panel16.Controls.Add(this.pictureBox17);
-            this.panel16.Location = new System.Drawing.Point(3, 2388);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(149, 153);
-            this.panel16.TabIndex = 15;
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.textBox19);
-            this.panel17.Controls.Add(this.button20);
-            this.panel17.Controls.Add(this.pictureBox18);
-            this.panel17.Location = new System.Drawing.Point(3, 2547);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(149, 153);
-            this.panel17.TabIndex = 16;
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.textBox20);
-            this.panel21.Controls.Add(this.button21);
-            this.panel21.Controls.Add(this.pictureBox19);
-            this.panel21.Location = new System.Drawing.Point(3, 2706);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(149, 153);
-            this.panel21.TabIndex = 17;
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.textBox21);
-            this.panel24.Controls.Add(this.button22);
-            this.panel24.Controls.Add(this.pictureBox20);
-            this.panel24.Location = new System.Drawing.Point(3, 2865);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(149, 153);
-            this.panel24.TabIndex = 18;
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.textBox22);
-            this.panel25.Controls.Add(this.button23);
-            this.panel25.Controls.Add(this.pictureBox21);
-            this.panel25.Location = new System.Drawing.Point(3, 3024);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(149, 153);
-            this.panel25.TabIndex = 19;
-            // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.textBox23);
-            this.panel26.Controls.Add(this.button24);
-            this.panel26.Controls.Add(this.pictureBox22);
-            this.panel26.Location = new System.Drawing.Point(3, 3183);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(149, 153);
-            this.panel26.TabIndex = 20;
-            // 
-            // panel27
-            // 
-            this.panel27.Controls.Add(this.textBox24);
-            this.panel27.Controls.Add(this.button25);
-            this.panel27.Controls.Add(this.pictureBox23);
-            this.panel27.Location = new System.Drawing.Point(3, 3342);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(149, 153);
-            this.panel27.TabIndex = 21;
-            // 
-            // panel28
-            // 
-            this.panel28.Controls.Add(this.textBox25);
-            this.panel28.Controls.Add(this.button26);
-            this.panel28.Controls.Add(this.pictureBox24);
-            this.panel28.Location = new System.Drawing.Point(3, 3501);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(149, 153);
-            this.panel28.TabIndex = 22;
-            // 
-            // panel32
-            // 
-            this.panel32.Controls.Add(this.textBox26);
-            this.panel32.Controls.Add(this.button27);
-            this.panel32.Controls.Add(this.pictureBox25);
-            this.panel32.Location = new System.Drawing.Point(3, 3660);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(149, 153);
-            this.panel32.TabIndex = 23;
-            // 
-            // panel33
-            // 
-            this.panel33.Controls.Add(this.textBox27);
-            this.panel33.Controls.Add(this.button28);
-            this.panel33.Controls.Add(this.pictureBox26);
-            this.panel33.Location = new System.Drawing.Point(3, 3819);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(149, 153);
-            this.panel33.TabIndex = 24;
-            // 
-            // panel34
-            // 
-            this.panel34.Controls.Add(this.textBox28);
-            this.panel34.Controls.Add(this.button29);
-            this.panel34.Controls.Add(this.pictureBox27);
-            this.panel34.Location = new System.Drawing.Point(3, 3978);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(149, 153);
-            this.panel34.TabIndex = 25;
-            // 
-            // panel35
-            // 
-            this.panel35.Controls.Add(this.textBox29);
-            this.panel35.Controls.Add(this.button30);
-            this.panel35.Controls.Add(this.pictureBox28);
-            this.panel35.Location = new System.Drawing.Point(3, 4137);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(149, 153);
-            this.panel35.TabIndex = 26;
-            // 
-            // panel36
-            // 
-            this.panel36.Controls.Add(this.textBox30);
-            this.panel36.Controls.Add(this.button31);
-            this.panel36.Controls.Add(this.pictureBox29);
-            this.panel36.Location = new System.Drawing.Point(3, 4296);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(149, 153);
-            this.panel36.TabIndex = 27;
-            // 
-            // panel37
-            // 
-            this.panel37.Controls.Add(this.textBox31);
-            this.panel37.Controls.Add(this.button32);
-            this.panel37.Controls.Add(this.pictureBox30);
-            this.panel37.Location = new System.Drawing.Point(3, 4455);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(149, 153);
-            this.panel37.TabIndex = 28;
-            // 
             // textBox11
             // 
             this.textBox11.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -983,6 +864,18 @@ namespace Restuarent
             this.textBox11.Size = new System.Drawing.Size(118, 22);
             this.textBox11.TabIndex = 43;
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(16, 26);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 42;
+            this.pictureBox10.TabStop = false;
             // 
             // button12
             // 
@@ -999,17 +892,15 @@ namespace Restuarent
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // pictureBox10
+            // panel10
             // 
-            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(16, 26);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(118, 80);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 42;
-            this.pictureBox10.TabStop = false;
+            this.panel10.Controls.Add(this.textBox12);
+            this.panel10.Controls.Add(this.button13);
+            this.panel10.Controls.Add(this.pictureBox11);
+            this.panel10.Location = new System.Drawing.Point(3, 1434);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(149, 153);
+            this.panel10.TabIndex = 9;
             // 
             // textBox12
             // 
@@ -1049,6 +940,16 @@ namespace Restuarent
             this.pictureBox11.TabIndex = 42;
             this.pictureBox11.TabStop = false;
             // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.textBox13);
+            this.panel11.Controls.Add(this.button14);
+            this.panel11.Controls.Add(this.pictureBox12);
+            this.panel11.Location = new System.Drawing.Point(3, 1593);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(149, 153);
+            this.panel11.TabIndex = 10;
+            // 
             // textBox13
             // 
             this.textBox13.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -1086,6 +987,16 @@ namespace Restuarent
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 42;
             this.pictureBox12.TabStop = false;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.textBox14);
+            this.panel12.Controls.Add(this.button15);
+            this.panel12.Controls.Add(this.pictureBox13);
+            this.panel12.Location = new System.Drawing.Point(3, 1752);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(149, 153);
+            this.panel12.TabIndex = 11;
             // 
             // textBox14
             // 
@@ -1125,6 +1036,16 @@ namespace Restuarent
             this.pictureBox13.TabIndex = 42;
             this.pictureBox13.TabStop = false;
             // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.textBox15);
+            this.panel13.Controls.Add(this.button16);
+            this.panel13.Controls.Add(this.pictureBox14);
+            this.panel13.Location = new System.Drawing.Point(3, 1911);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(149, 153);
+            this.panel13.TabIndex = 12;
+            // 
             // textBox15
             // 
             this.textBox15.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -1149,6 +1070,7 @@ namespace Restuarent
             this.button16.TabIndex = 41;
             this.button16.Text = "button16";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // pictureBox14
             // 
@@ -1161,6 +1083,16 @@ namespace Restuarent
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 42;
             this.pictureBox14.TabStop = false;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.textBox16);
+            this.panel14.Controls.Add(this.button17);
+            this.panel14.Controls.Add(this.pictureBox15);
+            this.panel14.Location = new System.Drawing.Point(3, 2070);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(149, 153);
+            this.panel14.TabIndex = 13;
             // 
             // textBox16
             // 
@@ -1186,6 +1118,7 @@ namespace Restuarent
             this.button17.TabIndex = 41;
             this.button17.Text = "button17";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // pictureBox15
             // 
@@ -1198,6 +1131,16 @@ namespace Restuarent
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 42;
             this.pictureBox15.TabStop = false;
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.textBox17);
+            this.panel15.Controls.Add(this.button18);
+            this.panel15.Controls.Add(this.pictureBox16);
+            this.panel15.Location = new System.Drawing.Point(3, 2229);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(149, 153);
+            this.panel15.TabIndex = 14;
             // 
             // textBox17
             // 
@@ -1223,6 +1166,7 @@ namespace Restuarent
             this.button18.TabIndex = 41;
             this.button18.Text = "button18";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // pictureBox16
             // 
@@ -1235,6 +1179,16 @@ namespace Restuarent
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 42;
             this.pictureBox16.TabStop = false;
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.textBox18);
+            this.panel16.Controls.Add(this.button19);
+            this.panel16.Controls.Add(this.pictureBox17);
+            this.panel16.Location = new System.Drawing.Point(3, 2388);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(149, 153);
+            this.panel16.TabIndex = 15;
             // 
             // textBox18
             // 
@@ -1260,6 +1214,7 @@ namespace Restuarent
             this.button19.TabIndex = 41;
             this.button19.Text = "button19";
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // pictureBox17
             // 
@@ -1272,6 +1227,16 @@ namespace Restuarent
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 42;
             this.pictureBox17.TabStop = false;
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.textBox19);
+            this.panel17.Controls.Add(this.button20);
+            this.panel17.Controls.Add(this.pictureBox18);
+            this.panel17.Location = new System.Drawing.Point(3, 2547);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(149, 153);
+            this.panel17.TabIndex = 16;
             // 
             // textBox19
             // 
@@ -1297,6 +1262,7 @@ namespace Restuarent
             this.button20.TabIndex = 41;
             this.button20.Text = "button20";
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // pictureBox18
             // 
@@ -1309,6 +1275,16 @@ namespace Restuarent
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 42;
             this.pictureBox18.TabStop = false;
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.textBox20);
+            this.panel21.Controls.Add(this.button21);
+            this.panel21.Controls.Add(this.pictureBox19);
+            this.panel21.Location = new System.Drawing.Point(3, 2706);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(149, 153);
+            this.panel21.TabIndex = 17;
             // 
             // textBox20
             // 
@@ -1334,6 +1310,7 @@ namespace Restuarent
             this.button21.TabIndex = 41;
             this.button21.Text = "button21";
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // pictureBox19
             // 
@@ -1346,6 +1323,16 @@ namespace Restuarent
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 42;
             this.pictureBox19.TabStop = false;
+            // 
+            // panel24
+            // 
+            this.panel24.Controls.Add(this.textBox21);
+            this.panel24.Controls.Add(this.button22);
+            this.panel24.Controls.Add(this.pictureBox20);
+            this.panel24.Location = new System.Drawing.Point(3, 2865);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(149, 153);
+            this.panel24.TabIndex = 18;
             // 
             // textBox21
             // 
@@ -1371,6 +1358,7 @@ namespace Restuarent
             this.button22.TabIndex = 41;
             this.button22.Text = "button22";
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // pictureBox20
             // 
@@ -1383,6 +1371,16 @@ namespace Restuarent
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox20.TabIndex = 42;
             this.pictureBox20.TabStop = false;
+            // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.textBox22);
+            this.panel25.Controls.Add(this.button23);
+            this.panel25.Controls.Add(this.pictureBox21);
+            this.panel25.Location = new System.Drawing.Point(3, 3024);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(149, 153);
+            this.panel25.TabIndex = 19;
             // 
             // textBox22
             // 
@@ -1408,6 +1406,7 @@ namespace Restuarent
             this.button23.TabIndex = 41;
             this.button23.Text = "button23";
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // pictureBox21
             // 
@@ -1420,6 +1419,16 @@ namespace Restuarent
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox21.TabIndex = 42;
             this.pictureBox21.TabStop = false;
+            // 
+            // panel26
+            // 
+            this.panel26.Controls.Add(this.textBox23);
+            this.panel26.Controls.Add(this.button24);
+            this.panel26.Controls.Add(this.pictureBox22);
+            this.panel26.Location = new System.Drawing.Point(3, 3183);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(149, 153);
+            this.panel26.TabIndex = 20;
             // 
             // textBox23
             // 
@@ -1445,6 +1454,7 @@ namespace Restuarent
             this.button24.TabIndex = 41;
             this.button24.Text = "button24";
             this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // pictureBox22
             // 
@@ -1457,6 +1467,16 @@ namespace Restuarent
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 42;
             this.pictureBox22.TabStop = false;
+            // 
+            // panel27
+            // 
+            this.panel27.Controls.Add(this.textBox24);
+            this.panel27.Controls.Add(this.button25);
+            this.panel27.Controls.Add(this.pictureBox23);
+            this.panel27.Location = new System.Drawing.Point(3, 3342);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(149, 153);
+            this.panel27.TabIndex = 21;
             // 
             // textBox24
             // 
@@ -1482,6 +1502,7 @@ namespace Restuarent
             this.button25.TabIndex = 41;
             this.button25.Text = "button25";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // pictureBox23
             // 
@@ -1494,6 +1515,16 @@ namespace Restuarent
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox23.TabIndex = 42;
             this.pictureBox23.TabStop = false;
+            // 
+            // panel28
+            // 
+            this.panel28.Controls.Add(this.textBox25);
+            this.panel28.Controls.Add(this.button26);
+            this.panel28.Controls.Add(this.pictureBox24);
+            this.panel28.Location = new System.Drawing.Point(3, 3501);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(149, 153);
+            this.panel28.TabIndex = 22;
             // 
             // textBox25
             // 
@@ -1519,6 +1550,7 @@ namespace Restuarent
             this.button26.TabIndex = 41;
             this.button26.Text = "button26";
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // pictureBox24
             // 
@@ -1531,6 +1563,16 @@ namespace Restuarent
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox24.TabIndex = 42;
             this.pictureBox24.TabStop = false;
+            // 
+            // panel32
+            // 
+            this.panel32.Controls.Add(this.textBox26);
+            this.panel32.Controls.Add(this.button27);
+            this.panel32.Controls.Add(this.pictureBox25);
+            this.panel32.Location = new System.Drawing.Point(3, 3660);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(149, 153);
+            this.panel32.TabIndex = 23;
             // 
             // textBox26
             // 
@@ -1556,6 +1598,7 @@ namespace Restuarent
             this.button27.TabIndex = 41;
             this.button27.Text = "button27";
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // pictureBox25
             // 
@@ -1568,6 +1611,16 @@ namespace Restuarent
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox25.TabIndex = 42;
             this.pictureBox25.TabStop = false;
+            // 
+            // panel33
+            // 
+            this.panel33.Controls.Add(this.textBox27);
+            this.panel33.Controls.Add(this.button28);
+            this.panel33.Controls.Add(this.pictureBox26);
+            this.panel33.Location = new System.Drawing.Point(3, 3819);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(149, 153);
+            this.panel33.TabIndex = 24;
             // 
             // textBox27
             // 
@@ -1593,6 +1646,7 @@ namespace Restuarent
             this.button28.TabIndex = 41;
             this.button28.Text = "button28";
             this.button28.UseVisualStyleBackColor = false;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // pictureBox26
             // 
@@ -1605,6 +1659,16 @@ namespace Restuarent
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox26.TabIndex = 42;
             this.pictureBox26.TabStop = false;
+            // 
+            // panel34
+            // 
+            this.panel34.Controls.Add(this.textBox28);
+            this.panel34.Controls.Add(this.button29);
+            this.panel34.Controls.Add(this.pictureBox27);
+            this.panel34.Location = new System.Drawing.Point(3, 3978);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(149, 153);
+            this.panel34.TabIndex = 25;
             // 
             // textBox28
             // 
@@ -1630,6 +1694,7 @@ namespace Restuarent
             this.button29.TabIndex = 41;
             this.button29.Text = "button29";
             this.button29.UseVisualStyleBackColor = false;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // pictureBox27
             // 
@@ -1642,6 +1707,16 @@ namespace Restuarent
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox27.TabIndex = 42;
             this.pictureBox27.TabStop = false;
+            // 
+            // panel35
+            // 
+            this.panel35.Controls.Add(this.textBox29);
+            this.panel35.Controls.Add(this.button30);
+            this.panel35.Controls.Add(this.pictureBox28);
+            this.panel35.Location = new System.Drawing.Point(3, 4137);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(149, 153);
+            this.panel35.TabIndex = 26;
             // 
             // textBox29
             // 
@@ -1667,6 +1742,7 @@ namespace Restuarent
             this.button30.TabIndex = 41;
             this.button30.Text = "button30";
             this.button30.UseVisualStyleBackColor = false;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // pictureBox28
             // 
@@ -1679,6 +1755,16 @@ namespace Restuarent
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox28.TabIndex = 42;
             this.pictureBox28.TabStop = false;
+            // 
+            // panel36
+            // 
+            this.panel36.Controls.Add(this.textBox30);
+            this.panel36.Controls.Add(this.button31);
+            this.panel36.Controls.Add(this.pictureBox29);
+            this.panel36.Location = new System.Drawing.Point(3, 4296);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(149, 153);
+            this.panel36.TabIndex = 27;
             // 
             // textBox30
             // 
@@ -1704,6 +1790,7 @@ namespace Restuarent
             this.button31.TabIndex = 41;
             this.button31.Text = "button31";
             this.button31.UseVisualStyleBackColor = false;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // pictureBox29
             // 
@@ -1716,6 +1803,16 @@ namespace Restuarent
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox29.TabIndex = 42;
             this.pictureBox29.TabStop = false;
+            // 
+            // panel37
+            // 
+            this.panel37.Controls.Add(this.textBox31);
+            this.panel37.Controls.Add(this.button32);
+            this.panel37.Controls.Add(this.pictureBox30);
+            this.panel37.Location = new System.Drawing.Point(3, 4455);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(149, 153);
+            this.panel37.TabIndex = 28;
             // 
             // textBox31
             // 
@@ -1741,6 +1838,7 @@ namespace Restuarent
             this.button32.TabIndex = 41;
             this.button32.Text = "button32";
             this.button32.UseVisualStyleBackColor = false;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // pictureBox30
             // 
@@ -1766,35 +1864,6 @@ namespace Restuarent
             this.panel18.Size = new System.Drawing.Size(466, 322);
             this.panel18.TabIndex = 45;
             // 
-            // button33
-            // 
-            this.button33.Location = new System.Drawing.Point(147, 252);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(90, 43);
-            this.button33.TabIndex = 45;
-            this.button33.Text = "Activate";
-            this.button33.UseVisualStyleBackColor = true;
-            this.button33.Click += new System.EventHandler(this.button33_Click);
-            // 
-            // button34
-            // 
-            this.button34.Location = new System.Drawing.Point(252, 252);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(90, 43);
-            this.button34.TabIndex = 46;
-            this.button34.Text = "Deactivate";
-            this.button34.UseVisualStyleBackColor = true;
-            this.button34.Click += new System.EventHandler(this.button34_Click);
-            // 
-            // textBox32
-            // 
-            this.textBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox32.Location = new System.Drawing.Point(185, 204);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.ReadOnly = true;
-            this.textBox32.Size = new System.Drawing.Size(119, 26);
-            this.textBox32.TabIndex = 8;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
@@ -1808,14 +1877,585 @@ namespace Restuarent
             this.dataGridView1.TabIndex = 47;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // label1
+            // textBox32
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(639, 436);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "label1";
+            this.textBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox32.Location = new System.Drawing.Point(185, 204);
+            this.textBox32.Name = "textBox32";
+            this.textBox32.ReadOnly = true;
+            this.textBox32.Size = new System.Drawing.Size(119, 26);
+            this.textBox32.TabIndex = 8;
+            // 
+            // button34
+            // 
+            this.button34.Location = new System.Drawing.Point(252, 252);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(90, 43);
+            this.button34.TabIndex = 46;
+            this.button34.Text = "Deactivate";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
+            // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(147, 252);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(90, 43);
+            this.button33.TabIndex = 45;
+            this.button33.Text = "Activate";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
+            // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.textBox33);
+            this.panel19.Controls.Add(this.button35);
+            this.panel19.Controls.Add(this.pictureBox31);
+            this.panel19.Location = new System.Drawing.Point(3, 4614);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(149, 153);
+            this.panel19.TabIndex = 29;
+            // 
+            // textBox33
+            // 
+            this.textBox33.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox33.Location = new System.Drawing.Point(15, 12);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.ReadOnly = true;
+            this.textBox33.Size = new System.Drawing.Size(118, 22);
+            this.textBox33.TabIndex = 43;
+            this.textBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button35
+            // 
+            this.button35.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button35.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button35.Location = new System.Drawing.Point(15, 114);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(118, 27);
+            this.button35.TabIndex = 41;
+            this.button35.Text = "button35";
+            this.button35.UseVisualStyleBackColor = false;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
+            this.pictureBox31.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox31.TabIndex = 42;
+            this.pictureBox31.TabStop = false;
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.textBox34);
+            this.panel20.Controls.Add(this.button36);
+            this.panel20.Controls.Add(this.pictureBox32);
+            this.panel20.Location = new System.Drawing.Point(3, 4773);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(149, 153);
+            this.panel20.TabIndex = 30;
+            // 
+            // textBox34
+            // 
+            this.textBox34.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox34.Location = new System.Drawing.Point(15, 12);
+            this.textBox34.Name = "textBox34";
+            this.textBox34.ReadOnly = true;
+            this.textBox34.Size = new System.Drawing.Size(118, 22);
+            this.textBox34.TabIndex = 43;
+            this.textBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button36
+            // 
+            this.button36.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button36.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button36.Location = new System.Drawing.Point(15, 114);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(118, 27);
+            this.button36.TabIndex = 41;
+            this.button36.Text = "button36";
+            this.button36.UseVisualStyleBackColor = false;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
+            this.pictureBox32.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox32.TabIndex = 42;
+            this.pictureBox32.TabStop = false;
+            // 
+            // panel22
+            // 
+            this.panel22.Controls.Add(this.textBox35);
+            this.panel22.Controls.Add(this.button37);
+            this.panel22.Controls.Add(this.pictureBox33);
+            this.panel22.Location = new System.Drawing.Point(3, 4932);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(149, 153);
+            this.panel22.TabIndex = 31;
+            // 
+            // textBox35
+            // 
+            this.textBox35.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox35.Location = new System.Drawing.Point(15, 12);
+            this.textBox35.Name = "textBox35";
+            this.textBox35.ReadOnly = true;
+            this.textBox35.Size = new System.Drawing.Size(118, 22);
+            this.textBox35.TabIndex = 43;
+            this.textBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button37
+            // 
+            this.button37.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button37.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button37.Location = new System.Drawing.Point(15, 114);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(118, 27);
+            this.button37.TabIndex = 41;
+            this.button37.Text = "button37";
+            this.button37.UseVisualStyleBackColor = false;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
+            this.pictureBox33.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox33.TabIndex = 42;
+            this.pictureBox33.TabStop = false;
+            // 
+            // panel23
+            // 
+            this.panel23.Controls.Add(this.textBox36);
+            this.panel23.Controls.Add(this.button38);
+            this.panel23.Controls.Add(this.pictureBox34);
+            this.panel23.Location = new System.Drawing.Point(3, 5091);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(149, 153);
+            this.panel23.TabIndex = 32;
+            // 
+            // textBox36
+            // 
+            this.textBox36.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox36.Location = new System.Drawing.Point(15, 12);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.ReadOnly = true;
+            this.textBox36.Size = new System.Drawing.Size(118, 22);
+            this.textBox36.TabIndex = 43;
+            this.textBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button38
+            // 
+            this.button38.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button38.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button38.Location = new System.Drawing.Point(15, 114);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(118, 27);
+            this.button38.TabIndex = 41;
+            this.button38.Text = "button38";
+            this.button38.UseVisualStyleBackColor = false;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox34.Image")));
+            this.pictureBox34.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox34.TabIndex = 42;
+            this.pictureBox34.TabStop = false;
+            // 
+            // panel29
+            // 
+            this.panel29.Controls.Add(this.textBox37);
+            this.panel29.Controls.Add(this.button39);
+            this.panel29.Controls.Add(this.pictureBox35);
+            this.panel29.Location = new System.Drawing.Point(3, 5250);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(149, 153);
+            this.panel29.TabIndex = 33;
+            // 
+            // textBox37
+            // 
+            this.textBox37.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox37.Location = new System.Drawing.Point(15, 12);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.ReadOnly = true;
+            this.textBox37.Size = new System.Drawing.Size(118, 22);
+            this.textBox37.TabIndex = 43;
+            this.textBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button39
+            // 
+            this.button39.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button39.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button39.Location = new System.Drawing.Point(15, 114);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(118, 27);
+            this.button39.TabIndex = 41;
+            this.button39.Text = "button39";
+            this.button39.UseVisualStyleBackColor = false;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
+            // 
+            // pictureBox35
+            // 
+            this.pictureBox35.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox35.Image")));
+            this.pictureBox35.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox35.TabIndex = 42;
+            this.pictureBox35.TabStop = false;
+            // 
+            // panel30
+            // 
+            this.panel30.Controls.Add(this.textBox38);
+            this.panel30.Controls.Add(this.button40);
+            this.panel30.Controls.Add(this.pictureBox36);
+            this.panel30.Location = new System.Drawing.Point(3, 5409);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(149, 153);
+            this.panel30.TabIndex = 34;
+            // 
+            // textBox38
+            // 
+            this.textBox38.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox38.Location = new System.Drawing.Point(15, 12);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.ReadOnly = true;
+            this.textBox38.Size = new System.Drawing.Size(118, 22);
+            this.textBox38.TabIndex = 43;
+            this.textBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button40
+            // 
+            this.button40.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button40.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button40.Location = new System.Drawing.Point(15, 114);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(118, 27);
+            this.button40.TabIndex = 41;
+            this.button40.Text = "button40";
+            this.button40.UseVisualStyleBackColor = false;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
+            // 
+            // pictureBox36
+            // 
+            this.pictureBox36.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox36.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox36.Image")));
+            this.pictureBox36.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox36.TabIndex = 42;
+            this.pictureBox36.TabStop = false;
+            // 
+            // panel31
+            // 
+            this.panel31.Controls.Add(this.textBox39);
+            this.panel31.Controls.Add(this.button41);
+            this.panel31.Controls.Add(this.pictureBox37);
+            this.panel31.Location = new System.Drawing.Point(3, 5568);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(149, 153);
+            this.panel31.TabIndex = 35;
+            // 
+            // textBox39
+            // 
+            this.textBox39.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox39.Location = new System.Drawing.Point(15, 12);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.ReadOnly = true;
+            this.textBox39.Size = new System.Drawing.Size(118, 22);
+            this.textBox39.TabIndex = 43;
+            this.textBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button41
+            // 
+            this.button41.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button41.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button41.Location = new System.Drawing.Point(15, 114);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(118, 27);
+            this.button41.TabIndex = 41;
+            this.button41.Text = "button41";
+            this.button41.UseVisualStyleBackColor = false;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
+            // 
+            // pictureBox37
+            // 
+            this.pictureBox37.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox37.Image")));
+            this.pictureBox37.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox37.Name = "pictureBox37";
+            this.pictureBox37.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox37.TabIndex = 42;
+            this.pictureBox37.TabStop = false;
+            // 
+            // panel38
+            // 
+            this.panel38.Controls.Add(this.textBox40);
+            this.panel38.Controls.Add(this.button42);
+            this.panel38.Controls.Add(this.pictureBox38);
+            this.panel38.Location = new System.Drawing.Point(3, 5727);
+            this.panel38.Name = "panel38";
+            this.panel38.Size = new System.Drawing.Size(149, 153);
+            this.panel38.TabIndex = 36;
+            // 
+            // textBox40
+            // 
+            this.textBox40.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox40.Location = new System.Drawing.Point(15, 12);
+            this.textBox40.Name = "textBox40";
+            this.textBox40.ReadOnly = true;
+            this.textBox40.Size = new System.Drawing.Size(118, 22);
+            this.textBox40.TabIndex = 43;
+            this.textBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button42
+            // 
+            this.button42.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button42.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button42.Location = new System.Drawing.Point(15, 114);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(118, 27);
+            this.button42.TabIndex = 41;
+            this.button42.Text = "button42";
+            this.button42.UseVisualStyleBackColor = false;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
+            // 
+            // pictureBox38
+            // 
+            this.pictureBox38.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
+            this.pictureBox38.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox38.Name = "pictureBox38";
+            this.pictureBox38.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox38.TabIndex = 42;
+            this.pictureBox38.TabStop = false;
+            // 
+            // panel39
+            // 
+            this.panel39.Controls.Add(this.textBox41);
+            this.panel39.Controls.Add(this.button43);
+            this.panel39.Controls.Add(this.pictureBox39);
+            this.panel39.Location = new System.Drawing.Point(3, 5886);
+            this.panel39.Name = "panel39";
+            this.panel39.Size = new System.Drawing.Size(149, 153);
+            this.panel39.TabIndex = 37;
+            // 
+            // textBox41
+            // 
+            this.textBox41.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox41.Location = new System.Drawing.Point(15, 12);
+            this.textBox41.Name = "textBox41";
+            this.textBox41.ReadOnly = true;
+            this.textBox41.Size = new System.Drawing.Size(118, 22);
+            this.textBox41.TabIndex = 43;
+            this.textBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button43
+            // 
+            this.button43.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button43.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button43.Location = new System.Drawing.Point(15, 114);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(118, 27);
+            this.button43.TabIndex = 41;
+            this.button43.Text = "button43";
+            this.button43.UseVisualStyleBackColor = false;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
+            // 
+            // pictureBox39
+            // 
+            this.pictureBox39.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox39.Image")));
+            this.pictureBox39.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox39.Name = "pictureBox39";
+            this.pictureBox39.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox39.TabIndex = 42;
+            this.pictureBox39.TabStop = false;
+            // 
+            // panel40
+            // 
+            this.panel40.Controls.Add(this.textBox42);
+            this.panel40.Controls.Add(this.button44);
+            this.panel40.Controls.Add(this.pictureBox40);
+            this.panel40.Location = new System.Drawing.Point(3, 6045);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(149, 153);
+            this.panel40.TabIndex = 38;
+            // 
+            // textBox42
+            // 
+            this.textBox42.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox42.Location = new System.Drawing.Point(15, 12);
+            this.textBox42.Name = "textBox42";
+            this.textBox42.ReadOnly = true;
+            this.textBox42.Size = new System.Drawing.Size(118, 22);
+            this.textBox42.TabIndex = 43;
+            this.textBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button44
+            // 
+            this.button44.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button44.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button44.Location = new System.Drawing.Point(15, 114);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(118, 27);
+            this.button44.TabIndex = 41;
+            this.button44.Text = "button44";
+            this.button44.UseVisualStyleBackColor = false;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
+            // 
+            // pictureBox40
+            // 
+            this.pictureBox40.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox40.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox40.Image")));
+            this.pictureBox40.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox40.TabIndex = 42;
+            this.pictureBox40.TabStop = false;
+            // 
+            // panel41
+            // 
+            this.panel41.Controls.Add(this.textBox43);
+            this.panel41.Controls.Add(this.button45);
+            this.panel41.Controls.Add(this.pictureBox41);
+            this.panel41.Location = new System.Drawing.Point(3, 6204);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(149, 153);
+            this.panel41.TabIndex = 39;
+            // 
+            // textBox43
+            // 
+            this.textBox43.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox43.Location = new System.Drawing.Point(15, 12);
+            this.textBox43.Name = "textBox43";
+            this.textBox43.ReadOnly = true;
+            this.textBox43.Size = new System.Drawing.Size(118, 22);
+            this.textBox43.TabIndex = 43;
+            this.textBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button45
+            // 
+            this.button45.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button45.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button45.Location = new System.Drawing.Point(15, 114);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(118, 27);
+            this.button45.TabIndex = 41;
+            this.button45.Text = "button45";
+            this.button45.UseVisualStyleBackColor = false;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
+            this.pictureBox41.Location = new System.Drawing.Point(15, 34);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(118, 80);
+            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox41.TabIndex = 42;
+            this.pictureBox41.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Starter",
+            "Main course",
+            "Dessert",
+            "Drinks"});
+            this.comboBox1.Location = new System.Drawing.Point(148, 364);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(172, 28);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(49, 372);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Food Type";
             // 
             // FoodItem
             // 
@@ -1825,7 +2465,6 @@ namespace Restuarent
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -1866,72 +2505,104 @@ namespace Restuarent
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             this.panel26.ResumeLayout(false);
             this.panel26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             this.panel28.ResumeLayout(false);
             this.panel28.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             this.panel32.ResumeLayout(false);
             this.panel32.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             this.panel33.ResumeLayout(false);
             this.panel33.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             this.panel34.ResumeLayout(false);
             this.panel34.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             this.panel35.ResumeLayout(false);
             this.panel35.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             this.panel36.ResumeLayout(false);
             this.panel36.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
+            this.panel30.ResumeLayout(false);
+            this.panel30.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
+            this.panel38.ResumeLayout(false);
+            this.panel38.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            this.panel39.ResumeLayout(false);
+            this.panel39.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
+            this.panel40.ResumeLayout(false);
+            this.panel40.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            this.panel41.ResumeLayout(false);
+            this.panel41.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -2069,6 +2740,51 @@ namespace Restuarent
         private System.Windows.Forms.Button button34;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.PictureBox pictureBox31;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.PictureBox pictureBox32;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.PictureBox pictureBox33;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.TextBox textBox36;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.PictureBox pictureBox34;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.PictureBox pictureBox35;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.PictureBox pictureBox36;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.PictureBox pictureBox37;
+        private System.Windows.Forms.Panel panel38;
+        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.PictureBox pictureBox38;
+        private System.Windows.Forms.Panel panel39;
+        private System.Windows.Forms.TextBox textBox41;
+        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.PictureBox pictureBox39;
+        private System.Windows.Forms.Panel panel40;
+        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.PictureBox pictureBox40;
+        private System.Windows.Forms.Panel panel41;
+        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.PictureBox pictureBox41;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
