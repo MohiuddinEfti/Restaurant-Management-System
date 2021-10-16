@@ -548,10 +548,6 @@
             this.button169 = new System.Windows.Forms.Button();
             this.textBox75 = new System.Windows.Forms.TextBox();
             this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
             this.panel82 = new System.Windows.Forms.Panel();
             this.pictureBox75 = new System.Windows.Forms.PictureBox();
             this.button170 = new System.Windows.Forms.Button();
@@ -1032,6 +1028,10 @@
             this.button329 = new System.Windows.Forms.Button();
             this.textBox155 = new System.Windows.Forms.TextBox();
             this.label172 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Burgerpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sawrmapic)).BeginInit();
@@ -7880,50 +7880,6 @@
             this.label88.TabIndex = 64;
             this.label88.Text = "Pastry";
             // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.BackColor = System.Drawing.Color.Transparent;
-            this.label89.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.Location = new System.Drawing.Point(114, 94);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(65, 26);
-            this.label89.TabIndex = 73;
-            this.label89.Text = "Starter";
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.BackColor = System.Drawing.Color.Transparent;
-            this.label90.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label90.Location = new System.Drawing.Point(254, 94);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(108, 26);
-            this.label90.TabIndex = 74;
-            this.label90.Text = "Main Course";
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.BackColor = System.Drawing.Color.Transparent;
-            this.label91.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label91.Location = new System.Drawing.Point(443, 94);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(64, 26);
-            this.label91.TabIndex = 75;
-            this.label91.Text = "Dessert";
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.BackColor = System.Drawing.Color.Transparent;
-            this.label92.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label92.Location = new System.Drawing.Point(608, 94);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(65, 26);
-            this.label92.TabIndex = 76;
-            this.label92.Text = "Drinks";
-            // 
             // panel82
             // 
             this.panel82.Controls.Add(this.pictureBox75);
@@ -13763,6 +13719,50 @@
             this.label172.Size = new System.Drawing.Size(59, 20);
             this.label172.TabIndex = 64;
             this.label172.Text = "Pastry";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.BackColor = System.Drawing.Color.Transparent;
+            this.label89.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.Location = new System.Drawing.Point(114, 94);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(65, 26);
+            this.label89.TabIndex = 73;
+            this.label89.Text = "Starter";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.BackColor = System.Drawing.Color.Transparent;
+            this.label90.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label90.Location = new System.Drawing.Point(254, 94);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(108, 26);
+            this.label90.TabIndex = 74;
+            this.label90.Text = "Main Course";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.BackColor = System.Drawing.Color.Transparent;
+            this.label91.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label91.Location = new System.Drawing.Point(443, 94);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(64, 26);
+            this.label91.TabIndex = 75;
+            this.label91.Text = "Dessert";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.BackColor = System.Drawing.Color.Transparent;
+            this.label92.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label92.Location = new System.Drawing.Point(608, 94);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(65, 26);
+            this.label92.TabIndex = 76;
+            this.label92.Text = "Drinks";
             // 
             // Customer
             // 

@@ -123,50 +123,7 @@ namespace Restuarent
         public string addorder75 = "";
         public string addorder85 = "";
 
-        public string addorder16 = "";
-        public string addorder26 = "";
-        public string addorder36 = "";
-        public string addorder46 = "";
-        public string addorder56 = "";
-        public string addorder66 = "";
-        public string addorder76 = "";
-        public string addorder86 = "";
-
-        public string addorder17 = "";
-        public string addorder27 = "";
-        public string addorder37 = "";
-        public string addorder47 = "";
-        public string addorder57 = "";
-        public string addorder67 = "";
-        public string addorder77 = "";
-        public string addorder87 = "";
-
-        public string addorder18 = "";
-        public string addorder28 = "";
-        public string addorder38 = "";
-        public string addorder48 = "";
-        public string addorder58 = "";
-        public string addorder68 = "";
-        public string addorder78 = "";
-        public string addorder88 = "";
-
-        public string addorder19 = "";
-        public string addorder29 = "";
-        public string addorder39 = "";
-        public string addorder49 = "";
-        public string addorder59 = "";
-        public string addorder69 = "";
-        public string addorder79 = "";
-        public string addorder89 = "";
-
-        public string addorder110 = "";
-        public string addorder210 = "";
-        public string addorder310 = "";
-        public string addorder410= "";
-        public string addorder510 = "";
-        public string addorder610 = "";
-        public string addorder710 = "";
-        public string addorder810 = "";
+        
 
         public string Data1 = "";
         public string Data2 = "";
@@ -213,50 +170,6 @@ namespace Restuarent
         public string Data75 = "";
         public string Data85 = "";
 
-        public string Data16 = "";
-        public string Data26 = "";
-        public string Data36 = "";
-        public string Data46 = "";
-        public string Data56 = "";
-        public string Data66 = "";
-        public string Data76 = "";
-        public string Data86 = "";
-
-        public string Data17 = "";
-        public string Data27 = "";
-        public string Data37 = "";
-        public string Data47 = "";
-        public string Data57 = "";
-        public string Data67 = "";
-        public string Data77 = "";
-        public string Data87 = "";
-
-        public string Data18 = "";
-        public string Data28 = "";
-        public string Data38 = "";
-        public string Data48 = "";
-        public string Data58 = "";
-        public string Data68 = "";
-        public string Data78 = "";
-        public string Data88 = "";
-
-        public string Data19 = "";
-        public string Data29 = "";
-        public string Data39 = "";
-        public string Data49 = "";
-        public string Data59 = "";
-        public string Data69 = "";
-        public string Data79 = "";
-        public string Data89 = "";
-
-        public string Data110 = "";
-        public string Data210 = "";
-        public string Data310 = "";
-        public string Data410 = "";
-        public string Data510 = "";
-        public string Data610 = "";
-        public string Data710 = "";
-        public string Data810 = "";
 
        
         private void taka_Click(object sender, EventArgs e)
@@ -309,51 +222,6 @@ namespace Restuarent
         public static int a5 = 0;
         public static int i5 = 0;
         public static int n5 = 0;
-
-        public static int f6 = 0;
-        public static int ye6 = 0;
-        public static int d6 = 0;
-        public static int c6 = 0;
-        public static int b6 = 0;
-        public static int a6 = 0;
-        public static int i6 = 0;
-        public static int n6 = 0;
-
-        public static int f7 = 0;
-        public static int ye7 = 0;
-        public static int d7 = 0;
-        public static int c7 = 0;
-        public static int b7 = 0;
-        public static int a7 = 0;
-        public static int i7 = 0;
-        public static int n7 = 0;
-
-        public static int f8 = 0;
-        public static int ye8 = 0;
-        public static int d8 = 0;
-        public static int c8 = 0;
-        public static int b8 = 0;
-        public static int a8 = 0;
-        public static int i8 = 0;
-        public static int n8 = 0;
-
-        public static int f9 = 0;
-        public static int ye9 = 0;
-        public static int d9 = 0;
-        public static int c9 = 0;
-        public static int b9 = 0;
-        public static int a9 = 0;
-        public static int i9 = 0;
-        public static int n9 = 0;
-
-        public static int f10 = 0;
-        public static int ye10 = 0;
-        public static int d10 = 0;
-        public static int c10 = 0;
-        public static int b10 = 0;
-        public static int a10 = 0;
-        public static int i10 = 0;
-        public static int n10 = 0;
 
   
 
