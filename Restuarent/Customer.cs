@@ -256,7 +256,7 @@ namespace Restuarent
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+           
         }
 
 
@@ -507,103 +507,103 @@ namespace Restuarent
             }
             if (status.ElementAt(8) == "active" && type.ElementAt(8) == "Starter")
             {
-                panel34.Visible = true;
-                label41.Text = names.ElementAt(8);
-                pictureBox27.ImageLocation = pics.ElementAt(8);
+                panel33.Visible = true;
+                label40.Text = names.ElementAt(8);
+                pictureBox26.ImageLocation = pics.ElementAt(8);
             }
             else
             {
-                panel34.Visible = false;
+                panel33.Visible = false;
             }
             if (status.ElementAt(9) == "active" && type.ElementAt(9) == "Starter")
             {
-                panel38.Visible = true;
-                label45.Text = names.ElementAt(9);
-                pictureBox31.ImageLocation = pics.ElementAt(9);
+                panel37.Visible = true;
+                label44.Text = names.ElementAt(9);
+                pictureBox30.ImageLocation = pics.ElementAt(9);
             }
             else
             {
-                panel38.Visible = false;
+                panel37.Visible = false;
             }
             if (status.ElementAt(10) == "active" && type.ElementAt(10) == "Starter")
             {
-                panel42.Visible = true;
-                label49.Text = names.ElementAt(10);
-                pictureBox35.ImageLocation = pics.ElementAt(10);
+                panel41.Visible = true;
+                label48.Text = names.ElementAt(10);
+                pictureBox34.ImageLocation = pics.ElementAt(10);
             }
             else
             {
-                panel42.Visible = false;
+                panel41.Visible = false;
             }
             if (status.ElementAt(11) == "active" && type.ElementAt(11) == "Starter")
             {
-                panel46.Visible = true;
-                label53.Text = names.ElementAt(11);
-                pictureBox39.ImageLocation = pics.ElementAt(11);
+                panel45.Visible = true;
+                label52.Text = names.ElementAt(11);
+                pictureBox38.ImageLocation = pics.ElementAt(11);
             }
             else
             {
-                panel46.Visible = false;
+                panel45.Visible = false;
             }
             if (status.ElementAt(12) == "active" && type.ElementAt(12) == "Starter")
             {
-                panel50.Visible = true;
-                label57.Text = names.ElementAt(12);
-                pictureBox43.ImageLocation = pics.ElementAt(12);
+                panel49.Visible = true;
+                label56.Text = names.ElementAt(12);
+                pictureBox42.ImageLocation = pics.ElementAt(12);
             }
             else
             {
-                panel50.Visible = false;
+                panel49.Visible = false;
             }
             if (status.ElementAt(13) == "active" && type.ElementAt(13) == "Starter")
             {
-                panel54.Visible = true;
-                label61.Text = names.ElementAt(13);
-                pictureBox47.ImageLocation = pics.ElementAt(13);
+                panel53.Visible = true;
+                label60.Text = names.ElementAt(13);
+                pictureBox46.ImageLocation = pics.ElementAt(13);
             }
             else
             {
-                panel54.Visible = false;
+                panel53.Visible = false;
             }
             if (status.ElementAt(14) == "active" && type.ElementAt(14) == "Starter")
             {
-                panel58.Visible = true;
-                label65.Text = names.ElementAt(14);
-                pictureBox51.ImageLocation = pics.ElementAt(14);
+                panel57.Visible = true;
+                label64.Text = names.ElementAt(14);
+                pictureBox50.ImageLocation = pics.ElementAt(14);
             }
             else
             {
-                panel58.Visible = false;
+                panel57.Visible = false;
             }
             if (status.ElementAt(15) == "active" && type.ElementAt(15) == "Starter")
             {
-                panel62.Visible = true;
-                label69.Text = names.ElementAt(15);
-                pictureBox55.ImageLocation = pics.ElementAt(15);
+                panel61.Visible = true;
+                label68.Text = names.ElementAt(15);
+                pictureBox54.ImageLocation = pics.ElementAt(15);
             }
             else
             {
-                panel62.Visible = false;
+                panel61.Visible = false;
             }
             if (status.ElementAt(16) == "active" && type.ElementAt(16) == "Starter")
             {
-                panel66.Visible = true;
+                panel65.Visible = true;
                 label73.Text = names.ElementAt(16);
                 pictureBox59.ImageLocation = pics.ElementAt(16);
             }
             else
             {
-                panel66.Visible = false;
+                panel65.Visible = false;
             }
             if (status.ElementAt(17) == "active" && type.ElementAt(17) == "Starter")
             {
-                panel70.Visible = true;
+                panel69.Visible = true;
                 label77.Text = names.ElementAt(16);
                 pictureBox63.ImageLocation = pics.ElementAt(16);
             }
             else
             {
-                panel70.Visible = false;
+                panel69.Visible = false;
             }
             if (status.ElementAt(18) == "active" && type.ElementAt(18) == "Starter")
             {
@@ -707,125 +707,120 @@ namespace Restuarent
             }
             if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Starter")
             {
-                panel114.Visible = true;
-                label125.Text = names.ElementAt(27);
-                pictureBox107.ImageLocation = pics.ElementAt(28);
+                panel20.Visible = true;
+                label27.Text = names.ElementAt(28);
+                pictureBox13.ImageLocation = pics.ElementAt(28);
             }
             else
             {
-                panel114.Visible = false;
+                panel20.Visible = false;
             }
             if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Starter")
             {
-                panel118.Visible = true;
-                label129.Text = names.ElementAt(29);
-                pictureBox111.ImageLocation = pics.ElementAt(29);
+                panel24.Visible = true;
+                label31.Text = names.ElementAt(29);
+                pictureBox17.ImageLocation = pics.ElementAt(29);
             }
             else
             {
-                panel118.Visible = false;
+                panel24.Visible = false;
             }
             if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Starter")
             {
-                panel122.Visible = true;
-                label133.Text = names.ElementAt(30);
-                pictureBox115.ImageLocation = pics.ElementAt(30);
+                panel28.Visible = true;
+                label35.Text = names.ElementAt(30);
+                pictureBox21.ImageLocation = pics.ElementAt(30);
             }
             else
             {
-                panel122.Visible = false;
+                panel28.Visible = false;
             }
             if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Starter")
             {
-                panel126.Visible = true;
-                label137.Text = names.ElementAt(31);
-                pictureBox119.ImageLocation = pics.ElementAt(31);
+                panel32.Visible = true;
+                label39.Text = names.ElementAt(31);
+                pictureBox25.ImageLocation = pics.ElementAt(31);
             }
             else
             {
-                panel126.Visible = false;
+                panel32.Visible = false;
             }
             if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Starter")
             {
-                panel130.Visible = true;
-                label141.Text = names.ElementAt(32);
-                pictureBox123.ImageLocation = pics.ElementAt(32);
+                panel36.Visible = true;
+                label43.Text = names.ElementAt(32);
+                pictureBox29.ImageLocation = pics.ElementAt(32);
             }
             else
             {
-                panel130.Visible = false;
+                panel36.Visible = false;
             }
             if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Starter")
             {
-                panel134.Visible = true;
-                label145.Text = names.ElementAt(33);
-                pictureBox127.ImageLocation = pics.ElementAt(33);
+                panel40.Visible = true;
+                label47.Text = names.ElementAt(33);
+                pictureBox33.ImageLocation = pics.ElementAt(33);
             }
             else
             {
-                panel134.Visible = false;
+                panel40.Visible = false;
             }
             if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Starter")
             {
-                panel138.Visible = true;
-                label149.Text = names.ElementAt(34);
-                pictureBox131.ImageLocation = pics.ElementAt(34);
+                panel44.Visible = true;
+                label51.Text = names.ElementAt(34);
+                pictureBox37.ImageLocation = pics.ElementAt(34);
             }
             else
             {
-                panel138.Visible = false;
+                panel44.Visible = false;
             }
             if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Starter")
             {
-                panel142.Visible = true;
-                label153.Text = names.ElementAt(34);
-                pictureBox135.ImageLocation = pics.ElementAt(35);
+                panel48.Visible = true;
+                label55.Text = names.ElementAt(35);
+                pictureBox41.ImageLocation = pics.ElementAt(35);
             }
             else
             {
-                panel142.Visible = false;
+                panel48.Visible = false;
             }
             if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Starter")
             {
-                panel146.Visible = true;
-                label157.Text = names.ElementAt(36);
-                pictureBox139.ImageLocation = pics.ElementAt(36);
+                panel52.Visible = true;
+                label59.Text = names.ElementAt(36);
+                pictureBox45.ImageLocation = pics.ElementAt(36);
             }
             else
             {
-                panel146.Visible = false;
+                panel52.Visible = false;
             }
             if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Starter")
             {
-                panel150.Visible = true;
-                label161.Text = names.ElementAt(37);
-                pictureBox143.ImageLocation = pics.ElementAt(37);
+                panel56.Visible = true;
+                label63.Text = names.ElementAt(37);
+                pictureBox49.ImageLocation = pics.ElementAt(37);
             }
             else
             {
-                panel150.Visible = false;
+                panel56.Visible = false;
             }
             if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Starter")
             {
-                panel154.Visible = true;
-                label165.Text = names.ElementAt(38);
-                pictureBox147.ImageLocation = pics.ElementAt(38);
+                panel60.Visible = true;
+                label67.Text = names.ElementAt(38);
+                pictureBox53.ImageLocation = pics.ElementAt(38);
             }
             else
             {
-                panel154.Visible = false;
+                panel60.Visible = false;
             }
             if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Starter")
             {
-                panel158.Visible = true;
-                label169.Text = names.ElementAt(39);
-                pictureBox151.ImageLocation = pics.ElementAt(39);
+                panel64.Visible = true;
+                label71.Text = names.ElementAt(39);
+                pictureBox57.ImageLocation = pics.ElementAt(39);
             }
-            else
-            {
-                panel158.Visible = false;
-            }
-            
 
 
             //2nd row*****************************
@@ -1229,6 +1224,7 @@ namespace Restuarent
             {
                 panel159.Visible = false;
             }
+
 
 
             //3rd row*****************************
@@ -2066,7 +2062,7 @@ namespace Restuarent
                 timer1.Enabled = false;
                 LogIn lg = new LogIn();
                 lg.Show();
-                this.Hide();
+                this.Close();
             }
             else if (dialogResult == DialogResult.No)
             {
