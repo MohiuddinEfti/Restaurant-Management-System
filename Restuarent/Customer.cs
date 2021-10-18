@@ -1081,6 +1081,16 @@ namespace Restuarent
             {
                 panel137.Visible = false;
             }
+            if (status.ElementAt(7) == "active" && type.ElementAt(7) == "Dessert")
+            {
+                panel133.Visible = true;
+                label144.Text = names.ElementAt(7);
+                pictureBox126.ImageLocation = pics.ElementAt(7);
+            }
+            else
+            {
+                panel133.Visible = false;
+            }
 
 
 
