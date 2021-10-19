@@ -36,7 +36,7 @@ namespace Restuarent
         List<string> DATA = new List<string>();
         List<string> ADDorder = new List<string>();
         List<int> it = new List<int>();
-
+        
         public string orders;
         public bool its;
         private void button9_Click(object sender, EventArgs e)
@@ -71,7 +71,16 @@ namespace Restuarent
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            pics.Clear();
+            prices.Clear();
+            names.Clear();
+            status.Clear();
+            type.Clear();
+            DATA.Clear();
+            ADDorder.Clear();
+            it.Clear();
+
+
             button25.Visible = false;
             panel1.Visible = false;
             label9.Visible = false;
