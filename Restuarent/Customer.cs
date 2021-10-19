@@ -17,11 +17,7 @@ namespace Restuarent
             InitializeComponent();
         }
         
-        
-        //1st row
-        
-
-
+       
        
         private void taka_Click(object sender, EventArgs e)
         {
