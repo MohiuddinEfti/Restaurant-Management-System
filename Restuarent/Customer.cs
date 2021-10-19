@@ -82,87 +82,7 @@ namespace Restuarent
             label15.Visible = false;
             label13.Visible = false;
             button22.Visible = false;
-            label8.Text = tbno.ToString();
-            Burgers.Text = 0.ToString();
-            RiceBowls.Text = 0.ToString();
-            Pizzas.Text = 0.ToString();
-            
-            Dumplings.Text = 0.ToString();
-            Pastrys.Text = 0.ToString();
-            Cokes.Text = 0.ToString();
-            Waters.Text = 0.ToString();
-            textBox4.Text= 0.ToString();
-            textBox5.Text = 0.ToString();
-            textBox6.Text = 0.ToString();
-            textBox7.Text = 0.ToString();
-            textBox8.Text = 0.ToString();
-            textBox9.Text = 0.ToString();
-            textBox10.Text = 0.ToString();
-            textBox11.Text = 0.ToString();
-            textBox12.Text = 0.ToString();
-            textBox13.Text = 0.ToString();
-            textBox14.Text = 0.ToString();
-            textBox15.Text = 0.ToString();
-            textBox16.Text = 0.ToString();
-            textBox17.Text = 0.ToString();
-            textBox18.Text = 0.ToString();
-            textBox19.Text = 0.ToString();
-            textBox20.Text = 0.ToString();
-            textBox21.Text = 0.ToString();
-            
-            textBox23.Text = 0.ToString();
-            textBox24.Text = 0.ToString();
-            textBox25.Text = 0.ToString();
-            textBox26.Text = 0.ToString();
-            textBox27.Text = 0.ToString();
-            textBox28.Text = 0.ToString();
-            textBox29.Text = 0.ToString();
-            textBox30.Text = 0.ToString();
-            textBox31.Text = 0.ToString();
-            textBox32.Text = 0.ToString();
-            textBox33.Text = 0.ToString();
-            textBox34.Text = 0.ToString();
-            textBox35.Text = 0.ToString();
-            textBox36.Text = 0.ToString();
-            textBox37.Text = 0.ToString();
-            textBox38.Text = 0.ToString();
-            textBox39.Text = 0.ToString();
-            textBox40.Text = 0.ToString();
-            textBox41.Text = 0.ToString();
-            textBox42.Text = 0.ToString();
-            textBox43.Text = 0.ToString();
-            textBox44.Text = 0.ToString();
-            textBox45.Text = 0.ToString();
-            textBox46.Text = 0.ToString();
-            textBox47.Text = 0.ToString();
-            textBox48.Text = 0.ToString();
-            textBox49.Text = 0.ToString();
-            textBox50.Text = 0.ToString();
-            textBox51.Text = 0.ToString();
-            textBox52.Text = 0.ToString();
-            textBox53.Text = 0.ToString();
-            textBox54.Text = 0.ToString();
-            textBox55.Text = 0.ToString();
-            textBox56.Text = 0.ToString();
-            textBox57.Text = 0.ToString();
-            textBox58.Text = 0.ToString();
-            textBox59.Text = 0.ToString();
-            textBox60.Text = 0.ToString();
-            textBox61.Text = 0.ToString();
-            textBox62.Text = 0.ToString();
-            textBox63.Text = 0.ToString();
-            textBox64.Text = 0.ToString();
-            textBox65.Text = 0.ToString();
-            textBox66.Text = 0.ToString();
-            textBox67.Text = 0.ToString();
-            textBox68.Text = 0.ToString();
-            textBox69.Text = 0.ToString();
-            textBox70.Text = 0.ToString();
-            textBox71.Text = 0.ToString();
-            textBox72.Text = 0.ToString();
-            textBox73.Text = 0.ToString();
-            textBox74.Text = 0.ToString();
-            textBox75.Text = 0.ToString();
+           
 
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
             connection.Open();
@@ -184,7 +104,22 @@ namespace Restuarent
 
             }
             connection.Close();
-            
+            for(int te=0;te<=39;te++)
+            {
+                it.Insert(te, 0);
+                DATA.Insert(te, "");
+                ADDorder.Insert(te, "");
+                if(prices.ElementAt(te)!=null)
+                {
+                    prices.Insert(te, prices.ElementAt(te));
+                    
+                }
+                else
+                {
+                    prices.Insert(te, 0);
+                }
+                
+            }
 
             //1st row*****************************
             if (status.ElementAt(0)=="active"&&type.ElementAt(0)=="Starter")
@@ -1851,28 +1786,35 @@ namespace Restuarent
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-           
-          /*  i++;
+            int op= 0;
+            Plus(1, 0);
+            /*/
+            int i=it.ElementAt(op);
+            i++;
+            it.RemoveAt(op);
+            it.Insert(op, i);
             Burgers.Text = i.ToString();
-            int cash =  i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
+            int cash = it.ElementAt(0) * prices.ElementAt(0)+ it.ElementAt(1) * prices.ElementAt(1) + it.ElementAt(2) * prices.ElementAt(2) + it.ElementAt(3) * prices.ElementAt(3) + it.ElementAt(4) * prices.ElementAt(4) + it.ElementAt(5) * prices.ElementAt(5) + it.ElementAt(6) * prices.ElementAt(6) + it.ElementAt(7) * prices.ElementAt(7) + it.ElementAt(8) * prices.ElementAt(8) + it.ElementAt(9) * prices.ElementAt(9) + it.ElementAt(10) * prices.ElementAt(10) + it.ElementAt(11) * prices.ElementAt(11) + it.ElementAt(12) * prices.ElementAt(12) + it.ElementAt(13) * prices.ElementAt(13) + it.ElementAt(14) * prices.ElementAt(14) + it.ElementAt(15) * prices.ElementAt(15) + it.ElementAt(16) * prices.ElementAt(16) + it.ElementAt(17) * prices.ElementAt(17) + it.ElementAt(18) * prices.ElementAt(18) + it.ElementAt(19) * prices.ElementAt(19) + it.ElementAt(20) * prices.ElementAt(20) + it.ElementAt(21) * prices.ElementAt(21) + it.ElementAt(22) * prices.ElementAt(22) + it.ElementAt(23) * prices.ElementAt(23) + it.ElementAt(24) * prices.ElementAt(24) + it.ElementAt(25) * prices.ElementAt(25) + it.ElementAt(26) * prices.ElementAt(26) + it.ElementAt(27) * prices.ElementAt(27) + it.ElementAt(28) * prices.ElementAt(28) + it.ElementAt(29) * prices.ElementAt(29) + it.ElementAt(30) * prices.ElementAt(30) + it.ElementAt(31) * prices.ElementAt(31) + it.ElementAt(32) * prices.ElementAt(32) + it.ElementAt(33) * prices.ElementAt(33) + it.ElementAt(34) * prices.ElementAt(34) + it.ElementAt(35) * prices.ElementAt(35) + it.ElementAt(36) * prices.ElementAt(36) + it.ElementAt(37) * prices.ElementAt(37) + it.ElementAt(38) * prices.ElementAt(38) + it.ElementAt(39) * prices.ElementAt(39);
             taka.Text = cash.ToString();
             amount = cash;
             if (i > 0)
             {
 
 
-                addorder1 = name1 + "**********" + i.ToString() + " Quantity, Price: " + (i * price1).ToString() + "\n";
-                Data1 = name1 + "**********" + i.ToString() + "\n";
-                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
-
+                ADDorder.Insert(op, names.ElementAt(0) + "**********" + it.ElementAt(0) + " Quantity, Price: " + (it.ElementAt(0) * prices.ElementAt(0)).ToString() + "\n") ;
+                DATA.Insert(op, names.ElementAt(0) + "**********" + i.ToString() + "\n") ;
+                richTextBox1.Text = ADDorder.ElementAt(0)+ ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+                ADDorder.RemoveAt(op);
+                DATA.RemoveAt(op);
 
 
             }
             else
             {
-                addorder1 = "";
-                Data1 = "";
-                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+                ADDorder.Insert(0,"");
+                DATA.Insert(0,"");
+                richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
 
             }*/
 
@@ -1880,34 +1822,41 @@ namespace Restuarent
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if (Int32.Parse(Burgers.Text) > 0)
+            int op = 0;
+            /*if (it.ElementAt(op) > 0)
             {
 
-                
-               /* i--;
+               
+                int i = it.ElementAt(op);
+                i--;
+                it.RemoveAt(op);
+                it.Insert(op, i);
                 Burgers.Text = i.ToString();
-                int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
+                int cash = it.ElementAt(0) * prices.ElementAt(0) + it.ElementAt(1) * prices.ElementAt(1) + it.ElementAt(2) * prices.ElementAt(2) + it.ElementAt(3) * prices.ElementAt(3) + it.ElementAt(4) * prices.ElementAt(4) + it.ElementAt(5) * prices.ElementAt(5) + it.ElementAt(6) * prices.ElementAt(6) + it.ElementAt(7) * prices.ElementAt(7) + it.ElementAt(8) * prices.ElementAt(8) + it.ElementAt(9) * prices.ElementAt(9) + it.ElementAt(10) * prices.ElementAt(10) + it.ElementAt(11) * prices.ElementAt(11) + it.ElementAt(12) * prices.ElementAt(12) + it.ElementAt(13) * prices.ElementAt(13) + it.ElementAt(14) * prices.ElementAt(14) + it.ElementAt(15) * prices.ElementAt(15) + it.ElementAt(16) * prices.ElementAt(16) + it.ElementAt(17) * prices.ElementAt(17) + it.ElementAt(18) * prices.ElementAt(18) + it.ElementAt(19) * prices.ElementAt(19) + it.ElementAt(20) * prices.ElementAt(20) + it.ElementAt(21) * prices.ElementAt(21) + it.ElementAt(22) * prices.ElementAt(22) + it.ElementAt(23) * prices.ElementAt(23) + it.ElementAt(24) * prices.ElementAt(24) + it.ElementAt(25) * prices.ElementAt(25) + it.ElementAt(26) * prices.ElementAt(26) + it.ElementAt(27) * prices.ElementAt(27) + it.ElementAt(28) * prices.ElementAt(28) + it.ElementAt(29) * prices.ElementAt(29) + it.ElementAt(30) * prices.ElementAt(30) + it.ElementAt(31) * prices.ElementAt(31) + it.ElementAt(32) * prices.ElementAt(32) + it.ElementAt(33) * prices.ElementAt(33) + it.ElementAt(34) * prices.ElementAt(34) + it.ElementAt(35) * prices.ElementAt(35) + it.ElementAt(36) * prices.ElementAt(36) + it.ElementAt(37) * prices.ElementAt(37) + it.ElementAt(38) * prices.ElementAt(38) + it.ElementAt(39) * prices.ElementAt(39);
                 taka.Text = cash.ToString();
                 amount = cash;
                 if (i > 0)
                 {
-                    
 
-                    addorder1 = name1 + "**********" + i.ToString() + " Quantity, Price: " + (i * price1).ToString() + "\n";
-                    Data1 = name1 + "**********" + i.ToString() + "\n";
-                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
+                    ADDorder.Insert(op, names.ElementAt(0) + "**********" + it.ElementAt(0) + " Quantity, Price: " + (it.ElementAt(0) * prices.ElementAt(0)).ToString() + "\n");
+                    DATA.Insert(op, names.ElementAt(0) + "**********" + i.ToString() + "\n");
+                    richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+                    ADDorder.RemoveAt(op);
+                    DATA.RemoveAt(op);
 
 
                 }
                 else
                 {
-                    addorder1 = "";
-                    Data1 = "";
-                    richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+                    ADDorder.Insert(0, "");
+                    DATA.Insert(0, "");
+                    richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-                }*/
 
-            }
+                }
+
+            }*/
         }
 
         private void button4_Click_1(object sender, EventArgs e)
@@ -1938,10 +1887,10 @@ namespace Restuarent
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            if (Int32.Parse(RiceBowls.Text) > 0)
+            /*if (Int32.Parse(RiceBowls.Text) > 0)
             {
                 
-               /* n--;
+                n--;
                 RiceBowls.Text = n.ToString();
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
@@ -1961,8 +1910,8 @@ namespace Restuarent
                     Data2 = "";
                     richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-                }*/
-            }
+                }
+            }*/
         }
 
         private void button6_Click_1(object sender, EventArgs e)
@@ -2077,26 +2026,35 @@ namespace Restuarent
 
         private void button19_Click(object sender, EventArgs e)
         {
-            
-           /* c++;
-            Dumplings.Text = c.ToString();
-            int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
+            int op = 1;
+
+            /*
+            int i = it.ElementAt(op);
+            i++;
+            it.RemoveAt(op);
+            it.Insert(op, i);
+            Dumplings.Text = i.ToString();
+            int cash = it.ElementAt(0) * prices.ElementAt(0) + it.ElementAt(1) * prices.ElementAt(1) + it.ElementAt(2) * prices.ElementAt(2) + it.ElementAt(3) * prices.ElementAt(3) + it.ElementAt(4) * prices.ElementAt(4) + it.ElementAt(5) * prices.ElementAt(5) + it.ElementAt(6) * prices.ElementAt(6) + it.ElementAt(7) * prices.ElementAt(7) + it.ElementAt(8) * prices.ElementAt(8) + it.ElementAt(9) * prices.ElementAt(9) + it.ElementAt(10) * prices.ElementAt(10) + it.ElementAt(11) * prices.ElementAt(11) + it.ElementAt(12) * prices.ElementAt(12) + it.ElementAt(13) * prices.ElementAt(13) + it.ElementAt(14) * prices.ElementAt(14) + it.ElementAt(15) * prices.ElementAt(15) + it.ElementAt(16) * prices.ElementAt(16) + it.ElementAt(17) * prices.ElementAt(17) + it.ElementAt(18) * prices.ElementAt(18) + it.ElementAt(19) * prices.ElementAt(19) + it.ElementAt(20) * prices.ElementAt(20) + it.ElementAt(21) * prices.ElementAt(21) + it.ElementAt(22) * prices.ElementAt(22) + it.ElementAt(23) * prices.ElementAt(23) + it.ElementAt(24) * prices.ElementAt(24) + it.ElementAt(25) * prices.ElementAt(25) + it.ElementAt(26) * prices.ElementAt(26) + it.ElementAt(27) * prices.ElementAt(27) + it.ElementAt(28) * prices.ElementAt(28) + it.ElementAt(29) * prices.ElementAt(29) + it.ElementAt(30) * prices.ElementAt(30) + it.ElementAt(31) * prices.ElementAt(31) + it.ElementAt(32) * prices.ElementAt(32) + it.ElementAt(33) * prices.ElementAt(33) + it.ElementAt(34) * prices.ElementAt(34) + it.ElementAt(35) * prices.ElementAt(35) + it.ElementAt(36) * prices.ElementAt(36) + it.ElementAt(37) * prices.ElementAt(37) + it.ElementAt(38) * prices.ElementAt(38) + it.ElementAt(39) * prices.ElementAt(39);
             taka.Text = cash.ToString();
             amount = cash;
-            if (c > 0)
+            if (i > 0)
             {
 
 
-                addorder5 = name5 + "**********" + c.ToString() + " Quantity, Price: " + (c * price5).ToString() + "\n";
-                Data5= name5 + "**********" + c.ToString() + "\n";
-                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+                ADDorder.Insert(op, names.ElementAt(0) + "**********" + it.ElementAt(0) + " Quantity, Price: " + (it.ElementAt(0) * prices.ElementAt(0)).ToString() + "\n");
+                DATA.Insert(op, names.ElementAt(0) + "**********" + i.ToString() + "\n");
+                richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+                ADDorder.RemoveAt(op);
+                DATA.RemoveAt(op);
+
 
             }
             else
             {
-                addorder5 = "";
-                Data5 = "";
-                richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+                ADDorder.Insert(0, "");
+                DATA.Insert(0, "");
+                richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
 
             }*/
         }
@@ -2315,10 +2273,11 @@ namespace Restuarent
 
         private void button10_Click(object sender, EventArgs e)
         {
-           /* richTextBox1.Visible = true;
+           richTextBox1.Visible = true;
             label9.Visible = true;
-            richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
-            orders= addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+            //richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
+            /*orders= addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
         */
         }
 
@@ -2549,7 +2508,191 @@ namespace Restuarent
 
         }
 
-        
-        
+        private void button27_Click(object sender, EventArgs e)
+        {
+            int op = 2;
+
+            /*
+            int i = it.ElementAt(op);
+            i++;
+            it.RemoveAt(op);
+            it.Insert(op, i);
+            textBox4.Text = i.ToString();
+            int cash = it.ElementAt(0) * prices.ElementAt(0) + it.ElementAt(1) * prices.ElementAt(1) + it.ElementAt(2) * prices.ElementAt(2) + it.ElementAt(3) * prices.ElementAt(3) + it.ElementAt(4) * prices.ElementAt(4) + it.ElementAt(5) * prices.ElementAt(5) + it.ElementAt(6) * prices.ElementAt(6) + it.ElementAt(7) * prices.ElementAt(7) + it.ElementAt(8) * prices.ElementAt(8) + it.ElementAt(9) * prices.ElementAt(9) + it.ElementAt(10) * prices.ElementAt(10) + it.ElementAt(11) * prices.ElementAt(11) + it.ElementAt(12) * prices.ElementAt(12) + it.ElementAt(13) * prices.ElementAt(13) + it.ElementAt(14) * prices.ElementAt(14) + it.ElementAt(15) * prices.ElementAt(15) + it.ElementAt(16) * prices.ElementAt(16) + it.ElementAt(17) * prices.ElementAt(17) + it.ElementAt(18) * prices.ElementAt(18) + it.ElementAt(19) * prices.ElementAt(19) + it.ElementAt(20) * prices.ElementAt(20) + it.ElementAt(21) * prices.ElementAt(21) + it.ElementAt(22) * prices.ElementAt(22) + it.ElementAt(23) * prices.ElementAt(23) + it.ElementAt(24) * prices.ElementAt(24) + it.ElementAt(25) * prices.ElementAt(25) + it.ElementAt(26) * prices.ElementAt(26) + it.ElementAt(27) * prices.ElementAt(27) + it.ElementAt(28) * prices.ElementAt(28) + it.ElementAt(29) * prices.ElementAt(29) + it.ElementAt(30) * prices.ElementAt(30) + it.ElementAt(31) * prices.ElementAt(31) + it.ElementAt(32) * prices.ElementAt(32) + it.ElementAt(33) * prices.ElementAt(33) + it.ElementAt(34) * prices.ElementAt(34) + it.ElementAt(35) * prices.ElementAt(35) + it.ElementAt(36) * prices.ElementAt(36) + it.ElementAt(37) * prices.ElementAt(37) + it.ElementAt(38) * prices.ElementAt(38) + it.ElementAt(39) * prices.ElementAt(39);
+            taka.Text = cash.ToString();
+            amount = cash;
+            if (i > 0)
+            {
+
+
+                ADDorder.Insert(op, names.ElementAt(0) + "**********" + it.ElementAt(0) + " Quantity, Price: " + (it.ElementAt(0) * prices.ElementAt(0)).ToString() + "\n");
+                DATA.Insert(op, names.ElementAt(0) + "**********" + i.ToString() + "\n");
+                richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+                ADDorder.RemoveAt(op);
+                DATA.RemoveAt(op);
+
+
+            }
+            else
+            {
+                ADDorder.Insert(0, "");
+                DATA.Insert(0, "");
+                richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
+
+            }*/
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            int op = 3;
+
+
+        }
+
+        private void button43_Click(object sender, EventArgs e)
+        {
+            int op = 4;
+
+        }
+
+        private void button51_Click(object sender, EventArgs e)
+        {
+            int op = 5;
+
+        }
+
+        private void button59_Click(object sender, EventArgs e)
+        {
+            int op = 6;
+
+
+        }
+
+        private void button67_Click(object sender, EventArgs e)
+        {
+            int op = 7;
+
+        }
+
+        private void button73_Click(object sender, EventArgs e)
+        {
+            int op = 8;
+
+        }
+
+        private void button81_Click(object sender, EventArgs e)
+        {
+            int op = 9;
+
+        }
+
+        private void button89_Click(object sender, EventArgs e)
+        {
+            int op = 10;
+
+        }
+
+        private void button97_Click(object sender, EventArgs e)
+        {
+            int op = 11;
+
+        }
+
+        private void button105_Click(object sender, EventArgs e)
+        {
+            int op = 12;
+
+        }
+
+        private void button113_Click(object sender, EventArgs e)
+        {
+            int op = 13;
+
+        }
+
+        private void button121_Click(object sender, EventArgs e)
+        {
+            int op = 14;
+
+        }
+
+        private void button129_Click(object sender, EventArgs e)
+        {
+            int op = 15;
+
+        }
+
+        private void button137_Click(object sender, EventArgs e)
+        {
+            int op = 16;
+
+        }
+
+        private void button145_Click(object sender, EventArgs e)
+        {
+            int op = 17;
+
+        }
+
+        private void button153_Click(object sender, EventArgs e)
+        {
+            int op = 18;
+
+        }
+
+        private void button161_Click(object sender, EventArgs e)
+        {
+            int op = 19;
+
+        }
+
+        private void button169_Click(object sender, EventArgs e)
+        {
+            int op = 20;
+
+
+            
+        }
+
+        public void Plus(int row, int number)
+        {
+            int op = number;
+
+
+            int i = it.ElementAt(op);
+            i++;
+            it.RemoveAt(op);
+            it.Insert(op, i);
+            if(row==1&&number==0)
+            {
+                Burgers.Text = i.ToString();
+            }
+            
+            int cash = it.ElementAt(0) * prices.ElementAt(0) + it.ElementAt(1) * prices.ElementAt(1) + it.ElementAt(2) * prices.ElementAt(2) + it.ElementAt(3) * prices.ElementAt(3) + it.ElementAt(4) * prices.ElementAt(4) + it.ElementAt(5) * prices.ElementAt(5) + it.ElementAt(6) * prices.ElementAt(6) + it.ElementAt(7) * prices.ElementAt(7) + it.ElementAt(8) * prices.ElementAt(8) + it.ElementAt(9) * prices.ElementAt(9) + it.ElementAt(10) * prices.ElementAt(10) + it.ElementAt(11) * prices.ElementAt(11) + it.ElementAt(12) * prices.ElementAt(12) + it.ElementAt(13) * prices.ElementAt(13) + it.ElementAt(14) * prices.ElementAt(14) + it.ElementAt(15) * prices.ElementAt(15) + it.ElementAt(16) * prices.ElementAt(16) + it.ElementAt(17) * prices.ElementAt(17) + it.ElementAt(18) * prices.ElementAt(18) + it.ElementAt(19) * prices.ElementAt(19) + it.ElementAt(20) * prices.ElementAt(20) + it.ElementAt(21) * prices.ElementAt(21) + it.ElementAt(22) * prices.ElementAt(22) + it.ElementAt(23) * prices.ElementAt(23) + it.ElementAt(24) * prices.ElementAt(24) + it.ElementAt(25) * prices.ElementAt(25) + it.ElementAt(26) * prices.ElementAt(26) + it.ElementAt(27) * prices.ElementAt(27) + it.ElementAt(28) * prices.ElementAt(28) + it.ElementAt(29) * prices.ElementAt(29) + it.ElementAt(30) * prices.ElementAt(30) + it.ElementAt(31) * prices.ElementAt(31) + it.ElementAt(32) * prices.ElementAt(32) + it.ElementAt(33) * prices.ElementAt(33) + it.ElementAt(34) * prices.ElementAt(34) + it.ElementAt(35) * prices.ElementAt(35) + it.ElementAt(36) * prices.ElementAt(36) + it.ElementAt(37) * prices.ElementAt(37) + it.ElementAt(38) * prices.ElementAt(38) + it.ElementAt(39) * prices.ElementAt(39);
+            taka.Text = cash.ToString();
+            amount = cash;
+            if (i > 0)
+            {
+
+
+                ADDorder.Insert(op, names.ElementAt(0) + "**********" + it.ElementAt(0) + " Quantity, Price: " + (it.ElementAt(0) * prices.ElementAt(0)).ToString() + "\n");
+                DATA.Insert(op, names.ElementAt(0) + "**********" + i.ToString() + "\n");
+                richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+                ADDorder.RemoveAt(op);
+                DATA.RemoveAt(op);
+
+
+            }
+            else
+            {
+                ADDorder.Insert(0, "");
+                DATA.Insert(0, "");
+                richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+
+
+            }
+        }
+
     }
 }
