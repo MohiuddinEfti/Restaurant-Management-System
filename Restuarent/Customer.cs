@@ -90,7 +90,7 @@ namespace Restuarent
             Burgers.Text = 0.ToString();
             RiceBowls.Text = 0.ToString();
             Pizzas.Text = 0.ToString();
-            Sawrmas.Text = 0.ToString();
+            
             Dumplings.Text = 0.ToString();
             Pastrys.Text = 0.ToString();
             Cokes.Text = 0.ToString();
@@ -113,7 +113,7 @@ namespace Restuarent
             textBox19.Text = 0.ToString();
             textBox20.Text = 0.ToString();
             textBox21.Text = 0.ToString();
-            textBox22.Text = 0.ToString();
+            
             textBox23.Text = 0.ToString();
             textBox24.Text = 0.ToString();
             textBox25.Text = 0.ToString();
@@ -600,193 +600,193 @@ namespace Restuarent
             //2nd row*****************************
             if (status.ElementAt(0) == "active" && type.ElementAt(0) == "Main course")
             {
-                panel2.Visible = true;
-                RicebowlLab.Text = names.ElementAt(0);
-                pictureBox1.ImageLocation = pics.ElementAt(0);
+                panel155.Visible = true;
+                label166.Text = names.ElementAt(0);
+                pictureBox148.ImageLocation = pics.ElementAt(0);
             }
             else
             {
-                panel2.Visible = false;
+                panel155.Visible = false;
             }
             if (status.ElementAt(1) == "active" && type.ElementAt(1) == "Main course")
             {
-                panel7.Visible = true;
-                Pastrylab.Text = names.ElementAt(1);
-                Pastrypic.ImageLocation = pics.ElementAt(1);
+                panel159.Visible = true;
+                label170.Text = names.ElementAt(1);
+                pictureBox152.ImageLocation = pics.ElementAt(1);
             }
             else
             {
-                panel7.Visible = false;
+                panel159.Visible = false;
             }
             if (status.ElementAt(2) == "active" && type.ElementAt(2) == "Main course")
             {
-                panel11.Visible = true;
-                label18.Text = names.ElementAt(2);
-                pictureBox4.ImageLocation = pics.ElementAt(2);
+                panel151.Visible = true;
+                label162.Text = names.ElementAt(2);
+                pictureBox144.ImageLocation = pics.ElementAt(2);
             }
             else
             {
-                panel11.Visible = false;
+                panel151.Visible = false;
             }
             if (status.ElementAt(3) == "active" && type.ElementAt(3) == "Main course")
             {
-                panel15.Visible = true;
-                label22.Text = names.ElementAt(3);
-                pictureBox8.ImageLocation = pics.ElementAt(3);
+                panel147.Visible = true;
+                label158.Text = names.ElementAt(3);
+                pictureBox140.ImageLocation = pics.ElementAt(3);
             }
             else
             {
-                panel15.Visible = false;
+                panel147.Visible = false;
             }
             if (status.ElementAt(4) == "active" && type.ElementAt(4) == "Main course")
             {
-                panel19.Visible = true;
-                label26.Text = names.ElementAt(4);
-                pictureBox12.ImageLocation = pics.ElementAt(4);
+                panel143.Visible = true;
+                label154.Text = names.ElementAt(4);
+                pictureBox136.ImageLocation = pics.ElementAt(4);
             }
             else
             {
-                panel19.Visible = false;
+                panel143.Visible = false;
             }
             if (status.ElementAt(5) == "active" && type.ElementAt(5) == "Main course")
             {
-                panel23.Visible = true;
-                label30.Text = names.ElementAt(5);
-                pictureBox16.ImageLocation = pics.ElementAt(5);
+                panel139.Visible = true;
+                label150.Text = names.ElementAt(5);
+                pictureBox132.ImageLocation = pics.ElementAt(5);
             }
             else
             {
-                panel23.Visible = false;
+                panel139.Visible = false;
             }
             if (status.ElementAt(6) == "active" && type.ElementAt(6) == "Main course")
             {
-                panel27.Visible = true;
-                label34.Text = names.ElementAt(6);
-                pictureBox20.ImageLocation = pics.ElementAt(6);
+                panel135.Visible = true;
+                label146.Text = names.ElementAt(6);
+                pictureBox128.ImageLocation = pics.ElementAt(6);
             }
             else
             {
-                panel27.Visible = false;
+                panel135.Visible = false;
             }
             if (status.ElementAt(7) == "active" && type.ElementAt(7) == "Main course")
             {
-                panel31.Visible = true;
-                label38.Text = names.ElementAt(7);
-                pictureBox24.ImageLocation = pics.ElementAt(7);
+                panel131.Visible = true;
+                label142.Text = names.ElementAt(7);
+                pictureBox124.ImageLocation = pics.ElementAt(7);
             }
             else
             {
-                panel31.Visible = false;
+                panel131.Visible = false;
             }
             if (status.ElementAt(8) == "active" && type.ElementAt(8) == "Main course")
             {
-                panel35.Visible = true;
-                label42.Text = names.ElementAt(8);
-                pictureBox28.ImageLocation = pics.ElementAt(8);
+                panel127.Visible = true;
+                label138.Text = names.ElementAt(8);
+                pictureBox120.ImageLocation = pics.ElementAt(8);
             }
             else
             {
-                panel35.Visible = false;
+                panel127.Visible = false;
             }
             if (status.ElementAt(9) == "active" && type.ElementAt(9) == "Main course")
             {
-                panel39.Visible = true;
-                label46.Text = names.ElementAt(9);
-                pictureBox32.ImageLocation = pics.ElementAt(9);
+                panel123.Visible = true;
+                label134.Text = names.ElementAt(9);
+                pictureBox116.ImageLocation = pics.ElementAt(9);
             }
             else
             {
-                panel39.Visible = false;
+                panel123.Visible = false;
             }
             if (status.ElementAt(10) == "active" && type.ElementAt(10) == "Main course")
             {
-                panel43.Visible = true;
-                label50.Text = names.ElementAt(10);
-                pictureBox36.ImageLocation = pics.ElementAt(10);
+                panel115.Visible = true;
+                label126.Text = names.ElementAt(10);
+                pictureBox108.ImageLocation = pics.ElementAt(10);
             }
             else
             {
-                panel43.Visible = false;
+                panel115.Visible = false;
             }
             if (status.ElementAt(11) == "active" && type.ElementAt(11) == "Main course")
             {
-                panel47.Visible = true;
-                label54.Text = names.ElementAt(11);
-                pictureBox40.ImageLocation = pics.ElementAt(11);
+                panel111.Visible = true;
+                label122.Text = names.ElementAt(11);
+                pictureBox104.ImageLocation = pics.ElementAt(11);
             }
             else
             {
-                panel47.Visible = false;
+                panel111.Visible = false;
             }
             if (status.ElementAt(12) == "active" && type.ElementAt(12) == "Main course")
             {
-                panel51.Visible = true;
-                label58.Text = names.ElementAt(12);
-                pictureBox44.ImageLocation = pics.ElementAt(12);
+                panel107.Visible = true;
+                label118.Text = names.ElementAt(12);
+                pictureBox100.ImageLocation = pics.ElementAt(12);
             }
             else
             {
-                panel51.Visible = false;
+                panel107.Visible = false;
             }
             if (status.ElementAt(13) == "active" && type.ElementAt(13) == "Main course")
             {
-                panel55.Visible = true;
-                label62.Text = names.ElementAt(13);
-                pictureBox48.ImageLocation = pics.ElementAt(13);
+                panel103.Visible = true;
+                label114.Text = names.ElementAt(13);
+                pictureBox96.ImageLocation = pics.ElementAt(13);
             }
             else
             {
-                panel55.Visible = false;
+                panel103.Visible = false;
             }
             if (status.ElementAt(14) == "active" && type.ElementAt(14) == "Main course")
             {
-                panel59.Visible = true;
-                label66.Text = names.ElementAt(14);
-                pictureBox52.ImageLocation = pics.ElementAt(14);
+                panel99.Visible = true;
+                label110.Text = names.ElementAt(14);
+                pictureBox92.ImageLocation = pics.ElementAt(14);
             }
             else
             {
-                panel59.Visible = false;
+                panel99.Visible = false;
             }
             if (status.ElementAt(15) == "active" && type.ElementAt(15) == "Main course")
             {
-                panel63.Visible = true;
-                label70.Text = names.ElementAt(15);
-                pictureBox56.ImageLocation = pics.ElementAt(15);
+                panel95.Visible = true;
+                label106.Text = names.ElementAt(15);
+                pictureBox88.ImageLocation = pics.ElementAt(15);
             }
             else
             {
-                panel63.Visible = false;
+                panel95.Visible = false;
             }
             if (status.ElementAt(16) == "active" && type.ElementAt(16) == "Main course")
             {
-                panel67.Visible = true;
-                label74.Text = names.ElementAt(16);
-                pictureBox60.ImageLocation = pics.ElementAt(16);
+                panel91.Visible = true;
+                label102.Text = names.ElementAt(16);
+                pictureBox84.ImageLocation = pics.ElementAt(16);
             }
             else
             {
-                panel67.Visible = false;
+                panel91.Visible = false;
             }
             if (status.ElementAt(17) == "active" && type.ElementAt(17) == "Main course")
             {
-                panel71.Visible = true;
-                label78.Text = names.ElementAt(16);
-                pictureBox64.ImageLocation = pics.ElementAt(16);
+                panel87.Visible = true;
+                label98.Text = names.ElementAt(16);
+                pictureBox80.ImageLocation = pics.ElementAt(16);
             }
             else
             {
-                panel71.Visible = false;
+                panel87.Visible = false;
             }
             if (status.ElementAt(18) == "active" && type.ElementAt(18) == "Main course")
             {
-                panel75.Visible = true;
-                label82.Text = names.ElementAt(18);
-                pictureBox68.ImageLocation = pics.ElementAt(18);
+                panel83.Visible = true;
+                label94.Text = names.ElementAt(18);
+                pictureBox76.ImageLocation = pics.ElementAt(18);
             }
             else
             {
-                panel75.Visible = false;
+                panel83.Visible = false;
             }
             if (status.ElementAt(19) == "active" && type.ElementAt(19) == "Main course")
             {
@@ -800,203 +800,203 @@ namespace Restuarent
             }
             if (status.ElementAt(20) == "active" && type.ElementAt(20) == "Main course")
             {
-                panel83.Visible = true;
-                label94.Text = names.ElementAt(20);
-                pictureBox76.ImageLocation = pics.ElementAt(20);
+                panel75.Visible = true;
+                label82.Text = names.ElementAt(20);
+                pictureBox68.ImageLocation = pics.ElementAt(20);
             }
             else
             {
-                panel83.Visible = false;
+                panel75.Visible = false;
             }
             if (status.ElementAt(21) == "active" && type.ElementAt(21) == "Main course")
             {
-                panel87.Visible = true;
-                label98.Text = names.ElementAt(21);
-                pictureBox80.ImageLocation = pics.ElementAt(21);
+                panel71.Visible = true;
+                label78.Text = names.ElementAt(21);
+                pictureBox64.ImageLocation = pics.ElementAt(21);
             }
             else
             {
-                panel87.Visible = false;
+                panel71.Visible = false;
             }
             if (status.ElementAt(22) == "active" && type.ElementAt(22) == "Main course")
             {
-                panel91.Visible = true;
-                label102.Text = names.ElementAt(21);
-                pictureBox84.ImageLocation = pics.ElementAt(22);
+                panel67.Visible = true;
+                label74.Text = names.ElementAt(21);
+                pictureBox60.ImageLocation = pics.ElementAt(22);
             }
             else
             {
-                panel91.Visible = false;
+                panel67.Visible = false;
             }
             if (status.ElementAt(23) == "active" && type.ElementAt(23) == "Main course")
             {
-                panel95.Visible = true;
-                label106.Text = names.ElementAt(23);
-                pictureBox88.ImageLocation = pics.ElementAt(23);
+                panel63.Visible = true;
+                label70.Text = names.ElementAt(23);
+                pictureBox56.ImageLocation = pics.ElementAt(23);
             }
             else
             {
-                panel95.Visible = false;
+                panel63.Visible = false;
             }
             if (status.ElementAt(24) == "active" && type.ElementAt(24) == "Main course")
             {
-                panel99.Visible = true;
-                label110.Text = names.ElementAt(24);
-                pictureBox92.ImageLocation = pics.ElementAt(24);
+                panel59.Visible = true;
+                label66.Text = names.ElementAt(24);
+                pictureBox52.ImageLocation = pics.ElementAt(24);
             }
             else
             {
-                panel99.Visible = false;
+                panel59.Visible = false;
             }
             if (status.ElementAt(25) == "active" && type.ElementAt(25) == "Main course")
             {
-                panel103.Visible = true;
-                label114.Text = names.ElementAt(25);
-                pictureBox96.ImageLocation = pics.ElementAt(25);
+                panel55.Visible = true;
+                label62.Text = names.ElementAt(25);
+                pictureBox48.ImageLocation = pics.ElementAt(25);
             }
             else
             {
-                panel103.Visible = false;
+                panel55.Visible = false;
             }
             if (status.ElementAt(26) == "active" && type.ElementAt(26) == "Main course")
             {
-                panel107.Visible = true;
-                label118.Text = names.ElementAt(26);
-                pictureBox100.ImageLocation = pics.ElementAt(26);
+                panel51.Visible = true;
+                label58.Text = names.ElementAt(26);
+                pictureBox44.ImageLocation = pics.ElementAt(26);
             }
             else
             {
-                panel107.Visible = false;
+                panel51.Visible = false;
             }
             if (status.ElementAt(27) == "active" && type.ElementAt(27) == "Main course")
             {
-                panel111.Visible = true;
-                label122.Text = names.ElementAt(27);
-                pictureBox104.ImageLocation = pics.ElementAt(27);
+                panel47.Visible = true;
+                label54.Text = names.ElementAt(27);
+                pictureBox40.ImageLocation = pics.ElementAt(27);
             }
             else
             {
-                panel111.Visible = false;
+                panel47.Visible = false;
             }
             if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Main course")
             {
-                panel115.Visible = true;
-                label126.Text = names.ElementAt(27);
-                pictureBox108.ImageLocation = pics.ElementAt(28);
+                panel43.Visible = true;
+                label50.Text = names.ElementAt(27);
+                pictureBox36.ImageLocation = pics.ElementAt(28);
             }
             else
             {
-                panel115.Visible = false;
+                panel43.Visible = false;
             }
             if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Main course")
             {
-                panel119.Visible = true;
-                label130.Text = names.ElementAt(29);
-                pictureBox112.ImageLocation = pics.ElementAt(29);
+                panel39.Visible = true;
+                label46.Text = names.ElementAt(29);
+                pictureBox32.ImageLocation = pics.ElementAt(29);
             }
             else
             {
-                panel119.Visible = false;
+                panel39.Visible = false;
             }
             if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Main course")
             {
-                panel123.Visible = true;
-                label134.Text = names.ElementAt(30);
-                pictureBox116.ImageLocation = pics.ElementAt(30);
+                panel35.Visible = true;
+                label42.Text = names.ElementAt(30);
+                pictureBox28.ImageLocation = pics.ElementAt(30);
             }
             else
             {
-                panel123.Visible = false;
+                panel35.Visible = false;
             }
             if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Main course")
             {
-                panel127.Visible = true;
-                label138.Text = names.ElementAt(31);
-                pictureBox120.ImageLocation = pics.ElementAt(31);
+                panel27.Visible = true;
+                label34.Text = names.ElementAt(31);
+                pictureBox20.ImageLocation = pics.ElementAt(31);
             }
             else
             {
-                panel127.Visible = false;
+                panel27.Visible = false;
             }           
             if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Main course")
             {
-                panel135.Visible = true;
-                label146.Text = names.ElementAt(32);
-                pictureBox128.ImageLocation = pics.ElementAt(32);
+                panel23.Visible = true;
+                label30.Text = names.ElementAt(32);
+                pictureBox16.ImageLocation = pics.ElementAt(32);
             }
             else
             {
-                panel135.Visible = false;
+                panel23.Visible = false;
             }
             if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Main course")
             {
-                panel139.Visible = true;
-                label150.Text = names.ElementAt(33);
-                pictureBox132.ImageLocation = pics.ElementAt(33);
+                panel19.Visible = true;
+                label26.Text = names.ElementAt(33);
+                pictureBox12.ImageLocation = pics.ElementAt(33);
             }
             else
             {
-                panel139.Visible = false;
+                panel19.Visible = false;
             }
             if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Main course")
             {
-                panel143.Visible = true;
-                label154.Text = names.ElementAt(34);
-                pictureBox136.ImageLocation = pics.ElementAt(34);
+                panel15.Visible = true;
+                label22.Text = names.ElementAt(34);
+                pictureBox8.ImageLocation = pics.ElementAt(34);
             }
             else
             {
-                panel143.Visible = false;
+                panel15.Visible = false;
             }
             if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Main course")
             {
-                panel147.Visible = true;
-                label158.Text = names.ElementAt(35);
-                pictureBox140.ImageLocation = pics.ElementAt(35);
+                panel11.Visible = true;
+                label18.Text = names.ElementAt(35);
+                pictureBox4.ImageLocation = pics.ElementAt(35);
             }
             else
             {
-                panel147.Visible = false;
+                panel11.Visible = false;
             }
             if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Main course")
             {
-                panel151.Visible = true;
-                label162.Text = names.ElementAt(36);
-                pictureBox144.ImageLocation = pics.ElementAt(36);
+                panel7.Visible = true;
+                Pastrylab.Text = names.ElementAt(36);
+                Pastrypic.ImageLocation = pics.ElementAt(36);
             }
             else
             {
-                panel151.Visible = false;
+                panel7.Visible = false;
             }
             if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Main course")
             {
-                panel155.Visible = true;
-                label166.Text = names.ElementAt(37);
-                pictureBox148.ImageLocation = pics.ElementAt(37);
+                panel2.Visible = true;
+                RicebowlLab.Text = names.ElementAt(37);
+                pictureBox1.ImageLocation = pics.ElementAt(37);
             }
             else
             {
-                panel155.Visible = false;
+                panel2.Visible = false;
             }
             if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Main course")
             {
-                panel159.Visible = true;
-                label170.Text = names.ElementAt(38);
-                pictureBox152.ImageLocation = pics.ElementAt(38);
+                panel160.Visible = true;
+                label171.Text = names.ElementAt(38);
+                pictureBox153.ImageLocation = pics.ElementAt(38);
             }
             else
             {
-                panel159.Visible = false;
+                panel160.Visible = false;
             }
             if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Main course")
             {
-                panel60.Visible = true;
-                label67.Text = names.ElementAt(39);
-                pictureBox53.ImageLocation = pics.ElementAt(39);
+                panel70.Visible = true;
+                label77.Text = names.ElementAt(39);
+                pictureBox63.ImageLocation = pics.ElementAt(39);
             }
             else
             {
-                panel60.Visible = false;
+                panel70.Visible = false;
             }
 
 
@@ -1411,16 +1411,7 @@ namespace Restuarent
             {
                 panel24.Visible = false;
             }
-            if (status.ElementAt(40) == "active" && type.ElementAt(40) == "Dessert")
-            {
-                panel70.Visible = true;
-                label77.Text = names.ElementAt(40);
-                pictureBox63.ImageLocation = pics.ElementAt(40);
-            }
-            else
-            {
-                panel70.Visible = false;
-            }
+            
 
 
 
@@ -1431,7 +1422,7 @@ namespace Restuarent
                 panel158.Visible = true;
                 label169.Text = names.ElementAt(0);
                 pictureBox151.ImageLocation = pics.ElementAt(0);
-            }
+            }//
             else
             {
                 panel158.Visible = false;
@@ -1441,7 +1432,7 @@ namespace Restuarent
                 panel154.Visible = true;
                 label165.Text = names.ElementAt(1);
                 pictureBox147.ImageLocation = pics.ElementAt(1);
-            }
+            }//
             else
             {
                 panel154.Visible = false;
@@ -1451,7 +1442,7 @@ namespace Restuarent
                 panel150.Visible = true;
                 label161.Text = names.ElementAt(2);
                 pictureBox143.ImageLocation = pics.ElementAt(2);
-            }
+            }//
             else
             {
                 panel150.Visible = false;
@@ -1461,7 +1452,7 @@ namespace Restuarent
                 panel146.Visible = true;
                 label157.Text = names.ElementAt(3);
                 pictureBox139.ImageLocation = pics.ElementAt(3);
-            }
+            }//
             else
             {
                 panel146.Visible = false;
@@ -1471,7 +1462,7 @@ namespace Restuarent
                 panel142.Visible = true;
                 label153.Text = names.ElementAt(4);
                 pictureBox135.ImageLocation = pics.ElementAt(4);
-            }
+            }//
             else
             {
                 panel142.Visible = false;
@@ -1481,7 +1472,7 @@ namespace Restuarent
                 panel138.Visible = true;
                 label149.Text = names.ElementAt(5);
                 pictureBox131.ImageLocation = pics.ElementAt(5);
-            }
+            }//
             else
             {
                 panel138.Visible = false;
@@ -1491,7 +1482,7 @@ namespace Restuarent
                 panel134.Visible = true;
                 label145.Text = names.ElementAt(6);
                 pictureBox127.ImageLocation = pics.ElementAt(6);
-            }
+            }//
             else
             {
                 panel134.Visible = false;
@@ -1501,7 +1492,7 @@ namespace Restuarent
                 panel130.Visible = true;
                 label141.Text = names.ElementAt(7);
                 pictureBox123.ImageLocation = pics.ElementAt(7);
-            }
+            }//
             else
             {
                 panel130.Visible = false;
@@ -1511,7 +1502,7 @@ namespace Restuarent
                 panel126.Visible = true;
                 label137.Text = names.ElementAt(8);
                 pictureBox119.ImageLocation = pics.ElementAt(8);
-            }
+            }//
             else
             {
                 panel126.Visible = false;
@@ -1521,27 +1512,27 @@ namespace Restuarent
                 panel122.Visible = true;
                 label133.Text = names.ElementAt(9);
                 pictureBox115.ImageLocation = pics.ElementAt(9);
-            }
+            }//
             else
             {
                 panel122.Visible = false;
             }
             if (status.ElementAt(10) == "active" && type.ElementAt(10) == "Drinks")
             {
-                panel9.Visible = true;
-                Waterlab.Text = names.ElementAt(10);
-                Waterpic.ImageLocation = pics.ElementAt(10);
-            }
+                panel119.Visible = true;
+                label30.Text = names.ElementAt(10);
+                pictureBox112.ImageLocation = pics.ElementAt(10);
+            }//
             else
             {
-                panel9.Visible = false;
+                panel119.Visible = false;
             }
             if (status.ElementAt(11) == "active" && type.ElementAt(11) == "Drinks")
             {
                 panel116.Visible = true;
                 label127.Text = names.ElementAt(11);
                 pictureBox109.ImageLocation = pics.ElementAt(11);
-            }
+            }//
             else
             {
                 panel116.Visible = false;
@@ -1551,7 +1542,7 @@ namespace Restuarent
                 panel32.Visible = true;
                 label39.Text = names.ElementAt(12);
                 pictureBox25.ImageLocation = pics.ElementAt(12);
-            }
+            }//
             else
             {
                 panel32.Visible = false;
@@ -1561,7 +1552,7 @@ namespace Restuarent
                 panel36.Visible = true;
                 label43.Text = names.ElementAt(13);
                 pictureBox29.ImageLocation = pics.ElementAt(13);
-            }
+            }//
             else
             {
                 panel36.Visible = false;
@@ -1571,7 +1562,7 @@ namespace Restuarent
                 panel40.Visible = true;
                 label47.Text = names.ElementAt(14);
                 pictureBox33.ImageLocation = pics.ElementAt(14);
-            }
+            }//
             else
             {
                 panel40.Visible = false;
@@ -1581,7 +1572,7 @@ namespace Restuarent
                 panel44.Visible = true;
                 label51.Text = names.ElementAt(15);
                 pictureBox37.ImageLocation = pics.ElementAt(15);
-            }
+            }//
             else
             {
                 panel44.Visible = false;
@@ -1591,7 +1582,7 @@ namespace Restuarent
                 panel48.Visible = true;
                 label55.Text = names.ElementAt(16);
                 pictureBox41.ImageLocation = pics.ElementAt(16);
-            }
+            }//
             else
             {
                 panel48.Visible = false;
@@ -1601,7 +1592,7 @@ namespace Restuarent
                 panel52.Visible = true;
                 label59.Text = names.ElementAt(17);
                 pictureBox45.ImageLocation = pics.ElementAt(17);
-            }
+            }//
             else
             {
                 panel52.Visible = false;
@@ -1611,7 +1602,7 @@ namespace Restuarent
                 panel56.Visible = true;
                 label63.Text = names.ElementAt(18);
                 pictureBox49.ImageLocation = pics.ElementAt(18);
-            }
+            }//
             else
             {
                 panel56.Visible = false;
@@ -1621,7 +1612,7 @@ namespace Restuarent
                 panel60.Visible = true;
                 label67.Text = names.ElementAt(19);
                 pictureBox53.ImageLocation = pics.ElementAt(19);
-            }
+            }//
             else
             {
                 panel60.Visible = false;
@@ -1631,7 +1622,7 @@ namespace Restuarent
                 panel64.Visible = true;
                 label71.Text = names.ElementAt(20);
                 pictureBox57.ImageLocation = pics.ElementAt(20);
-            }
+            }//
             else
             {
                 panel64.Visible = false;
@@ -1641,7 +1632,7 @@ namespace Restuarent
                 panel68.Visible = true;
                 label75.Text = names.ElementAt(21);
                 pictureBox61.ImageLocation = pics.ElementAt(21);
-            }
+            }//
             else
             {
                 panel68.Visible = false;
@@ -1651,166 +1642,175 @@ namespace Restuarent
                 panel72.Visible = true;
                 label79.Text = names.ElementAt(23);
                 pictureBox65.ImageLocation = pics.ElementAt(23);
-            }
+            }//
             else
             {
                 panel72.Visible = false;
             }
-            if (status.ElementAt(24) == "active" && type.ElementAt(24) == "Drinks")
+            if (status.ElementAt(23) == "active" && type.ElementAt(23) == "Drinks")
             {
                 panel76.Visible = true;
-                label83.Text = names.ElementAt(24);
-                pictureBox69.ImageLocation = pics.ElementAt(24);
-            }
+                label83.Text = names.ElementAt(23);
+                pictureBox69.ImageLocation = pics.ElementAt(23);
+            }//
             else
             {
                 panel76.Visible = false;
             }
-            if (status.ElementAt(25) == "active" && type.ElementAt(25) == "Drinks")
+            if (status.ElementAt(24) == "active" && type.ElementAt(24) == "Drinks")
             {
                 panel80.Visible = true;
-                label87.Text = names.ElementAt(25);
-                pictureBox73.ImageLocation = pics.ElementAt(25);
-            }
+                label87.Text = names.ElementAt(24);
+                pictureBox73.ImageLocation = pics.ElementAt(24);
+            }//
             else
             {
                 panel80.Visible = false;
             }
-            if (status.ElementAt(26) == "active" && type.ElementAt(26) == "Drinks")
+            if (status.ElementAt(25) == "active" && type.ElementAt(25) == "Drinks")
             {
                 panel84.Visible = true;
-                label95.Text = names.ElementAt(26);
-                pictureBox77.ImageLocation = pics.ElementAt(26);
-            }
+                label95.Text = names.ElementAt(25);
+                pictureBox77.ImageLocation = pics.ElementAt(25);
+            }//
             else
             {
                 panel84.Visible = false;
             }
-            if (status.ElementAt(27) == "active" && type.ElementAt(27) == "Drinks")
+            if (status.ElementAt(26) == "active" && type.ElementAt(26) == "Drinks")
             {
                 panel88.Visible = true;
-                label99.Text = names.ElementAt(27);
-                pictureBox81.ImageLocation = pics.ElementAt(27);
-            }
+                label99.Text = names.ElementAt(26);
+                pictureBox81.ImageLocation = pics.ElementAt(26);
+            }//
             else
             {
                 panel88.Visible = false;
             }
-            if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Drinks")
+            if (status.ElementAt(27) == "active" && type.ElementAt(27) == "Drinks")
             {
                 panel92.Visible = true;
-                label103.Text = names.ElementAt(28);
-                pictureBox85.ImageLocation = pics.ElementAt(28);
-            }
+                label103.Text = names.ElementAt(27);
+                pictureBox85.ImageLocation = pics.ElementAt(27);
+            }//
             else
             {
                 panel92.Visible = false;
             }
-            if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Drinks")
+            if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Drinks")
             {
                 panel96.Visible = true;
-                label107.Text = names.ElementAt(29);
-                pictureBox89.ImageLocation = pics.ElementAt(29);
-            }
+                label107.Text = names.ElementAt(28);
+                pictureBox89.ImageLocation = pics.ElementAt(28);
+            }//
             else
             {
                 panel96.Visible = false;
             }
-            if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Drinks")
+            if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Drinks")
             {
                 panel100.Visible = true;
-                label111.Text = names.ElementAt(30);
-                pictureBox93.ImageLocation = pics.ElementAt(30);
-            }
+                label111.Text = names.ElementAt(29);
+                pictureBox93.ImageLocation = pics.ElementAt(29);
+            }//
             else
             {
                 panel100.Visible = false;
             }
-            if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Drinks")
+            if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Drinks")
             {
                 panel104.Visible = true;
-                label115.Text = names.ElementAt(31);
-                pictureBox97.ImageLocation = pics.ElementAt(31);
-            }
+                label115.Text = names.ElementAt(30);
+                pictureBox97.ImageLocation = pics.ElementAt(30);
+            }//
             else
             {
                 panel104.Visible = false;
             }
-            if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Drinks")
+            if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Drinks")
             {
                 panel108.Visible = true;
-                label119.Text = names.ElementAt(33);
-                pictureBox101.ImageLocation = pics.ElementAt(33);
-            }
+                label119.Text = names.ElementAt(31);
+                pictureBox101.ImageLocation = pics.ElementAt(31);
+            }//
             else
             {
                 panel108.Visible = false;
             }
-            if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Drinks")
+            if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Drinks")
             {
                 panel112.Visible = true;
-                label123.Text = names.ElementAt(34);
-                pictureBox105.ImageLocation = pics.ElementAt(34);
-            }
+                label123.Text = names.ElementAt(32);
+                pictureBox105.ImageLocation = pics.ElementAt(32);
+            }//
             else
             {
                 panel112.Visible = false;
             }
-            if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Drinks")
+            if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Drinks")
             {
                 panel21.Visible = true;
-                label28.Text = names.ElementAt(35);
-                pictureBox14.ImageLocation = pics.ElementAt(35);
-            }
+                label28.Text = names.ElementAt(33);
+                pictureBox14.ImageLocation = pics.ElementAt(33);
+            }//
             else
             {
                 panel21.Visible = false;
             }
-            if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Drinks")
+            if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Drinks")
             {
                 panel25.Visible = true;
-                label32.Text = names.ElementAt(36);
-                pictureBox18.ImageLocation = pics.ElementAt(36);
-            }
+                label32.Text = names.ElementAt(34);
+                pictureBox18.ImageLocation = pics.ElementAt(34);
+            }//
             else
             {
                 panel25.Visible = false;
             }
-            if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Drinks")
+            if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Drinks")
             {
                 panel29.Visible = true;
-                label36.Text = names.ElementAt(37);
-                pictureBox22.ImageLocation = pics.ElementAt(37);
-            }
+                label36.Text = names.ElementAt(35);
+                pictureBox22.ImageLocation = pics.ElementAt(35);
+            }//
             else
             {
                 panel29.Visible = false;
             }
-            if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Drinks")
+            if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Drinks")
             {
                 panel17.Visible = true;
-                label24.Text = names.ElementAt(38);
-                pictureBox10.ImageLocation = pics.ElementAt(38);
-            }
+                label24.Text = names.ElementAt(36);
+                pictureBox10.ImageLocation = pics.ElementAt(36);
+            }//
             else
             {
                 panel17.Visible = false;
             }
-            if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Drinks")
+            if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Drinks")
             {
                 panel13.Visible = true;
-                label20.Text = names.ElementAt(39);
-                pictureBox6.ImageLocation = pics.ElementAt(39);
-            }
+                label20.Text = names.ElementAt(38);
+                pictureBox6.ImageLocation = pics.ElementAt(38);
+            }//
             else
             {
                 panel13.Visible = false;
             }
+            if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Drinks")
+            {
+                panel9.Visible = true;
+                Waterlab.Text = names.ElementAt(39);
+                Waterpic.ImageLocation = pics.ElementAt(39);
+            }//
+            else
+            {
+                panel9.Visible = false;
+            }
 
 
 
 
-           
 
         }
 
