@@ -2454,7 +2454,6 @@
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(20, 22);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(118, 76);
@@ -2527,7 +2526,6 @@
             // pictureBox7
             // 
             this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(19, 22);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(118, 80);
@@ -2600,7 +2598,6 @@
             // pictureBox11
             // 
             this.pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(24, 27);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(118, 76);
@@ -2673,7 +2670,6 @@
             // pictureBox15
             // 
             this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
             this.pictureBox15.Location = new System.Drawing.Point(20, 22);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(118, 76);
@@ -2746,7 +2742,6 @@
             // pictureBox19
             // 
             this.pictureBox19.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
             this.pictureBox19.Location = new System.Drawing.Point(19, 22);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(118, 80);
@@ -2819,7 +2814,6 @@
             // pictureBox23
             // 
             this.pictureBox23.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
             this.pictureBox23.Location = new System.Drawing.Point(24, 27);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(118, 76);
@@ -2892,7 +2886,6 @@
             // pictureBox26
             // 
             this.pictureBox26.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
             this.pictureBox26.Location = new System.Drawing.Point(24, 27);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(118, 76);
@@ -2965,7 +2958,6 @@
             // pictureBox30
             // 
             this.pictureBox30.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
             this.pictureBox30.Location = new System.Drawing.Point(20, 22);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(118, 76);
@@ -3111,7 +3103,6 @@
             // pictureBox38
             // 
             this.pictureBox38.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
             this.pictureBox38.Location = new System.Drawing.Point(24, 27);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(118, 76);
@@ -3184,7 +3175,6 @@
             // pictureBox42
             // 
             this.pictureBox42.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox42.Image")));
             this.pictureBox42.Location = new System.Drawing.Point(20, 22);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(118, 76);
@@ -3257,7 +3247,6 @@
             // pictureBox46
             // 
             this.pictureBox46.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
             this.pictureBox46.Location = new System.Drawing.Point(19, 22);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(118, 80);
@@ -3330,7 +3319,6 @@
             // pictureBox50
             // 
             this.pictureBox50.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox50.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox50.Image")));
             this.pictureBox50.Location = new System.Drawing.Point(24, 27);
             this.pictureBox50.Name = "pictureBox50";
             this.pictureBox50.Size = new System.Drawing.Size(118, 76);
@@ -3403,7 +3391,6 @@
             // pictureBox54
             // 
             this.pictureBox54.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox54.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox54.Image")));
             this.pictureBox54.Location = new System.Drawing.Point(20, 22);
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.Size = new System.Drawing.Size(118, 76);
@@ -3476,7 +3463,6 @@
             // pictureBox58
             // 
             this.pictureBox58.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox58.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox58.Image")));
             this.pictureBox58.Location = new System.Drawing.Point(20, 22);
             this.pictureBox58.Name = "pictureBox58";
             this.pictureBox58.Size = new System.Drawing.Size(118, 76);
@@ -3549,7 +3535,6 @@
             // pictureBox62
             // 
             this.pictureBox62.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox62.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox62.Image")));
             this.pictureBox62.Location = new System.Drawing.Point(20, 22);
             this.pictureBox62.Name = "pictureBox62";
             this.pictureBox62.Size = new System.Drawing.Size(118, 76);
@@ -3622,7 +3607,6 @@
             // pictureBox66
             // 
             this.pictureBox66.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox66.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox66.Image")));
             this.pictureBox66.Location = new System.Drawing.Point(20, 22);
             this.pictureBox66.Name = "pictureBox66";
             this.pictureBox66.Size = new System.Drawing.Size(118, 76);
@@ -3695,7 +3679,6 @@
             // pictureBox70
             // 
             this.pictureBox70.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox70.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox70.Image")));
             this.pictureBox70.Location = new System.Drawing.Point(20, 22);
             this.pictureBox70.Name = "pictureBox70";
             this.pictureBox70.Size = new System.Drawing.Size(118, 76);
@@ -3768,7 +3751,6 @@
             // pictureBox74
             // 
             this.pictureBox74.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox74.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox74.Image")));
             this.pictureBox74.Location = new System.Drawing.Point(20, 22);
             this.pictureBox74.Name = "pictureBox74";
             this.pictureBox74.Size = new System.Drawing.Size(118, 76);
@@ -3841,7 +3823,6 @@
             // pictureBox78
             // 
             this.pictureBox78.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox78.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox78.Image")));
             this.pictureBox78.Location = new System.Drawing.Point(20, 22);
             this.pictureBox78.Name = "pictureBox78";
             this.pictureBox78.Size = new System.Drawing.Size(118, 76);
@@ -3914,7 +3895,6 @@
             // pictureBox82
             // 
             this.pictureBox82.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox82.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox82.Image")));
             this.pictureBox82.Location = new System.Drawing.Point(20, 22);
             this.pictureBox82.Name = "pictureBox82";
             this.pictureBox82.Size = new System.Drawing.Size(118, 76);
@@ -3987,7 +3967,6 @@
             // pictureBox86
             // 
             this.pictureBox86.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox86.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox86.Image")));
             this.pictureBox86.Location = new System.Drawing.Point(20, 22);
             this.pictureBox86.Name = "pictureBox86";
             this.pictureBox86.Size = new System.Drawing.Size(118, 76);
@@ -4060,7 +4039,6 @@
             // pictureBox90
             // 
             this.pictureBox90.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox90.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox90.Image")));
             this.pictureBox90.Location = new System.Drawing.Point(20, 22);
             this.pictureBox90.Name = "pictureBox90";
             this.pictureBox90.Size = new System.Drawing.Size(118, 76);
@@ -4133,7 +4111,6 @@
             // pictureBox94
             // 
             this.pictureBox94.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox94.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox94.Image")));
             this.pictureBox94.Location = new System.Drawing.Point(20, 22);
             this.pictureBox94.Name = "pictureBox94";
             this.pictureBox94.Size = new System.Drawing.Size(118, 76);
@@ -4206,7 +4183,6 @@
             // pictureBox98
             // 
             this.pictureBox98.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox98.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox98.Image")));
             this.pictureBox98.Location = new System.Drawing.Point(20, 22);
             this.pictureBox98.Name = "pictureBox98";
             this.pictureBox98.Size = new System.Drawing.Size(118, 76);
@@ -4279,7 +4255,6 @@
             // pictureBox102
             // 
             this.pictureBox102.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox102.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox102.Image")));
             this.pictureBox102.Location = new System.Drawing.Point(20, 22);
             this.pictureBox102.Name = "pictureBox102";
             this.pictureBox102.Size = new System.Drawing.Size(118, 76);
@@ -4352,7 +4327,6 @@
             // pictureBox106
             // 
             this.pictureBox106.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox106.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox106.Image")));
             this.pictureBox106.Location = new System.Drawing.Point(20, 22);
             this.pictureBox106.Name = "pictureBox106";
             this.pictureBox106.Size = new System.Drawing.Size(118, 76);
@@ -4425,7 +4399,6 @@
             // pictureBox110
             // 
             this.pictureBox110.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox110.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox110.Image")));
             this.pictureBox110.Location = new System.Drawing.Point(20, 22);
             this.pictureBox110.Name = "pictureBox110";
             this.pictureBox110.Size = new System.Drawing.Size(118, 76);
@@ -4498,7 +4471,6 @@
             // pictureBox113
             // 
             this.pictureBox113.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox113.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox113.Image")));
             this.pictureBox113.Location = new System.Drawing.Point(24, 27);
             this.pictureBox113.Name = "pictureBox113";
             this.pictureBox113.Size = new System.Drawing.Size(118, 76);
@@ -4571,7 +4543,6 @@
             // pictureBox117
             // 
             this.pictureBox117.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox117.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox117.Image")));
             this.pictureBox117.Location = new System.Drawing.Point(24, 27);
             this.pictureBox117.Name = "pictureBox117";
             this.pictureBox117.Size = new System.Drawing.Size(118, 76);
@@ -4644,7 +4615,6 @@
             // pictureBox121
             // 
             this.pictureBox121.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox121.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox121.Image")));
             this.pictureBox121.Location = new System.Drawing.Point(24, 27);
             this.pictureBox121.Name = "pictureBox121";
             this.pictureBox121.Size = new System.Drawing.Size(118, 76);
@@ -4717,7 +4687,6 @@
             // pictureBox125
             // 
             this.pictureBox125.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox125.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox125.Image")));
             this.pictureBox125.Location = new System.Drawing.Point(24, 27);
             this.pictureBox125.Name = "pictureBox125";
             this.pictureBox125.Size = new System.Drawing.Size(118, 76);
@@ -4790,7 +4759,6 @@
             // pictureBox129
             // 
             this.pictureBox129.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox129.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox129.Image")));
             this.pictureBox129.Location = new System.Drawing.Point(24, 27);
             this.pictureBox129.Name = "pictureBox129";
             this.pictureBox129.Size = new System.Drawing.Size(118, 76);
@@ -4863,7 +4831,6 @@
             // pictureBox133
             // 
             this.pictureBox133.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox133.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox133.Image")));
             this.pictureBox133.Location = new System.Drawing.Point(24, 27);
             this.pictureBox133.Name = "pictureBox133";
             this.pictureBox133.Size = new System.Drawing.Size(118, 76);
@@ -4936,7 +4903,6 @@
             // pictureBox137
             // 
             this.pictureBox137.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox137.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox137.Image")));
             this.pictureBox137.Location = new System.Drawing.Point(24, 27);
             this.pictureBox137.Name = "pictureBox137";
             this.pictureBox137.Size = new System.Drawing.Size(118, 76);
@@ -5009,7 +4975,6 @@
             // pictureBox141
             // 
             this.pictureBox141.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox141.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox141.Image")));
             this.pictureBox141.Location = new System.Drawing.Point(24, 27);
             this.pictureBox141.Name = "pictureBox141";
             this.pictureBox141.Size = new System.Drawing.Size(118, 76);
@@ -5082,7 +5047,6 @@
             // pictureBox145
             // 
             this.pictureBox145.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox145.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox145.Image")));
             this.pictureBox145.Location = new System.Drawing.Point(24, 27);
             this.pictureBox145.Name = "pictureBox145";
             this.pictureBox145.Size = new System.Drawing.Size(118, 76);
@@ -8585,7 +8549,6 @@
             // pictureBox63
             // 
             this.pictureBox63.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox63.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox63.Image")));
             this.pictureBox63.Location = new System.Drawing.Point(20, 22);
             this.pictureBox63.Name = "pictureBox63";
             this.pictureBox63.Size = new System.Drawing.Size(118, 76);

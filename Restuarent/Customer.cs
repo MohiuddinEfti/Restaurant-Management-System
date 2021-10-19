@@ -394,7 +394,7 @@ namespace Restuarent
             if (status.ElementAt(20) == "active" && type.ElementAt(20) == "Starter")
             {
                 panel81.Visible = true;
-                label92.Text = names.ElementAt(20);
+                label88.Text = names.ElementAt(20);
                 pictureBox74.ImageLocation = pics.ElementAt(20);
             }
             else
@@ -493,103 +493,103 @@ namespace Restuarent
             }
             if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Starter")
             {
-                panel20.Visible = true;
-                label27.Text = names.ElementAt(30);
-                pictureBox13.ImageLocation = pics.ElementAt(30);
+                panel120.Visible = true;
+                label131.Text = names.ElementAt(30);
+                pictureBox113.ImageLocation = pics.ElementAt(30);
             }
             else
             {
-                panel20.Visible = false;
+                panel120.Visible = false;
             }
             if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Starter")
             {
-                panel24.Visible = true;
-                label31.Text = names.ElementAt(31);
-                pictureBox17.ImageLocation = pics.ElementAt(31);
+                panel124.Visible = true;
+                label135.Text = names.ElementAt(31);
+                pictureBox117.ImageLocation = pics.ElementAt(31);
             }
             else
             {
-                panel24.Visible = false;
+                panel124.Visible = false;
             }
             if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Starter")
             {
-                panel28.Visible = true;
-                label35.Text = names.ElementAt(32);
-                pictureBox21.ImageLocation = pics.ElementAt(32);
+                panel128.Visible = true;
+                label139.Text = names.ElementAt(32);
+                pictureBox121.ImageLocation = pics.ElementAt(32);
             }
             else
             {
-                panel28.Visible = false;
+                panel128.Visible = false;
             }
             if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Starter")
             {
-                panel32.Visible = true;
-                label39.Text = names.ElementAt(33);
-                pictureBox25.ImageLocation = pics.ElementAt(33);
+                panel132.Visible = true;
+                label143.Text = names.ElementAt(33);
+                pictureBox125.ImageLocation = pics.ElementAt(33);
             }
             else
             {
-                panel32.Visible = false;
+                panel132.Visible = false;
             }
             if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Starter")
             {
-                panel36.Visible = true;
-                label43.Text = names.ElementAt(34);
-                pictureBox29.ImageLocation = pics.ElementAt(34);
+                panel136.Visible = true;
+                label147.Text = names.ElementAt(34);
+                pictureBox129.ImageLocation = pics.ElementAt(34);
             }
             else
             {
-                panel36.Visible = false;
+                panel136.Visible = false;
             }
             if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Starter")
             {
-                panel40.Visible = true;
-                label47.Text = names.ElementAt(35);
-                pictureBox33.ImageLocation = pics.ElementAt(35);
+                panel140.Visible = true;
+                label151.Text = names.ElementAt(35);
+                pictureBox133.ImageLocation = pics.ElementAt(35);
             }
             else
             {
-                panel40.Visible = false;
+                panel140.Visible = false;
             }
             if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Starter")
             {
-                panel44.Visible = true;
-                label51.Text = names.ElementAt(36);
-                pictureBox37.ImageLocation = pics.ElementAt(36);
+                panel144.Visible = true;
+                label155.Text = names.ElementAt(36);
+                pictureBox137.ImageLocation = pics.ElementAt(36);
             }
             else
             {
-                panel44.Visible = false;
+                panel144.Visible = false;
             }
             if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Starter")
             {
-                panel48.Visible = true;
-                label55.Text = names.ElementAt(37);
-                pictureBox41.ImageLocation = pics.ElementAt(37);
+                panel148.Visible = true;
+                label159.Text = names.ElementAt(37);
+                pictureBox141.ImageLocation = pics.ElementAt(37);
             }
             else
             {
-                panel48.Visible = false;
+                panel148.Visible = false;
             }
             if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Starter")
             {
-                panel52.Visible = true;
-                label59.Text = names.ElementAt(38);
-                pictureBox45.ImageLocation = pics.ElementAt(38);
+                panel152.Visible = true;
+                label163.Text = names.ElementAt(38);
+                pictureBox145.ImageLocation = pics.ElementAt(38);
             }
             else
             {
-                panel52.Visible = false;
+                panel152.Visible = false;
             }
             if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Starter")
             {
-                panel56.Visible = true;
-                label63.Text = names.ElementAt(39);
-                pictureBox49.ImageLocation = pics.ElementAt(39);
+                panel156.Visible = true;
+                label167.Text = names.ElementAt(39);
+                pictureBox149.ImageLocation = pics.ElementAt(39);
             }
             else
             {
-                panel56.Visible = false;
+                panel156.Visible = false;
             }
 
 
@@ -1091,7 +1091,336 @@ namespace Restuarent
             {
                 panel133.Visible = false;
             }
-
+            if (status.ElementAt(8) == "active" && type.ElementAt(8) == "Dessert")
+            {
+                panel129.Visible = true;
+                label140.Text = names.ElementAt(8);
+                pictureBox122.ImageLocation = pics.ElementAt(8);
+            }
+            else
+            {
+                panel129.Visible = false;
+            }
+            if (status.ElementAt(9) == "active" && type.ElementAt(9) == "Dessert")
+            {
+                panel125.Visible = true;
+                label136.Text = names.ElementAt(9);
+                pictureBox118.ImageLocation = pics.ElementAt(9);
+            }
+            else
+            {
+                panel125.Visible = false;
+            }
+            if (status.ElementAt(10) == "active" && type.ElementAt(10) == "Dessert")
+            {
+                panel121.Visible = true;
+                label132.Text = names.ElementAt(10);
+                pictureBox114.ImageLocation = pics.ElementAt(10);
+            }
+            else
+            {
+                panel121.Visible = false;
+            }
+            if (status.ElementAt(11) == "active" && type.ElementAt(11) == "Dessert")
+            {
+                panel118.Visible = true;
+                label129.Text = names.ElementAt(11);
+                pictureBox111.ImageLocation = pics.ElementAt(11);
+            }
+            else
+            {
+                panel118.Visible = false;
+            }
+            if (status.ElementAt(12) == "active" && type.ElementAt(12) == "Dessert")
+            {
+                panel114.Visible = true;
+                label125.Text = names.ElementAt(12);
+                pictureBox107.ImageLocation = pics.ElementAt(12);
+            }
+            else
+            {
+                panel114.Visible = false;
+            }
+            if (status.ElementAt(13) == "active" && type.ElementAt(13) == "Dessert")
+            {
+                panel110.Visible = true;
+                label121.Text = names.ElementAt(13);
+                pictureBox103.ImageLocation = pics.ElementAt(13);
+            }
+            else
+            {
+                panel110.Visible = false;
+            }
+            if (status.ElementAt(14) == "active" && type.ElementAt(14) == "Dessert")
+            {
+                panel106.Visible = true;
+                label117.Text = names.ElementAt(14);
+                pictureBox99.ImageLocation = pics.ElementAt(14);
+            }
+            else
+            {
+                panel106.Visible = false;
+            }
+            if (status.ElementAt(15) == "active" && type.ElementAt(15) == "Dessert")
+            {
+                panel102.Visible = true;
+                label113.Text = names.ElementAt(15);
+                pictureBox95.ImageLocation = pics.ElementAt(15);
+            }
+            else
+            {
+                panel102.Visible = false;
+            }
+            if (status.ElementAt(16) == "active" && type.ElementAt(16) == "Dessert")
+            {
+                panel98.Visible = true;
+                label109.Text = names.ElementAt(16);
+                pictureBox91.ImageLocation = pics.ElementAt(16);
+            }
+            else
+            {
+                panel98.Visible = false;
+            }
+            if (status.ElementAt(17) == "active" && type.ElementAt(17) == "Dessert")
+            {
+                panel94.Visible = true;
+                label105.Text = names.ElementAt(17);
+                pictureBox87.ImageLocation = pics.ElementAt(17);
+            }
+            else
+            {
+                panel94.Visible = false;
+            }
+            if (status.ElementAt(18) == "active" && type.ElementAt(18) == "Dessert")
+            {
+                panel90.Visible = true;
+                label101.Text = names.ElementAt(18);
+                pictureBox83.ImageLocation = pics.ElementAt(18);
+            }
+            else
+            {
+                panel90.Visible = false;
+            }
+            if (status.ElementAt(19) == "active" && type.ElementAt(19) == "Dessert")
+            {
+                panel86.Visible = true;
+                label97.Text = names.ElementAt(19);
+                pictureBox79.ImageLocation = pics.ElementAt(19);
+            }
+            else
+            {
+                panel86.Visible = false;
+            }
+            if (status.ElementAt(20) == "active" && type.ElementAt(20) == "Dessert")
+            {
+                panel82.Visible = true;
+                label93.Text = names.ElementAt(20);
+                pictureBox75.ImageLocation = pics.ElementAt(20);
+            }
+            else
+            {
+                panel82.Visible = false;
+            }
+            if (status.ElementAt(21) == "active" && type.ElementAt(21) == "Dessert")
+            {
+                panel78.Visible = true;
+                label85.Text = names.ElementAt(21);
+                pictureBox71.ImageLocation = pics.ElementAt(21);
+            }
+            else
+            {
+                panel78.Visible = false;
+            }
+            if (status.ElementAt(22) == "active" && type.ElementAt(22) == "Dessert")
+            {
+                panel74.Visible = true;
+                label81.Text = names.ElementAt(22);
+                pictureBox67.ImageLocation = pics.ElementAt(22);
+            }
+            else
+            {
+                panel74.Visible = false;
+            }
+            if (status.ElementAt(23) == "active" && type.ElementAt(23) == "Dessert")
+            {
+                panel76.Visible = true;
+                label77.Text = names.ElementAt(23);
+                pictureBox63.ImageLocation = pics.ElementAt(23);
+            }
+            else
+            {
+                panel76.Visible = false;
+            }
+            if (status.ElementAt(24) == "active" && type.ElementAt(24) == "Dessert")
+            {
+                panel66.Visible = true;
+                label73.Text = names.ElementAt(24);
+                pictureBox59.ImageLocation = pics.ElementAt(24);
+            }
+            else
+            {
+                panel66.Visible = false;
+            }
+            if (status.ElementAt(25) == "active" && type.ElementAt(25) == "Dessert")
+            {
+                panel62.Visible = true;
+                label69.Text = names.ElementAt(25);
+                pictureBox55.ImageLocation = pics.ElementAt(25);
+            }
+            else
+            {
+                panel62.Visible = false;
+            }
+            if (status.ElementAt(26) == "active" && type.ElementAt(26) == "Dessert")
+            {
+                panel58.Visible = true;
+                label65.Text = names.ElementAt(26);
+                pictureBox51.ImageLocation = pics.ElementAt(26);
+            }
+            else
+            {
+                panel58.Visible = false;
+            }
+            if (status.ElementAt(27) == "active" && type.ElementAt(27) == "Dessert")
+            {
+                panel54.Visible = true;
+                label61.Text = names.ElementAt(27);
+                pictureBox47.ImageLocation = pics.ElementAt(27);
+            }
+            else
+            {
+                panel54.Visible = false;
+            }
+            if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Dessert")
+            {
+                panel50.Visible = true;
+                label57.Text = names.ElementAt(28);
+                pictureBox43.ImageLocation = pics.ElementAt(28);
+            }
+            else
+            {
+                panel50.Visible = false;
+            }
+            if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Dessert")
+            {
+                panel46.Visible = true;
+                label53.Text = names.ElementAt(29);
+                pictureBox39.ImageLocation = pics.ElementAt(29);
+            }
+            else
+            {
+                panel46.Visible = false;
+            }
+            if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Dessert")
+            {
+                panel42.Visible = true;
+                label49.Text = names.ElementAt(30);
+                pictureBox35.ImageLocation = pics.ElementAt(30);
+            }
+            else
+            {
+                panel42.Visible = false;
+            }
+            if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Dessert")
+            {
+                panel38.Visible = true;
+                label45.Text = names.ElementAt(31);
+                pictureBox31.ImageLocation = pics.ElementAt(31);
+            }
+            else
+            {
+                panel38.Visible = false;
+            }
+            if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Dessert")
+            {
+                panel34.Visible = true;
+                label41.Text = names.ElementAt(32);
+                pictureBox27.ImageLocation = pics.ElementAt(32);
+            }
+            else
+            {
+                panel34.Visible = false;
+            }
+            if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Dessert")
+            {
+                panel31.Visible = true;
+                label38.Text = names.ElementAt(33);
+                pictureBox24.ImageLocation = pics.ElementAt(33);
+            }
+            else
+            {
+                panel31.Visible = false;
+            }
+            if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Dessert")
+            {
+                panel20.Visible = true;
+                label27.Text = names.ElementAt(34);
+                pictureBox13.ImageLocation = pics.ElementAt(34);
+            }
+            else
+            {
+                panel20.Visible = false;
+            }
+            if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Dessert")
+            {
+                panel16.Visible = true;
+                label23.Text = names.ElementAt(35);
+                pictureBox9.ImageLocation = pics.ElementAt(35);
+            }
+            else
+            {
+                panel16.Visible = false;
+            }
+            if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Dessert")
+            {
+                panel12.Visible = true;
+                label19.Text = names.ElementAt(36);
+                pictureBox5.ImageLocation = pics.ElementAt(36);
+            }
+            else
+            {
+                panel12.Visible = false;
+            }
+            if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Dessert")
+            {
+                panel8.Visible = true;
+                Cokelab.Text = names.ElementAt(37);
+                Cokepic.ImageLocation = pics.ElementAt(37);
+            }
+            else
+            {
+                panel8.Visible = false;
+            }
+            if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Dessert")
+            {
+                panel4.Visible = true;
+                Pizzalab.Text = names.ElementAt(38);
+                pizzapic.ImageLocation = pics.ElementAt(38);
+            }
+            else
+            {
+                panel4.Visible = false;
+            }
+            if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Dessert")
+            {
+                panel24.Visible = true;
+                label31.Text = names.ElementAt(39);
+                pictureBox17.ImageLocation = pics.ElementAt(39);
+            }
+            else
+            {
+                panel24.Visible = false;
+            }
+            if (status.ElementAt(40) == "active" && type.ElementAt(40) == "Dessert")
+            {
+                panel70.Visible = true;
+                label77.Text = names.ElementAt(40);
+                pictureBox63.ImageLocation = pics.ElementAt(40);
+            }
+            else
+            {
+                panel70.Visible = false;
+            }
 
 
 
@@ -1427,7 +1756,7 @@ namespace Restuarent
             {
                 panel112.Visible = false;
             }
-            if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Dessert")
+            if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Drinks")
             {
                 panel21.Visible = true;
                 label28.Text = names.ElementAt(35);
@@ -1437,7 +1766,7 @@ namespace Restuarent
             {
                 panel21.Visible = false;
             }
-            if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Dessert")
+            if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Drinks")
             {
                 panel25.Visible = true;
                 label32.Text = names.ElementAt(36);
@@ -1447,7 +1776,7 @@ namespace Restuarent
             {
                 panel25.Visible = false;
             }
-            if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Dessert")
+            if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Drinks")
             {
                 panel29.Visible = true;
                 label36.Text = names.ElementAt(37);
@@ -1457,7 +1786,7 @@ namespace Restuarent
             {
                 panel29.Visible = false;
             }
-            if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Dessert")
+            if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Drinks")
             {
                 panel17.Visible = true;
                 label24.Text = names.ElementAt(38);
@@ -1467,7 +1796,7 @@ namespace Restuarent
             {
                 panel17.Visible = false;
             }
-            if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Dessert")
+            if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Drinks")
             {
                 panel13.Visible = true;
                 label20.Text = names.ElementAt(39);
@@ -1499,7 +1828,7 @@ namespace Restuarent
             if (dialogResult == DialogResult.Yes)
             {
                
-                Burgers.Text = Pizzas.Text = RiceBowls.Text = Sawrmas.Text = Dumplings.Text = Pastrys.Text = Cokes.Text = Waters.Text = textBox2.Text = textBox3.Text = taka.Text = String.Empty;
+                /*Burgers.Text = Pizzas.Text = RiceBowls.Text = Sawrmas.Text = Dumplings.Text = Pastrys.Text = Cokes.Text = Waters.Text = textBox2.Text = textBox3.Text = taka.Text = String.Empty;
                 i = 0;
                 n = 0;
                 a = 0;
@@ -1507,7 +1836,7 @@ namespace Restuarent
                 c = 0;
                 d = 0;
                 ye = 0;
-                f = 0;
+                f = 0;*/
                 timer1.Enabled = false;
                 LogIn lg = new LogIn();
                 lg.Show();
@@ -1527,7 +1856,7 @@ namespace Restuarent
         private void button3_Click_1(object sender, EventArgs e)
         {
            
-            i++;
+          /*  i++;
             Burgers.Text = i.ToString();
             int cash =  i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
@@ -1549,7 +1878,7 @@ namespace Restuarent
                 Data1 = "";
                 richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-            }
+            }*/
 
         }
 
@@ -1559,7 +1888,7 @@ namespace Restuarent
             {
 
                 
-                i--;
+               /* i--;
                 Burgers.Text = i.ToString();
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
@@ -1580,7 +1909,7 @@ namespace Restuarent
                     Data1 = "";
                     richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-                }
+                }*/
 
             }
         }
@@ -1588,7 +1917,7 @@ namespace Restuarent
         private void button4_Click_1(object sender, EventArgs e)
         {
             
-            n++;
+           /* n++;
             RiceBowls.Text = n.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
@@ -1608,7 +1937,7 @@ namespace Restuarent
                 Data2 = "";
                 richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-            }
+            }*/
         }
 
         private void button5_Click_1(object sender, EventArgs e)
@@ -1616,7 +1945,7 @@ namespace Restuarent
             if (Int32.Parse(RiceBowls.Text) > 0)
             {
                 
-                n--;
+               /* n--;
                 RiceBowls.Text = n.ToString();
                 int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
                 taka.Text = cash.ToString();
@@ -1636,14 +1965,14 @@ namespace Restuarent
                     Data2 = "";
                     richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-                }
+                }*/
             }
         }
 
         private void button6_Click_1(object sender, EventArgs e)
         {
             
-            a++;
+           /* a++;
             Pizzas.Text = a.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
@@ -1663,12 +1992,12 @@ namespace Restuarent
                 Data3 = "";
                 richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-            }
+            }*/
         }
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            if (Int32.Parse(Pizzas.Text) > 0)
+           /* if (Int32.Parse(Pizzas.Text) > 0)
             {
                
                 a--;
@@ -1692,13 +2021,13 @@ namespace Restuarent
                     richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
                 }
-            }
+            }*/
         }
 
         private void button8_Click_1(object sender, EventArgs e)
         {
            
-            b++;
+            /*b++;
             Sawrmas.Text = b.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
@@ -1718,12 +2047,12 @@ namespace Restuarent
                 Data4 = "";
                 richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-            }
+            }*/
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            if (Int32.Parse(Sawrmas.Text) > 0 )
+            /*if (Int32.Parse(Sawrmas.Text) > 0 )
             {
                 
                 b--;
@@ -1747,13 +2076,13 @@ namespace Restuarent
                     richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
                 }
-            }
+            }*/
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
             
-            c++;
+           /* c++;
             Dumplings.Text = c.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
@@ -1773,12 +2102,11 @@ namespace Restuarent
                 Data5 = "";
                 richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-            }
+            }*/
         }
 
         private void button20_Click(object sender, EventArgs e)
-        {
-            if (Int32.Parse(Dumplings.Text) > 0 )
+        {/* if (Int32.Parse(Dumplings.Text) > 0 )
             {
                
                 c--;
@@ -1802,12 +2130,12 @@ namespace Restuarent
                     richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
                 }
-            }
+            }*/
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            
+          /*  
             d++;
             Pastrys.Text = d.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
@@ -1828,12 +2156,12 @@ namespace Restuarent
                 Data6 = "";
                 richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-            }
+            }*/
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            if (Int32.Parse(Pastrys.Text) > 0)
+           /* if (Int32.Parse(Pastrys.Text) > 0)
             {
                 
                 d--;
@@ -1857,13 +2185,13 @@ namespace Restuarent
                     richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
                 }
-            }
+            }*/
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
            
-            f++;
+           /* f++;
             Waters.Text = f.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             taka.Text = cash.ToString();
@@ -1883,12 +2211,12 @@ namespace Restuarent
                 Data8 = "";
                 richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-            }
+            }*/
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            if (Int32.Parse(Waters.Text) > 0 )
+            /*if (Int32.Parse(Waters.Text) > 0 )
             {
                 f--;
                 Waters.Text = f.ToString();
@@ -1911,12 +2239,12 @@ namespace Restuarent
                     richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
                 }
-            }
+            }*/
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-           
+           /*
             ye++;
             Cokes.Text = ye.ToString();
             int cash = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
@@ -1937,12 +2265,12 @@ namespace Restuarent
                 Data7 = "";
                 richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
-            }
+            }*/
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            if (Int32.Parse(Cokes.Text) > 0 )
+           /* if (Int32.Parse(Cokes.Text) > 0 )
             {
                
                 ye--;
@@ -1966,7 +2294,7 @@ namespace Restuarent
                     richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
                 }
-            }
+            }*/
         }
 
         private void Burgers_TextChanged(object sender, EventArgs e)
@@ -1991,10 +2319,11 @@ namespace Restuarent
 
         private void button10_Click(object sender, EventArgs e)
         {
-            richTextBox1.Visible = true;
+           /* richTextBox1.Visible = true;
             label9.Visible = true;
             richTextBox1.Text = addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
             orders= addorder1 + addorder2 + addorder3 + addorder4 + addorder5 + addorder6 + addorder7 + addorder8 + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
+        */
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -2052,7 +2381,7 @@ namespace Restuarent
 
         private void button22_Click(object sender, EventArgs e)
         {
-            string bkash = "Bkash Paid Not Confirmed";
+           /* string bkash = "Bkash Paid Not Confirmed";
             int tk = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
             DateTime time = DateTime.Now;
@@ -2088,7 +2417,7 @@ namespace Restuarent
             else
             {
                 MessageBox.Show("Error");
-            }
+            }*/
             
         }
 
@@ -2106,7 +2435,7 @@ namespace Restuarent
 
         private void Cash_Click(object sender, EventArgs e)
         {
-            string bkash = "Cash Payment";
+           /* string bkash = "Cash Payment";
             int tk = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
             string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
             DateTime time = DateTime.Now;
@@ -2139,7 +2468,7 @@ namespace Restuarent
             else
             {
                 MessageBox.Show("Error");
-            }
+            }*/
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -2197,7 +2526,7 @@ namespace Restuarent
 
         private void button25_Click(object sender, EventArgs e)
         {
-            button25.Visible = false;
+           /* button25.Visible = false;
             timer1.Enabled = false;
             i = 0;
             n = 0;
@@ -2218,7 +2547,7 @@ namespace Restuarent
             Waters.Text = 0.ToString();
             taka.Text = 0.ToString();
             textBox2.Text = textBox3.Text = String.Empty;
-            addorder1 = addorder2 = addorder3 = addorder4 = addorder5 = addorder6 = addorder7 = addorder8 = "";
+            addorder1 = addorder2 = addorder3 = addorder4 = addorder5 = addorder6 = addorder7 = addorder8 = "";*/
 
 
 
