@@ -118,15 +118,7 @@ namespace Restuarent
                 it.Insert(te, 0);
                 DATA.Insert(te, "");
                 ADDorder.Insert(te, "");
-                if(prices.ElementAt(te)!=null)
-                {
-                    prices.Insert(te, prices.ElementAt(te));
-                    
-                }
-                else
-                {
-                    prices.Insert(te, 0);
-                }
+                
                 
             }
 
@@ -2317,6 +2309,7 @@ namespace Restuarent
                 }
             
                 it.RemoveAt(op);
+            
                 it.Insert(op, i);
                 if (row == 1)
                 {
@@ -2486,27 +2479,28 @@ namespace Restuarent
                 int cash = it.ElementAt(0) * prices.ElementAt(0) + it.ElementAt(1) * prices.ElementAt(1) + it.ElementAt(2) * prices.ElementAt(2) + it.ElementAt(3) * prices.ElementAt(3) + it.ElementAt(4) * prices.ElementAt(4) + it.ElementAt(5) * prices.ElementAt(5) + it.ElementAt(6) * prices.ElementAt(6) + it.ElementAt(7) * prices.ElementAt(7) + it.ElementAt(8) * prices.ElementAt(8) + it.ElementAt(9) * prices.ElementAt(9) + it.ElementAt(10) * prices.ElementAt(10) + it.ElementAt(11) * prices.ElementAt(11) + it.ElementAt(12) * prices.ElementAt(12) + it.ElementAt(13) * prices.ElementAt(13) + it.ElementAt(14) * prices.ElementAt(14) + it.ElementAt(15) * prices.ElementAt(15) + it.ElementAt(16) * prices.ElementAt(16) + it.ElementAt(17) * prices.ElementAt(17) + it.ElementAt(18) * prices.ElementAt(18) + it.ElementAt(19) * prices.ElementAt(19) + it.ElementAt(20) * prices.ElementAt(20) + it.ElementAt(21) * prices.ElementAt(21) + it.ElementAt(22) * prices.ElementAt(22) + it.ElementAt(23) * prices.ElementAt(23) + it.ElementAt(24) * prices.ElementAt(24) + it.ElementAt(25) * prices.ElementAt(25) + it.ElementAt(26) * prices.ElementAt(26) + it.ElementAt(27) * prices.ElementAt(27) + it.ElementAt(28) * prices.ElementAt(28) + it.ElementAt(29) * prices.ElementAt(29) + it.ElementAt(30) * prices.ElementAt(30) + it.ElementAt(31) * prices.ElementAt(31) + it.ElementAt(32) * prices.ElementAt(32) + it.ElementAt(33) * prices.ElementAt(33) + it.ElementAt(34) * prices.ElementAt(34) + it.ElementAt(35) * prices.ElementAt(35) + it.ElementAt(36) * prices.ElementAt(36) + it.ElementAt(37) * prices.ElementAt(37) + it.ElementAt(38) * prices.ElementAt(38) + it.ElementAt(39) * prices.ElementAt(39);
                 taka.Text = cash.ToString();
                 amount = cash;
-                if (i > 0)
+                if (ADDorder.ElementAt(op) != names.ElementAt(op) + "**********" + 0 + " Quantity, Price: " + 0 + "\n"&&i>0)
                 {
 
-
-                    ADDorder.Insert(op, names.ElementAt(op) + "**********" + it.ElementAt(op) + " Quantity, Price: " + (it.ElementAt(op) * prices.ElementAt(op)).ToString() + "\n");
+                ADDorder.RemoveAt(op);
+                DATA.RemoveAt(op);
+                ADDorder.Insert(op, names.ElementAt(op) + "**********" + it.ElementAt(op) + " Quantity, Price: " + (it.ElementAt(op) * prices.ElementAt(op)).ToString() + "\n");
                     DATA.Insert(op, names.ElementAt(op) + "**********" + i.ToString() + "\n");
                     richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
-                    ADDorder.RemoveAt(op);
-                    DATA.RemoveAt(op);
+                    
 
 
                 }
                 else
                 {
-                    ADDorder.Insert(0, "");
-                    DATA.Insert(0, "");
-                    richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
-
+                ADDorder.RemoveAt(op);
+                DATA.RemoveAt(op);
+                ADDorder.Insert(op, "");
+                DATA.Insert(op, "");
+                richTextBox1.Text = ADDorder.ElementAt(0) + ADDorder.ElementAt(1) + ADDorder.ElementAt(2) + ADDorder.ElementAt(3) + ADDorder.ElementAt(4) + ADDorder.ElementAt(5) + ADDorder.ElementAt(6) + ADDorder.ElementAt(7) + ADDorder.ElementAt(8) + ADDorder.ElementAt(9) + ADDorder.ElementAt(10) + ADDorder.ElementAt(11) + ADDorder.ElementAt(12) + ADDorder.ElementAt(13) + ADDorder.ElementAt(14) + ADDorder.ElementAt(15) + ADDorder.ElementAt(16) + ADDorder.ElementAt(17) + ADDorder.ElementAt(18) + ADDorder.ElementAt(19) + ADDorder.ElementAt(20) + ADDorder.ElementAt(21) + ADDorder.ElementAt(22) + ADDorder.ElementAt(23) + ADDorder.ElementAt(24) + ADDorder.ElementAt(25) + ADDorder.ElementAt(26) + ADDorder.ElementAt(27) + ADDorder.ElementAt(28) + ADDorder.ElementAt(29) + ADDorder.ElementAt(30) + ADDorder.ElementAt(31) + ADDorder.ElementAt(32) + ADDorder.ElementAt(33) + ADDorder.ElementAt(34) + ADDorder.ElementAt(35) + ADDorder.ElementAt(36) + ADDorder.ElementAt(37) + ADDorder.ElementAt(38) + ADDorder.ElementAt(39) + "\n" + "\n" + "Total Price*****************" + taka.Text.ToString();
 
                 }
-            
+
         }
 
     }
