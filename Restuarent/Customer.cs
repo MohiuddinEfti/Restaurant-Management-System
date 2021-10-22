@@ -1715,27 +1715,36 @@ namespace Restuarent
             {
                 panel17.Visible = false;
             }
-            if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Drinks")
+            if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Drinks")
             {
                 panel13.Visible = true;
-                label20.Text = names.ElementAt(38);
-                pictureBox6.ImageLocation = pics.ElementAt(38);
+                label20.Text = names.ElementAt(37);
+                pictureBox6.ImageLocation = pics.ElementAt(37);
             }//
             else
             {
                 panel13.Visible = false;
             }
-            if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Drinks")
+            if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Drinks")
             {
                 panel9.Visible = true;
-                Waterlab.Text = names.ElementAt(39);
-                Waterpic.ImageLocation = pics.ElementAt(39);
+                Waterlab.Text = names.ElementAt(38);
+                Waterpic.ImageLocation = pics.ElementAt(38);
             }//
             else
             {
                 panel9.Visible = false;
             }
-
+            if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Drinks")
+            {
+                panel28.Visible = true;
+                label174.Text = names.ElementAt(39);
+                pictureBox155.ImageLocation = pics.ElementAt(39);
+            }//
+            else
+            {
+                panel28.Visible = false;
+            }
 
 
 
@@ -1796,10 +1805,7 @@ namespace Restuarent
 
        
 
-        private void button7_Click_1(object sender, EventArgs e)
-        {
-          
-        }
+        
 
         private void button12_Click(object sender, EventArgs e)
         {
@@ -1820,12 +1826,7 @@ namespace Restuarent
         
         
 
-        private void button13_Click(object sender, EventArgs e)
-        {
-           
-           
-        }
-
+        
         private void button14_Click(object sender, EventArgs e)
         {
            
@@ -1833,10 +1834,7 @@ namespace Restuarent
 
         
 
-        private void button16_Click(object sender, EventArgs e)
-        {
-           
-        }
+        
 
         private void Burgers_TextChanged(object sender, EventArgs e)
         {
@@ -3423,6 +3421,404 @@ namespace Restuarent
         private void button12_Click_1(object sender, EventArgs e)
         {
             Plus(3, 39, "plus");
+        }
+
+        private void button320_Click(object sender, EventArgs e)
+        {
+            Plus(3, 0, "minus");
+        }
+
+        private void button328_Click(object sender, EventArgs e)
+        {
+            Plus(3, 1, "minus");
+        }
+
+        private void button312_Click(object sender, EventArgs e)
+        {
+            Plus(3, 2, "minus");
+        }
+
+        private void button304_Click(object sender, EventArgs e)
+        {
+            Plus(3, 3, "minus");
+        }
+
+        private void button296_Click(object sender, EventArgs e)
+        {
+            Plus(3, 4, "minus");
+        }
+
+        private void button288_Click(object sender, EventArgs e)
+        {
+            Plus(3, 5, "minus");
+        }
+
+        private void button280_Click(object sender, EventArgs e)
+        {
+            Plus(3, 6, "minus");
+        }
+
+        private void button272_Click(object sender, EventArgs e)
+        {
+            Plus(3, 7, "minus");
+        }
+
+        private void button264_Click(object sender, EventArgs e)
+        {
+            Plus(3, 8, "minus");
+        }
+
+        private void button256_Click(object sender, EventArgs e)
+        {
+            Plus(3, 9, "minus");
+        }
+
+        private void button248_Click(object sender, EventArgs e)
+        {
+            Plus(3, 10, "minus");
+        }
+
+        private void button242_Click(object sender, EventArgs e)
+        {
+            Plus(3,11, "minus");
+        }
+
+        private void button234_Click(object sender, EventArgs e)
+        {
+            Plus(3, 12, "minus");
+        }
+
+        private void button226_Click(object sender, EventArgs e)
+        {
+            Plus(3, 13, "minus");
+        }
+
+        private void button218_Click(object sender, EventArgs e)
+        {
+            Plus(3, 14, "minus");
+        }
+
+        private void button210_Click(object sender, EventArgs e)
+        {
+            Plus(3, 15, "minus");
+        }
+
+        private void button202_Click(object sender, EventArgs e)
+        {
+            Plus(3, 16, "minus");
+        }
+
+        private void button194_Click(object sender, EventArgs e)
+        {
+            Plus(3, 17, "minus");
+        }
+
+        private void button186_Click(object sender, EventArgs e)
+        {
+            Plus(3, 18, "minus");
+        }
+
+        private void button178_Click(object sender, EventArgs e)
+        {
+            Plus(3, 19, "minus");
+        }
+
+        private void button170_Click(object sender, EventArgs e)
+        {
+            Plus(3, 20, "minus");
+        }
+
+        private void button162_Click(object sender, EventArgs e)
+        {
+            Plus(3,21, "minus");
+        }
+
+        private void button154_Click(object sender, EventArgs e)
+        {
+            Plus(3, 22, "minus");
+        }
+
+        private void button138_Click(object sender, EventArgs e)
+        {
+            Plus(3, 23, "minus");
+        }
+
+        private void button130_Click(object sender, EventArgs e)
+        {
+            Plus(3, 24, "minus");
+        }
+
+        private void button122_Click(object sender, EventArgs e)
+        {
+            Plus(3, 25, "minus");
+        }
+
+        private void button114_Click(object sender, EventArgs e)
+        {
+            Plus(3, 26, "minus");
+        }
+
+        private void button106_Click(object sender, EventArgs e)
+        {
+            Plus(3, 27, "minus");
+        }
+
+        private void button98_Click(object sender, EventArgs e)
+        {
+            Plus(3, 28, "minus");
+        }
+
+        private void button90_Click(object sender, EventArgs e)
+        {
+            Plus(3, 29, "minus");
+        }
+
+        private void button82_Click(object sender, EventArgs e)
+        {
+            Plus(3,30, "minus");
+        }
+
+        private void button74_Click(object sender, EventArgs e)
+        {
+            Plus(3, 31, "minus");
+        }
+
+        private void button68_Click(object sender, EventArgs e)
+        {
+            Plus(3, 32, "minus");
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            Plus(3, 33, "minus");
+        }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            Plus(3, 34, "minus");
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            Plus(3, 35, "minus");
+        }
+        private void button16_Click(object sender, EventArgs e)
+        {
+            Plus(3, 36, "minus");
+        }
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            Plus(3, 37, "minus");
+        }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+            Plus(3, 38, "minus");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Plus(3, 39, "minus");
+        }
+
+        private void button323_Click(object sender, EventArgs e)
+        {
+            Plus(4, 0, "plus");
+        }
+
+        private void button315_Click(object sender, EventArgs e)
+        {
+            Plus(4, 1, "plus");
+        }
+
+        private void button307_Click(object sender, EventArgs e)
+        {
+            Plus(4, 2, "plus");
+        }
+
+        private void button299_Click(object sender, EventArgs e)
+        {
+            Plus(4, 3, "plus");
+        }
+
+        private void button291_Click(object sender, EventArgs e)
+        {
+            Plus(4, 4, "plus");
+        }
+
+        private void button283_Click(object sender, EventArgs e)
+        {
+            Plus(4, 5, "plus");
+        }
+
+        private void button275_Click(object sender, EventArgs e)
+        {
+            Plus(4, 6, "plus");
+        }
+
+        private void button267_Click(object sender, EventArgs e)
+        {
+            Plus(4, 7, "plus");
+        }
+
+        private void button259_Click(object sender, EventArgs e)
+        {
+            Plus(4, 8, "plus");
+        }
+
+        private void button251_Click(object sender, EventArgs e)
+        {
+            Plus(4, 9, "plus");
+        }
+
+        private void button245_Click(object sender, EventArgs e)
+        {
+            Plus(4, 10, "plus");
+        }
+
+        private void button239_Click(object sender, EventArgs e)
+        {
+            Plus(4, 11, "plus");
+        }
+
+        private void button231_Click(object sender, EventArgs e)
+        {
+            Plus(4, 12, "plus");
+        }
+
+        private void button223_Click(object sender, EventArgs e)
+        {
+            Plus(4, 13, "plus");
+        }
+
+        private void button215_Click(object sender, EventArgs e)
+        {
+            Plus(4, 14, "plus");
+        }
+
+        private void button207_Click(object sender, EventArgs e)
+        {
+            Plus(4,15, "plus");
+        }
+
+        private void button199_Click(object sender, EventArgs e)
+        {
+            Plus(4, 16, "plus");
+        }
+
+        private void button191_Click(object sender, EventArgs e)
+        {
+            Plus(4, 17, "plus");
+        }
+
+        private void button183_Click(object sender, EventArgs e)
+        {
+            Plus(4, 18, "plus");
+        }
+
+        private void button175_Click(object sender, EventArgs e)
+        {
+            Plus(4, 19, "plus");
+        }
+
+        private void button167_Click(object sender, EventArgs e)
+        {
+            Plus(4, 20, "plus");
+        }
+
+        private void button159_Click(object sender, EventArgs e)
+        {
+            Plus(4, 21, "plus");
+        }
+
+        private void button151_Click(object sender, EventArgs e)
+        {
+            Plus(4, 22, "plus");
+        }
+
+        private void button143_Click(object sender, EventArgs e)
+        {
+            Plus(4, 23, "plus");
+        }
+
+        private void button135_Click(object sender, EventArgs e)
+        {
+            Plus(4, 24, "plus");
+        }
+
+        private void button127_Click(object sender, EventArgs e)
+        {
+            Plus(4, 25, "plus");
+        }
+
+        private void button119_Click(object sender, EventArgs e)
+        {
+            Plus(4, 26, "plus");
+        }
+
+        private void button111_Click(object sender, EventArgs e)
+        {
+            Plus(4, 27, "plus");
+        }
+
+        private void button103_Click(object sender, EventArgs e)
+        {
+            Plus(4, 28, "plus");
+        }
+
+        private void button95_Click(object sender, EventArgs e)
+        {
+            Plus(4, 29, "plus");
+        }
+
+        private void button87_Click(object sender, EventArgs e)
+        {
+            Plus(4, 30, "plus");
+        }
+
+        private void button79_Click(object sender, EventArgs e)
+        {
+            Plus(4, 31, "plus");
+        }
+
+        private void button71_Click(object sender, EventArgs e)
+        {
+            Plus(4, 32, "plus");
+        }
+
+        private void button65_Click(object sender, EventArgs e)
+        {
+            Plus(4, 33, "plus");
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            Plus(4, 34, "plus");
+        }
+
+        private void button49_Click(object sender, EventArgs e)
+        {
+            Plus(4, 35, "plus");
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            Plus(4, 36, "plus");
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            Plus(4, 37, "plus");
+        }
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Plus(4, 38, "plus");
+
+        }
+
+        private void button63_Click(object sender, EventArgs e)
+        {
+            Plus(4, 39, "plus");
         }
     }
 }
