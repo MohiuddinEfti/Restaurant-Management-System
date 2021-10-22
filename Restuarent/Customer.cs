@@ -3880,5 +3880,45 @@ namespace Restuarent
         {
 
         }
+
+        private void button230_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button222_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button214_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button206_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button198_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button190_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button182_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button174_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
