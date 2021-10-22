@@ -1827,10 +1827,7 @@ namespace Restuarent
         
 
         
-        private void button14_Click(object sender, EventArgs e)
-        {
-           
-        }
+       
 
         
 
@@ -3990,10 +3987,31 @@ namespace Restuarent
         {
 
         }
-
         private void button56_Click(object sender, EventArgs e)
         {
 
         }
+        private void button48_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void button40_Click(object sender, EventArgs e)
+        {
+
+        }
+       
+        private void button32_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void button62_Click(object sender, EventArgs e)
+        {
+
+        }
+    
     }
 }
