@@ -3985,5 +3985,15 @@ namespace Restuarent
         {
 
         }
+
+        private void button64_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button56_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

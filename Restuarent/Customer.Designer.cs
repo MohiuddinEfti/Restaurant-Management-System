@@ -6182,6 +6182,7 @@
             this.button56.Text = "-";
             this.button56.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button56.UseVisualStyleBackColor = false;
+            this.button56.Click += new System.EventHandler(this.button56_Click);
             // 
             // button57
             // 
@@ -6331,6 +6332,7 @@
             this.button64.Text = "-";
             this.button64.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button64.UseVisualStyleBackColor = false;
+            this.button64.Click += new System.EventHandler(this.button64_Click);
             // 
             // button65
             // 
