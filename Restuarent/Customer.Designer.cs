@@ -5209,6 +5209,7 @@
             this.button326.Text = "-";
             this.button326.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button326.UseVisualStyleBackColor = false;
+            this.button326.Click += new System.EventHandler(this.button326_Click);
             // 
             // button327
             // 
@@ -5343,6 +5344,7 @@
             this.button28.Text = "-";
             this.button28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button28.UseVisualStyleBackColor = false;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // button29
             // 
@@ -5563,6 +5565,7 @@
             this.button36.Text = "-";
             this.button36.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button36.UseVisualStyleBackColor = false;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // button37
             // 
@@ -5783,6 +5786,7 @@
             this.button44.Text = "-";
             this.button44.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button44.UseVisualStyleBackColor = false;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
             // 
             // button45
             // 
@@ -6003,6 +6007,7 @@
             this.button52.Text = "-";
             this.button52.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button52.UseVisualStyleBackColor = false;
+            this.button52.Click += new System.EventHandler(this.button52_Click);
             // 
             // button53
             // 
@@ -6223,6 +6228,7 @@
             this.button60.Text = "-";
             this.button60.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button60.UseVisualStyleBackColor = false;
+            this.button60.Click += new System.EventHandler(this.button60_Click);
             // 
             // button61
             // 
@@ -6589,6 +6595,7 @@
             this.button76.Text = "-";
             this.button76.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button76.UseVisualStyleBackColor = false;
+            this.button76.Click += new System.EventHandler(this.button76_Click);
             // 
             // button77
             // 
@@ -6809,6 +6816,7 @@
             this.button84.Text = "-";
             this.button84.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button84.UseVisualStyleBackColor = false;
+            this.button84.Click += new System.EventHandler(this.button84_Click);
             // 
             // button85
             // 
@@ -7029,6 +7037,7 @@
             this.button92.Text = "-";
             this.button92.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button92.UseVisualStyleBackColor = false;
+            this.button92.Click += new System.EventHandler(this.button92_Click);
             // 
             // button93
             // 
@@ -7249,6 +7258,7 @@
             this.button100.Text = "-";
             this.button100.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button100.UseVisualStyleBackColor = false;
+            this.button100.Click += new System.EventHandler(this.button100_Click);
             // 
             // button101
             // 
@@ -7469,6 +7479,7 @@
             this.button108.Text = "-";
             this.button108.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button108.UseVisualStyleBackColor = false;
+            this.button108.Click += new System.EventHandler(this.button108_Click);
             // 
             // button109
             // 
@@ -7689,6 +7700,7 @@
             this.button116.Text = "-";
             this.button116.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button116.UseVisualStyleBackColor = false;
+            this.button116.Click += new System.EventHandler(this.button116_Click);
             // 
             // button117
             // 
@@ -7909,6 +7921,7 @@
             this.button124.Text = "-";
             this.button124.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button124.UseVisualStyleBackColor = false;
+            this.button124.Click += new System.EventHandler(this.button124_Click);
             // 
             // button125
             // 
@@ -8129,6 +8142,7 @@
             this.button132.Text = "-";
             this.button132.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button132.UseVisualStyleBackColor = false;
+            this.button132.Click += new System.EventHandler(this.button132_Click);
             // 
             // button133
             // 
@@ -8349,6 +8363,7 @@
             this.button140.Text = "-";
             this.button140.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button140.UseVisualStyleBackColor = false;
+            this.button140.Click += new System.EventHandler(this.button140_Click);
             // 
             // button141
             // 
@@ -8495,6 +8510,7 @@
             this.button146.Text = "-";
             this.button146.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button146.UseVisualStyleBackColor = false;
+            this.button146.Click += new System.EventHandler(this.button146_Click);
             // 
             // button147
             // 
@@ -8569,6 +8585,7 @@
             this.button148.Text = "-";
             this.button148.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button148.UseVisualStyleBackColor = false;
+            this.button148.Click += new System.EventHandler(this.button148_Click);
             // 
             // button149
             // 
@@ -8789,6 +8806,7 @@
             this.button156.Text = "-";
             this.button156.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button156.UseVisualStyleBackColor = false;
+            this.button156.Click += new System.EventHandler(this.button156_Click);
             // 
             // button157
             // 
@@ -9009,6 +9027,7 @@
             this.button164.Text = "-";
             this.button164.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button164.UseVisualStyleBackColor = false;
+            this.button164.Click += new System.EventHandler(this.button164_Click);
             // 
             // button165
             // 
@@ -9229,6 +9248,7 @@
             this.button172.Text = "-";
             this.button172.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button172.UseVisualStyleBackColor = false;
+            this.button172.Click += new System.EventHandler(this.button172_Click);
             // 
             // button173
             // 
@@ -9449,6 +9469,7 @@
             this.button180.Text = "-";
             this.button180.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button180.UseVisualStyleBackColor = false;
+            this.button180.Click += new System.EventHandler(this.button180_Click);
             // 
             // button181
             // 
@@ -9669,6 +9690,7 @@
             this.button188.Text = "-";
             this.button188.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button188.UseVisualStyleBackColor = false;
+            this.button188.Click += new System.EventHandler(this.button188_Click);
             // 
             // button189
             // 
@@ -9889,6 +9911,7 @@
             this.button196.Text = "-";
             this.button196.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button196.UseVisualStyleBackColor = false;
+            this.button196.Click += new System.EventHandler(this.button196_Click);
             // 
             // button197
             // 
@@ -10109,6 +10132,7 @@
             this.button204.Text = "-";
             this.button204.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button204.UseVisualStyleBackColor = false;
+            this.button204.Click += new System.EventHandler(this.button204_Click);
             // 
             // button205
             // 
@@ -10329,6 +10353,7 @@
             this.button212.Text = "-";
             this.button212.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button212.UseVisualStyleBackColor = false;
+            this.button212.Click += new System.EventHandler(this.button212_Click);
             // 
             // button213
             // 
@@ -10549,6 +10574,7 @@
             this.button220.Text = "-";
             this.button220.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button220.UseVisualStyleBackColor = false;
+            this.button220.Click += new System.EventHandler(this.button220_Click);
             // 
             // button221
             // 
@@ -10769,6 +10795,7 @@
             this.button228.Text = "-";
             this.button228.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button228.UseVisualStyleBackColor = false;
+            this.button228.Click += new System.EventHandler(this.button228_Click);
             // 
             // button229
             // 
@@ -10989,6 +11016,7 @@
             this.button236.Text = "-";
             this.button236.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button236.UseVisualStyleBackColor = false;
+            this.button236.Click += new System.EventHandler(this.button236_Click);
             // 
             // button237
             // 
@@ -11428,6 +11456,7 @@
             this.button252.Text = "-";
             this.button252.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button252.UseVisualStyleBackColor = false;
+            this.button252.Click += new System.EventHandler(this.button252_Click);
             // 
             // button253
             // 
@@ -11648,6 +11677,7 @@
             this.button260.Text = "-";
             this.button260.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button260.UseVisualStyleBackColor = false;
+            this.button260.Click += new System.EventHandler(this.button260_Click);
             // 
             // button261
             // 
@@ -11868,6 +11898,7 @@
             this.button268.Text = "-";
             this.button268.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button268.UseVisualStyleBackColor = false;
+            this.button268.Click += new System.EventHandler(this.button268_Click);
             // 
             // button269
             // 
@@ -12088,6 +12119,7 @@
             this.button276.Text = "-";
             this.button276.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button276.UseVisualStyleBackColor = false;
+            this.button276.Click += new System.EventHandler(this.button276_Click);
             // 
             // button277
             // 
@@ -12308,6 +12340,7 @@
             this.button284.Text = "-";
             this.button284.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button284.UseVisualStyleBackColor = false;
+            this.button284.Click += new System.EventHandler(this.button284_Click);
             // 
             // button285
             // 
@@ -12528,6 +12561,7 @@
             this.button292.Text = "-";
             this.button292.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button292.UseVisualStyleBackColor = false;
+            this.button292.Click += new System.EventHandler(this.button292_Click);
             // 
             // button293
             // 
@@ -12748,6 +12782,7 @@
             this.button300.Text = "-";
             this.button300.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button300.UseVisualStyleBackColor = false;
+            this.button300.Click += new System.EventHandler(this.button300_Click);
             // 
             // button301
             // 
@@ -12968,6 +13003,7 @@
             this.button308.Text = "-";
             this.button308.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button308.UseVisualStyleBackColor = false;
+            this.button308.Click += new System.EventHandler(this.button308_Click);
             // 
             // button309
             // 
@@ -13188,6 +13224,7 @@
             this.button316.Text = "-";
             this.button316.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button316.UseVisualStyleBackColor = false;
+            this.button316.Click += new System.EventHandler(this.button316_Click);
             // 
             // button317
             // 
@@ -13408,6 +13445,7 @@
             this.button324.Text = "-";
             this.button324.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button324.UseVisualStyleBackColor = false;
+            this.button324.Click += new System.EventHandler(this.button324_Click);
             // 
             // button325
             // 
