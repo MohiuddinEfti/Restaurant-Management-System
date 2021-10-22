@@ -13165,6 +13165,7 @@
             this.button317.Text = "+";
             this.button317.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button317.UseVisualStyleBackColor = false;
+            this.button317.Click += new System.EventHandler(this.button317_Click);
             // 
             // textBox149
             // 
@@ -13384,6 +13385,7 @@
             this.button325.Text = "+";
             this.button325.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button325.UseVisualStyleBackColor = false;
+            this.button325.Click += new System.EventHandler(this.button325_Click);
             // 
             // textBox153
             // 

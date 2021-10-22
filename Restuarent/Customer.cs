@@ -2735,5 +2735,15 @@ namespace Restuarent
         {
             Plus(1, 39, "minus");
         }
+
+        private void button317_Click(object sender, EventArgs e)
+        {
+            Plus(2, 0, "plus");
+        }
+
+        private void button325_Click(object sender, EventArgs e)
+        {
+            Plus(2, 1, "plus");
+        }
     }
 }
