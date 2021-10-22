@@ -980,16 +980,6 @@ namespace Restuarent
             {
                 panel149.Visible = false;
             }
-            if (status.ElementAt(3) == "active" && type.ElementAt(3) == "Dessert")
-            {
-                panel149.Visible = true;
-                label160.Text = names.ElementAt(3);
-                pictureBox142.ImageLocation = pics.ElementAt(3);
-            }
-            else
-            {
-                panel149.Visible = false;
-            }
             if (status.ElementAt(4) == "active" && type.ElementAt(4) == "Dessert")
             {
                 panel145.Visible = true;
@@ -1179,178 +1169,177 @@ namespace Restuarent
             else
             {
                 panel74.Visible = false;
-            }
+            }           
             if (status.ElementAt(23) == "active" && type.ElementAt(23) == "Dessert")
             {
-                panel76.Visible = true;
-                label77.Text = names.ElementAt(23);
-                pictureBox63.ImageLocation = pics.ElementAt(23);
-            }
-            else
-            {
-                panel76.Visible = false;
-            }
-            if (status.ElementAt(24) == "active" && type.ElementAt(24) == "Dessert")
-            {
                 panel66.Visible = true;
-                label73.Text = names.ElementAt(24);
-                pictureBox59.ImageLocation = pics.ElementAt(24);
+                label73.Text = names.ElementAt(23);
+                pictureBox59.ImageLocation = pics.ElementAt(23);
             }
             else
             {
                 panel66.Visible = false;
             }
-            if (status.ElementAt(25) == "active" && type.ElementAt(25) == "Dessert")
+            if (status.ElementAt(24) == "active" && type.ElementAt(24) == "Dessert")
             {
                 panel62.Visible = true;
-                label69.Text = names.ElementAt(25);
-                pictureBox55.ImageLocation = pics.ElementAt(25);
+                label69.Text = names.ElementAt(24);
+                pictureBox55.ImageLocation = pics.ElementAt(24);
             }
             else
             {
                 panel62.Visible = false;
             }
-            if (status.ElementAt(26) == "active" && type.ElementAt(26) == "Dessert")
+            if (status.ElementAt(25) == "active" && type.ElementAt(25) == "Dessert")
             {
                 panel58.Visible = true;
-                label65.Text = names.ElementAt(26);
-                pictureBox51.ImageLocation = pics.ElementAt(26);
+                label65.Text = names.ElementAt(25);
+                pictureBox51.ImageLocation = pics.ElementAt(25);
             }
             else
             {
                 panel58.Visible = false;
             }
-            if (status.ElementAt(27) == "active" && type.ElementAt(27) == "Dessert")
+            if (status.ElementAt(26) == "active" && type.ElementAt(26) == "Dessert")
             {
                 panel54.Visible = true;
-                label61.Text = names.ElementAt(27);
-                pictureBox47.ImageLocation = pics.ElementAt(27);
+                label61.Text = names.ElementAt(26);
+                pictureBox47.ImageLocation = pics.ElementAt(26);
             }
             else
             {
                 panel54.Visible = false;
             }
-            if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Dessert")
+            if (status.ElementAt(27) == "active" && type.ElementAt(27) == "Dessert")
             {
                 panel50.Visible = true;
-                label57.Text = names.ElementAt(28);
-                pictureBox43.ImageLocation = pics.ElementAt(28);
+                label57.Text = names.ElementAt(27);
+                pictureBox43.ImageLocation = pics.ElementAt(27);
             }
             else
             {
                 panel50.Visible = false;
             }
-            if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Dessert")
+            if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Dessert")
             {
                 panel46.Visible = true;
-                label53.Text = names.ElementAt(29);
-                pictureBox39.ImageLocation = pics.ElementAt(29);
+                label53.Text = names.ElementAt(28);
+                pictureBox39.ImageLocation = pics.ElementAt(28);
             }
             else
             {
                 panel46.Visible = false;
             }
-            if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Dessert")
+            if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Dessert")
             {
                 panel42.Visible = true;
-                label49.Text = names.ElementAt(30);
-                pictureBox35.ImageLocation = pics.ElementAt(30);
+                label49.Text = names.ElementAt(29);
+                pictureBox35.ImageLocation = pics.ElementAt(29);
             }
             else
             {
                 panel42.Visible = false;
             }
-            if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Dessert")
+            if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Dessert")
             {
                 panel38.Visible = true;
-                label45.Text = names.ElementAt(31);
-                pictureBox31.ImageLocation = pics.ElementAt(31);
+                label45.Text = names.ElementAt(30);
+                pictureBox31.ImageLocation = pics.ElementAt(30);
             }
             else
             {
                 panel38.Visible = false;
             }
-            if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Dessert")
+            if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Dessert")
             {
                 panel34.Visible = true;
-                label41.Text = names.ElementAt(32);
-                pictureBox27.ImageLocation = pics.ElementAt(32);
+                label41.Text = names.ElementAt(31);
+                pictureBox27.ImageLocation = pics.ElementAt(31);
             }
             else
             {
                 panel34.Visible = false;
             }
-            if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Dessert")
+            if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Dessert")
             {
                 panel31.Visible = true;
-                label38.Text = names.ElementAt(33);
-                pictureBox24.ImageLocation = pics.ElementAt(33);
+                label38.Text = names.ElementAt(32);
+                pictureBox24.ImageLocation = pics.ElementAt(32);
             }
             else
             {
                 panel31.Visible = false;
             }
-            if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Dessert")
+            if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Dessert")
             {
                 panel20.Visible = true;
-                label27.Text = names.ElementAt(34);
-                pictureBox13.ImageLocation = pics.ElementAt(34);
+                label27.Text = names.ElementAt(33);
+                pictureBox13.ImageLocation = pics.ElementAt(33);
             }
             else
             {
                 panel20.Visible = false;
             }
-            if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Dessert")
+            if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Dessert")
             {
                 panel16.Visible = true;
-                label23.Text = names.ElementAt(35);
-                pictureBox9.ImageLocation = pics.ElementAt(35);
+                label23.Text = names.ElementAt(34);
+                pictureBox9.ImageLocation = pics.ElementAt(34);
             }
             else
             {
                 panel16.Visible = false;
             }
-            if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Dessert")
+            if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Dessert")
             {
                 panel12.Visible = true;
-                label19.Text = names.ElementAt(36);
-                pictureBox5.ImageLocation = pics.ElementAt(36);
+                label19.Text = names.ElementAt(35);
+                pictureBox5.ImageLocation = pics.ElementAt(35);
             }
             else
             {
                 panel12.Visible = false;
             }
-            if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Dessert")
+            if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Dessert")
             {
                 panel8.Visible = true;
-                Cokelab.Text = names.ElementAt(37);
-                Cokepic.ImageLocation = pics.ElementAt(37);
+                Cokelab.Text = names.ElementAt(36);
+                Cokepic.ImageLocation = pics.ElementAt(36);
             }
             else
             {
                 panel8.Visible = false;
             }
-            if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Dessert")
+            if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Dessert")
             {
                 panel4.Visible = true;
-                Pizzalab.Text = names.ElementAt(38);
-                pizzapic.ImageLocation = pics.ElementAt(38);
+                Pizzalab.Text = names.ElementAt(37);
+                pizzapic.ImageLocation = pics.ElementAt(37);
             }
             else
             {
                 panel4.Visible = false;
             }
-            if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Dessert")
+            if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Dessert")
             {
                 panel24.Visible = true;
-                label31.Text = names.ElementAt(39);
-                pictureBox17.ImageLocation = pics.ElementAt(39);
+                label31.Text = names.ElementAt(38);
+                pictureBox17.ImageLocation = pics.ElementAt(38);
             }
             else
             {
                 panel24.Visible = false;
             }
-            
+            if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Dessert")
+            {
+                panel5.Visible = true;
+                label35.Text = names.ElementAt(39);
+                pictureBox21.ImageLocation = pics.ElementAt(39);
+            }
+            else
+            {
+                panel5.Visible = false;
+            }
 
 
 
@@ -1805,10 +1794,7 @@ namespace Restuarent
 
         
 
-        private void button6_Click_1(object sender, EventArgs e)
-        {
-           
-        }
+       
 
         private void button7_Click_1(object sender, EventArgs e)
         {
@@ -1845,10 +1831,7 @@ namespace Restuarent
            
         }
 
-        private void button15_Click(object sender, EventArgs e)
-        {
-          
-        }
+        
 
         private void button16_Click(object sender, EventArgs e)
         {
@@ -3242,6 +3225,204 @@ namespace Restuarent
         private void button146_Click(object sender, EventArgs e)
         {
             Plus(2, 39, "minus");
+        }
+
+        private void button321_Click(object sender, EventArgs e)
+        {
+            Plus(3, 0, "plus");
+        }
+
+        private void button329_Click(object sender, EventArgs e)
+        {
+            Plus(3, 1, "plus");
+        }
+
+        private void button313_Click(object sender, EventArgs e)
+        {
+            Plus(3, 2, "plus");
+        }
+
+        private void button305_Click(object sender, EventArgs e)
+        {
+            Plus(3, 3, "plus");
+        }
+
+        private void button297_Click(object sender, EventArgs e)
+        {
+            Plus(3, 4, "plus");
+        }
+
+        private void button289_Click(object sender, EventArgs e)
+        {
+            Plus(3, 5, "plus");
+        }
+
+        private void button281_Click(object sender, EventArgs e)
+        {
+            Plus(3, 6, "plus");
+        }
+
+        private void button273_Click(object sender, EventArgs e)
+        {
+            Plus(3,7, "plus");
+        }
+
+        private void button265_Click(object sender, EventArgs e)
+        {
+            Plus(3, 8, "plus");
+        }
+
+        private void button257_Click(object sender, EventArgs e)
+        {
+            Plus(3, 9, "plus");
+        }
+
+        private void button249_Click(object sender, EventArgs e)
+        {
+            Plus(3, 10, "plus");
+        }
+
+        private void button243_Click(object sender, EventArgs e)
+        {
+            Plus(3, 11, "plus");
+        }
+
+        private void button235_Click(object sender, EventArgs e)
+        {
+            Plus(3, 12, "plus");
+        }
+
+        private void button227_Click(object sender, EventArgs e)
+        {
+            Plus(3, 13, "plus");
+        }
+
+        private void button219_Click(object sender, EventArgs e)
+        {
+            Plus(3, 14, "plus");
+        }
+
+        private void button211_Click(object sender, EventArgs e)
+        {
+            Plus(3, 15, "plus");
+        }
+
+        private void button203_Click(object sender, EventArgs e)
+        {
+            Plus(3, 16, "plus");
+        }
+
+        private void button195_Click(object sender, EventArgs e)
+        {
+            Plus(3, 17, "plus");
+        }
+
+        private void button187_Click(object sender, EventArgs e)
+        {
+            Plus(3, 18, "plus");
+        }
+
+        private void button179_Click(object sender, EventArgs e)
+        {
+            Plus(3, 19, "plus");
+        }
+
+        private void button171_Click(object sender, EventArgs e)
+        {
+            Plus(3, 20, "plus");
+        }
+
+        private void button163_Click(object sender, EventArgs e)
+        {
+            Plus(3, 21, "plus");
+        }
+
+        private void button155_Click(object sender, EventArgs e)
+        {
+            Plus(3, 22, "plus");
+        }
+
+        private void button139_Click(object sender, EventArgs e)
+        {
+            Plus(3, 23, "plus");
+        }
+
+        private void button131_Click(object sender, EventArgs e)
+        {
+            Plus(3, 24, "plus");
+        }
+
+        private void button123_Click(object sender, EventArgs e)
+        {
+            Plus(3, 25, "plus");
+        }
+
+        private void button115_Click(object sender, EventArgs e)
+        {
+            Plus(3, 26, "plus");
+        }
+
+        private void button107_Click(object sender, EventArgs e)
+        {
+            Plus(3, 27, "plus");
+        }
+
+        private void button99_Click(object sender, EventArgs e)
+        {
+            Plus(3, 28, "plus");
+        }
+
+        private void button91_Click(object sender, EventArgs e)
+        {
+            Plus(3, 29, "plus");
+        }
+
+        private void button83_Click(object sender, EventArgs e)
+        {
+            Plus(3, 30, "plus");
+        }
+
+        private void button75_Click(object sender, EventArgs e)
+        {
+            Plus(3, 31, "plus");
+        }
+
+        private void button69_Click(object sender, EventArgs e)
+        {
+            Plus(3, 32, "plus");
+        }
+
+        private void button47_Click(object sender, EventArgs e)
+        {
+            Plus(3, 33, "plus");
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            Plus(3, 34, "plus");
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            Plus(3, 35, "plus");
+        }
+        private void button15_Click(object sender, EventArgs e)
+        {
+            Plus(3, 36, "plus");
+        }
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Plus(3, 37, "plus");
+        }
+
+        private void button55_Click(object sender, EventArgs e)
+        {
+            Plus(3, 38, "plus");
+        }
+
+        private void button12_Click_1(object sender, EventArgs e)
+        {
+            Plus(3, 39, "plus");
         }
     }
 }
