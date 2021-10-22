@@ -1029,13 +1029,13 @@
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label173 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
             this.pictureBox155 = new System.Windows.Forms.PictureBox();
             this.button62 = new System.Windows.Forms.Button();
             this.button63 = new System.Windows.Forms.Button();
             this.textBox156 = new System.Windows.Forms.TextBox();
             this.label174 = new System.Windows.Forms.Label();
+            this.label173 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Burgerpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pizzapic)).BeginInit();
@@ -11183,6 +11183,7 @@
             this.button238.Text = "-";
             this.button238.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button238.UseVisualStyleBackColor = false;
+            this.button238.Click += new System.EventHandler(this.button238_Click);
             // 
             // button239
             // 
@@ -11332,6 +11333,7 @@
             this.button244.Text = "-";
             this.button244.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button244.UseVisualStyleBackColor = false;
+            this.button244.Click += new System.EventHandler(this.button244_Click);
             // 
             // button245
             // 
@@ -11481,6 +11483,7 @@
             this.button250.Text = "-";
             this.button250.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button250.UseVisualStyleBackColor = false;
+            this.button250.Click += new System.EventHandler(this.button250_Click);
             // 
             // button251
             // 
@@ -11705,6 +11708,7 @@
             this.button258.Text = "-";
             this.button258.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button258.UseVisualStyleBackColor = false;
+            this.button258.Click += new System.EventHandler(this.button258_Click);
             // 
             // button259
             // 
@@ -11929,6 +11933,7 @@
             this.button266.Text = "-";
             this.button266.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button266.UseVisualStyleBackColor = false;
+            this.button266.Click += new System.EventHandler(this.button266_Click);
             // 
             // button267
             // 
@@ -12153,6 +12158,7 @@
             this.button274.Text = "-";
             this.button274.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button274.UseVisualStyleBackColor = false;
+            this.button274.Click += new System.EventHandler(this.button274_Click);
             // 
             // button275
             // 
@@ -12377,6 +12383,7 @@
             this.button282.Text = "-";
             this.button282.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button282.UseVisualStyleBackColor = false;
+            this.button282.Click += new System.EventHandler(this.button282_Click);
             // 
             // button283
             // 
@@ -12601,6 +12608,7 @@
             this.button290.Text = "-";
             this.button290.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button290.UseVisualStyleBackColor = false;
+            this.button290.Click += new System.EventHandler(this.button290_Click);
             // 
             // button291
             // 
@@ -12825,6 +12833,7 @@
             this.button298.Text = "-";
             this.button298.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button298.UseVisualStyleBackColor = false;
+            this.button298.Click += new System.EventHandler(this.button298_Click);
             // 
             // button299
             // 
@@ -13049,6 +13058,7 @@
             this.button306.Text = "-";
             this.button306.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button306.UseVisualStyleBackColor = false;
+            this.button306.Click += new System.EventHandler(this.button306_Click);
             // 
             // button307
             // 
@@ -13273,6 +13283,7 @@
             this.button314.Text = "-";
             this.button314.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button314.UseVisualStyleBackColor = false;
+            this.button314.Click += new System.EventHandler(this.button314_Click);
             // 
             // button315
             // 
@@ -13497,6 +13508,7 @@
             this.button322.Text = "-";
             this.button322.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button322.UseVisualStyleBackColor = false;
+            this.button322.Click += new System.EventHandler(this.button322_Click);
             // 
             // button323
             // 
@@ -13951,15 +13963,6 @@
             this.flowLayoutPanel4.Size = new System.Drawing.Size(200, 501);
             this.flowLayoutPanel4.TabIndex = 79;
             // 
-            // label173
-            // 
-            this.label173.AutoSize = true;
-            this.label173.Location = new System.Drawing.Point(969, 45);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(47, 13);
-            this.label173.TabIndex = 80;
-            this.label173.Text = "label173";
-            // 
             // panel28
             // 
             this.panel28.Controls.Add(this.pictureBox155);
@@ -13975,7 +13978,6 @@
             // pictureBox155
             // 
             this.pictureBox155.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox155.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox155.Image")));
             this.pictureBox155.Location = new System.Drawing.Point(24, 27);
             this.pictureBox155.Name = "pictureBox155";
             this.pictureBox155.Size = new System.Drawing.Size(118, 76);
@@ -14033,6 +14035,15 @@
             this.label174.Size = new System.Drawing.Size(57, 20);
             this.label174.TabIndex = 63;
             this.label174.Text = "Water";
+            // 
+            // label173
+            // 
+            this.label173.AutoSize = true;
+            this.label173.Location = new System.Drawing.Point(969, 45);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(47, 13);
+            this.label173.TabIndex = 80;
+            this.label173.Text = "label173";
             // 
             // Customer
             // 
