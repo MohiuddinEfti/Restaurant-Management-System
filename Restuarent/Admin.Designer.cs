@@ -137,11 +137,11 @@ namespace Restuarent
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(225, 160);
+            this.dataGridView1.Location = new System.Drawing.Point(257, 160);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1021, 296);
+            this.dataGridView1.Size = new System.Drawing.Size(945, 296);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -320,7 +320,7 @@ namespace Restuarent
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.Movies);
             this.panel1.Controls.Add(this.button9);
-            this.panel1.Location = new System.Drawing.Point(219, 90);
+            this.panel1.Location = new System.Drawing.Point(222, 80);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1027, 508);
             this.panel1.TabIndex = 35;
