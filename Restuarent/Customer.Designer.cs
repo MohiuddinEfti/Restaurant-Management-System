@@ -98,7 +98,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.Cash = new System.Windows.Forms.Button();
             this.Bkash = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -1033,7 +1032,8 @@
             this.button63 = new System.Windows.Forms.Button();
             this.textBox156 = new System.Windows.Forms.TextBox();
             this.label174 = new System.Windows.Forms.Label();
-            this.label173 = new System.Windows.Forms.Label();
+            this.button330 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Burgerpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pizzapic)).BeginInit();
@@ -1391,11 +1391,14 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.LightGray;
             this.textBox2.Location = new System.Drawing.Point(796, 309);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(209, 31);
             this.textBox2.TabIndex = 11;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Text = "Customer Name";
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // label3
             // 
@@ -2260,21 +2263,6 @@
             this.Bkash.TabIndex = 35;
             this.Bkash.UseVisualStyleBackColor = true;
             this.Bkash.Click += new System.EventHandler(this.Bkash_Click_1);
-            // 
-            // button25
-            // 
-            this.button25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button25.BackColor = System.Drawing.Color.PaleGreen;
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.Location = new System.Drawing.Point(718, 63);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(185, 148);
-            this.button25.TabIndex = 70;
-            this.button25.Text = "Your Order Is Ready";
-            this.button25.UseVisualStyleBackColor = false;
-            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // timer1
             // 
@@ -14041,14 +14029,29 @@
             this.label174.TabIndex = 63;
             this.label174.Text = "Water";
             // 
-            // label173
+            // button330
             // 
-            this.label173.AutoSize = true;
-            this.label173.Location = new System.Drawing.Point(969, 45);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(47, 13);
-            this.label173.TabIndex = 80;
-            this.label173.Text = "label173";
+            this.button330.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button330.BackColor = System.Drawing.Color.PaleGreen;
+            this.button330.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button330.Location = new System.Drawing.Point(565, -4);
+            this.button330.Name = "button330";
+            this.button330.Size = new System.Drawing.Size(220, 96);
+            this.button330.TabIndex = 81;
+            this.button330.Text = "Your Order Is Ready";
+            this.button330.UseVisualStyleBackColor = false;
+            this.button330.Click += new System.EventHandler(this.button330_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(-12, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 82;
+            this.label5.Text = "label5";
             // 
             // Customer
             // 
@@ -14059,7 +14062,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
-            this.Controls.Add(this.label173);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button330);
             this.Controls.Add(this.flowLayoutPanel4);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -14068,7 +14072,6 @@
             this.Controls.Add(this.label90);
             this.Controls.Add(this.label89);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.button25);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.label9);
@@ -14656,7 +14659,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel3;
@@ -15579,7 +15581,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.Label label173;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.Button button8;
@@ -15592,6 +15593,8 @@
         private System.Windows.Forms.Button button63;
         private System.Windows.Forms.TextBox textBox156;
         private System.Windows.Forms.Label label174;
+        private System.Windows.Forms.Button button330;
+        private System.Windows.Forms.Label label5;
     }
 }
 

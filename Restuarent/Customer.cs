@@ -86,16 +86,9 @@ namespace Restuarent
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if(textBox2.Text=="")
-            {
-                textBox2.Text = "Customer Name";
-                textBox2.ForeColor = Color.LightGray;
-            }
-            else
-            {
-                textBox2.Text = textBox2.Text;
-                textBox2.ForeColor = Color.Black;
-            }
+            
+           
+            
             pics.Clear();
             prices.Clear();
             names.Clear();
@@ -106,7 +99,7 @@ namespace Restuarent
             it.Clear();
 
 
-            button25.Visible = false;
+            button330.Visible = false;
             panel1.Visible = false;
             label9.Visible = false;
             richTextBox1.Visible = false;
@@ -1952,7 +1945,7 @@ namespace Restuarent
              string ab = time.ToString("h:mm:ss tt ");
              SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
              connection.Open();
-             string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + data + "','" + ab + "','" + tk + "','" + Today + "','" +bkash+ "','" + textBox1.Text.ToString() + "')";
+             string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + data + "','" + ab + "','" + tk + "','" + Today + "','" +bkash+ "','" + textBox1.Text.ToString() + "')";
 
              SqlCommand command = new SqlCommand(sq1, connection);
              int diary = command.ExecuteNonQuery();
@@ -1969,7 +1962,7 @@ namespace Restuarent
                  label13.Visible = false;
                  button22.Visible = false;
                  panel1.Visible = false;
-                 string to = textBox1.Text;
+                
                  
                  richTextBox1.Text = String.Empty;
                  flowLayoutPanel1.Visible = true;
@@ -2063,11 +2056,12 @@ namespace Restuarent
         public string mynoti;
         private void timer1_Tick(object sender, EventArgs e)
         {
+            label5.Text = "Active";
             string data = DATA.ElementAt(0) + DATA.ElementAt(1) + DATA.ElementAt(2) + DATA.ElementAt(3) + DATA.ElementAt(4) + DATA.ElementAt(5) + DATA.ElementAt(6) + DATA.ElementAt(7) + DATA.ElementAt(8) + DATA.ElementAt(9) + DATA.ElementAt(10) + DATA.ElementAt(11) + DATA.ElementAt(12) + DATA.ElementAt(13) + DATA.ElementAt(14) + DATA.ElementAt(15) + DATA.ElementAt(16) + DATA.ElementAt(17) + DATA.ElementAt(18) + DATA.ElementAt(19) + DATA.ElementAt(20) + DATA.ElementAt(21) + DATA.ElementAt(22) + DATA.ElementAt(23) + DATA.ElementAt(24) + DATA.ElementAt(25) + DATA.ElementAt(26) + DATA.ElementAt(27) + DATA.ElementAt(28) + DATA.ElementAt(29) + DATA.ElementAt(30) + DATA.ElementAt(31) + DATA.ElementAt(32) + DATA.ElementAt(33) + DATA.ElementAt(34) + DATA.ElementAt(35) + DATA.ElementAt(36) + DATA.ElementAt(37) + DATA.ElementAt(38) + DATA.ElementAt(39);
 
             SqlConnection connection7 = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection7.Open();
-            string sq7 = "SELECT CustomerRecieved FROM CustomerOrders Where TableNo='" + label8.Text+ "' AND TotalOrder='"+data+ "'AND CustomerName='"+textBox2.Text+"'";
+            string sq7 = "SELECT CustomerRecieved FROM CustomerOrders Where TableNo='" + label8.Text+"'";
             SqlCommand command7 = new SqlCommand(sq7, connection7);
             SqlDataReader reader7 = command7.ExecuteReader();
 
@@ -2083,44 +2077,27 @@ namespace Restuarent
             }
             if(mynoti=="Ready")
             {
-                button25.Visible = true;
+                button330.Visible = true;
                
             }
             else
             {
-                button25.Visible = false;
+                button330.Visible = false;
             }
 
-            if(button25.BackColor == Color.Red)
+            if(button330.BackColor == Color.Red)
             {
-                button25.BackColor = Color.PaleGreen;
+                button330.BackColor = Color.PaleGreen;
                
             }
-            else if(button25.BackColor == Color.PaleGreen)
+            else if(button330.BackColor == Color.PaleGreen)
             {
-                button25.BackColor = Color.Red;
+                button330.BackColor = Color.Red;
                 
             }
         }
 
-        private void button25_Click(object sender, EventArgs e)
-        {
-           button25.Visible = false;
-            timer1.Enabled = false;            
-            textBox2.Text = String.Empty;
-            ADDorder.Clear();
-            it.Clear();
-            DATA.Clear();
-            for (int te = 0; te <= 39; te++)
-            {
-                it.Insert(te, 0);
-                DATA.Insert(te, "");
-                ADDorder.Insert(te, "");
-
-
-            }
-
-        }
+       
 
         private void button27_Click(object sender, EventArgs e)
         {            
@@ -4392,17 +4369,39 @@ namespace Restuarent
             Plus(4, 39, "minus");
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if(textBox2.Text=="Customer Name")
+            {
+                textBox2.Text = "";
+                textBox2.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
         {
             if (textBox2.Text == "")
             {
                 textBox2.Text = "Customer Name";
                 textBox2.ForeColor = Color.LightGray;
             }
-            else
+        }
+
+        private void button330_Click(object sender, EventArgs e)
+        {
+            button330.Visible = false;
+            timer1.Enabled = false;
+            textBox2.Text = String.Empty;
+            ADDorder.Clear();
+            it.Clear();
+            DATA.Clear();
+            for (int te = 0; te <= 39; te++)
             {
-                textBox2.Text = textBox2.Text;
-                textBox2.ForeColor = Color.Black;
+                it.Insert(te, 0);
+                DATA.Insert(te, "");
+                ADDorder.Insert(te, "");
+
+
             }
         }
     }
