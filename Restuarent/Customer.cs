@@ -2015,7 +2015,7 @@ namespace Restuarent
              {
                  MessageBox.Show("Clear Payment When Order Is Ready");
                  timer1.Enabled = true;
-                label4.Text = true;
+                label4.Visible = true;
                  textBox1.Text = string.Empty;
                  groupBox1.Visible = false;
                  pictureBox2.Visible = false;
