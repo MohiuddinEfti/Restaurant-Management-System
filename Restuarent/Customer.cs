@@ -2504,163 +2504,163 @@ namespace Restuarent
                 {
                     if (number == 0)
                     {
-                        textBox149.Text = i.ToString();
+                        textBox151.Text = i.ToString();
                     }
                     else if (number == 1)
                     {
-                        textBox153.Text = i.ToString();
+                        textBox155.Text = i.ToString();
                     }
                     else if (number == 2)
                     {
-                        textBox145.Text = i.ToString();
+                        textBox147.Text = i.ToString();
                     }
                     else if (number == 3)
                     {
-                        textBox141.Text = i.ToString();
+                        textBox143.Text = i.ToString();
                     }
                     else if (number == 4)
                     {
-                        textBox137.Text = i.ToString();
+                        textBox139.Text = i.ToString();
                     }
                     else if (number == 5)
                     {
-                        textBox133.Text = i.ToString();
+                        textBox135.Text = i.ToString();
                     }
                     else if (number == 6)
                     {
-                        textBox129.Text = i.ToString();
+                        textBox131.Text = i.ToString();
                     }
                     else if (number == 7)
                     {
-                        textBox125.Text = i.ToString();
+                        textBox127.Text = i.ToString();
                     }
                     else if (number == 8)
                     {
-                        textBox121.Text = i.ToString();
+                        textBox123.Text = i.ToString();
                     }
                     else if (number == 9)
                     {
-                        textBox117.Text = i.ToString();
+                        textBox119.Text = i.ToString();
                     }
                     else if (number == 10)
                     {
-                        textBox109.Text = i.ToString();
+                        textBox115.Text = i.ToString();
                     }
                     else if (number == 11)
                     {
-                        textBox105.Text = i.ToString();
+                        textBox112.Text = i.ToString();
                     }
                     else if (number == 12)
                     {
-                        textBox101.Text = i.ToString();
+                        textBox108.Text = i.ToString();
                     }
                     else if (number == 13)
                     {
-                        textBox97.Text = i.ToString();
+                        textBox104.Text = i.ToString();
                     }
                     else if (number == 14)
                     {
-                        textBox93.Text = i.ToString();
+                        textBox100.Text = i.ToString();
                     }
                     else if (number == 15)
                     {
-                        textBox89.Text = i.ToString();
+                        textBox96.Text = i.ToString();
                     }
                     else if (number == 16)
                     {
-                        textBox85.Text = i.ToString();
+                        textBox92.Text = i.ToString();
                     }
                     else if (number == 17)
                     {
-                        textBox81.Text = i.ToString();
+                        textBox88.Text = i.ToString();
                     }
                     else if (number == 18)
                     {
-                        textBox77.Text = i.ToString();
+                        textBox84.Text = i.ToString();
                     }
                     else if (number == 19)
                     {
-                        textBox73.Text = i.ToString();
+                        textBox80.Text = i.ToString();
                     }
                     else if (number == 20)
                     {
-                        textBox69.Text = i.ToString();
+                        textBox76.Text = i.ToString();
                     }
                     else if (number == 21)
                     {
-                        textBox65.Text = i.ToString();
+                        textBox72.Text = i.ToString();
                     }
                     else if (number == 22)
                     {
-                        textBox61.Text = i.ToString();
+                        textBox68.Text = i.ToString();
                     }
                     else if (number == 23)
                     {
-                        textBox57.Text = i.ToString();
+                        textBox60.Text = i.ToString();
                     }
                     else if (number == 24)
                     {
-                        textBox53.Text = i.ToString();
+                        textBox56.Text = i.ToString();
                     }
                     else if (number == 25)
                     {
-                        textBox49.Text = i.ToString();
+                        textBox52.Text = i.ToString();
                     }
                     else if (number == 26)
                     {
-                        textBox45.Text = i.ToString();
+                        textBox48.Text = i.ToString();
                     }
                     else if (number == 27)
                     {
-                        textBox41.Text = i.ToString();
+                        textBox44.Text = i.ToString();
                     }
                     else if (number == 28)
                     {
-                        textBox37.Text = i.ToString();
+                        textBox40.Text = i.ToString();
                     }
                     else if (number == 29)
                     {
-                        textBox33.Text = i.ToString();
+                        textBox36.Text = i.ToString();
                     }
                     else if (number == 30)
                     {
-                        textBox29.Text = i.ToString();
+                        textBox32.Text = i.ToString();
                     }
                     else if (number == 31)
                     {
-                        textBox21.Text = i.ToString();
+                        textBox28.Text = i.ToString();
                     }
                     else if (number == 32)
                     {
-                        textBox17.Text = i.ToString();
+                        textBox25.Text = i.ToString();
                     }
                     else if (number == 33)
                     {
-                        textBox13.Text = i.ToString();
+                        textBox14.Text = i.ToString();
                     }
                     else if (number == 34)
                     {
-                        textBox9.Text = i.ToString();
+                        textBox10.Text = i.ToString();
                     }
                     else if (number == 35)
                     {
-                        textBox5.Text = i.ToString();
+                        textBox6.Text = i.ToString();
                     }
                     else if (number == 36)
                     {
-                        Pastrys.Text = i.ToString();
+                        Cokes.Text = i.ToString();
                     }
                     else if (number == 37)
                     {
-                        RiceBowls.Text = i.ToString();
+                        Pizzas.Text = i.ToString();
                     }
                     else if (number == 38)
                     {
-                        textBox154.Text = i.ToString();
+                        textBox18.Text = i.ToString();
                     }
                     else if (number == 39)
                     {
-                        textBox64.Text = i.ToString();
+                        textBox22.Text = i.ToString();
                     }
 
                 }
