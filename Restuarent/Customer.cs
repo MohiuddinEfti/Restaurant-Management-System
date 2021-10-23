@@ -1962,8 +1962,8 @@ namespace Restuarent
                  label13.Visible = false;
                  button22.Visible = false;
                  panel1.Visible = false;
-                
-                 
+
+                label4.Visible = true;
                  richTextBox1.Text = String.Empty;
                  flowLayoutPanel1.Visible = true;
                  flowLayoutPanel2.Visible = true;
@@ -2015,6 +2015,7 @@ namespace Restuarent
              {
                  MessageBox.Show("Clear Payment When Order Is Ready");
                  timer1.Enabled = true;
+                label4.Text = true;
                  textBox1.Text = string.Empty;
                  groupBox1.Visible = false;
                  pictureBox2.Visible = false;
@@ -4349,6 +4350,7 @@ namespace Restuarent
         private void button330_Click(object sender, EventArgs e)
         {
             button330.Visible = false;
+            label4.Visible = false;
             timer1.Enabled = false;
             textBox2.Text = String.Empty;
             ADDorder.Clear();
