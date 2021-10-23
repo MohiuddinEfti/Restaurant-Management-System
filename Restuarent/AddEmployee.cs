@@ -138,10 +138,10 @@ namespace Restuarent
                     {
                         gen = "Male";
                     }
-
+                    string ac = "Active";
                     SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
                     connection.Open();
-                    string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password,EmpID) VALUES('" + comboBox2.Text + "','" + NameTextBox.Text + "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','" + dateTimePicker1.Text + "','" + gen + "','" + comboBox1.Text + "','" + Int32.Parse(Salarytextbox.Text) + "','" + abc + "','" + PasswordtextBox2.Text + "','" + textBox2.Text + "')";
+                    string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password,EmpID,Active) VALUES('" + comboBox2.Text + "','" + NameTextBox.Text + "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','" + dateTimePicker1.Text + "','" + gen + "','" + comboBox1.Text + "','" + Int32.Parse(Salarytextbox.Text) + "','" + abc + "','" + PasswordtextBox2.Text + "','" + textBox2.Text + "','" + ac + "')";
 
                     SqlCommand command = new SqlCommand(sq1, connection);
                     int diary = command.ExecuteNonQuery();
@@ -174,6 +174,7 @@ namespace Restuarent
                             CS.Salary = (int)reader2["Salary"];
                             CS.Picture = reader2["Picture"].ToString();
                             CS.Password = reader2["Password"].ToString();
+                            CS.Status = reader2["Active"].ToString();
                             list2.Add(CS);
                         }
                         dataGridView1.DataSource = list2;
