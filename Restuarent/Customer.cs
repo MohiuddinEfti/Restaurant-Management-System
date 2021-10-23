@@ -86,9 +86,9 @@ namespace Restuarent
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-           
-            
+
+            label8.Text =tbno.ToString();
+            ;label4.Visible = false;
             pics.Clear();
             prices.Clear();
             names.Clear();
@@ -1942,7 +1942,7 @@ namespace Restuarent
             string data = DATA.ElementAt(0) + DATA.ElementAt(1) + DATA.ElementAt(2) + DATA.ElementAt(3) + DATA.ElementAt(4) + DATA.ElementAt(5) + DATA.ElementAt(6) + DATA.ElementAt(7) + DATA.ElementAt(8) + DATA.ElementAt(9) + DATA.ElementAt(10) + DATA.ElementAt(11) + DATA.ElementAt(12) + DATA.ElementAt(13) + DATA.ElementAt(14) + DATA.ElementAt(15) + DATA.ElementAt(16) + DATA.ElementAt(17) + DATA.ElementAt(18) + DATA.ElementAt(19) + DATA.ElementAt(20) + DATA.ElementAt(21) + DATA.ElementAt(22) + DATA.ElementAt(23) + DATA.ElementAt(24) + DATA.ElementAt(25) + DATA.ElementAt(26) + DATA.ElementAt(27) + DATA.ElementAt(28) + DATA.ElementAt(29) + DATA.ElementAt(30) + DATA.ElementAt(31) + DATA.ElementAt(32) + DATA.ElementAt(33) + DATA.ElementAt(34) + DATA.ElementAt(35) + DATA.ElementAt(36) + DATA.ElementAt(37) + DATA.ElementAt(38) + DATA.ElementAt(39);
             string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
              DateTime time = DateTime.Now;
-             string ab = time.ToString("h:mm:ss tt ");
+             string ab =grab= time.ToString("h:mm:ss tt");
              SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
              connection.Open();
              string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + data + "','" + ab + "','" + tk + "','" + Today + "','" +bkash+ "','" + textBox1.Text.ToString() + "')";
@@ -1996,7 +1996,7 @@ namespace Restuarent
         {
 
         }
-
+        public string grab;
         private void Cash_Click(object sender, EventArgs e)
         {
             string bkash = "Cash Payment";
@@ -2004,7 +2004,7 @@ namespace Restuarent
             string data = DATA.ElementAt(0) + DATA.ElementAt(1) + DATA.ElementAt(2) + DATA.ElementAt(3) + DATA.ElementAt(4) + DATA.ElementAt(5) + DATA.ElementAt(6) + DATA.ElementAt(7) + DATA.ElementAt(8) + DATA.ElementAt(9) + DATA.ElementAt(10) + DATA.ElementAt(11) + DATA.ElementAt(12) + DATA.ElementAt(13) + DATA.ElementAt(14) + DATA.ElementAt(15) + DATA.ElementAt(16) + DATA.ElementAt(17) + DATA.ElementAt(18) + DATA.ElementAt(19) + DATA.ElementAt(20) + DATA.ElementAt(21) + DATA.ElementAt(22) + DATA.ElementAt(23) + DATA.ElementAt(24) + DATA.ElementAt(25) + DATA.ElementAt(26) + DATA.ElementAt(27) + DATA.ElementAt(28) + DATA.ElementAt(29) + DATA.ElementAt(30) + DATA.ElementAt(31) + DATA.ElementAt(32) + DATA.ElementAt(33) + DATA.ElementAt(34) + DATA.ElementAt(35) + DATA.ElementAt(36) + DATA.ElementAt(37) + DATA.ElementAt(38) + DATA.ElementAt(39);
             string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
             DateTime time = DateTime.Now;
-            string ab = time.ToString("h:mm:ss tt ");
+            string ab =grab= time.ToString("h:mm:ss tt ");
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
             string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + data + "','" + ab + "','" + tk + "','" + Today + "','" + bkash + "','" + textBox1.Text.ToString() + "')";
@@ -2054,49 +2054,7 @@ namespace Restuarent
             
         }
         public string mynoti;
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            label5.Text = "Active";
-            string data = DATA.ElementAt(0) + DATA.ElementAt(1) + DATA.ElementAt(2) + DATA.ElementAt(3) + DATA.ElementAt(4) + DATA.ElementAt(5) + DATA.ElementAt(6) + DATA.ElementAt(7) + DATA.ElementAt(8) + DATA.ElementAt(9) + DATA.ElementAt(10) + DATA.ElementAt(11) + DATA.ElementAt(12) + DATA.ElementAt(13) + DATA.ElementAt(14) + DATA.ElementAt(15) + DATA.ElementAt(16) + DATA.ElementAt(17) + DATA.ElementAt(18) + DATA.ElementAt(19) + DATA.ElementAt(20) + DATA.ElementAt(21) + DATA.ElementAt(22) + DATA.ElementAt(23) + DATA.ElementAt(24) + DATA.ElementAt(25) + DATA.ElementAt(26) + DATA.ElementAt(27) + DATA.ElementAt(28) + DATA.ElementAt(29) + DATA.ElementAt(30) + DATA.ElementAt(31) + DATA.ElementAt(32) + DATA.ElementAt(33) + DATA.ElementAt(34) + DATA.ElementAt(35) + DATA.ElementAt(36) + DATA.ElementAt(37) + DATA.ElementAt(38) + DATA.ElementAt(39);
-
-            SqlConnection connection7 = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
-            connection7.Open();
-            string sq7 = "SELECT CustomerRecieved FROM CustomerOrders Where TableNo='" + label8.Text+ "' AND CustomerRecieved IS NULL";
-            SqlCommand command7 = new SqlCommand(sq7, connection7);
-            SqlDataReader reader7 = command7.ExecuteReader();
-
-            while (reader7.Read())
-            {
-
-                
-                mynoti = reader7["CustomerRecieved"].ToString();
-               
-
-
-
-            }
-            label5.Text = mynoti;
-            if (mynoti=="Ready")
-            {
-                button330.Visible = true;
-               
-            }
-            else
-            {
-                button330.Visible = false;
-            }
-
-            if(button330.BackColor == Color.Red)
-            {
-                button330.BackColor = Color.PaleGreen;
-               
-            }
-            else if(button330.BackColor == Color.PaleGreen)
-            {
-                button330.BackColor = Color.Red;
-                
-            }
-        }
+        
 
        
 
@@ -4405,5 +4363,65 @@ namespace Restuarent
 
             }
         }
+        
+        public string value="not";
+        public string chef;
+        public string waiter;
+        private void timer2_Tick(object sender, EventArgs e)
+        { 
+           
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            
+            string sql = "SELECT * FROM CustomerOrders Where TableNo='" + label8.Text + "' AND OrderTime ='" + grab + "'";
+            connection.Open();
+            SqlCommand command = new SqlCommand(sql, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+
+                value=reader["CustomerRecieved"].ToString();
+                chef= reader["ChefOrderDoneTime"].ToString();
+               
+
+
+            }
+            connection.Close();
+
+            if (timer1.Enabled == true)
+            {
+                label4.Text = "Processing";
+            }
+            else if(chef!=null)
+            {
+                label4.Text = "Processing------Preparing";
+            }
+            else if (value == "Ready")
+            {
+                label4.Text = "Processing------Preparing------Ready";
+            }
+
+            if (value=="Ready")
+            {
+               
+                button330.Visible = true;
+
+            }
+            else
+            {
+                button330.Visible = false;
+            }
+
+            if (button330.BackColor == Color.Red)
+            {
+                button330.BackColor = Color.PaleGreen;
+
+            }
+            else if (button330.BackColor == Color.PaleGreen)
+            {
+                button330.BackColor = Color.Red;
+
+            }
+        }
+
     }
 }

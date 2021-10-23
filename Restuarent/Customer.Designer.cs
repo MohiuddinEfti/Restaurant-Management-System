@@ -34,10 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.taka = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Signinbutton = new System.Windows.Forms.Button();
@@ -98,7 +96,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.Cash = new System.Windows.Forms.Button();
             this.Bkash = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -1033,7 +1030,8 @@
             this.textBox156 = new System.Windows.Forms.TextBox();
             this.label174 = new System.Windows.Forms.Label();
             this.button330 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Burgerpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pizzapic)).BeginInit();
@@ -1370,7 +1368,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(698, 94);
+            this.label1.Location = new System.Drawing.Point(774, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(361, 117);
             this.label1.TabIndex = 0;
@@ -1390,11 +1388,11 @@
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.LightGray;
-            this.textBox2.Location = new System.Drawing.Point(796, 309);
+            this.textBox2.Location = new System.Drawing.Point(815, 309);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(209, 31);
+            this.textBox2.Size = new System.Drawing.Size(166, 26);
             this.textBox2.TabIndex = 11;
             this.textBox2.Text = "Customer Name";
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
@@ -1406,24 +1404,12 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(790, 228);
+            this.label3.Location = new System.Drawing.Point(864, 41);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 31);
             this.label3.TabIndex = 13;
             this.label3.Text = "Table No.";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(810, 350);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 25);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Customer Name";
             // 
             // label6
             // 
@@ -1431,7 +1417,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(763, 440);
+            this.label6.Location = new System.Drawing.Point(1084, 487);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 25);
             this.label6.TabIndex = 16;
@@ -1443,33 +1429,21 @@
             this.taka.AutoSize = true;
             this.taka.BackColor = System.Drawing.Color.Transparent;
             this.taka.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taka.Location = new System.Drawing.Point(842, 442);
+            this.taka.Location = new System.Drawing.Point(1163, 487);
             this.taka.Name = "taka";
             this.taka.Size = new System.Drawing.Size(25, 25);
             this.taka.TabIndex = 17;
             this.taka.Text = "0";
             this.taka.Click += new System.EventHandler(this.taka_Click);
             // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(920, 444);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 25);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "taka";
-            // 
             // button9
             // 
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button9.BackColor = System.Drawing.Color.Red;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(769, 543);
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(815, 429);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(185, 44);
+            this.button9.Size = new System.Drawing.Size(166, 44);
             this.button9.TabIndex = 19;
             this.button9.Text = "Take Payment";
             this.button9.UseVisualStyleBackColor = false;
@@ -1492,7 +1466,7 @@
             // 
             // Signinbutton
             // 
-            this.Signinbutton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Signinbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Signinbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.Signinbutton.Location = new System.Drawing.Point(1141, 621);
             this.Signinbutton.Name = "Signinbutton";
@@ -1952,7 +1926,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(937, 228);
+            this.label8.Location = new System.Drawing.Point(1011, 41);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(36, 37);
             this.label8.TabIndex = 64;
@@ -1974,10 +1948,10 @@
             // 
             this.button10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button10.BackColor = System.Drawing.Color.LightGreen;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(769, 493);
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(815, 376);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(185, 44);
+            this.button10.Size = new System.Drawing.Size(166, 44);
             this.button10.TabIndex = 66;
             this.button10.Text = "Total Order";
             this.button10.UseVisualStyleBackColor = false;
@@ -2264,13 +2238,10 @@
             this.Bkash.UseVisualStyleBackColor = true;
             this.Bkash.Click += new System.EventHandler(this.Bkash_Click_1);
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.panel3);
@@ -13736,6 +13707,8 @@
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.flowLayoutPanel2.AutoScroll = true;
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel2.Controls.Add(this.panel155);
@@ -13785,6 +13758,8 @@
             // 
             // flowLayoutPanel3
             // 
+            this.flowLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.flowLayoutPanel3.AutoScroll = true;
             this.flowLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel3.Controls.Add(this.panel157);
@@ -13908,6 +13883,8 @@
             // 
             // flowLayoutPanel4
             // 
+            this.flowLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.flowLayoutPanel4.AutoScroll = true;
             this.flowLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel4.Controls.Add(this.panel158);
@@ -14031,27 +14008,33 @@
             // 
             // button330
             // 
-            this.button330.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button330.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button330.BackColor = System.Drawing.Color.PaleGreen;
             this.button330.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button330.Location = new System.Drawing.Point(565, -4);
+            this.button330.Location = new System.Drawing.Point(548, -4);
             this.button330.Name = "button330";
-            this.button330.Size = new System.Drawing.Size(220, 96);
+            this.button330.Size = new System.Drawing.Size(288, 96);
             this.button330.TabIndex = 81;
             this.button330.Text = "Your Order Is Ready";
             this.button330.UseVisualStyleBackColor = false;
             this.button330.Click += new System.EventHandler(this.button330_Click);
             // 
-            // label5
+            // timer1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(-12, 51);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 82;
-            this.label5.Text = "label5";
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label4.Location = new System.Drawing.Point(243, 64);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 20);
+            this.label4.TabIndex = 82;
+            this.label4.Text = "label4";
             // 
             // Customer
             // 
@@ -14062,7 +14045,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button330);
             this.Controls.Add(this.flowLayoutPanel4);
             this.Controls.Add(this.flowLayoutPanel3);
@@ -14081,10 +14064,8 @@
             this.Controls.Add(this.Signinbutton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.taka);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
@@ -14595,10 +14576,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label taka;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Signinbutton;
@@ -14659,7 +14638,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
@@ -15594,7 +15572,8 @@
         private System.Windows.Forms.TextBox textBox156;
         private System.Windows.Forms.Label label174;
         private System.Windows.Forms.Button button330;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label4;
     }
 }
 

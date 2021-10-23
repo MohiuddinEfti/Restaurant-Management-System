@@ -13,17 +13,6 @@ namespace Restuarent
         public string CustomerName { get; set; }
 
         public int TableNo { get; set; }
-
-        public string AddOn { get; set; }
-
-        public string Burger { get; set; }
-        public string RiceBowl { get; set; }
-        public string Pizza { get; set; }
-        public string Sawrma { get; set; }
-        public string Dumplings { get; set; }
-        public string Pastry { get; set; }
-        public string Coke { get; set; }
-        public string Water { get; set; }
         public string Price { get; set; }
         public string OrderTime { get; set; }
         public string ChefOrderDone { get; set; }

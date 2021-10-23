@@ -64,7 +64,7 @@ namespace Restuarent
 
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
-            string sql = "SELECT Id,CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,Price,OrderTime,ChefOrderDoneTime,CustomerRecieved,Date,Payment FROM CustomerOrders";
+            string sql = "SELECT * FROM CustomerOrders";
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
             List<CustomerOrders> list = new List<CustomerOrders>();
@@ -75,23 +75,7 @@ namespace Restuarent
                 CS.Id = (int)reader["Id"];
                 CS.CustomerName = reader["CustomerName"].ToString();
                 CS.TableNo = (int)reader["TableNo"];
-                CS.AddOn = reader["AddOn"].ToString();
-                CS.Burger = reader["Burger"].ToString();
-                real1 = reader["Burger"].ToString();
-                CS.RiceBowl = reader["RiceBowl"].ToString();
-                real2 = reader["RiceBowl"].ToString();
-                CS.Pizza = reader["Pizza"].ToString();
-                real3 = reader["Pizza"].ToString();
-                CS.Sawrma = reader["Sawrma"].ToString();
-                real4 = reader["Sawrma"].ToString();
-                CS.Dumplings = reader["Dumplings"].ToString();
-                real5 = reader["Dumplings"].ToString();
-                CS.Pastry = reader["Pastry"].ToString();
-                real6 = reader["Pastry"].ToString();
-                CS.Coke = reader["Coke"].ToString();
-                real7 = reader["Coke"].ToString();
-                CS.Water = reader["Water"].ToString();
-                real8 = reader["Water"].ToString();
+                
                 CS.Price = reader["Price"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
@@ -377,15 +361,7 @@ namespace Restuarent
                 CS.Id = (int)reader["Id"];
                 CS.CustomerName = reader["CustomerName"].ToString();
                 CS.TableNo = (int)reader["TableNo"];
-                CS.AddOn = reader["AddOn"].ToString();
-                CS.Burger = reader["Burger"].ToString();
-                CS.RiceBowl = reader["RiceBowl"].ToString();
-                CS.Pizza = reader["Pizza"].ToString();
-                CS.Sawrma = reader["Sawrma"].ToString();
-                CS.Dumplings = reader["Dumplings"].ToString();
-                CS.Pastry = reader["Pastry"].ToString();
-                CS.Coke = reader["Coke"].ToString();
-                CS.Water = reader["Water"].ToString();
+                
                 CS.Price = reader["Price"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
@@ -412,7 +388,7 @@ namespace Restuarent
             {
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
                 connection.Open();
-                string sql = "SELECT Id,CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,Price,OrderTime,ChefOrderDoneTime,CustomerRecieved,Date,Payment FROM CustomerOrders";
+                string sql = "SELECT * FROM CustomerOrders";
                 SqlCommand command = new SqlCommand(sql, connection);
                 SqlDataReader reader = command.ExecuteReader();
                 List<CustomerOrders> list = new List<CustomerOrders>();
@@ -423,23 +399,7 @@ namespace Restuarent
                     CS.Id = (int)reader["Id"];
                     CS.CustomerName = reader["CustomerName"].ToString();
                     CS.TableNo = (int)reader["TableNo"];
-                    CS.AddOn = reader["AddOn"].ToString();
-                    CS.Burger = reader["Burger"].ToString();
-                    real1 = reader["Burger"].ToString();
-                    CS.RiceBowl = reader["RiceBowl"].ToString();
-                    real2 = reader["RiceBowl"].ToString();
-                    CS.Pizza = reader["Pizza"].ToString();
-                    real3 = reader["Pizza"].ToString();
-                    CS.Sawrma = reader["Sawrma"].ToString();
-                    real4 = reader["Sawrma"].ToString();
-                    CS.Dumplings = reader["Dumplings"].ToString();
-                    real5 = reader["Dumplings"].ToString();
-                    CS.Pastry = reader["Pastry"].ToString();
-                    real6 = reader["Pastry"].ToString();
-                    CS.Coke = reader["Coke"].ToString();
-                    real7 = reader["Coke"].ToString();
-                    CS.Water = reader["Water"].ToString();
-                    real8 = reader["Water"].ToString();
+                    
                     CS.Price = reader["Price"].ToString();
                     CS.OrderTime = reader["OrderTime"].ToString();
                     CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
