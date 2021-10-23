@@ -2513,6 +2513,334 @@ namespace Restuarent
                     }
 
                 }
+                else if (row == 3)
+                {
+                    if (number == 0)
+                    {
+                        textBox149.Text = i.ToString();
+                    }
+                    else if (number == 1)
+                    {
+                        textBox153.Text = i.ToString();
+                    }
+                    else if (number == 2)
+                    {
+                        textBox145.Text = i.ToString();
+                    }
+                    else if (number == 3)
+                    {
+                        textBox141.Text = i.ToString();
+                    }
+                    else if (number == 4)
+                    {
+                        textBox137.Text = i.ToString();
+                    }
+                    else if (number == 5)
+                    {
+                        textBox133.Text = i.ToString();
+                    }
+                    else if (number == 6)
+                    {
+                        textBox129.Text = i.ToString();
+                    }
+                    else if (number == 7)
+                    {
+                        textBox125.Text = i.ToString();
+                    }
+                    else if (number == 8)
+                    {
+                        textBox121.Text = i.ToString();
+                    }
+                    else if (number == 9)
+                    {
+                        textBox117.Text = i.ToString();
+                    }
+                    else if (number == 10)
+                    {
+                        textBox109.Text = i.ToString();
+                    }
+                    else if (number == 11)
+                    {
+                        textBox105.Text = i.ToString();
+                    }
+                    else if (number == 12)
+                    {
+                        textBox101.Text = i.ToString();
+                    }
+                    else if (number == 13)
+                    {
+                        textBox97.Text = i.ToString();
+                    }
+                    else if (number == 14)
+                    {
+                        textBox93.Text = i.ToString();
+                    }
+                    else if (number == 15)
+                    {
+                        textBox89.Text = i.ToString();
+                    }
+                    else if (number == 16)
+                    {
+                        textBox85.Text = i.ToString();
+                    }
+                    else if (number == 17)
+                    {
+                        textBox81.Text = i.ToString();
+                    }
+                    else if (number == 18)
+                    {
+                        textBox77.Text = i.ToString();
+                    }
+                    else if (number == 19)
+                    {
+                        textBox73.Text = i.ToString();
+                    }
+                    else if (number == 20)
+                    {
+                        textBox69.Text = i.ToString();
+                    }
+                    else if (number == 21)
+                    {
+                        textBox65.Text = i.ToString();
+                    }
+                    else if (number == 22)
+                    {
+                        textBox61.Text = i.ToString();
+                    }
+                    else if (number == 23)
+                    {
+                        textBox57.Text = i.ToString();
+                    }
+                    else if (number == 24)
+                    {
+                        textBox53.Text = i.ToString();
+                    }
+                    else if (number == 25)
+                    {
+                        textBox49.Text = i.ToString();
+                    }
+                    else if (number == 26)
+                    {
+                        textBox45.Text = i.ToString();
+                    }
+                    else if (number == 27)
+                    {
+                        textBox41.Text = i.ToString();
+                    }
+                    else if (number == 28)
+                    {
+                        textBox37.Text = i.ToString();
+                    }
+                    else if (number == 29)
+                    {
+                        textBox33.Text = i.ToString();
+                    }
+                    else if (number == 30)
+                    {
+                        textBox29.Text = i.ToString();
+                    }
+                    else if (number == 31)
+                    {
+                        textBox21.Text = i.ToString();
+                    }
+                    else if (number == 32)
+                    {
+                        textBox17.Text = i.ToString();
+                    }
+                    else if (number == 33)
+                    {
+                        textBox13.Text = i.ToString();
+                    }
+                    else if (number == 34)
+                    {
+                        textBox9.Text = i.ToString();
+                    }
+                    else if (number == 35)
+                    {
+                        textBox5.Text = i.ToString();
+                    }
+                    else if (number == 36)
+                    {
+                        Pastrys.Text = i.ToString();
+                    }
+                    else if (number == 37)
+                    {
+                        RiceBowls.Text = i.ToString();
+                    }
+                    else if (number == 38)
+                    {
+                        textBox154.Text = i.ToString();
+                    }
+                    else if (number == 39)
+                    {
+                        textBox64.Text = i.ToString();
+                    }
+
+                }
+                else if (row == 4)
+                {
+                    if (number == 0)
+                    {
+                        textBox152.Text = i.ToString();
+                    }
+                    else if (number == 1)
+                    {
+                        textBox148.Text = i.ToString();
+                    }
+                    else if (number == 2)
+                    {
+                        textBox144.Text = i.ToString();
+                    }
+                    else if (number == 3)
+                    {
+                        textBox140.Text = i.ToString();
+                    }
+                    else if (number == 4)
+                    {
+                        textBox136.Text = i.ToString();
+                    }
+                    else if (number == 5)
+                    {
+                        textBox132.Text = i.ToString();
+                    }
+                    else if (number == 6)
+                    {
+                        textBox128.Text = i.ToString();
+                    }
+                    else if (number == 7)
+                    {
+                        textBox124.Text = i.ToString();
+                    }
+                    else if (number == 8)
+                    {
+                        textBox120.Text = i.ToString();
+                    }
+                    else if (number == 9)
+                    {
+                        textBox116.Text = i.ToString();
+                    }
+                    else if (number == 10)
+                    {
+                        textBox113.Text = i.ToString();
+                    }
+                    else if (number == 11)
+                    {
+                        textBox110.Text = i.ToString();
+                    }
+                    else if (number == 12)
+                    {
+                        textBox106.Text = i.ToString();
+                    }
+                    else if (number == 13)
+                    {
+                        textBox102.Text = i.ToString();
+                    }
+                    else if (number == 14)
+                    {
+                        textBox98.Text = i.ToString();
+                    }
+                    else if (number == 15)
+                    {
+                        textBox94.Text = i.ToString();
+                    }
+                    else if (number == 16)
+                    {
+                        textBox90.Text = i.ToString();
+                    }
+                    else if (number == 17)
+                    {
+                        textBox86.Text = i.ToString();
+                    }
+                    else if (number == 18)
+                    {
+                        textBox82.Text = i.ToString();
+                    }
+                    else if (number == 19)
+                    {
+                        textBox78.Text = i.ToString();
+                    }
+                    else if (number == 20)
+                    {
+                        textBox74.Text = i.ToString();
+                    }
+                    else if (number == 21)
+                    {
+                        textBox70.Text = i.ToString();
+                    }
+                    else if (number == 22)
+                    {
+                        textBox66.Text = i.ToString();
+                    }
+                    else if (number == 23)
+                    {
+                        textBox62.Text = i.ToString();
+                    }
+                    else if (number == 24)
+                    {
+                        textBox58.Text = i.ToString();
+                    }
+                    else if (number == 25)
+                    {
+                        textBox54.Text = i.ToString();
+                    }
+                    else if (number == 26)
+                    {
+                        textBox50.Text = i.ToString();
+                    }
+                    else if (number == 27)
+                    {
+                        textBox46.Text = i.ToString();
+                    }
+                    else if (number == 28)
+                    {
+                        textBox42.Text = i.ToString();
+                    }
+                    else if (number == 29)
+                    {
+                        textBox38.Text = i.ToString();
+                    }
+                    else if (number == 30)
+                    {
+                        textBox34.Text = i.ToString();
+                    }
+                    else if (number == 31)
+                    {
+                        textBox30.Text = i.ToString();
+                    }
+                    else if (number == 32)
+                    {
+                        textBox26.Text = i.ToString();
+                    }
+                    else if (number == 33)
+                    {
+                        textBox23.Text = i.ToString();
+                    }
+                    else if (number == 34)
+                    {
+                        textBox19.Text = i.ToString();
+                    }
+                    else if (number == 35)
+                    {
+                        textBox15.Text = i.ToString();
+                    }
+                    else if (number == 36)
+                    {
+                        textBox11.Text = i.ToString();
+                    }
+                    else if (number == 37)
+                    {
+                        textBox7.Text = i.ToString();
+                    }
+                    else if (number == 38)
+                    {
+                        Waters.Text = i.ToString();
+                    }
+                    else if (number == 39)
+                    {
+                        textBox150.Text = i.ToString();
+                    }
+
+                }
 
             int cash = it.ElementAt(0) * prices.ElementAt(0) + it.ElementAt(1) * prices.ElementAt(1) + it.ElementAt(2) * prices.ElementAt(2) + it.ElementAt(3) * prices.ElementAt(3) + it.ElementAt(4) * prices.ElementAt(4) + it.ElementAt(5) * prices.ElementAt(5) + it.ElementAt(6) * prices.ElementAt(6) + it.ElementAt(7) * prices.ElementAt(7) + it.ElementAt(8) * prices.ElementAt(8) + it.ElementAt(9) * prices.ElementAt(9) + it.ElementAt(10) * prices.ElementAt(10) + it.ElementAt(11) * prices.ElementAt(11) + it.ElementAt(12) * prices.ElementAt(12) + it.ElementAt(13) * prices.ElementAt(13) + it.ElementAt(14) * prices.ElementAt(14) + it.ElementAt(15) * prices.ElementAt(15) + it.ElementAt(16) * prices.ElementAt(16) + it.ElementAt(17) * prices.ElementAt(17) + it.ElementAt(18) * prices.ElementAt(18) + it.ElementAt(19) * prices.ElementAt(19) + it.ElementAt(20) * prices.ElementAt(20) + it.ElementAt(21) * prices.ElementAt(21) + it.ElementAt(22) * prices.ElementAt(22) + it.ElementAt(23) * prices.ElementAt(23) + it.ElementAt(24) * prices.ElementAt(24) + it.ElementAt(25) * prices.ElementAt(25) + it.ElementAt(26) * prices.ElementAt(26) + it.ElementAt(27) * prices.ElementAt(27) + it.ElementAt(28) * prices.ElementAt(28) + it.ElementAt(29) * prices.ElementAt(29) + it.ElementAt(30) * prices.ElementAt(30) + it.ElementAt(31) * prices.ElementAt(31) + it.ElementAt(32) * prices.ElementAt(32) + it.ElementAt(33) * prices.ElementAt(33) + it.ElementAt(34) * prices.ElementAt(34) + it.ElementAt(35) * prices.ElementAt(35) + it.ElementAt(36) * prices.ElementAt(36) + it.ElementAt(37) * prices.ElementAt(37) + it.ElementAt(38) * prices.ElementAt(38) + it.ElementAt(39) * prices.ElementAt(39);
                 taka.Text = cash.ToString();
