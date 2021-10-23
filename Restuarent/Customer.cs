@@ -50,6 +50,13 @@ namespace Restuarent
             else
             {
                 flowLayoutPanel1.Visible = false;
+                flowLayoutPanel2.Visible = false;
+                flowLayoutPanel3.Visible = false;
+                flowLayoutPanel4.Visible = false;
+                label89.Visible = false;
+                label90.Visible = false;
+                label91.Visible = false;
+                label92.Visible = false;
                 panel1.Visible = true;
                 orders= DATA.ElementAt(0) + DATA.ElementAt(1) + DATA.ElementAt(2) + DATA.ElementAt(3) + DATA.ElementAt(4) + DATA.ElementAt(5) + DATA.ElementAt(6) + DATA.ElementAt(7);
  
@@ -78,6 +85,16 @@ namespace Restuarent
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if(textBox2.Text=="")
+            {
+                textBox2.Text = "Customer Name";
+                textBox2.ForeColor = Color.LightGray;
+            }
+            else
+            {
+                textBox2.Text = textBox2.Text;
+                textBox2.ForeColor = Color.Black;
+            }
             pics.Clear();
             prices.Clear();
             names.Clear();
@@ -1897,6 +1914,14 @@ namespace Restuarent
         {
             flowLayoutPanel1.Visible = true;
             panel1.Visible = false;
+            flowLayoutPanel1.Visible = true;
+            flowLayoutPanel2.Visible = true;
+            flowLayoutPanel3.Visible = true;
+            flowLayoutPanel4.Visible = true;
+            label89.Visible = true;
+            label90.Visible = true;
+            label91.Visible = true;
+            label92.Visible = true;
         }
 
         private void button23_Click(object sender, EventArgs e)
@@ -1918,47 +1943,55 @@ namespace Restuarent
 
         private void button22_Click(object sender, EventArgs e)
         {
-           /* string bkash = "Bkash Paid Not Confirmed";
-            int tk = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
+            string bkash = "Bkash Paid Not Confirmed";
+            int tk = it.ElementAt(0) * prices.ElementAt(0) + it.ElementAt(1) * prices.ElementAt(1) + it.ElementAt(2) * prices.ElementAt(2) + it.ElementAt(3) * prices.ElementAt(3) + it.ElementAt(4) * prices.ElementAt(4) + it.ElementAt(5) * prices.ElementAt(5) + it.ElementAt(6) * prices.ElementAt(6) + it.ElementAt(7) * prices.ElementAt(7) + it.ElementAt(8) * prices.ElementAt(8) + it.ElementAt(9) * prices.ElementAt(9) + it.ElementAt(10) * prices.ElementAt(10) + it.ElementAt(11) * prices.ElementAt(11) + it.ElementAt(12) * prices.ElementAt(12) + it.ElementAt(13) * prices.ElementAt(13) + it.ElementAt(14) * prices.ElementAt(14) + it.ElementAt(15) * prices.ElementAt(15) + it.ElementAt(16) * prices.ElementAt(16) + it.ElementAt(17) * prices.ElementAt(17) + it.ElementAt(18) * prices.ElementAt(18) + it.ElementAt(19) * prices.ElementAt(19) + it.ElementAt(20) * prices.ElementAt(20) + it.ElementAt(21) * prices.ElementAt(21) + it.ElementAt(22) * prices.ElementAt(22) + it.ElementAt(23) * prices.ElementAt(23) + it.ElementAt(24) * prices.ElementAt(24) + it.ElementAt(25) * prices.ElementAt(25) + it.ElementAt(26) * prices.ElementAt(26) + it.ElementAt(27) * prices.ElementAt(27) + it.ElementAt(28) * prices.ElementAt(28) + it.ElementAt(29) * prices.ElementAt(29) + it.ElementAt(30) * prices.ElementAt(30) + it.ElementAt(31) * prices.ElementAt(31) + it.ElementAt(32) * prices.ElementAt(32) + it.ElementAt(33) * prices.ElementAt(33) + it.ElementAt(34) * prices.ElementAt(34) + it.ElementAt(35) * prices.ElementAt(35) + it.ElementAt(36) * prices.ElementAt(36) + it.ElementAt(37) * prices.ElementAt(37) + it.ElementAt(38) * prices.ElementAt(38) + it.ElementAt(39) * prices.ElementAt(39);
+            string data = DATA.ElementAt(0) + DATA.ElementAt(1) + DATA.ElementAt(2) + DATA.ElementAt(3) + DATA.ElementAt(4) + DATA.ElementAt(5) + DATA.ElementAt(6) + DATA.ElementAt(7) + DATA.ElementAt(8) + DATA.ElementAt(9) + DATA.ElementAt(10) + DATA.ElementAt(11) + DATA.ElementAt(12) + DATA.ElementAt(13) + DATA.ElementAt(14) + DATA.ElementAt(15) + DATA.ElementAt(16) + DATA.ElementAt(17) + DATA.ElementAt(18) + DATA.ElementAt(19) + DATA.ElementAt(20) + DATA.ElementAt(21) + DATA.ElementAt(22) + DATA.ElementAt(23) + DATA.ElementAt(24) + DATA.ElementAt(25) + DATA.ElementAt(26) + DATA.ElementAt(27) + DATA.ElementAt(28) + DATA.ElementAt(29) + DATA.ElementAt(30) + DATA.ElementAt(31) + DATA.ElementAt(32) + DATA.ElementAt(33) + DATA.ElementAt(34) + DATA.ElementAt(35) + DATA.ElementAt(36) + DATA.ElementAt(37) + DATA.ElementAt(38) + DATA.ElementAt(39);
             string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
-            DateTime time = DateTime.Now;
-            string ab = time.ToString("h:mm:ss tt ");
-            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
-            connection.Open();
-            string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + textBox3.Text + "','" + i.ToString() + "','" + n.ToString() + "','" + a.ToString() + "','" + b.ToString() + "','" + c.ToString() + "','" + d.ToString() + "','" + ye.ToString() + "','" + f.ToString() + "','" + orders + "','" + ab + "','" + tk + "','" + Today + "','" +bkash+ "','" + textBox1.Text.ToString() + "')";
+             DateTime time = DateTime.Now;
+             string ab = time.ToString("h:mm:ss tt ");
+             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+             connection.Open();
+             string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + data + "','" + ab + "','" + tk + "','" + Today + "','" +bkash+ "','" + textBox1.Text.ToString() + "')";
 
-            SqlCommand command = new SqlCommand(sq1, connection);
-            int diary = command.ExecuteNonQuery();
-            connection.Close();
-            if (diary > 0)
-            {
-                timer1.Enabled = true;
-                
-                textBox1.Text = string.Empty;
-                groupBox1.Visible = false;
-                pictureBox2.Visible = false;
-                label14.Visible = false;
-                label15.Visible = false;
-                label13.Visible = false;
-                button22.Visible = false;
-                panel1.Visible = false;
-                string to = textBox1.Text;
-                flowLayoutPanel1.Visible = true;
-                richTextBox1.Text = String.Empty;
-                
+             SqlCommand command = new SqlCommand(sq1, connection);
+             int diary = command.ExecuteNonQuery();
+             connection.Close();
+             if (diary > 0)
+             {
+                 timer1.Enabled = true;
+
+                 textBox1.Text = string.Empty;
+                 groupBox1.Visible = false;
+                 pictureBox2.Visible = false;
+                 label14.Visible = false;
+                 label15.Visible = false;
+                 label13.Visible = false;
+                 button22.Visible = false;
+                 panel1.Visible = false;
+                 string to = textBox1.Text;
+                 
+                 richTextBox1.Text = String.Empty;
+                 flowLayoutPanel1.Visible = true;
+                 flowLayoutPanel2.Visible = true;
+                 flowLayoutPanel3.Visible = true;
+                 flowLayoutPanel4.Visible = true;
+                 label89.Visible = true;
+                 label90.Visible = true;
+                 label91.Visible = true;
+                 label92.Visible = true;
 
 
 
 
-            }
-            else
-            {
-                MessageBox.Show("Error");
-            }*/
-            
+             }
+             else
+             {
+                 MessageBox.Show("Error");
+             }
+
         }
 
-        
+
 
         private void Bkash_Click_1(object sender, EventArgs e)
         {
@@ -1972,40 +2005,47 @@ namespace Restuarent
 
         private void Cash_Click(object sender, EventArgs e)
         {
-           /* string bkash = "Cash Payment";
-            int tk = i * price1 + n * price2 + a * price3 + b * price4 + c * price5 + d * price6 + ye * price7 + f * price8;
+            string bkash = "Cash Payment";
+            int tk = it.ElementAt(0) * prices.ElementAt(0) + it.ElementAt(1) * prices.ElementAt(1) + it.ElementAt(2) * prices.ElementAt(2) + it.ElementAt(3) * prices.ElementAt(3) + it.ElementAt(4) * prices.ElementAt(4) + it.ElementAt(5) * prices.ElementAt(5) + it.ElementAt(6) * prices.ElementAt(6) + it.ElementAt(7) * prices.ElementAt(7) + it.ElementAt(8) * prices.ElementAt(8) + it.ElementAt(9) * prices.ElementAt(9) + it.ElementAt(10) * prices.ElementAt(10) + it.ElementAt(11) * prices.ElementAt(11) + it.ElementAt(12) * prices.ElementAt(12) + it.ElementAt(13) * prices.ElementAt(13) + it.ElementAt(14) * prices.ElementAt(14) + it.ElementAt(15) * prices.ElementAt(15) + it.ElementAt(16) * prices.ElementAt(16) + it.ElementAt(17) * prices.ElementAt(17) + it.ElementAt(18) * prices.ElementAt(18) + it.ElementAt(19) * prices.ElementAt(19) + it.ElementAt(20) * prices.ElementAt(20) + it.ElementAt(21) * prices.ElementAt(21) + it.ElementAt(22) * prices.ElementAt(22) + it.ElementAt(23) * prices.ElementAt(23) + it.ElementAt(24) * prices.ElementAt(24) + it.ElementAt(25) * prices.ElementAt(25) + it.ElementAt(26) * prices.ElementAt(26) + it.ElementAt(27) * prices.ElementAt(27) + it.ElementAt(28) * prices.ElementAt(28) + it.ElementAt(29) * prices.ElementAt(29) + it.ElementAt(30) * prices.ElementAt(30) + it.ElementAt(31) * prices.ElementAt(31) + it.ElementAt(32) * prices.ElementAt(32) + it.ElementAt(33) * prices.ElementAt(33) + it.ElementAt(34) * prices.ElementAt(34) + it.ElementAt(35) * prices.ElementAt(35) + it.ElementAt(36) * prices.ElementAt(36) + it.ElementAt(37) * prices.ElementAt(37) + it.ElementAt(38) * prices.ElementAt(38) + it.ElementAt(39) * prices.ElementAt(39);
+            string data = DATA.ElementAt(0) + DATA.ElementAt(1) + DATA.ElementAt(2) + DATA.ElementAt(3) + DATA.ElementAt(4) + DATA.ElementAt(5) + DATA.ElementAt(6) + DATA.ElementAt(7) + DATA.ElementAt(8) + DATA.ElementAt(9) + DATA.ElementAt(10) + DATA.ElementAt(11) + DATA.ElementAt(12) + DATA.ElementAt(13) + DATA.ElementAt(14) + DATA.ElementAt(15) + DATA.ElementAt(16) + DATA.ElementAt(17) + DATA.ElementAt(18) + DATA.ElementAt(19) + DATA.ElementAt(20) + DATA.ElementAt(21) + DATA.ElementAt(22) + DATA.ElementAt(23) + DATA.ElementAt(24) + DATA.ElementAt(25) + DATA.ElementAt(26) + DATA.ElementAt(27) + DATA.ElementAt(28) + DATA.ElementAt(29) + DATA.ElementAt(30) + DATA.ElementAt(31) + DATA.ElementAt(32) + DATA.ElementAt(33) + DATA.ElementAt(34) + DATA.ElementAt(35) + DATA.ElementAt(36) + DATA.ElementAt(37) + DATA.ElementAt(38) + DATA.ElementAt(39);
             string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
             DateTime time = DateTime.Now;
             string ab = time.ToString("h:mm:ss tt ");
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
-            string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,AddOn,Burger,RiceBowl,Pizza,Sawrma,Dumplings,Pastry,Coke,Water,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + textBox3.Text + "','" + i.ToString() + "','" + n.ToString() + "','" + a.ToString() + "','" + b.ToString() + "','" + c.ToString() + "','" + d.ToString() + "','" + ye.ToString() + "','" + f.ToString() + "','" + orders + "','" + ab + "','" + tk + "','" + Today + "','" + bkash + "','" + textBox1.Text.ToString() + "')";
-
+            string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + data + "','" + ab + "','" + tk + "','" + Today + "','" + bkash + "','" + textBox1.Text.ToString() + "')";
             SqlCommand command = new SqlCommand(sq1, connection);
-            int diary = command.ExecuteNonQuery();
-            connection.Close();
-            if (diary > 0)
-            {
-                MessageBox.Show("Clear Payment When Order Is Ready");
-                timer1.Enabled = true;
-                textBox1.Text = string.Empty;
-                groupBox1.Visible = false;
-                pictureBox2.Visible = false;
-                label14.Visible = false;
-                label15.Visible = false;
-                label13.Visible = false;
-                button22.Visible = false;
-                panel1.Visible = false;
-                string to = textBox1.Text;
-                flowLayoutPanel1.Visible = true;
-                richTextBox1.Text = String.Empty;
+             int diary = command.ExecuteNonQuery();
+             connection.Close();
+             if (diary > 0)
+             {
+                 MessageBox.Show("Clear Payment When Order Is Ready");
+                 timer1.Enabled = true;
+                 textBox1.Text = string.Empty;
+                 groupBox1.Visible = false;
+                 pictureBox2.Visible = false;
+                 label14.Visible = false;
+                 label15.Visible = false;
+                 label13.Visible = false;
+                 button22.Visible = false;
+                 panel1.Visible = false;
+                 string to = textBox1.Text;
+                 flowLayoutPanel1.Visible = true;
+                  flowLayoutPanel2.Visible = true;
+                  flowLayoutPanel3.Visible = true;
+                  flowLayoutPanel4.Visible = true;
+                  label89.Visible = true;
+                  label90.Visible = true;
+                  label91.Visible = true;
+                  label92.Visible = true;
+                 richTextBox1.Text = String.Empty;
 
 
-            }
-            else
-            {
-                MessageBox.Show("Error");
-            }*/
+             }
+             else
+             {
+                 MessageBox.Show("Error");
+             }
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -2022,10 +2062,11 @@ namespace Restuarent
         public string mynoti;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
+            string data = DATA.ElementAt(0) + DATA.ElementAt(1) + DATA.ElementAt(2) + DATA.ElementAt(3) + DATA.ElementAt(4) + DATA.ElementAt(5) + DATA.ElementAt(6) + DATA.ElementAt(7) + DATA.ElementAt(8) + DATA.ElementAt(9) + DATA.ElementAt(10) + DATA.ElementAt(11) + DATA.ElementAt(12) + DATA.ElementAt(13) + DATA.ElementAt(14) + DATA.ElementAt(15) + DATA.ElementAt(16) + DATA.ElementAt(17) + DATA.ElementAt(18) + DATA.ElementAt(19) + DATA.ElementAt(20) + DATA.ElementAt(21) + DATA.ElementAt(22) + DATA.ElementAt(23) + DATA.ElementAt(24) + DATA.ElementAt(25) + DATA.ElementAt(26) + DATA.ElementAt(27) + DATA.ElementAt(28) + DATA.ElementAt(29) + DATA.ElementAt(30) + DATA.ElementAt(31) + DATA.ElementAt(32) + DATA.ElementAt(33) + DATA.ElementAt(34) + DATA.ElementAt(35) + DATA.ElementAt(36) + DATA.ElementAt(37) + DATA.ElementAt(38) + DATA.ElementAt(39);
+
             SqlConnection connection7 = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection7.Open();
-            string sq7 = "SELECT CustomerRecieved FROM CustomerOrders Where TableNo='" + label8.Text+ "' AND TotalOrder='"+orders+ "'AND CustomerName='"+textBox2.Text+"'";
+            string sq7 = "SELECT CustomerRecieved FROM CustomerOrders Where TableNo='" + label8.Text+ "' AND TotalOrder='"+data+ "'AND CustomerName='"+textBox2.Text+"'";
             SqlCommand command7 = new SqlCommand(sq7, connection7);
             SqlDataReader reader7 = command7.ExecuteReader();
 
@@ -2063,12 +2104,20 @@ namespace Restuarent
 
         private void button25_Click(object sender, EventArgs e)
         {
-           /* button25.Visible = false;
+           button25.Visible = false;
             timer1.Enabled = false;            
-            textBox2.Text = textBox3.Text = String.Empty;
-            addorder1 = addorder2 = addorder3 = addorder4 = addorder5 = addorder6 = addorder7 = addorder8 = "";*/
+            textBox2.Text = String.Empty;
+            ADDorder.Clear();
+            it.Clear();
+            DATA.Clear();
+            for (int te = 0; te <= 39; te++)
+            {
+                it.Insert(te, 0);
+                DATA.Insert(te, "");
+                ADDorder.Insert(te, "");
 
 
+            }
 
         }
 
@@ -4341,6 +4390,19 @@ namespace Restuarent
         {
             Plus(4, 39, "minus");
         }
-    
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "")
+            {
+                textBox2.Text = "Customer Name";
+                textBox2.ForeColor = Color.LightGray;
+            }
+            else
+            {
+                textBox2.Text = textBox2.Text;
+                textBox2.ForeColor = Color.Black;
+            }
+        }
     }
 }
