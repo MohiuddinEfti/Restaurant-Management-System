@@ -71,7 +71,18 @@ namespace Restuarent
 
             }
             dataGridView1.DataSource = list;
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
 
+                if (dataGridView1.Rows[i].Cells[2].Value.ToString() == "not")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                else
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+            }
             SqlConnection connection555 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
             connection555.Open();
             string sql555 = "SELECT * FROM Food";
@@ -814,7 +825,18 @@ namespace Restuarent
 
                     }
                     dataGridView1.DataSource = list;
+                    for (int i = 0; i < dataGridView1.RowCount; i++)
+                    {
 
+                        if (dataGridView1.Rows[i].Cells[2].Value.ToString() == "not")
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                        }
+                        else
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                    }
                     SqlConnection connection555 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
                     connection555.Open();
                     string sql555 = "SELECT * FROM Food";
@@ -1427,7 +1449,18 @@ namespace Restuarent
 
                 }
                 dataGridView1.DataSource = list;
+                for (int i = 0; i < dataGridView1.RowCount; i++)
+                {
 
+                    if (dataGridView1.Rows[i].Cells[2].Value.ToString() == "not")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
+                }
                 SqlConnection connection555 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
                 connection555.Open();
                 string sql555 = "SELECT * FROM Food";
@@ -2018,7 +2051,18 @@ namespace Restuarent
 
                 }
                 dataGridView1.DataSource = list;
+                for (int i = 0; i < dataGridView1.RowCount; i++)
+                {
 
+                    if (dataGridView1.Rows[i].Cells[2].Value.ToString() == "not")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
+                }
                 SqlConnection connection555 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
                 connection555.Open();
                 string sql555 = "SELECT * FROM Food";
@@ -2608,7 +2652,18 @@ namespace Restuarent
 
                 }
                 dataGridView1.DataSource = list;
+                for (int i = 0; i < dataGridView1.RowCount; i++)
+                {
 
+                    if (dataGridView1.Rows[i].Cells[2].Value.ToString() == "not")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
+                }
                 SqlConnection connection555 = new SqlConnection(ConfigurationManager.ConnectionStrings["Food"].ConnectionString);
                 connection555.Open();
                 string sql555 = "SELECT * FROM Food";

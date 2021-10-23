@@ -177,7 +177,18 @@ namespace Restuarent
                             list2.Add(CS);
                         }
                         dataGridView1.DataSource = list2;
+                        for (int i = 0; i < dataGridView1.RowCount; i++)
+                        {
 
+                            if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            }
+                            else
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                            }
+                        }
                     }
                     else
                     {
@@ -218,24 +229,9 @@ namespace Restuarent
         private void AddEmployee_Load(object sender, EventArgs e)
         {
             dataGridView1.ReadOnly = true;
+           
             
-            string d2;
             
-            for (int i = 0; i < dataGridView1.RowCount - 1; i++)
-            {
-                
-                d2 = dataGridView1.Rows[i].Cells[12].Value.ToString();
-                
-                
-                if (d2=="No")
-                {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                }
-                else
-                {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Green;
-                }
-            }
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
             connection.Open();
             string sql = "SELECT * FROM Employee";
@@ -262,6 +258,18 @@ namespace Restuarent
                 list2.Add(CS);
             }
             dataGridView1.DataSource = list2;
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
+
+                if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                else
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+            }
         }
         public string abc;
         private void button3_Click(object sender, EventArgs e)
@@ -362,7 +370,18 @@ namespace Restuarent
                         list2.Add(CS);
                     }
                     dataGridView1.DataSource = list2;
+                    for (int i = 0; i < dataGridView1.RowCount; i++)
+                    {
 
+                        if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                        }
+                        else
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                    }
                 }
             }
         }
@@ -436,8 +455,20 @@ namespace Restuarent
                         }
 
                         dataGridView1.DataSource = list2;
+                        for (int i = 0; i < dataGridView1.RowCount; i++)
+                        {
 
-                    textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                            if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            }
+                            else
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                            }
+                        }
+
+                     textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
 
                     pictureBox1.ImageLocation = null;
 
@@ -511,6 +542,11 @@ namespace Restuarent
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
