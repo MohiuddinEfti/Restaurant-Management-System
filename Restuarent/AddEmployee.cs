@@ -219,6 +219,23 @@ namespace Restuarent
         {
             dataGridView1.ReadOnly = true;
             
+            string d2;
+            
+            for (int i = 0; i < dataGridView1.RowCount - 1; i++)
+            {
+                
+                d2 = dataGridView1.Rows[i].Cells[12].Value.ToString();
+                
+                
+                if (d2=="No")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                else
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Green;
+                }
+            }
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
             connection.Open();
             string sql = "SELECT * FROM Employee";
@@ -241,6 +258,7 @@ namespace Restuarent
                 CS.Salary = (int)reader2["Salary"];
                 CS.Picture = reader2["Picture"].ToString();
                 CS.Password = reader2["Password"].ToString();
+                CS.Status = reader2["Active"].ToString();
                 list2.Add(CS);
             }
             dataGridView1.DataSource = list2;
@@ -304,9 +322,10 @@ namespace Restuarent
             }
             else
             {
+                string active = "No";
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
                 connection.Open();
-                string sql = "DELETE FROM Employee WHERE Id='" + id1 + "' ";
+                string sql = "UPDATE Employee SET Active='"+active+"' WHERE Id='" + id1 + "' ";
 
 
                 SqlCommand command = new SqlCommand(sql, connection);
@@ -327,7 +346,6 @@ namespace Restuarent
                     while (reader2.Read())
                     {
                         EmployeeAdding CS = new EmployeeAdding();
-
                         CS.ID = (int)reader2["Id"];
                         CS.Position = reader2["Position"].ToString();
                         CS.Name = reader2["Name"].ToString();
@@ -340,6 +358,7 @@ namespace Restuarent
                         CS.Salary = (int)reader2["Salary"];
                         CS.Picture = reader2["Picture"].ToString();
                         CS.Password = reader2["Password"].ToString();
+                        CS.Status = reader2["Active"].ToString();
                         list2.Add(CS);
                     }
                     dataGridView1.DataSource = list2;
@@ -398,31 +417,21 @@ namespace Restuarent
                             EmployeeAdding CS = new EmployeeAdding();
 
 
-                            CS.ID = (int)reader2["Id"];
+                        CS.ID = (int)reader2["Id"];
+                        CS.Position = reader2["Position"].ToString();
+                        CS.Name = reader2["Name"].ToString();
+                        CS.EmployeeID = reader2["EmpID"].ToString();
+                        CS.Email = reader2["Email"].ToString();
+                        CS.Phone = reader2["Phone"].ToString();
+                        CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                        CS.Gender = reader2["Gender"].ToString();
+                        CS.BloodGroup = reader2["BloodGroup"].ToString();
+                        CS.Salary = (int)reader2["Salary"];
+                        CS.Picture = reader2["Picture"].ToString();
+                        CS.Password = reader2["Password"].ToString();
+                        CS.Status = reader2["Active"].ToString();
 
-                            CS.Position = reader2["Position"].ToString();
-
-                            CS.Name = reader2["Name"].ToString();
-
-                            CS.EmployeeID = reader2["EmpID"].ToString();
-
-                            CS.Email = reader2["Email"].ToString();
-
-                            CS.Phone = reader2["Phone"].ToString();
-
-                            CS.DateOfBirth = reader2["DateOfBirth"].ToString();
-
-                            CS.Gender = reader2["Gender"].ToString();
-
-                            CS.BloodGroup = reader2["BloodGroup"].ToString();
-
-                            CS.Salary = (int)reader2["Salary"];
-
-                            CS.Picture = reader2["Picture"].ToString();
-
-                            CS.Password = reader2["Password"].ToString();
-
-                            list2.Add(CS);
+                        list2.Add(CS);
 
                         }
 
@@ -468,6 +477,7 @@ namespace Restuarent
                 CS.Salary = (int)reader2["Salary"];
                 CS.Picture = reader2["Picture"].ToString();
                 CS.Password = reader2["Password"].ToString();
+                CS.Status = reader2["Active"].ToString();
                 list2.Add(CS);
             }
             dataGridView1.DataSource = list2;

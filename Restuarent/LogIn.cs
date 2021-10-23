@@ -63,18 +63,16 @@ namespace Restuarent
 
 
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
-
-
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Employee WHERE Name = '" + Namebox.Text + "' AND [Password] = '" + PasswordBox.Text + "' ", connection);
-
-
-
                 connection.Open();
+                string active = "Yes";
+                string sql ="SELECT * FROM Employee WHERE Name = '" + Namebox.Text + "' AND Password='" + PasswordBox.Text + "' AND Active='" + active + "'";
 
 
-                SqlDataReader sdr = cmd.ExecuteReader();
+                SqlCommand command = new SqlCommand(sql, connection);
+                SqlDataReader sdr = command.ExecuteReader();
+                
+
                 if ((sdr.Read() == true))
-
                 {
                     string emp;
                     string eid;

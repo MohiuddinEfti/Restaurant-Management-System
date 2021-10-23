@@ -23,5 +23,6 @@ namespace Restuarent
         public int Salary { get; set; }
         public string Picture { get; set; }
         public string Password { get; set; }
+        public string Status { get; set; }
     }
 }
