@@ -4382,7 +4382,7 @@ namespace Restuarent
             {
 
                 value=reader["CustomerRecieved"].ToString();
-                chef= reader["ChefOrderDoneTime"].ToString();
+                chef= reader["ChefOrderDone"].ToString();
                
 
 
@@ -4393,11 +4393,11 @@ namespace Restuarent
             {
                 label4.Text = "Processing";
             }
-            else if(chef!=null)
+            if(chef=="Done")
             {
                 label4.Text = "Processing------Preparing";
             }
-            else if (value == "Ready")
+            if (value == "Ready")
             {
                 label4.Text = "Processing------Preparing------Ready";
             }

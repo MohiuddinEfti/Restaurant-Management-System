@@ -41,10 +41,11 @@ namespace Restuarent
         
         private void Waiter_Load(object sender, EventArgs e)
         {
+            string rr = "Ready";
            
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
-            string sql = "SELECT * FROM CustomerOrders WHERE CustomerRecieved IS NULL AND ChefOrderDoneTime IS NOT NULL";
+            string sql = "SELECT * FROM CustomerOrders WHERE CustomerRecieved IS NULL OR CustomerRecieved='" + rr + "' AND ChefOrderDoneTime IS NOT NULL";
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
             List<WaiterChek> list = new List<WaiterChek>();
@@ -57,10 +58,10 @@ namespace Restuarent
                 CS.Id = (int)reader["Id"];
                 CS.CustomerName = reader["CustomerName"].ToString();
                 CS.TableNo = (int)reader["TableNo"];
-                CS.AddOn = reader["AddOn"].ToString();
+                
                 CS.Order = reader["TotalOrder"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
-                CS.CustomerRecieved = reader["ChefOrderDoneTime"].ToString();
+                CS.CustomerRecieved = reader["CustomerRecieved"].ToString();
                 CS.Price = reader["Price"].ToString();
                 CS.Payment = reader["Payment"].ToString();
                 CS.Reference = reader["Reference"].ToString();
@@ -80,7 +81,7 @@ namespace Restuarent
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex == -1) return;
-            rec= (string)dataGridView1.Rows[e.RowIndex].Cells[7].Value;
+            rec= (string)dataGridView1.Rows[e.RowIndex].Cells[5].Value;
             Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
 
             richTextBox1.Text = String.Empty;
@@ -134,10 +135,10 @@ namespace Restuarent
                         CS.Id = (int)readers["Id"];
                         CS.CustomerName = readers["CustomerName"].ToString();
                         CS.TableNo = (int)readers["TableNo"];
-                        CS.AddOn = readers["AddOn"].ToString();
+                        
                         CS.Order = readers["TotalOrder"].ToString();
                         CS.OrderTime = readers["OrderTime"].ToString();
-                        CS.CustomerRecieved = readers["ChefOrderDoneTime"].ToString();
+                        CS.CustomerRecieved = readers["CustomerRecieved"].ToString();
                         CS.Price = readers["Price"].ToString();
                         CS.Payment = readers["Payment"].ToString();
                         CS.Reference = readers["Reference"].ToString();
@@ -199,10 +200,10 @@ namespace Restuarent
                 CS.Id = (int)reader["Id"];
                 CS.CustomerName = reader["CustomerName"].ToString();
                 CS.TableNo = (int)reader["TableNo"];
-                CS.AddOn = reader["AddOn"].ToString();
+               
                 CS.Order = reader["TotalOrder"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
-                CS.CustomerRecieved = reader["ChefOrderDoneTime"].ToString();
+                CS.CustomerRecieved = reader["CustomerRecieved"].ToString();
                 CS.Price = reader["Price"].ToString();
                 CS.Payment = reader["Payment"].ToString();
                 CS.Reference = reader["Reference"].ToString();
@@ -233,10 +234,11 @@ namespace Restuarent
 
             if (diary > 0)
             {
+                string rr = "Ready";
                 comboBox1.Text = String.Empty;
                 MessageBox.Show("Order is Succefully Done");
                 richTextBox1.Text = String.Empty;
-                string sq2 = "SELECT * FROM CustomerOrders WHERE CustomerRecieved=Ready AND ChefOrderDoneTime IS NOT NULL";
+                string sq2 = "SELECT * FROM CustomerOrders WHERE CustomerRecieved='"+rr+"' AND ChefOrderDoneTime IS NOT NULL";
                 SqlCommand commandss = new SqlCommand(sq2, connections);
                 SqlDataReader readers = commandss.ExecuteReader();
                 List<WaiterChek> list = new List<WaiterChek>();
@@ -249,10 +251,10 @@ namespace Restuarent
                     CS.Id = (int)readers["Id"];
                     CS.CustomerName = readers["CustomerName"].ToString();
                     CS.TableNo = (int)readers["TableNo"];
-                    CS.AddOn = readers["AddOn"].ToString();
+                   
                     CS.Order = readers["TotalOrder"].ToString();
                     CS.OrderTime = readers["OrderTime"].ToString();
-                    CS.CustomerRecieved = readers["ChefOrderDoneTime"].ToString();
+                    CS.CustomerRecieved = readers["CustomerRecieved"].ToString();
                     CS.Price = readers["Price"].ToString();
                     CS.Payment = readers["Payment"].ToString();
                     CS.Reference = readers["Reference"].ToString();

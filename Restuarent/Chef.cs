@@ -59,7 +59,7 @@ namespace Restuarent
                 CS.Id = (int)reader["Id"];
                 CS.CustomerName = reader["CustomerName"].ToString();
                 CS.TableNo = (int)reader["TableNo"];
-                CS.AddOn = reader["AddOn"].ToString();
+                
                 CS.Order = reader["TotalOrder"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
@@ -88,9 +88,10 @@ namespace Restuarent
             DateTime time = DateTime.Now;
             string abcd="by "+abc;
             string ab = time.ToString("h:mm tt"+" Done ");
+            string done = "Done";
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
-            string sql = "UPDATE CustomerOrders SET ChefOrderDoneTime='" + ab+abcd + "'WHERE Id=" + Id;
+            string sql = "UPDATE CustomerOrders SET ChefOrderDone='"+done+"', ChefOrderDoneTime='" + ab+abcd + "'WHERE Id=" + Id;
            
            
             SqlCommand command = new SqlCommand(sql, connection);
@@ -113,7 +114,7 @@ namespace Restuarent
                     CS.Id = (int)reader["Id"];
                     CS.CustomerName = reader["CustomerName"].ToString();
                     CS.TableNo = (int)reader["TableNo"];
-                    CS.AddOn = reader["AddOn"].ToString();
+                    
                     CS.Order = reader["TotalOrder"].ToString();
                     CS.OrderTime = reader["OrderTime"].ToString();
                     CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
@@ -191,7 +192,7 @@ namespace Restuarent
                     CS.Id = (int)reader["Id"];
                     CS.CustomerName = reader["CustomerName"].ToString();
                     CS.TableNo = (int)reader["TableNo"];
-                    CS.AddOn = reader["AddOn"].ToString();
+                   
                     CS.Order = reader["TotalOrder"].ToString();
                     CS.OrderTime = reader["OrderTime"].ToString();
                     CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();

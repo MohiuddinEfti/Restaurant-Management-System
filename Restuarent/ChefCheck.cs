@@ -14,7 +14,7 @@ namespace Restuarent
 
         public int TableNo { get; set; }
 
-        public string AddOn { get; set; }
+      
         public string Order { get; set; }
         public string OrderTime { get; set; }
         public string ChefOrderDone { get; set; }
