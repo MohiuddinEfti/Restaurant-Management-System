@@ -2061,7 +2061,7 @@ namespace Restuarent
 
             SqlConnection connection7 = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection7.Open();
-            string sq7 = "SELECT CustomerRecieved FROM CustomerOrders Where TableNo='" + label8.Text+"'";
+            string sq7 = "SELECT CustomerRecieved FROM CustomerOrders Where TableNo='" + label8.Text+ "' AND CustomerRecieved IS NULL";
             SqlCommand command7 = new SqlCommand(sq7, connection7);
             SqlDataReader reader7 = command7.ExecuteReader();
 
@@ -2075,7 +2075,8 @@ namespace Restuarent
 
 
             }
-            if(mynoti=="Ready")
+            label5.Text = mynoti;
+            if (mynoti=="Ready")
             {
                 button330.Visible = true;
                
