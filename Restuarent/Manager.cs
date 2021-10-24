@@ -75,7 +75,7 @@ namespace Restuarent
                 CS.Id = (int)reader["Id"];
                 CS.CustomerName = reader["CustomerName"].ToString();
                 CS.TableNo = (int)reader["TableNo"];
-                
+                CS.TotalOrder = reader["TotalOrder"].ToString();
                 CS.Price = reader["Price"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
@@ -87,7 +87,22 @@ namespace Restuarent
             }
 
             dataGridView1.DataSource = list;
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
 
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "" && dataGridView1.Rows[i].Cells[7].Value.ToString() == "")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() == "")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
+                }
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() != "")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+            }
 
 
         }
@@ -169,7 +184,7 @@ namespace Restuarent
                 CS.Id = (int)reader["Id"];
                 CS.CustomerName = reader["CustomerName"].ToString();
                 CS.TableNo = (int)reader["TableNo"];
-                
+                CS.TotalOrder = reader["TotalOrder"].ToString();
                 CS.Price = reader["Price"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
                 CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
@@ -181,6 +196,22 @@ namespace Restuarent
                 list.Add(CS);
             }
             dataGridView1.DataSource = list;
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
+
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "" && dataGridView1.Rows[i].Cells[7].Value.ToString() == "")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() == "")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
+                }
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() != "")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+            }
 
             connection.Close();
         }
@@ -207,7 +238,7 @@ namespace Restuarent
                     CS.Id = (int)reader["Id"];
                     CS.CustomerName = reader["CustomerName"].ToString();
                     CS.TableNo = (int)reader["TableNo"];
-                    
+                    CS.TotalOrder = reader["TotalOrder"].ToString();
                     CS.Price = reader["Price"].ToString();
                     CS.OrderTime = reader["OrderTime"].ToString();
                     CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
@@ -219,6 +250,22 @@ namespace Restuarent
                 }
 
                 dataGridView1.DataSource = list;
+                for (int i = 0; i < dataGridView1.RowCount; i++)
+                {
+
+                    if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "" && dataGridView1.Rows[i].Cells[7].Value.ToString() == "")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    }
+                    if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() == "")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
+                    }
+                    if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() != "")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
+                }
             }
         }
 

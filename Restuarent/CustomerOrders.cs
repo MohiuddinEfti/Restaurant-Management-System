@@ -13,6 +13,7 @@ namespace Restuarent
         public string CustomerName { get; set; }
 
         public int TableNo { get; set; }
+        public string TotalOrder { get; set; }
         public string Price { get; set; }
         public string OrderTime { get; set; }
         public string ChefOrderDone { get; set; }
