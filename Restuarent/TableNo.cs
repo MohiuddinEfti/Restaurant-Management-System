@@ -30,9 +30,18 @@ namespace Restuarent
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Customer cm = new Customer(Int32.Parse(comboBox1.Text));
-            cm.Show();
-            this.Hide();
+            if(comboBox1.Text=="")
+            {
+                MessageBox.Show("Please Select A table number");
+
+            }
+            else
+            {
+                Customer cm = new Customer(Int32.Parse(comboBox1.Text));
+                cm.Show();
+                this.Hide();
+            }
+            
         }
     }
 }
