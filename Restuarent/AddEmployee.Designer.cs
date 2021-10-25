@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddEmployee));
             this.SignUpGroupBox = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.PasswordtextBox2 = new System.Windows.Forms.TextBox();
@@ -71,8 +69,6 @@
             this.SignUpGroupBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.SignUpGroupBox.BackColor = System.Drawing.Color.Transparent;
             this.SignUpGroupBox.Controls.Add(this.button4);
-            this.SignUpGroupBox.Controls.Add(this.textBox2);
-            this.SignUpGroupBox.Controls.Add(this.label6);
             this.SignUpGroupBox.Controls.Add(this.comboBox2);
             this.SignUpGroupBox.Controls.Add(this.label5);
             this.SignUpGroupBox.Controls.Add(this.PasswordtextBox2);
@@ -106,29 +102,13 @@
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(317, 450);
+            this.button4.Location = new System.Drawing.Point(317, 422);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(33, 23);
             this.button4.TabIndex = 43;
             this.button4.Text = "Show";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(162, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 26);
-            this.textBox2.TabIndex = 49;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 128);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 20);
-            this.label6.TabIndex = 48;
-            this.label6.Text = "Employee Id";
             // 
             // comboBox2
             // 
@@ -158,7 +138,7 @@
             // 
             // PasswordtextBox2
             // 
-            this.PasswordtextBox2.Location = new System.Drawing.Point(162, 448);
+            this.PasswordtextBox2.Location = new System.Drawing.Point(162, 419);
             this.PasswordtextBox2.Name = "PasswordtextBox2";
             this.PasswordtextBox2.PasswordChar = '*';
             this.PasswordtextBox2.Size = new System.Drawing.Size(189, 26);
@@ -167,7 +147,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 448);
+            this.label4.Location = new System.Drawing.Point(39, 419);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 20);
             this.label4.TabIndex = 44;
@@ -196,7 +176,7 @@
             // 
             // Salarytextbox
             // 
-            this.Salarytextbox.Location = new System.Drawing.Point(162, 396);
+            this.Salarytextbox.Location = new System.Drawing.Point(162, 367);
             this.Salarytextbox.Name = "Salarytextbox";
             this.Salarytextbox.Size = new System.Drawing.Size(189, 26);
             this.Salarytextbox.TabIndex = 20;
@@ -204,7 +184,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 398);
+            this.label2.Location = new System.Drawing.Point(52, 369);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 20);
             this.label2.TabIndex = 19;
@@ -212,7 +192,7 @@
             // 
             // Phonetextbox
             // 
-            this.Phonetextbox.Location = new System.Drawing.Point(162, 217);
+            this.Phonetextbox.Location = new System.Drawing.Point(162, 188);
             this.Phonetextbox.Name = "Phonetextbox";
             this.Phonetextbox.Size = new System.Drawing.Size(188, 26);
             this.Phonetextbox.TabIndex = 18;
@@ -220,7 +200,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 217);
+            this.label1.Location = new System.Drawing.Point(23, 188);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 20);
             this.label1.TabIndex = 17;
@@ -239,7 +219,7 @@
             "AB-",
             "B+",
             "B-"});
-            this.comboBox1.Location = new System.Drawing.Point(163, 346);
+            this.comboBox1.Location = new System.Drawing.Point(163, 317);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(187, 28);
             this.comboBox1.TabIndex = 14;
@@ -248,7 +228,7 @@
             // BloodGroupLabel
             // 
             this.BloodGroupLabel.AutoSize = true;
-            this.BloodGroupLabel.Location = new System.Drawing.Point(30, 346);
+            this.BloodGroupLabel.Location = new System.Drawing.Point(30, 317);
             this.BloodGroupLabel.Name = "BloodGroupLabel";
             this.BloodGroupLabel.Size = new System.Drawing.Size(110, 20);
             this.BloodGroupLabel.TabIndex = 13;
@@ -257,7 +237,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(282, 304);
+            this.radioButton2.Location = new System.Drawing.Point(285, 275);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(65, 24);
             this.radioButton2.TabIndex = 12;
@@ -268,7 +248,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(177, 304);
+            this.radioButton1.Location = new System.Drawing.Point(177, 275);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(86, 24);
             this.radioButton1.TabIndex = 11;
@@ -279,7 +259,7 @@
             // GenderLabel
             // 
             this.GenderLabel.AutoSize = true;
-            this.GenderLabel.Location = new System.Drawing.Point(50, 308);
+            this.GenderLabel.Location = new System.Drawing.Point(50, 279);
             this.GenderLabel.Name = "GenderLabel";
             this.GenderLabel.Size = new System.Drawing.Size(69, 20);
             this.GenderLabel.TabIndex = 10;
@@ -287,17 +267,17 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(163, 261);
+            this.dateTimePicker1.Location = new System.Drawing.Point(163, 232);
             this.dateTimePicker1.MaxDate = new System.DateTime(2022, 1, 4, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(188, 26);
             this.dateTimePicker1.TabIndex = 9;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 12, 18, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2021, 10, 25, 0, 0, 0, 0);
             // 
             // DateOfBirthLabel
             // 
             this.DateOfBirthLabel.AutoSize = true;
-            this.DateOfBirthLabel.Location = new System.Drawing.Point(28, 267);
+            this.DateOfBirthLabel.Location = new System.Drawing.Point(28, 238);
             this.DateOfBirthLabel.Name = "DateOfBirthLabel";
             this.DateOfBirthLabel.Size = new System.Drawing.Size(112, 20);
             this.DateOfBirthLabel.TabIndex = 8;
@@ -305,7 +285,7 @@
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.Location = new System.Drawing.Point(162, 168);
+            this.EmailTextBox.Location = new System.Drawing.Point(162, 139);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(188, 26);
             this.EmailTextBox.TabIndex = 7;
@@ -313,7 +293,7 @@
             // EmailLabel
             // 
             this.EmailLabel.AutoSize = true;
-            this.EmailLabel.Location = new System.Drawing.Point(51, 168);
+            this.EmailLabel.Location = new System.Drawing.Point(51, 139);
             this.EmailLabel.Name = "EmailLabel";
             this.EmailLabel.Size = new System.Drawing.Size(53, 20);
             this.EmailLabel.TabIndex = 6;
@@ -475,8 +455,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button4;
     }
 }

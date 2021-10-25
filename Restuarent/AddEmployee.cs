@@ -46,19 +46,7 @@ namespace Restuarent
         private void AddEmployeeButton_Click(object sender, EventArgs e)
         {
             string mycombo = comboBox2.Text;
-            SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
-
-
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Employee WHERE EmpID = '" + textBox2.Text + "'", connections);
-
-
-
-            connections.Open();
-
-
-            SqlDataReader sdr = cmd.ExecuteReader();
-            if ((sdr.Read() == false))
-            { 
+            
                 SqlConnection connections1 = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
             connections1.Open();
             string sq2s1 = "SELECT * FROM Employee WHERE Position LIKE '" + "Manager" + "%'  ";
@@ -88,11 +76,7 @@ namespace Restuarent
                 MessageBox.Show("ERROR Name is Blank");
 
             }
-            else if(textBox2.Text=="")
-            {
-                MessageBox.Show("ERROR Employee Id is Blank");
-
-            }
+            
             else if(EmailTextBox.Text=="")
             {
                 MessageBox.Show("ERROR Email is Blank");
@@ -121,7 +105,7 @@ namespace Restuarent
             else if (ManagerPos == "Manager" && comboBox2.Text=="Manager"&&positions=="Manager")
             {
                 MessageBox.Show("Unauthorised\nThere Is Already A Manager\nNew Manager Only Can Be Added By ADMIN");
-                textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
                 pictureBox1.ImageLocation = null;
                 
                 abc = string.Empty;
@@ -139,18 +123,20 @@ namespace Restuarent
                         gen = "Male";
                     }
                     string ac = "Active";
+                    string count = (dataGridView1.RowCount + 1).ToString();
+                    string myid = dateTimePicker1.Value.ToString("yyyy-" + count + "-dd"); 
                     SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
                     connection.Open();
-                    string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password,EmpID,Active) VALUES('" + comboBox2.Text + "','" + NameTextBox.Text + "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','" + dateTimePicker1.Text + "','" + gen + "','" + comboBox1.Text + "','" + Int32.Parse(Salarytextbox.Text) + "','" + abc + "','" + PasswordtextBox2.Text + "','" + textBox2.Text + "','" + ac + "')";
+                    string sq1 = "INSERT INTO Employee(Position,Name,Email,Phone,DateOfBirth,Gender,BloodGroup,Salary,Picture,Password,EmpID,Active) VALUES('" + comboBox2.Text + "','" + NameTextBox.Text + "','" + EmailTextBox.Text + "','" + Phonetextbox.Text + "','" + dateTimePicker1.Text + "','" + gen + "','" + comboBox1.Text + "','" + Int32.Parse(Salarytextbox.Text) + "','" + abc + "','" + PasswordtextBox2.Text + "','" + myid + "','" + ac + "')";
 
                     SqlCommand command = new SqlCommand(sq1, connection);
                     int diary = command.ExecuteNonQuery();
-
+                   
                     if (diary > 0)
                     {
                         MessageBox.Show("Employee Added");
 
-                        textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                       comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
                         pictureBox1.ImageLocation = null;
 
                         abc = string.Empty;
@@ -202,12 +188,7 @@ namespace Restuarent
                 
                
             }
-            }
-            else
-            {
-                MessageBox.Show("Employee ID Already Taken\nPlease Choose Another ID");
-                textBox2.Text = String.Empty;
-            }
+            
         }
 
         private void button21_Click(object sender, EventArgs e)
@@ -331,6 +312,7 @@ namespace Restuarent
             }
             else
             {
+
                 string active = "No";
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
                 connection.Open();
@@ -344,7 +326,7 @@ namespace Restuarent
                 {
                     MessageBox.Show("Employee Deleted");
 
-                    textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                    comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
                     pictureBox1.ImageLocation = null;
 
                     abc = string.Empty;
@@ -389,11 +371,11 @@ namespace Restuarent
 
         private void button1_Click(object sender, EventArgs e)
         {
-               
 
-                    
 
-                    SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+            
+
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
 
                     connection.Open();
 
@@ -469,7 +451,7 @@ namespace Restuarent
                             }
                         }
 
-                     textBox2.Text = comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+                     comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
 
                     pictureBox1.ImageLocation = null;
 
@@ -513,7 +495,18 @@ namespace Restuarent
                 list2.Add(CS);
             }
             dataGridView1.DataSource = list2;
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
 
+                if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                else
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+            }
             connection.Close();
         }
 
