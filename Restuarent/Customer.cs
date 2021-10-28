@@ -88,7 +88,7 @@ namespace Restuarent
         {
 
             label8.Text =tbno.ToString();
-            ;label4.Visible = false;
+            label4.Visible = false;
             pics.Clear();
             prices.Clear();
             names.Clear();
@@ -144,7 +144,7 @@ namespace Restuarent
             if (status.ElementAt(0)=="active"&&type.ElementAt(0)=="Starter")
             {   
                 panel3.Visible = true;
-                BurgerLab.Text = names.ElementAt(0);
+                BurgerLab.Text = names.ElementAt(0)+" "+prices.ElementAt(0)+"Tk";
                 Burgerpic.ImageLocation = pics.ElementAt(0); 
             }
             else
@@ -154,7 +154,7 @@ namespace Restuarent
             if (status.ElementAt(1) == "active" && type.ElementAt(1) == "Starter")
             {
                 panel6.Visible = true;
-                Dumplinglab.Text = names.ElementAt(1);
+                Dumplinglab.Text = names.ElementAt(1) + " " + prices.ElementAt(1) + "Tk";
                 Dumplingpic.ImageLocation = pics.ElementAt(1); 
             }
             else
@@ -164,7 +164,7 @@ namespace Restuarent
             if (status.ElementAt(2) == "active" && type.ElementAt(2) == "Starter")
             {
                 panel10.Visible = true;
-                label17.Text = names.ElementAt(2);
+                label17.Text = names.ElementAt(2) + " " + prices.ElementAt(2) + "Tk";
                 pictureBox3.ImageLocation = pics.ElementAt(2);
             }
             else
@@ -174,7 +174,7 @@ namespace Restuarent
             if (status.ElementAt(3) == "active" && type.ElementAt(3) == "Starter")
             {
                 panel14.Visible = true;
-                label21.Text = names.ElementAt(3);
+                label21.Text = names.ElementAt(3) + " " + prices.ElementAt(3) + "Tk";
                 pictureBox7.ImageLocation = pics.ElementAt(3);
             }
             else
@@ -184,7 +184,7 @@ namespace Restuarent
             if (status.ElementAt(4) == "active" && type.ElementAt(4) == "Starter")
             {
                 panel18.Visible = true;
-                label25.Text = names.ElementAt(4);
+                label25.Text = names.ElementAt(4) + " " + prices.ElementAt(4) + "Tk";
                 pictureBox11.ImageLocation = pics.ElementAt(4);
             }
             else
@@ -194,7 +194,7 @@ namespace Restuarent
             if (status.ElementAt(5) == "active" && type.ElementAt(5) == "Starter")
             {
                 panel22.Visible = true;
-                label29.Text = names.ElementAt(5);
+                label29.Text = names.ElementAt(5) + " " + prices.ElementAt(5) + "Tk";
                 pictureBox15.ImageLocation = pics.ElementAt(5);
             }
             else
@@ -204,7 +204,7 @@ namespace Restuarent
             if (status.ElementAt(6) == "active" && type.ElementAt(6) == "Starter")
             {
                 panel26.Visible = true;
-                label33.Text = names.ElementAt(6);
+                label33.Text = names.ElementAt(6) + " " + prices.ElementAt(6) + "Tk";
                 pictureBox19.ImageLocation = pics.ElementAt(6);
             }
             else
@@ -214,7 +214,7 @@ namespace Restuarent
             if (status.ElementAt(7) == "active" && type.ElementAt(7) == "Starter")
             {
                 panel30.Visible = true;
-                label37.Text = names.ElementAt(7);
+                label37.Text = names.ElementAt(7) + " " + prices.ElementAt(7) + "Tk";
                 pictureBox23.ImageLocation = pics.ElementAt(7);
             }
             else
@@ -224,7 +224,7 @@ namespace Restuarent
             if (status.ElementAt(8) == "active" && type.ElementAt(8) == "Starter")
             {
                 panel33.Visible = true;
-                label40.Text = names.ElementAt(8);
+                label40.Text = names.ElementAt(8) + " " + prices.ElementAt(8) + "Tk";
                 pictureBox26.ImageLocation = pics.ElementAt(8);
             }
             else
@@ -234,7 +234,7 @@ namespace Restuarent
             if (status.ElementAt(9) == "active" && type.ElementAt(9) == "Starter")
             {
                 panel37.Visible = true;
-                label44.Text = names.ElementAt(9);
+                label44.Text = names.ElementAt(9) + " " + prices.ElementAt(9) + "Tk";
                 pictureBox30.ImageLocation = pics.ElementAt(9);
             }
             else
@@ -244,7 +244,7 @@ namespace Restuarent
             if (status.ElementAt(10) == "active" && type.ElementAt(10) == "Starter")
             {
                 panel41.Visible = true;
-                label48.Text = names.ElementAt(10);
+                label48.Text = names.ElementAt(10) + " " + prices.ElementAt(10) + "Tk";
                 pictureBox34.ImageLocation = pics.ElementAt(10);
             }
             else
@@ -254,7 +254,7 @@ namespace Restuarent
             if (status.ElementAt(11) == "active" && type.ElementAt(11) == "Starter")
             {
                 panel45.Visible = true;
-                label52.Text = names.ElementAt(11);
+                label52.Text = names.ElementAt(11) + " " + prices.ElementAt(11) + "Tk";
                 pictureBox38.ImageLocation = pics.ElementAt(11);
             }
             else
@@ -264,7 +264,7 @@ namespace Restuarent
             if (status.ElementAt(12) == "active" && type.ElementAt(12) == "Starter")
             {
                 panel49.Visible = true;
-                label56.Text = names.ElementAt(12);
+                label56.Text = names.ElementAt(12) + " " + prices.ElementAt(12) + "Tk";
                 pictureBox42.ImageLocation = pics.ElementAt(12);
             }
             else
@@ -274,7 +274,7 @@ namespace Restuarent
             if (status.ElementAt(13) == "active" && type.ElementAt(13) == "Starter")
             {
                 panel53.Visible = true;
-                label60.Text = names.ElementAt(13);
+                label60.Text = names.ElementAt(13) + " " + prices.ElementAt(13) + "Tk";
                 pictureBox46.ImageLocation = pics.ElementAt(13);
             }
             else
@@ -284,7 +284,7 @@ namespace Restuarent
             if (status.ElementAt(14) == "active" && type.ElementAt(14) == "Starter")
             {
                 panel57.Visible = true;
-                label64.Text = names.ElementAt(14);
+                label64.Text = names.ElementAt(14) + " " + prices.ElementAt(14) + "Tk";
                 pictureBox50.ImageLocation = pics.ElementAt(14);
             }
             else
@@ -294,7 +294,7 @@ namespace Restuarent
             if (status.ElementAt(15) == "active" && type.ElementAt(15) == "Starter")
             {
                 panel61.Visible = true;
-                label68.Text = names.ElementAt(15);
+                label68.Text = names.ElementAt(15) + " " + prices.ElementAt(15) + "Tk";
                 pictureBox54.ImageLocation = pics.ElementAt(15);
             }
             else
@@ -304,7 +304,7 @@ namespace Restuarent
             if (status.ElementAt(16) == "active" && type.ElementAt(16) == "Starter")
             {
                 panel65.Visible = true;
-                label72.Text = names.ElementAt(16);
+                label72.Text = names.ElementAt(16) + " " + prices.ElementAt(16) + "Tk";
                 pictureBox58.ImageLocation = pics.ElementAt(16);
             }
             else
@@ -314,8 +314,8 @@ namespace Restuarent
             if (status.ElementAt(17) == "active" && type.ElementAt(17) == "Starter")
             {
                 panel69.Visible = true;
-                label76.Text = names.ElementAt(16);
-                pictureBox62.ImageLocation = pics.ElementAt(16);
+                label76.Text = names.ElementAt(17) + " " + prices.ElementAt(17) + "Tk";
+                pictureBox62.ImageLocation = pics.ElementAt(17);
             }
             else
             {
@@ -324,7 +324,7 @@ namespace Restuarent
             if (status.ElementAt(18) == "active" && type.ElementAt(18) == "Starter")
             {
                 panel73.Visible = true;
-                label80.Text = names.ElementAt(18);
+                label80.Text = names.ElementAt(18) + " " + prices.ElementAt(18) + "Tk";
                 pictureBox66.ImageLocation = pics.ElementAt(18);
             }
             else
@@ -334,7 +334,7 @@ namespace Restuarent
             if (status.ElementAt(19) == "active" && type.ElementAt(19) == "Starter")
             {
                 panel77.Visible = true;
-                label84.Text = names.ElementAt(19);
+                label84.Text = names.ElementAt(19) + " " + prices.ElementAt(19) + "Tk";
                 pictureBox70.ImageLocation = pics.ElementAt(19);
             }
             else
@@ -344,7 +344,7 @@ namespace Restuarent
             if (status.ElementAt(20) == "active" && type.ElementAt(20) == "Starter")
             {
                 panel81.Visible = true;
-                label88.Text = names.ElementAt(20);
+                label88.Text = names.ElementAt(20) + " " + prices.ElementAt(20) + "Tk";
                 pictureBox74.ImageLocation = pics.ElementAt(20);
             }
             else
@@ -354,7 +354,7 @@ namespace Restuarent
             if (status.ElementAt(21) == "active" && type.ElementAt(21) == "Starter")
             {
                 panel85.Visible = true;
-                label96.Text = names.ElementAt(21);
+                label96.Text = names.ElementAt(21) + " " + prices.ElementAt(21) + "Tk";
                 pictureBox78.ImageLocation = pics.ElementAt(21);
             }
             else
@@ -364,7 +364,7 @@ namespace Restuarent
             if (status.ElementAt(22) == "active" && type.ElementAt(22) == "Starter")
             {
                 panel89.Visible = true;
-                label100.Text = names.ElementAt(21);
+                label100.Text = names.ElementAt(22) + " " + prices.ElementAt(22) + "Tk";
                 pictureBox82.ImageLocation = pics.ElementAt(22);
             }
             else
@@ -374,7 +374,7 @@ namespace Restuarent
             if (status.ElementAt(23) == "active" && type.ElementAt(23) == "Starter")
             {
                 panel93.Visible = true;
-                label104.Text = names.ElementAt(23);
+                label104.Text = names.ElementAt(23) + " " + prices.ElementAt(23) + "Tk";
                 pictureBox86.ImageLocation = pics.ElementAt(23);
             }
             else
@@ -384,7 +384,7 @@ namespace Restuarent
             if (status.ElementAt(24) == "active" && type.ElementAt(24) == "Starter")
             {
                 panel97.Visible = true;
-                label108.Text = names.ElementAt(24);
+                label108.Text = names.ElementAt(24) + " " + prices.ElementAt(24) + "Tk";
                 pictureBox90.ImageLocation = pics.ElementAt(24);
             }
             else
@@ -394,7 +394,7 @@ namespace Restuarent
             if (status.ElementAt(25) == "active" && type.ElementAt(25) == "Starter")
             {
                 panel101.Visible = true;
-                label112.Text = names.ElementAt(25);
+                label112.Text = names.ElementAt(25) + " " + prices.ElementAt(25) + "Tk";
                 pictureBox94.ImageLocation = pics.ElementAt(25);
             }
             else
@@ -404,7 +404,7 @@ namespace Restuarent
             if (status.ElementAt(26) == "active" && type.ElementAt(26) == "Starter")
             {
                 panel105.Visible = true;
-                label116.Text = names.ElementAt(26);
+                label116.Text = names.ElementAt(26) + " " + prices.ElementAt(26) + "Tk";
                 pictureBox98.ImageLocation = pics.ElementAt(26);
             }
             else
@@ -414,7 +414,7 @@ namespace Restuarent
             if (status.ElementAt(27) == "active" && type.ElementAt(27) == "Starter")
             {
                 panel109.Visible = true;
-                label120.Text = names.ElementAt(27);
+                label120.Text = names.ElementAt(27) + " " + prices.ElementAt(27) + "Tk";
                 pictureBox102.ImageLocation = pics.ElementAt(27);
             }
             else
@@ -424,7 +424,7 @@ namespace Restuarent
             if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Starter")
             {
                 panel113.Visible = true;
-                label124.Text = names.ElementAt(28);
+                label124.Text = names.ElementAt(28) + " " + prices.ElementAt(28) + "Tk";
                 pictureBox106.ImageLocation = pics.ElementAt(28);
             }
             else
@@ -434,7 +434,7 @@ namespace Restuarent
             if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Starter")
             {
                 panel117.Visible = true;
-                label128.Text = names.ElementAt(29);
+                label128.Text = names.ElementAt(29) + " " + prices.ElementAt(29) + "Tk";
                 pictureBox110.ImageLocation = pics.ElementAt(29);
             }
             else
@@ -444,7 +444,7 @@ namespace Restuarent
             if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Starter")
             {
                 panel120.Visible = true;
-                label131.Text = names.ElementAt(30);
+                label131.Text = names.ElementAt(30) + " " + prices.ElementAt(30) + "Tk";
                 pictureBox113.ImageLocation = pics.ElementAt(30);
             }
             else
@@ -454,7 +454,7 @@ namespace Restuarent
             if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Starter")
             {
                 panel124.Visible = true;
-                label135.Text = names.ElementAt(31);
+                label135.Text = names.ElementAt(31) + " " + prices.ElementAt(31) + "Tk";
                 pictureBox117.ImageLocation = pics.ElementAt(31);
             }
             else
@@ -464,7 +464,7 @@ namespace Restuarent
             if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Starter")
             {
                 panel128.Visible = true;
-                label139.Text = names.ElementAt(32);
+                label139.Text = names.ElementAt(32) + " " + prices.ElementAt(32) + "Tk";
                 pictureBox121.ImageLocation = pics.ElementAt(32);
             }
             else
@@ -474,7 +474,7 @@ namespace Restuarent
             if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Starter")
             {
                 panel132.Visible = true;
-                label143.Text = names.ElementAt(33);
+                label143.Text = names.ElementAt(33) + " " + prices.ElementAt(33) + "Tk";
                 pictureBox125.ImageLocation = pics.ElementAt(33);
             }
             else
@@ -484,7 +484,7 @@ namespace Restuarent
             if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Starter")
             {
                 panel136.Visible = true;
-                label147.Text = names.ElementAt(34);
+                label147.Text = names.ElementAt(34) + " " + prices.ElementAt(34) + "Tk";
                 pictureBox129.ImageLocation = pics.ElementAt(34);
             }
             else
@@ -494,7 +494,7 @@ namespace Restuarent
             if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Starter")
             {
                 panel140.Visible = true;
-                label151.Text = names.ElementAt(35);
+                label151.Text = names.ElementAt(35) + " " + prices.ElementAt(35) + "Tk";
                 pictureBox133.ImageLocation = pics.ElementAt(35);
             }
             else
@@ -504,7 +504,7 @@ namespace Restuarent
             if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Starter")
             {
                 panel144.Visible = true;
-                label155.Text = names.ElementAt(36);
+                label155.Text = names.ElementAt(36) + " " + prices.ElementAt(36) + "Tk";
                 pictureBox137.ImageLocation = pics.ElementAt(36);
             }
             else
@@ -514,7 +514,7 @@ namespace Restuarent
             if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Starter")
             {
                 panel148.Visible = true;
-                label159.Text = names.ElementAt(37);
+                label159.Text = names.ElementAt(37) + " " + prices.ElementAt(37) + "Tk";
                 pictureBox141.ImageLocation = pics.ElementAt(37);
             }
             else
@@ -524,7 +524,7 @@ namespace Restuarent
             if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Starter")
             {
                 panel152.Visible = true;
-                label163.Text = names.ElementAt(38);
+                label163.Text = names.ElementAt(38) + " " + prices.ElementAt(38) + "Tk";
                 pictureBox145.ImageLocation = pics.ElementAt(38);
             }
             else
@@ -534,7 +534,7 @@ namespace Restuarent
             if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Starter")
             {
                 panel156.Visible = true;
-                label167.Text = names.ElementAt(39);
+                label167.Text = names.ElementAt(39) + " " + prices.ElementAt(39) + "Tk";
                 pictureBox149.ImageLocation = pics.ElementAt(39);
             }
             else
@@ -551,7 +551,7 @@ namespace Restuarent
             if (status.ElementAt(0) == "active" && type.ElementAt(0) == "Main course")
             {
                 panel155.Visible = true;
-                label166.Text = names.ElementAt(0);
+                label166.Text = names.ElementAt(0) + " " + prices.ElementAt(39) + "Tk";
                 pictureBox148.ImageLocation = pics.ElementAt(0);
             }
             else
@@ -561,7 +561,7 @@ namespace Restuarent
             if (status.ElementAt(1) == "active" && type.ElementAt(1) == "Main course")
             {
                 panel159.Visible = true;
-                label170.Text = names.ElementAt(1);
+                label170.Text = names.ElementAt(1) + " " + prices.ElementAt(1) + "Tk";
                 pictureBox152.ImageLocation = pics.ElementAt(1);
             }
             else
@@ -571,7 +571,7 @@ namespace Restuarent
             if (status.ElementAt(2) == "active" && type.ElementAt(2) == "Main course")
             {
                 panel151.Visible = true;
-                label162.Text = names.ElementAt(2);
+                label162.Text = names.ElementAt(2) + " " + prices.ElementAt(2) + "Tk";
                 pictureBox144.ImageLocation = pics.ElementAt(2);
             }
             else
@@ -581,7 +581,7 @@ namespace Restuarent
             if (status.ElementAt(3) == "active" && type.ElementAt(3) == "Main course")
             {
                 panel147.Visible = true;
-                label158.Text = names.ElementAt(3);
+                label158.Text = names.ElementAt(3) + " " + prices.ElementAt(3) + "Tk";
                 pictureBox140.ImageLocation = pics.ElementAt(3);
             }
             else
@@ -591,7 +591,7 @@ namespace Restuarent
             if (status.ElementAt(4) == "active" && type.ElementAt(4) == "Main course")
             {
                 panel143.Visible = true;
-                label154.Text = names.ElementAt(4);
+                label154.Text = names.ElementAt(4) + " " + prices.ElementAt(4) + "Tk";
                 pictureBox136.ImageLocation = pics.ElementAt(4);
             }
             else
@@ -601,7 +601,7 @@ namespace Restuarent
             if (status.ElementAt(5) == "active" && type.ElementAt(5) == "Main course")
             {
                 panel139.Visible = true;
-                label150.Text = names.ElementAt(5);
+                label150.Text = names.ElementAt(5) + " " + prices.ElementAt(5) + "Tk";
                 pictureBox132.ImageLocation = pics.ElementAt(5);
             }
             else
@@ -611,7 +611,7 @@ namespace Restuarent
             if (status.ElementAt(6) == "active" && type.ElementAt(6) == "Main course")
             {
                 panel135.Visible = true;
-                label146.Text = names.ElementAt(6);
+                label146.Text = names.ElementAt(6) + " " + prices.ElementAt(6) + "Tk";
                 pictureBox128.ImageLocation = pics.ElementAt(6);
             }
             else
@@ -621,7 +621,7 @@ namespace Restuarent
             if (status.ElementAt(7) == "active" && type.ElementAt(7) == "Main course")
             {
                 panel131.Visible = true;
-                label142.Text = names.ElementAt(7);
+                label142.Text = names.ElementAt(7) + " " + prices.ElementAt(7) + "Tk";
                 pictureBox124.ImageLocation = pics.ElementAt(7);
             }
             else
@@ -631,7 +631,7 @@ namespace Restuarent
             if (status.ElementAt(8) == "active" && type.ElementAt(8) == "Main course")
             {
                 panel127.Visible = true;
-                label138.Text = names.ElementAt(8);
+                label138.Text = names.ElementAt(8) + " " + prices.ElementAt(8) + "Tk";
                 pictureBox120.ImageLocation = pics.ElementAt(8);
             }
             else
@@ -641,7 +641,7 @@ namespace Restuarent
             if (status.ElementAt(9) == "active" && type.ElementAt(9) == "Main course")
             {
                 panel123.Visible = true;
-                label134.Text = names.ElementAt(9);
+                label134.Text = names.ElementAt(9) + " " + prices.ElementAt(9) + "Tk";
                 pictureBox116.ImageLocation = pics.ElementAt(9);
             }
             else
@@ -651,7 +651,7 @@ namespace Restuarent
             if (status.ElementAt(10) == "active" && type.ElementAt(10) == "Main course")
             {
                 panel115.Visible = true;
-                label126.Text = names.ElementAt(10);
+                label126.Text = names.ElementAt(10) + " " + prices.ElementAt(10) + "Tk";
                 pictureBox108.ImageLocation = pics.ElementAt(10);
             }
             else
@@ -661,7 +661,7 @@ namespace Restuarent
             if (status.ElementAt(11) == "active" && type.ElementAt(11) == "Main course")
             {
                 panel111.Visible = true;
-                label122.Text = names.ElementAt(11);
+                label122.Text = names.ElementAt(11) + " " + prices.ElementAt(11) + "Tk";
                 pictureBox104.ImageLocation = pics.ElementAt(11);
             }
             else
@@ -671,7 +671,7 @@ namespace Restuarent
             if (status.ElementAt(12) == "active" && type.ElementAt(12) == "Main course")
             {
                 panel107.Visible = true;
-                label118.Text = names.ElementAt(12);
+                label118.Text = names.ElementAt(12) + " " + prices.ElementAt(12) + "Tk";
                 pictureBox100.ImageLocation = pics.ElementAt(12);
             }
             else
@@ -681,7 +681,7 @@ namespace Restuarent
             if (status.ElementAt(13) == "active" && type.ElementAt(13) == "Main course")
             {
                 panel103.Visible = true;
-                label114.Text = names.ElementAt(13);
+                label114.Text = names.ElementAt(13) + " " + prices.ElementAt(13) + "Tk";
                 pictureBox96.ImageLocation = pics.ElementAt(13);
             }
             else
@@ -691,7 +691,7 @@ namespace Restuarent
             if (status.ElementAt(14) == "active" && type.ElementAt(14) == "Main course")
             {
                 panel99.Visible = true;
-                label110.Text = names.ElementAt(14);
+                label110.Text = names.ElementAt(14) + " " + prices.ElementAt(14) + "Tk";
                 pictureBox92.ImageLocation = pics.ElementAt(14);
             }
             else
@@ -701,7 +701,7 @@ namespace Restuarent
             if (status.ElementAt(15) == "active" && type.ElementAt(15) == "Main course")
             {
                 panel95.Visible = true;
-                label106.Text = names.ElementAt(15);
+                label106.Text = names.ElementAt(15) + " " + prices.ElementAt(15) + "Tk";
                 pictureBox88.ImageLocation = pics.ElementAt(15);
             }
             else
@@ -711,7 +711,7 @@ namespace Restuarent
             if (status.ElementAt(16) == "active" && type.ElementAt(16) == "Main course")
             {
                 panel91.Visible = true;
-                label102.Text = names.ElementAt(16);
+                label102.Text = names.ElementAt(16) + " " + prices.ElementAt(16) + "Tk";
                 pictureBox84.ImageLocation = pics.ElementAt(16);
             }
             else
@@ -721,8 +721,8 @@ namespace Restuarent
             if (status.ElementAt(17) == "active" && type.ElementAt(17) == "Main course")
             {
                 panel87.Visible = true;
-                label98.Text = names.ElementAt(16);
-                pictureBox80.ImageLocation = pics.ElementAt(16);
+                label98.Text = names.ElementAt(17) + " " + prices.ElementAt(17) + "Tk";
+                pictureBox80.ImageLocation = pics.ElementAt(17);
             }
             else
             {
@@ -731,7 +731,7 @@ namespace Restuarent
             if (status.ElementAt(18) == "active" && type.ElementAt(18) == "Main course")
             {
                 panel83.Visible = true;
-                label94.Text = names.ElementAt(18);
+                label94.Text = names.ElementAt(18) + " " + prices.ElementAt(18) + "Tk";
                 pictureBox76.ImageLocation = pics.ElementAt(18);
             }
             else
@@ -741,7 +741,7 @@ namespace Restuarent
             if (status.ElementAt(19) == "active" && type.ElementAt(19) == "Main course")
             {
                 panel79.Visible = true;
-                label86.Text = names.ElementAt(19);
+                label86.Text = names.ElementAt(19) + " " + prices.ElementAt(19) + "Tk";
                 pictureBox72.ImageLocation = pics.ElementAt(19);
             }
             else
@@ -751,7 +751,7 @@ namespace Restuarent
             if (status.ElementAt(20) == "active" && type.ElementAt(20) == "Main course")
             {
                 panel75.Visible = true;
-                label82.Text = names.ElementAt(20);
+                label82.Text = names.ElementAt(20) + " " + prices.ElementAt(20) + "Tk";
                 pictureBox68.ImageLocation = pics.ElementAt(20);
             }
             else
@@ -761,7 +761,7 @@ namespace Restuarent
             if (status.ElementAt(21) == "active" && type.ElementAt(21) == "Main course")
             {
                 panel71.Visible = true;
-                label78.Text = names.ElementAt(21);
+                label78.Text = names.ElementAt(21) + " " + prices.ElementAt(21) + "Tk";
                 pictureBox64.ImageLocation = pics.ElementAt(21);
             }
             else
@@ -771,7 +771,7 @@ namespace Restuarent
             if (status.ElementAt(22) == "active" && type.ElementAt(22) == "Main course")
             {
                 panel67.Visible = true;
-                label74.Text = names.ElementAt(21);
+                label74.Text = names.ElementAt(22) + " " + prices.ElementAt(22) + "Tk";
                 pictureBox60.ImageLocation = pics.ElementAt(22);
             }
             else
@@ -781,7 +781,7 @@ namespace Restuarent
             if (status.ElementAt(23) == "active" && type.ElementAt(23) == "Main course")
             {
                 panel63.Visible = true;
-                label70.Text = names.ElementAt(23);
+                label70.Text = names.ElementAt(23) + " " + prices.ElementAt(23) + "Tk";
                 pictureBox56.ImageLocation = pics.ElementAt(23);
             }
             else
@@ -791,7 +791,7 @@ namespace Restuarent
             if (status.ElementAt(24) == "active" && type.ElementAt(24) == "Main course")
             {
                 panel59.Visible = true;
-                label66.Text = names.ElementAt(24);
+                label66.Text = names.ElementAt(24) + " " + prices.ElementAt(24) + "Tk";
                 pictureBox52.ImageLocation = pics.ElementAt(24);
             }
             else
@@ -801,7 +801,7 @@ namespace Restuarent
             if (status.ElementAt(25) == "active" && type.ElementAt(25) == "Main course")
             {
                 panel55.Visible = true;
-                label62.Text = names.ElementAt(25);
+                label62.Text = names.ElementAt(25) + " " + prices.ElementAt(25) + "Tk";
                 pictureBox48.ImageLocation = pics.ElementAt(25);
             }
             else
@@ -811,7 +811,7 @@ namespace Restuarent
             if (status.ElementAt(26) == "active" && type.ElementAt(26) == "Main course")
             {
                 panel51.Visible = true;
-                label58.Text = names.ElementAt(26);
+                label58.Text = names.ElementAt(26) + " " + prices.ElementAt(26) + "Tk";
                 pictureBox44.ImageLocation = pics.ElementAt(26);
             }
             else
@@ -821,7 +821,7 @@ namespace Restuarent
             if (status.ElementAt(27) == "active" && type.ElementAt(27) == "Main course")
             {
                 panel47.Visible = true;
-                label54.Text = names.ElementAt(27);
+                label54.Text = names.ElementAt(27) + " " + prices.ElementAt(27) + "Tk";
                 pictureBox40.ImageLocation = pics.ElementAt(27);
             }
             else
@@ -831,7 +831,7 @@ namespace Restuarent
             if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Main course")
             {
                 panel43.Visible = true;
-                label50.Text = names.ElementAt(27);
+                label50.Text = names.ElementAt(28) + " " + prices.ElementAt(28) + "Tk";
                 pictureBox36.ImageLocation = pics.ElementAt(28);
             }
             else
@@ -841,7 +841,7 @@ namespace Restuarent
             if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Main course")
             {
                 panel39.Visible = true;
-                label46.Text = names.ElementAt(29);
+                label46.Text = names.ElementAt(29) + " " + prices.ElementAt(29) + "Tk";
                 pictureBox32.ImageLocation = pics.ElementAt(29);
             }
             else
@@ -851,7 +851,7 @@ namespace Restuarent
             if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Main course")
             {
                 panel35.Visible = true;
-                label42.Text = names.ElementAt(30);
+                label42.Text = names.ElementAt(30) + " " + prices.ElementAt(30) + "Tk";
                 pictureBox28.ImageLocation = pics.ElementAt(30);
             }
             else
@@ -861,7 +861,7 @@ namespace Restuarent
             if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Main course")
             {
                 panel27.Visible = true;
-                label34.Text = names.ElementAt(31);
+                label34.Text = names.ElementAt(31) + " " + prices.ElementAt(31) + "Tk";
                 pictureBox20.ImageLocation = pics.ElementAt(31);
             }
             else
@@ -871,7 +871,7 @@ namespace Restuarent
             if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Main course")
             {
                 panel23.Visible = true;
-                label30.Text = names.ElementAt(32);
+                label30.Text = names.ElementAt(32) + " " + prices.ElementAt(32) + "Tk";
                 pictureBox16.ImageLocation = pics.ElementAt(32);
             }
             else
@@ -881,7 +881,7 @@ namespace Restuarent
             if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Main course")
             {
                 panel19.Visible = true;
-                label26.Text = names.ElementAt(33);
+                label26.Text = names.ElementAt(33) + " " + prices.ElementAt(33) + "Tk";
                 pictureBox12.ImageLocation = pics.ElementAt(33);
             }
             else
@@ -891,7 +891,7 @@ namespace Restuarent
             if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Main course")
             {
                 panel15.Visible = true;
-                label22.Text = names.ElementAt(34);
+                label22.Text = names.ElementAt(34) + " " + prices.ElementAt(34) + "Tk";
                 pictureBox8.ImageLocation = pics.ElementAt(34);
             }
             else
@@ -901,7 +901,7 @@ namespace Restuarent
             if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Main course")
             {
                 panel11.Visible = true;
-                label18.Text = names.ElementAt(35);
+                label18.Text = names.ElementAt(35) + " " + prices.ElementAt(35) + "Tk";
                 pictureBox4.ImageLocation = pics.ElementAt(35);
             }
             else
@@ -911,7 +911,7 @@ namespace Restuarent
             if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Main course")
             {
                 panel7.Visible = true;
-                Pastrylab.Text = names.ElementAt(36);
+                Pastrylab.Text = names.ElementAt(36) + " " + prices.ElementAt(36) + "Tk";
                 Pastrypic.ImageLocation = pics.ElementAt(36);
             }
             else
@@ -921,7 +921,7 @@ namespace Restuarent
             if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Main course")
             {
                 panel2.Visible = true;
-                RicebowlLab.Text = names.ElementAt(37);
+                RicebowlLab.Text = names.ElementAt(37) + " " + prices.ElementAt(37) + "Tk";
                 pictureBox1.ImageLocation = pics.ElementAt(37);
             }
             else
@@ -931,7 +931,7 @@ namespace Restuarent
             if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Main course")
             {
                 panel160.Visible = true;
-                label171.Text = names.ElementAt(38);
+                label171.Text = names.ElementAt(38) + " " + prices.ElementAt(38) + "Tk";
                 pictureBox153.ImageLocation = pics.ElementAt(38);
             }
             else
@@ -941,7 +941,7 @@ namespace Restuarent
             if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Main course")
             {
                 panel70.Visible = true;
-                label77.Text = names.ElementAt(39);
+                label77.Text = names.ElementAt(39) + " " + prices.ElementAt(39) + "Tk";
                 pictureBox63.ImageLocation = pics.ElementAt(39);
             }
             else
@@ -954,7 +954,7 @@ namespace Restuarent
             if (status.ElementAt(0) == "active" && type.ElementAt(0) == "Dessert")
             {
                 panel157.Visible = true;
-                label168.Text = names.ElementAt(0);
+                label168.Text = names.ElementAt(0) + " " + prices.ElementAt(39) + "Tk";
                 pictureBox150.ImageLocation = pics.ElementAt(0);
             }
             else
@@ -964,7 +964,7 @@ namespace Restuarent
             if (status.ElementAt(1) == "active" && type.ElementAt(1) == "Dessert")
             {
                 panel161.Visible = true;
-                label172.Text = names.ElementAt(1);
+                label172.Text = names.ElementAt(1) + " " + prices.ElementAt(1) + "Tk";
                 pictureBox154.ImageLocation = pics.ElementAt(1);
             }
             else
@@ -974,7 +974,7 @@ namespace Restuarent
             if (status.ElementAt(2) == "active" && type.ElementAt(2) == "Dessert")
             {
                 panel153.Visible = true;
-                label164.Text = names.ElementAt(2);
+                label164.Text = names.ElementAt(2) + " " + prices.ElementAt(2) + "Tk";
                 pictureBox146.ImageLocation = pics.ElementAt(2);
             }
             else
@@ -984,7 +984,7 @@ namespace Restuarent
             if (status.ElementAt(3) == "active" && type.ElementAt(3) == "Dessert")
             {
                 panel149.Visible = true;
-                label160.Text = names.ElementAt(3);
+                label160.Text = names.ElementAt(3) + " " + prices.ElementAt(3) + "Tk";
                 pictureBox142.ImageLocation = pics.ElementAt(3);
             }
             else
@@ -994,7 +994,7 @@ namespace Restuarent
             if (status.ElementAt(4) == "active" && type.ElementAt(4) == "Dessert")
             {
                 panel145.Visible = true;
-                label156.Text = names.ElementAt(4);
+                label156.Text = names.ElementAt(4) + " " + prices.ElementAt(4) + "Tk";
                 pictureBox138.ImageLocation = pics.ElementAt(4);
             }
             else
@@ -1004,7 +1004,7 @@ namespace Restuarent
             if (status.ElementAt(5) == "active" && type.ElementAt(5) == "Dessert")
             {
                 panel141.Visible = true;
-                label152.Text = names.ElementAt(5);
+                label152.Text = names.ElementAt(5) + " " + prices.ElementAt(5) + "Tk";
                 pictureBox134.ImageLocation = pics.ElementAt(5);
             }
             else
@@ -1014,7 +1014,7 @@ namespace Restuarent
             if (status.ElementAt(6) == "active" && type.ElementAt(6) == "Dessert")
             {
                 panel137.Visible = true;
-                label148.Text = names.ElementAt(6);
+                label148.Text = names.ElementAt(6) + " " + prices.ElementAt(6) + "Tk";
                 pictureBox130.ImageLocation = pics.ElementAt(6);
             }
             else
@@ -1024,7 +1024,7 @@ namespace Restuarent
             if (status.ElementAt(7) == "active" && type.ElementAt(7) == "Dessert")
             {
                 panel133.Visible = true;
-                label144.Text = names.ElementAt(7);
+                label144.Text = names.ElementAt(7) + " " + prices.ElementAt(7) + "Tk";
                 pictureBox126.ImageLocation = pics.ElementAt(7);
             }
             else
@@ -1034,7 +1034,7 @@ namespace Restuarent
             if (status.ElementAt(8) == "active" && type.ElementAt(8) == "Dessert")
             {
                 panel129.Visible = true;
-                label140.Text = names.ElementAt(8);
+                label140.Text = names.ElementAt(8) + " " + prices.ElementAt(8) + "Tk";
                 pictureBox122.ImageLocation = pics.ElementAt(8);
             }
             else
@@ -1044,7 +1044,7 @@ namespace Restuarent
             if (status.ElementAt(9) == "active" && type.ElementAt(9) == "Dessert")
             {
                 panel125.Visible = true;
-                label136.Text = names.ElementAt(9);
+                label136.Text = names.ElementAt(9) + " " + prices.ElementAt(9) + "Tk";
                 pictureBox118.ImageLocation = pics.ElementAt(9);
             }
             else
@@ -1054,7 +1054,7 @@ namespace Restuarent
             if (status.ElementAt(10) == "active" && type.ElementAt(10) == "Dessert")
             {
                 panel121.Visible = true;
-                label132.Text = names.ElementAt(10);
+                label132.Text = names.ElementAt(10) + " " + prices.ElementAt(10) + "Tk";
                 pictureBox114.ImageLocation = pics.ElementAt(10);
             }
             else
@@ -1064,7 +1064,7 @@ namespace Restuarent
             if (status.ElementAt(11) == "active" && type.ElementAt(11) == "Dessert")
             {
                 panel118.Visible = true;
-                label129.Text = names.ElementAt(11);
+                label129.Text = names.ElementAt(11) + " " + prices.ElementAt(11) + "Tk";
                 pictureBox111.ImageLocation = pics.ElementAt(11);
             }
             else
@@ -1074,7 +1074,7 @@ namespace Restuarent
             if (status.ElementAt(12) == "active" && type.ElementAt(12) == "Dessert")
             {
                 panel114.Visible = true;
-                label125.Text = names.ElementAt(12);
+                label125.Text = names.ElementAt(12) + " " + prices.ElementAt(12) + "Tk";
                 pictureBox107.ImageLocation = pics.ElementAt(12);
             }
             else
@@ -1084,7 +1084,7 @@ namespace Restuarent
             if (status.ElementAt(13) == "active" && type.ElementAt(13) == "Dessert")
             {
                 panel110.Visible = true;
-                label121.Text = names.ElementAt(13);
+                label121.Text = names.ElementAt(13) + " " + prices.ElementAt(13) + "Tk";
                 pictureBox103.ImageLocation = pics.ElementAt(13);
             }
             else
@@ -1094,7 +1094,7 @@ namespace Restuarent
             if (status.ElementAt(14) == "active" && type.ElementAt(14) == "Dessert")
             {
                 panel106.Visible = true;
-                label117.Text = names.ElementAt(14);
+                label117.Text = names.ElementAt(14) + " " + prices.ElementAt(14) + "Tk";
                 pictureBox99.ImageLocation = pics.ElementAt(14);
             }
             else
@@ -1104,7 +1104,7 @@ namespace Restuarent
             if (status.ElementAt(15) == "active" && type.ElementAt(15) == "Dessert")
             {
                 panel102.Visible = true;
-                label113.Text = names.ElementAt(15);
+                label113.Text = names.ElementAt(15) + " " + prices.ElementAt(15) + "Tk";
                 pictureBox95.ImageLocation = pics.ElementAt(15);
             }
             else
@@ -1114,7 +1114,7 @@ namespace Restuarent
             if (status.ElementAt(16) == "active" && type.ElementAt(16) == "Dessert")
             {
                 panel98.Visible = true;
-                label109.Text = names.ElementAt(16);
+                label109.Text = names.ElementAt(16) + " " + prices.ElementAt(16) + "Tk";
                 pictureBox91.ImageLocation = pics.ElementAt(16);
             }
             else
@@ -1124,7 +1124,7 @@ namespace Restuarent
             if (status.ElementAt(17) == "active" && type.ElementAt(17) == "Dessert")
             {
                 panel94.Visible = true;
-                label105.Text = names.ElementAt(17);
+                label105.Text = names.ElementAt(17) + " " + prices.ElementAt(17) + "Tk";
                 pictureBox87.ImageLocation = pics.ElementAt(17);
             }
             else
@@ -1134,7 +1134,7 @@ namespace Restuarent
             if (status.ElementAt(18) == "active" && type.ElementAt(18) == "Dessert")
             {
                 panel90.Visible = true;
-                label101.Text = names.ElementAt(18);
+                label101.Text = names.ElementAt(18) + " " + prices.ElementAt(18) + "Tk";
                 pictureBox83.ImageLocation = pics.ElementAt(18);
             }
             else
@@ -1144,7 +1144,7 @@ namespace Restuarent
             if (status.ElementAt(19) == "active" && type.ElementAt(19) == "Dessert")
             {
                 panel86.Visible = true;
-                label97.Text = names.ElementAt(19);
+                label97.Text = names.ElementAt(19) + " " + prices.ElementAt(19) + "Tk";
                 pictureBox79.ImageLocation = pics.ElementAt(19);
             }
             else
@@ -1154,7 +1154,7 @@ namespace Restuarent
             if (status.ElementAt(20) == "active" && type.ElementAt(20) == "Dessert")
             {
                 panel82.Visible = true;
-                label93.Text = names.ElementAt(20);
+                label93.Text = names.ElementAt(20) + " " + prices.ElementAt(20) + "Tk";
                 pictureBox75.ImageLocation = pics.ElementAt(20);
             }
             else
@@ -1164,7 +1164,7 @@ namespace Restuarent
             if (status.ElementAt(21) == "active" && type.ElementAt(21) == "Dessert")
             {
                 panel78.Visible = true;
-                label85.Text = names.ElementAt(21);
+                label85.Text = names.ElementAt(21) + " " + prices.ElementAt(21) + "Tk";
                 pictureBox71.ImageLocation = pics.ElementAt(21);
             }
             else
@@ -1174,7 +1174,7 @@ namespace Restuarent
             if (status.ElementAt(22) == "active" && type.ElementAt(22) == "Dessert")
             {
                 panel74.Visible = true;
-                label81.Text = names.ElementAt(22);
+                label81.Text = names.ElementAt(22) + " " + prices.ElementAt(22) + "Tk";
                 pictureBox67.ImageLocation = pics.ElementAt(22);
             }
             else
@@ -1184,7 +1184,7 @@ namespace Restuarent
             if (status.ElementAt(23) == "active" && type.ElementAt(23) == "Dessert")
             {
                 panel66.Visible = true;
-                label73.Text = names.ElementAt(23);
+                label73.Text = names.ElementAt(23) + " " + prices.ElementAt(23) + "Tk";
                 pictureBox59.ImageLocation = pics.ElementAt(23);
             }
             else
@@ -1194,7 +1194,7 @@ namespace Restuarent
             if (status.ElementAt(24) == "active" && type.ElementAt(24) == "Dessert")
             {
                 panel62.Visible = true;
-                label69.Text = names.ElementAt(24);
+                label69.Text = names.ElementAt(24) + " " + prices.ElementAt(24) + "Tk";
                 pictureBox55.ImageLocation = pics.ElementAt(24);
             }
             else
@@ -1204,7 +1204,7 @@ namespace Restuarent
             if (status.ElementAt(25) == "active" && type.ElementAt(25) == "Dessert")
             {
                 panel58.Visible = true;
-                label65.Text = names.ElementAt(25);
+                label65.Text = names.ElementAt(25) + " " + prices.ElementAt(25) + "Tk";
                 pictureBox51.ImageLocation = pics.ElementAt(25);
             }
             else
@@ -1214,7 +1214,7 @@ namespace Restuarent
             if (status.ElementAt(26) == "active" && type.ElementAt(26) == "Dessert")
             {
                 panel54.Visible = true;
-                label61.Text = names.ElementAt(26);
+                label61.Text = names.ElementAt(26) + " " + prices.ElementAt(26) + "Tk";
                 pictureBox47.ImageLocation = pics.ElementAt(26);
             }
             else
@@ -1224,7 +1224,7 @@ namespace Restuarent
             if (status.ElementAt(27) == "active" && type.ElementAt(27) == "Dessert")
             {
                 panel50.Visible = true;
-                label57.Text = names.ElementAt(27);
+                label57.Text = names.ElementAt(27) + " " + prices.ElementAt(27) + "Tk";
                 pictureBox43.ImageLocation = pics.ElementAt(27);
             }
             else
@@ -1234,7 +1234,7 @@ namespace Restuarent
             if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Dessert")
             {
                 panel46.Visible = true;
-                label53.Text = names.ElementAt(28);
+                label53.Text = names.ElementAt(28) + " " + prices.ElementAt(28) + "Tk";
                 pictureBox39.ImageLocation = pics.ElementAt(28);
             }
             else
@@ -1244,7 +1244,7 @@ namespace Restuarent
             if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Dessert")
             {
                 panel42.Visible = true;
-                label49.Text = names.ElementAt(29);
+                label49.Text = names.ElementAt(29) + " " + prices.ElementAt(29) + "Tk";
                 pictureBox35.ImageLocation = pics.ElementAt(29);
             }
             else
@@ -1254,7 +1254,7 @@ namespace Restuarent
             if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Dessert")
             {
                 panel38.Visible = true;
-                label45.Text = names.ElementAt(30);
+                label45.Text = names.ElementAt(30) + " " + prices.ElementAt(30) + "Tk";
                 pictureBox31.ImageLocation = pics.ElementAt(30);
             }
             else
@@ -1264,7 +1264,7 @@ namespace Restuarent
             if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Dessert")
             {
                 panel34.Visible = true;
-                label41.Text = names.ElementAt(31);
+                label41.Text = names.ElementAt(31) + " " + prices.ElementAt(31) + "Tk";
                 pictureBox27.ImageLocation = pics.ElementAt(31);
             }
             else
@@ -1274,7 +1274,7 @@ namespace Restuarent
             if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Dessert")
             {
                 panel31.Visible = true;
-                label38.Text = names.ElementAt(32);
+                label38.Text = names.ElementAt(32) + " " + prices.ElementAt(32) + "Tk";
                 pictureBox24.ImageLocation = pics.ElementAt(32);
             }
             else
@@ -1284,7 +1284,7 @@ namespace Restuarent
             if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Dessert")
             {
                 panel20.Visible = true;
-                label27.Text = names.ElementAt(33);
+                label27.Text = names.ElementAt(33) + " " + prices.ElementAt(33) + "Tk";
                 pictureBox13.ImageLocation = pics.ElementAt(33);
             }
             else
@@ -1294,7 +1294,7 @@ namespace Restuarent
             if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Dessert")
             {
                 panel16.Visible = true;
-                label23.Text = names.ElementAt(34);
+                label23.Text = names.ElementAt(34) + " " + prices.ElementAt(34) + "Tk";
                 pictureBox9.ImageLocation = pics.ElementAt(34);
             }
             else
@@ -1304,7 +1304,7 @@ namespace Restuarent
             if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Dessert")
             {
                 panel12.Visible = true;
-                label19.Text = names.ElementAt(35);
+                label19.Text = names.ElementAt(35) + " " + prices.ElementAt(35) + "Tk";
                 pictureBox5.ImageLocation = pics.ElementAt(35);
             }
             else
@@ -1314,7 +1314,7 @@ namespace Restuarent
             if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Dessert")
             {
                 panel8.Visible = true;
-                Cokelab.Text = names.ElementAt(36);
+                Cokelab.Text = names.ElementAt(36) + " " + prices.ElementAt(36) + "Tk";
                 Cokepic.ImageLocation = pics.ElementAt(36);
             }
             else
@@ -1324,7 +1324,7 @@ namespace Restuarent
             if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Dessert")
             {
                 panel4.Visible = true;
-                Pizzalab.Text = names.ElementAt(37);
+                Pizzalab.Text = names.ElementAt(37) + " " + prices.ElementAt(37) + "Tk";
                 pizzapic.ImageLocation = pics.ElementAt(37);
             }
             else
@@ -1334,7 +1334,7 @@ namespace Restuarent
             if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Dessert")
             {
                 panel24.Visible = true;
-                label31.Text = names.ElementAt(38);
+                label31.Text = names.ElementAt(38) + " " + prices.ElementAt(38) + "Tk";
                 pictureBox17.ImageLocation = pics.ElementAt(38);
             }
             else
@@ -1344,7 +1344,7 @@ namespace Restuarent
             if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Dessert")
             {
                 panel5.Visible = true;
-                label35.Text = names.ElementAt(39);
+                label35.Text = names.ElementAt(39) + " " + prices.ElementAt(39) + "Tk";
                 pictureBox21.ImageLocation = pics.ElementAt(39);
             }
             else
@@ -1359,7 +1359,7 @@ namespace Restuarent
             if (status.ElementAt(0) == "active" && type.ElementAt(0) == "Drinks")
             {
                 panel158.Visible = true;
-                label169.Text = names.ElementAt(0);
+                label169.Text = names.ElementAt(0) + " " + prices.ElementAt(0) + "Tk";
                 pictureBox151.ImageLocation = pics.ElementAt(0);
             }//
             else
@@ -1369,7 +1369,7 @@ namespace Restuarent
             if (status.ElementAt(1) == "active" && type.ElementAt(1) == "Drinks")
             {
                 panel154.Visible = true;
-                label165.Text = names.ElementAt(1);
+                label165.Text = names.ElementAt(1) + " " + prices.ElementAt(1) + "Tk";
                 pictureBox147.ImageLocation = pics.ElementAt(1);
             }//
             else
@@ -1379,7 +1379,7 @@ namespace Restuarent
             if (status.ElementAt(2) == "active" && type.ElementAt(2) == "Drinks")
             {
                 panel150.Visible = true;
-                label161.Text = names.ElementAt(2);
+                label161.Text = names.ElementAt(2) + " " + prices.ElementAt(2) + "Tk";
                 pictureBox143.ImageLocation = pics.ElementAt(2);
             }//
             else
@@ -1389,7 +1389,7 @@ namespace Restuarent
             if (status.ElementAt(3) == "active" && type.ElementAt(3) == "Drinks")
             {
                 panel146.Visible = true;
-                label157.Text = names.ElementAt(3);
+                label157.Text = names.ElementAt(3) + " " + prices.ElementAt(3) + "Tk";
                 pictureBox139.ImageLocation = pics.ElementAt(3);
             }//
             else
@@ -1399,7 +1399,7 @@ namespace Restuarent
             if (status.ElementAt(4) == "active" && type.ElementAt(4) == "Drinks")
             {
                 panel142.Visible = true;
-                label153.Text = names.ElementAt(4);
+                label153.Text = names.ElementAt(4) + " " + prices.ElementAt(4) + "Tk";
                 pictureBox135.ImageLocation = pics.ElementAt(4);
             }//
             else
@@ -1409,7 +1409,7 @@ namespace Restuarent
             if (status.ElementAt(5) == "active" && type.ElementAt(5) == "Drinks")
             {
                 panel138.Visible = true;
-                label149.Text = names.ElementAt(5);
+                label149.Text = names.ElementAt(5) + " " + prices.ElementAt(5) + "Tk";
                 pictureBox131.ImageLocation = pics.ElementAt(5);
             }//
             else
@@ -1419,7 +1419,7 @@ namespace Restuarent
             if (status.ElementAt(6) == "active" && type.ElementAt(6) == "Drinks")
             {
                 panel134.Visible = true;
-                label145.Text = names.ElementAt(6);
+                label145.Text = names.ElementAt(6) + " " + prices.ElementAt(6) + "Tk";
                 pictureBox127.ImageLocation = pics.ElementAt(6);
             }//
             else
@@ -1429,7 +1429,7 @@ namespace Restuarent
             if (status.ElementAt(7) == "active" && type.ElementAt(7) == "Drinks")
             {
                 panel130.Visible = true;
-                label141.Text = names.ElementAt(7);
+                label141.Text = names.ElementAt(7) + " " + prices.ElementAt(7) + "Tk";
                 pictureBox123.ImageLocation = pics.ElementAt(7);
             }//
             else
@@ -1439,7 +1439,7 @@ namespace Restuarent
             if (status.ElementAt(8) == "active" && type.ElementAt(8) == "Drinks")
             {
                 panel126.Visible = true;
-                label137.Text = names.ElementAt(8);
+                label137.Text = names.ElementAt(8) + " " + prices.ElementAt(8) + "Tk";
                 pictureBox119.ImageLocation = pics.ElementAt(8);
             }//
             else
@@ -1449,7 +1449,7 @@ namespace Restuarent
             if (status.ElementAt(9) == "active" && type.ElementAt(9) == "Drinks")
             {
                 panel122.Visible = true;
-                label133.Text = names.ElementAt(9);
+                label133.Text = names.ElementAt(9) + " " + prices.ElementAt(9) + "Tk";
                 pictureBox115.ImageLocation = pics.ElementAt(9);
             }//
             else
@@ -1459,7 +1459,7 @@ namespace Restuarent
             if (status.ElementAt(10) == "active" && type.ElementAt(10) == "Drinks")
             {
                 panel119.Visible = true;
-                label30.Text = names.ElementAt(10);
+                label30.Text = names.ElementAt(10) + " " + prices.ElementAt(10) + "Tk";
                 pictureBox112.ImageLocation = pics.ElementAt(10);
             }//
             else
@@ -1469,7 +1469,7 @@ namespace Restuarent
             if (status.ElementAt(11) == "active" && type.ElementAt(11) == "Drinks")
             {
                 panel116.Visible = true;
-                label127.Text = names.ElementAt(11);
+                label127.Text = names.ElementAt(11) + " " + prices.ElementAt(11) + "Tk";
                 pictureBox109.ImageLocation = pics.ElementAt(11);
             }//
             else
@@ -1479,7 +1479,7 @@ namespace Restuarent
             if (status.ElementAt(12) == "active" && type.ElementAt(12) == "Drinks")
             {
                 panel32.Visible = true;
-                label39.Text = names.ElementAt(12);
+                label39.Text = names.ElementAt(12) + " " + prices.ElementAt(12) + "Tk";
                 pictureBox25.ImageLocation = pics.ElementAt(12);
             }//
             else
@@ -1489,7 +1489,7 @@ namespace Restuarent
             if (status.ElementAt(13) == "active" && type.ElementAt(13) == "Drinks")
             {
                 panel36.Visible = true;
-                label43.Text = names.ElementAt(13);
+                label43.Text = names.ElementAt(13) + " " + prices.ElementAt(13) + "Tk";
                 pictureBox29.ImageLocation = pics.ElementAt(13);
             }//
             else
@@ -1499,7 +1499,7 @@ namespace Restuarent
             if (status.ElementAt(14) == "active" && type.ElementAt(14) == "Drinks")
             {
                 panel40.Visible = true;
-                label47.Text = names.ElementAt(14);
+                label47.Text = names.ElementAt(14) + " " + prices.ElementAt(14) + "Tk";
                 pictureBox33.ImageLocation = pics.ElementAt(14);
             }//
             else
@@ -1509,7 +1509,7 @@ namespace Restuarent
             if (status.ElementAt(15) == "active" && type.ElementAt(15) == "Drinks")
             {
                 panel44.Visible = true;
-                label51.Text = names.ElementAt(15);
+                label51.Text = names.ElementAt(15) + " " + prices.ElementAt(15) + "Tk";
                 pictureBox37.ImageLocation = pics.ElementAt(15);
             }//
             else
@@ -1519,7 +1519,7 @@ namespace Restuarent
             if (status.ElementAt(16) == "active" && type.ElementAt(16) == "Drinks")
             {
                 panel48.Visible = true;
-                label55.Text = names.ElementAt(16);
+                label55.Text = names.ElementAt(16) + " " + prices.ElementAt(16) + "Tk";
                 pictureBox41.ImageLocation = pics.ElementAt(16);
             }//
             else
@@ -1529,7 +1529,7 @@ namespace Restuarent
             if (status.ElementAt(17) == "active" && type.ElementAt(17) == "Drinks")
             {
                 panel52.Visible = true;
-                label59.Text = names.ElementAt(17);
+                label59.Text = names.ElementAt(17) + " " + prices.ElementAt(17) + "Tk";
                 pictureBox45.ImageLocation = pics.ElementAt(17);
             }//
             else
@@ -1539,7 +1539,7 @@ namespace Restuarent
             if (status.ElementAt(18) == "active" && type.ElementAt(18) == "Drinks")
             {
                 panel56.Visible = true;
-                label63.Text = names.ElementAt(18);
+                label63.Text = names.ElementAt(18) + " " + prices.ElementAt(18) + "Tk";
                 pictureBox49.ImageLocation = pics.ElementAt(18);
             }//
             else
@@ -1549,7 +1549,7 @@ namespace Restuarent
             if (status.ElementAt(19) == "active" && type.ElementAt(19) == "Drinks")
             {
                 panel60.Visible = true;
-                label67.Text = names.ElementAt(19);
+                label67.Text = names.ElementAt(19) + " " + prices.ElementAt(19) + "Tk";
                 pictureBox53.ImageLocation = pics.ElementAt(19);
             }//
             else
@@ -1559,7 +1559,7 @@ namespace Restuarent
             if (status.ElementAt(20) == "active" && type.ElementAt(20) == "Drinks")
             {
                 panel64.Visible = true;
-                label71.Text = names.ElementAt(20);
+                label71.Text = names.ElementAt(20) + " " + prices.ElementAt(20) + "Tk";
                 pictureBox57.ImageLocation = pics.ElementAt(20);
             }//
             else
@@ -1569,7 +1569,7 @@ namespace Restuarent
             if (status.ElementAt(21) == "active" && type.ElementAt(21) == "Drinks")
             {
                 panel68.Visible = true;
-                label75.Text = names.ElementAt(21);
+                label75.Text = names.ElementAt(21) + " " + prices.ElementAt(21) + "Tk";
                 pictureBox61.ImageLocation = pics.ElementAt(21);
             }//
             else
@@ -1579,8 +1579,8 @@ namespace Restuarent
             if (status.ElementAt(22) == "active" && type.ElementAt(22) == "Drinks")
             {
                 panel72.Visible = true;
-                label79.Text = names.ElementAt(23);
-                pictureBox65.ImageLocation = pics.ElementAt(23);
+                label79.Text = names.ElementAt(22) + " " + prices.ElementAt(22) + "Tk";
+                pictureBox65.ImageLocation = pics.ElementAt(22);
             }//
             else
             {
@@ -1589,7 +1589,7 @@ namespace Restuarent
             if (status.ElementAt(23) == "active" && type.ElementAt(23) == "Drinks")
             {
                 panel76.Visible = true;
-                label83.Text = names.ElementAt(23);
+                label83.Text = names.ElementAt(23) + " " + prices.ElementAt(23) + "Tk";
                 pictureBox69.ImageLocation = pics.ElementAt(23);
             }//
             else
@@ -1599,7 +1599,7 @@ namespace Restuarent
             if (status.ElementAt(24) == "active" && type.ElementAt(24) == "Drinks")
             {
                 panel80.Visible = true;
-                label87.Text = names.ElementAt(24);
+                label87.Text = names.ElementAt(24) + " " + prices.ElementAt(24) + "Tk";
                 pictureBox73.ImageLocation = pics.ElementAt(24);
             }//
             else
@@ -1609,7 +1609,7 @@ namespace Restuarent
             if (status.ElementAt(25) == "active" && type.ElementAt(25) == "Drinks")
             {
                 panel84.Visible = true;
-                label95.Text = names.ElementAt(25);
+                label95.Text = names.ElementAt(25) + " " + prices.ElementAt(25) + "Tk";
                 pictureBox77.ImageLocation = pics.ElementAt(25);
             }//
             else
@@ -1619,7 +1619,7 @@ namespace Restuarent
             if (status.ElementAt(26) == "active" && type.ElementAt(26) == "Drinks")
             {
                 panel88.Visible = true;
-                label99.Text = names.ElementAt(26);
+                label99.Text = names.ElementAt(26) + " " + prices.ElementAt(26) + "Tk";
                 pictureBox81.ImageLocation = pics.ElementAt(26);
             }//
             else
@@ -1629,7 +1629,7 @@ namespace Restuarent
             if (status.ElementAt(27) == "active" && type.ElementAt(27) == "Drinks")
             {
                 panel92.Visible = true;
-                label103.Text = names.ElementAt(27);
+                label103.Text = names.ElementAt(27) + " " + prices.ElementAt(27) + "Tk";
                 pictureBox85.ImageLocation = pics.ElementAt(27);
             }//
             else
@@ -1639,7 +1639,7 @@ namespace Restuarent
             if (status.ElementAt(28) == "active" && type.ElementAt(28) == "Drinks")
             {
                 panel96.Visible = true;
-                label107.Text = names.ElementAt(28);
+                label107.Text = names.ElementAt(28) + " " + prices.ElementAt(28) + "Tk";
                 pictureBox89.ImageLocation = pics.ElementAt(28);
             }//
             else
@@ -1649,7 +1649,7 @@ namespace Restuarent
             if (status.ElementAt(29) == "active" && type.ElementAt(29) == "Drinks")
             {
                 panel100.Visible = true;
-                label111.Text = names.ElementAt(29);
+                label111.Text = names.ElementAt(29) + " " + prices.ElementAt(29) + "Tk";
                 pictureBox93.ImageLocation = pics.ElementAt(29);
             }//
             else
@@ -1659,7 +1659,7 @@ namespace Restuarent
             if (status.ElementAt(30) == "active" && type.ElementAt(30) == "Drinks")
             {
                 panel104.Visible = true;
-                label115.Text = names.ElementAt(30);
+                label115.Text = names.ElementAt(30) + " " + prices.ElementAt(30) + "Tk";
                 pictureBox97.ImageLocation = pics.ElementAt(30);
             }//
             else
@@ -1669,7 +1669,7 @@ namespace Restuarent
             if (status.ElementAt(31) == "active" && type.ElementAt(31) == "Drinks")
             {
                 panel108.Visible = true;
-                label119.Text = names.ElementAt(31);
+                label119.Text = names.ElementAt(31) + " " + prices.ElementAt(31) + "Tk";
                 pictureBox101.ImageLocation = pics.ElementAt(31);
             }//
             else
@@ -1679,7 +1679,7 @@ namespace Restuarent
             if (status.ElementAt(32) == "active" && type.ElementAt(32) == "Drinks")
             {
                 panel112.Visible = true;
-                label123.Text = names.ElementAt(32);
+                label123.Text = names.ElementAt(32) + " " + prices.ElementAt(32) + "Tk";
                 pictureBox105.ImageLocation = pics.ElementAt(32);
             }//
             else
@@ -1689,7 +1689,7 @@ namespace Restuarent
             if (status.ElementAt(33) == "active" && type.ElementAt(33) == "Drinks")
             {
                 panel21.Visible = true;
-                label28.Text = names.ElementAt(33);
+                label28.Text = names.ElementAt(33) + " " + prices.ElementAt(33) + "Tk";
                 pictureBox14.ImageLocation = pics.ElementAt(33);
             }//
             else
@@ -1699,7 +1699,7 @@ namespace Restuarent
             if (status.ElementAt(34) == "active" && type.ElementAt(34) == "Drinks")
             {
                 panel25.Visible = true;
-                label32.Text = names.ElementAt(34);
+                label32.Text = names.ElementAt(34) + " " + prices.ElementAt(34) + "Tk";
                 pictureBox18.ImageLocation = pics.ElementAt(34);
             }//
             else
@@ -1709,7 +1709,7 @@ namespace Restuarent
             if (status.ElementAt(35) == "active" && type.ElementAt(35) == "Drinks")
             {
                 panel29.Visible = true;
-                label36.Text = names.ElementAt(35);
+                label36.Text = names.ElementAt(35) + " " + prices.ElementAt(35) + "Tk";
                 pictureBox22.ImageLocation = pics.ElementAt(35);
             }//
             else
@@ -1719,7 +1719,7 @@ namespace Restuarent
             if (status.ElementAt(36) == "active" && type.ElementAt(36) == "Drinks")
             {
                 panel17.Visible = true;
-                label24.Text = names.ElementAt(36);
+                label24.Text = names.ElementAt(36) + " " + prices.ElementAt(36) + "Tk";
                 pictureBox10.ImageLocation = pics.ElementAt(36);
             }//
             else
@@ -1729,7 +1729,7 @@ namespace Restuarent
             if (status.ElementAt(37) == "active" && type.ElementAt(37) == "Drinks")
             {
                 panel13.Visible = true;
-                label20.Text = names.ElementAt(37);
+                label20.Text = names.ElementAt(37) + " " + prices.ElementAt(37) + "Tk";
                 pictureBox6.ImageLocation = pics.ElementAt(37);
             }//
             else
@@ -1739,7 +1739,7 @@ namespace Restuarent
             if (status.ElementAt(38) == "active" && type.ElementAt(38) == "Drinks")
             {
                 panel9.Visible = true;
-                Waterlab.Text = names.ElementAt(38);
+                Waterlab.Text = names.ElementAt(38) + " " + prices.ElementAt(38) + "Tk";
                 Waterpic.ImageLocation = pics.ElementAt(38);
             }//
             else
@@ -1749,7 +1749,7 @@ namespace Restuarent
             if (status.ElementAt(39) == "active" && type.ElementAt(39) == "Drinks")
             {
                 panel28.Visible = true;
-                label174.Text = names.ElementAt(39);
+                label174.Text = names.ElementAt(39) + " " + prices.ElementAt(39) + "Tk";
                 pictureBox155.ImageLocation = pics.ElementAt(39);
             }//
             else
