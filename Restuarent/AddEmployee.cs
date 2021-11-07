@@ -138,9 +138,10 @@ namespace Restuarent
 
                        comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
                         pictureBox1.ImageLocation = null;
-
+                    
                         abc = string.Empty;
-                        string sq2 = "SELECT * FROM Employee";
+                        string active = "Yes";
+                        string sq2 = "SELECT * FROM Employee Where Active='" + active + "'";
                         SqlCommand command1 = new SqlCommand(sq2, connection);
                         SqlDataReader reader2 = command1.ExecuteReader();
                         List<EmployeeAdding> list2 = new List<EmployeeAdding>();
@@ -211,12 +212,15 @@ namespace Restuarent
         private void AddEmployee_Load(object sender, EventArgs e)
         {
             dataGridView1.ReadOnly = true;
-           
+
             
+                activation = "Yes";
             
+
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
             connection.Open();
-            string sql = "SELECT * FROM Employee";
+            string active = "Yes";
+            string sql = "SELECT * FROM Employee Where Active='" + active + "'";
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader2 = command.ExecuteReader();
             List<EmployeeAdding> list2 = new List<EmployeeAdding>();
@@ -330,7 +334,8 @@ namespace Restuarent
                     pictureBox1.ImageLocation = null;
 
                     abc = string.Empty;
-                    string sq2 = "SELECT * FROM Employee";
+                    string actives = "Yes";
+                    string sq2 = "SELECT * FROM Employee Where Active='" + actives + "'";
                     SqlCommand command1 = new SqlCommand(sq2, connection);
                     SqlDataReader reader2 = command1.ExecuteReader();
                     List<EmployeeAdding> list2 = new List<EmployeeAdding>();
@@ -398,13 +403,8 @@ namespace Restuarent
 
                         MessageBox.Show("Updated");
 
-
-                    
-
-
-
-
-                        string sq2 = "SELECT * FROM Employee";
+                        string active = "Yes";
+                        string sq2 = "SELECT * FROM Employee Where Active='" + active + "'";
 
                         SqlCommand command1 = new SqlCommand(sq2, connection);
 
@@ -465,49 +465,63 @@ namespace Restuarent
             
 
         }
-
+        public string activation;
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
-            connection.Open();
-            string sq1 = "SELECT * FROM Employee WHERE EmpID LIKE '" + textBox1.Text + "%' OR Name LIKE '" + textBox1.Text + "%'  ";
-
-            SqlCommand command1 = new SqlCommand(sq1, connection);
-            SqlDataReader reader2 = command1.ExecuteReader();
-            List<EmployeeAdding> list2 = new List<EmployeeAdding>();
-            while (reader2.Read())
-            {
-                EmployeeAdding CS = new EmployeeAdding();
-
-                CS.ID = (int)reader2["Id"];
-                CS.Position = reader2["Position"].ToString();
-                CS.Name = reader2["Name"].ToString();
-                CS.EmployeeID = reader2["EmpID"].ToString();
-                CS.Email = reader2["Email"].ToString();
-                CS.Phone = reader2["Phone"].ToString();
-                CS.DateOfBirth = reader2["DateOfBirth"].ToString();
-                CS.Gender = reader2["Gender"].ToString();
-                CS.BloodGroup = reader2["BloodGroup"].ToString();
-                CS.Salary = (int)reader2["Salary"];
-                CS.Picture = reader2["Picture"].ToString();
-                CS.Password = reader2["Password"].ToString();
-                CS.Status = reader2["Active"].ToString();
-                list2.Add(CS);
-            }
-            dataGridView1.DataSource = list2;
-            for (int i = 0; i < dataGridView1.RowCount; i++)
-            {
-
-                if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+            
+            
+                string nameid;
+                if(textBox1.Text==String.Empty||textBox1.Text== "Search By Name Or ID")
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    nameid = String.Empty;
                 }
                 else
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    nameid = textBox1.Text;
                 }
-            }
-            connection.Close();
+               
+                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+                connection.Open();
+                string sq1 = "SELECT * FROM Employee WHERE Active='" + activation + "' AND EmpID LIKE '" + nameid + "%' OR Active='" + activation + "' AND Name LIKE '" + textBox1.Text + "%' ";
+
+                SqlCommand command1 = new SqlCommand(sq1, connection);
+                SqlDataReader reader2 = command1.ExecuteReader();
+                List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+                while (reader2.Read())
+                {
+                    EmployeeAdding CS = new EmployeeAdding();
+
+                    CS.ID = (int)reader2["Id"];
+                    CS.Position = reader2["Position"].ToString();
+                    CS.Name = reader2["Name"].ToString();
+                    CS.EmployeeID = reader2["EmpID"].ToString();
+                    CS.Email = reader2["Email"].ToString();
+                    CS.Phone = reader2["Phone"].ToString();
+                    CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                    CS.Gender = reader2["Gender"].ToString();
+                    CS.BloodGroup = reader2["BloodGroup"].ToString();
+                    CS.Salary = (int)reader2["Salary"];
+                    CS.Picture = reader2["Picture"].ToString();
+                    CS.Password = reader2["Password"].ToString();
+                    CS.Status = reader2["Active"].ToString();
+                    list2.Add(CS);
+                }
+                dataGridView1.DataSource = list2;
+                for (int i = 0; i < dataGridView1.RowCount; i++)
+                {
+
+                    if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
+                }
+                connection.Close();
+            
+           
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -542,7 +556,99 @@ namespace Restuarent
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
 
+                if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                else
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+            }
+        }
+
+        
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            if (comboBox3.Text == String.Empty || comboBox3.Text == "Active Member")
+            {
+                activation = "Yes";
+            }
+            else
+            {
+                activation = "No";
+            }
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
+            connection.Open();
+            string sq2 = "SELECT * FROM Employee Where Active='" + activation + "'";
+
+            SqlCommand command1 = new SqlCommand(sq2, connection);
+
+            SqlDataReader reader2 = command1.ExecuteReader();
+
+            List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+
+            while (reader2.Read())
+
+            {
+
+                EmployeeAdding CS = new EmployeeAdding();
+
+
+                CS.ID = (int)reader2["Id"];
+                CS.Position = reader2["Position"].ToString();
+                CS.Name = reader2["Name"].ToString();
+                CS.EmployeeID = reader2["EmpID"].ToString();
+                CS.Email = reader2["Email"].ToString();
+                CS.Phone = reader2["Phone"].ToString();
+                CS.DateOfBirth = reader2["DateOfBirth"].ToString();
+                CS.Gender = reader2["Gender"].ToString();
+                CS.BloodGroup = reader2["BloodGroup"].ToString();
+                CS.Salary = (int)reader2["Salary"];
+                CS.Picture = reader2["Picture"].ToString();
+                CS.Password = reader2["Password"].ToString();
+                CS.Status = reader2["Active"].ToString();
+
+                list2.Add(CS);
+
+            }
+
+            dataGridView1.DataSource = list2;
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
+
+                if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                else
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+            }
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Search By Name Or ID")
+            {
+                textBox1.Text = "";
+                textBox1.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "Search By Name Or ID";
+                textBox1.ForeColor = Color.LightGray;
+            }
         }
     }
 }
