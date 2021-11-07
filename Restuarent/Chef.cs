@@ -78,7 +78,7 @@ namespace Restuarent
             Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
             
                 richTextBox1.Text = String.Empty;
-                richTextBox1.Text= (string)dataGridView1.Rows[e.RowIndex].Cells[4].Value;
+                richTextBox1.Text= (string)dataGridView1.Rows[e.RowIndex].Cells[3].Value;
             
           
         }
@@ -209,6 +209,55 @@ namespace Restuarent
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DateTime time = DateTime.Now;
+            string abcd = "by " + abc;
+            string ab = time.ToString("h:mm tt" + " Done ");
+            string done = "Cancel";
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connection.Open();
+            string sql = "UPDATE CustomerOrders SET ChefOrderDone='" + done + "', ChefOrderDoneTime='" + ab + abcd + "'WHERE Id=" + Id;
+
+
+            SqlCommand command = new SqlCommand(sql, connection);
+
+
+            int diary = command.ExecuteNonQuery();
+
+
+            if (diary > 0)
+            {
+                MessageBox.Show("Order Is Canceled");
+                string sq2 = "SELECT * FROM CustomerOrders WHERE ChefOrderDoneTime IS NULL";
+                SqlCommand commands = new SqlCommand(sq2, connection);
+                SqlDataReader reader = commands.ExecuteReader();
+                List<ChefCheck> list = new List<ChefCheck>();
+                while (reader.Read())
+                {
+                    ChefCheck CS = new ChefCheck();
+
+                    CS.Id = (int)reader["Id"];
+                    CS.CustomerName = reader["CustomerName"].ToString();
+                    CS.TableNo = (int)reader["TableNo"];
+
+                    CS.Order = reader["TotalOrder"].ToString();
+                    CS.OrderTime = reader["OrderTime"].ToString();
+                    CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+
+
+                    list.Add(CS);
+                }
+                dataGridView1.DataSource = list;
+                richTextBox1.Text = String.Empty;
+
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
         }
     }
 }

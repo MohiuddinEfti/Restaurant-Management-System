@@ -1999,7 +1999,7 @@
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.Cash);
             this.panel1.Controls.Add(this.Bkash);
-            this.panel1.Location = new System.Drawing.Point(815, 525);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1240, 648);
             this.panel1.TabIndex = 69;

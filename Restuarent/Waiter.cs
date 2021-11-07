@@ -42,10 +42,10 @@ namespace Restuarent
         private void Waiter_Load(object sender, EventArgs e)
         {
             string rr = "Ready";
-           
+            string Done = "Done";
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
-            string sql = "SELECT * FROM CustomerOrders WHERE CustomerRecieved IS NULL OR CustomerRecieved='" + rr + "' AND ChefOrderDoneTime IS NOT NULL";
+            string sql = "SELECT * FROM CustomerOrders WHERE CustomerRecieved IS NULL AND ChefOrderDone='" + Done + "' OR CustomerRecieved='" + rr + "' AND ChefOrderDone='" + Done + "'";
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
             List<WaiterChek> list = new List<WaiterChek>();
@@ -85,7 +85,7 @@ namespace Restuarent
             Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
 
             richTextBox1.Text = String.Empty;
-            richTextBox1.Text = "Table No: "+ (int)dataGridView1.Rows[e.RowIndex].Cells[2].Value+"\n"+"Customer Name: "+ (string)dataGridView1.Rows[e.RowIndex].Cells[1].Value +"\n\n" +(string)dataGridView1.Rows[e.RowIndex].Cells[4].Value;
+            richTextBox1.Text = "Table No: "+ (int)dataGridView1.Rows[e.RowIndex].Cells[2].Value+"\n"+"Customer Name: "+ (string)dataGridView1.Rows[e.RowIndex].Cells[1].Value +"\n\n" +(string)dataGridView1.Rows[e.RowIndex].Cells[3].Value;
 
         }
         public string rec;
@@ -119,10 +119,11 @@ namespace Restuarent
                 if (diary > 0)
                 {
                     string R = "Ready";
+                    string Done = "Done";
                     comboBox1.Text = String.Empty;
                     MessageBox.Show("Order is Succefully Done");
                     richTextBox1.Text = String.Empty;
-                    string sq2 = "SELECT * FROM CustomerOrders WHERE CustomerRecieved IS NULL OR CustomerRecieved='"+R+"' AND ChefOrderDoneTime IS NOT NULL";
+                    string sq2 = "SELECT * FROM CustomerOrders WHERE CustomerRecieved IS NULL AND ChefOrderDone='" + Done + "' OR CustomerRecieved='" + R + "' AND ChefOrderDone='" + Done + "'";
                     SqlCommand commandss = new SqlCommand(sq2, connections);
                     SqlDataReader readers = commandss.ExecuteReader();
                     List<WaiterChek> list = new List<WaiterChek>();
@@ -185,9 +186,10 @@ namespace Restuarent
         private void timer1_Tick(object sender, EventArgs e)
         {
             string Ready = "Ready";
+            string Done = "Done";
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
-            string sql = "SELECT * FROM CustomerOrders WHERE CustomerRecieved IS NULL OR CustomerRecieved='"+Ready+"' AND ChefOrderDoneTime IS NOT NULL";
+            string sql = "SELECT * FROM CustomerOrders WHERE CustomerRecieved IS NULL AND ChefOrderDone='" + Done + "' OR CustomerRecieved='" + Ready+ "' AND ChefOrderDone='" + Done + "'";
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
             List<WaiterChek> list = new List<WaiterChek>();

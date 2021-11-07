@@ -4404,7 +4404,13 @@ namespace Restuarent
 
             if (value=="Ready")
             {
-               
+                button330.Text = "Your Order Is Ready";
+                button330.Visible = true;
+
+            }
+            else if (chef == "Cancel")
+            {
+                button330.Text = "Sorry Your Ordered item\nIs Out Of STOCK";
                 button330.Visible = true;
 
             }
