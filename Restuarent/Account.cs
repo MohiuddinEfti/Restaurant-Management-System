@@ -61,6 +61,37 @@ namespace Restuarent
             connection.Close();
             label7.Text = number.ToString();
             pictureBox1.ImageLocation = picture;
+            string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
+            string cancel = "Cancel";
+            SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connections.Open();
+            string sqls = "SELECT * FROM CustomerOrders Where Date LIKE '" + Today + "%' AND ChefOrderDone !='" + cancel+ "' OR Date LIKE '" + Today + "%' AND ChefOrderDone IS NULL";
+            SqlCommand commands = new SqlCommand(sqls, connections);
+            SqlDataReader readers = commands.ExecuteReader();
+            List<AccountsCash> list = new List<AccountsCash>();
+            while (readers.Read())
+            {
+                AccountsCash CS = new AccountsCash();
+
+
+                CS.Cash = (int)readers["Price"];
+                CS.Date = readers["Date"].ToString();
+
+                list.Add(CS);
+            }
+            dataGridView3.DataSource = list;
+            connections.Close();
+            int a = 0;
+            for (int i = 0; i < dataGridView3.RowCount; i++)
+            {
+
+                string b = dataGridView3.Rows[i].Cells[0].Value.ToString(); 
+                
+
+                a = a + Int32.Parse(b);
+                label1.Text = "Total Cash = "+a.ToString()+" Tk";
+
+            }
         }
 
         private void button21_Click(object sender, EventArgs e)

@@ -436,7 +436,8 @@ namespace Restuarent
             }
             else
             {
-                string Today = dateTimePicker1.Text;
+                string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
+                
                 DateTime time = DateTime.Now;
                 string ab = time.ToString("h:mm:ss tt");
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Accounts"].ConnectionString);

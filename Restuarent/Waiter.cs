@@ -21,7 +21,7 @@ namespace Restuarent
             InitializeComponent();
             abd = a;
         }
-
+        public int value;
         private void button1_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Are You Sure", "Log Out", MessageBoxButtons.YesNo);
@@ -38,9 +38,36 @@ namespace Restuarent
             }
         }
         public string check;
-        
+       
         private void Waiter_Load(object sender, EventArgs e)
         {
+            string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
+            string cancel = "Cancel";
+            dataGridView3.Visible = false;
+            SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connections.Open();
+            string sqls = "SELECT * FROM CustomerOrders Where Date LIKE '" + Today + "%' AND ChefOrderDone !='" + cancel + "' OR Date LIKE '" + Today + "%' AND ChefOrderDone IS NULL";
+            SqlCommand commands = new SqlCommand(sqls, connections);
+            SqlDataReader readers = commands.ExecuteReader();
+            List<AccountsCash> lists = new List<AccountsCash>();
+            while (readers.Read())
+            {
+                AccountsCash CS = new AccountsCash();
+
+
+                CS.Cash = (int)readers["Price"];
+                CS.Date = readers["Date"].ToString();
+
+                lists.Add(CS);
+            }
+            dataGridView3.DataSource = lists;
+            connections.Close();
+            
+
+
+
+
+
             string rr = "Ready";
             string Done = "Done";
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
@@ -69,19 +96,33 @@ namespace Restuarent
                 list.Add(CS);
             }
             dataGridView1.DataSource = list;
-           
-                
+            SqlConnection connection2 = new SqlConnection(ConfigurationManager.ConnectionStrings["Accounts"].ConnectionString);
+            connection2.Open();
+            string sq2s = "SELECT * FROM Accounts";
+            SqlCommand command2 = new SqlCommand(sq2s, connection2);
+            SqlDataReader reader2 = command2.ExecuteReader();
+
+            while (reader2.Read())
+            {
+
+                DATA.Add(reader2["Date"].ToString());
+
+            }
+
+            connection2.Close();
+
         }
 
         private void Waiter_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
+        public string pp;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex == -1) return;
-            rec= (string)dataGridView1.Rows[e.RowIndex].Cells[5].Value;
+            pp= (string)dataGridView1.Rows[e.RowIndex].Cells[6].Value;
+            rec = (string)dataGridView1.Rows[e.RowIndex].Cells[5].Value;
             Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
 
             richTextBox1.Text = String.Empty;
@@ -89,6 +130,9 @@ namespace Restuarent
 
         }
         public string rec;
+        List<string> DATA = new List<string>();
+        public bool activ;
+        //public string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
         private void button2_Click(object sender, EventArgs e)
         {
             if(comboBox1.Text=="")
@@ -118,6 +162,82 @@ namespace Restuarent
 
                 if (diary > 0)
                 {
+
+                    int a = 0;
+                    for (int i = 0; i < dataGridView3.RowCount; i++)
+                    {
+
+                        string b = dataGridView3.Rows[i].Cells[0].Value.ToString();
+
+
+                        value = a = a + Int32.Parse(b);
+
+
+                    }
+                    string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
+
+                    bool con = DATA.Contains(Today);
+
+                    if (con == true)
+                    {
+
+                      
+                        DateTime times = DateTime.Now;
+                        string abc = times.ToString("h:mm:ss tt");
+
+                        SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Accounts"].ConnectionString);
+                        connection.Open();
+                        string sql = "UPDATE Accounts SET TotalCash='" + value + "',UpdatedTime='" + abc + "' WHERE Date='" + Today + "'";
+                        SqlCommand command = new SqlCommand(sql, connection);
+                        int diary1 = command.ExecuteNonQuery();
+                        if (diary1 > 0)
+                        {
+
+                            MessageBox.Show("Order is Succefully false");
+                        }
+                        else
+                        {
+                            MessageBox.Show("ERROR");
+                        }
+                    }
+                    else
+                    {
+
+                       
+                        DateTime times = DateTime.Now;
+                        string abc = times.ToString("h:mm:ss tt");
+                        SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Accounts"].ConnectionString);
+                        connection.Open();
+                        string sq1 = "INSERT INTO Accounts(TotalCash,Date,Time) VALUES('" + Int32.Parse(pp) + "','" + Today + "','" + abc + "')";
+
+                        SqlCommand command = new SqlCommand(sq1, connection);
+                        int diary1 = command.ExecuteNonQuery();
+                        if (diary1 > 0)
+                        {
+                            DATA.Clear();
+                            MessageBox.Show("Order is Succefully true");
+                            SqlConnection connection2 = new SqlConnection(ConfigurationManager.ConnectionStrings["Accounts"].ConnectionString);
+                            connection2.Open();
+                            string sq2s = "SELECT * FROM Accounts";
+                            SqlCommand command2 = new SqlCommand(sq2s, connection2);
+                            SqlDataReader reader2 = command2.ExecuteReader();
+
+                            while (reader2.Read())
+                            {
+
+                                DATA.Add(reader2["Date"].ToString());
+
+                            }
+
+                            connection2.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("ERROR");
+                        }
+                    }
+
+
                     string R = "Ready";
                     string Done = "Done";
                     comboBox1.Text = String.Empty;
@@ -148,6 +268,11 @@ namespace Restuarent
 
                     }
                     dataGridView1.DataSource = list;
+
+                    
+
+                   
+                    
                 }
             }
             
@@ -267,5 +392,7 @@ namespace Restuarent
                 dataGridView1.DataSource = list;
             }
         }
+        
+        
     }
 }
