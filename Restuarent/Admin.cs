@@ -88,6 +88,7 @@ namespace Restuarent
 
         private void Admin_Load(object sender, EventArgs e)
         {
+            label8.Visible = true;
             label3.Visible = false;
             panel1.Visible = false;
             Kidmovies.Visible = false;
@@ -111,7 +112,7 @@ namespace Restuarent
                     CS.TotalOrder = reader["TotalOrder"].ToString();
                     CS.Price = reader["Price"].ToString();
                     CS.OrderTime = reader["OrderTime"].ToString();
-                    CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                    CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
                     CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
                     CS.Date = reader["Date"].ToString();
                     CS.Payment = reader["Payment"].ToString();
@@ -134,6 +135,10 @@ namespace Restuarent
                 if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() != "")
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "Cancel")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.DarkBlue;
                 }
             }
 
@@ -199,7 +204,7 @@ namespace Restuarent
                     CS.TotalOrder = reader["TotalOrder"].ToString();
                     CS.Price = reader["Price"].ToString();
                     CS.OrderTime = reader["OrderTime"].ToString();
-                    CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                    CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
                     CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
                     CS.Date = reader["Date"].ToString();
                     CS.Payment = reader["Payment"].ToString();
@@ -222,6 +227,10 @@ namespace Restuarent
                     if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() != "")
                     {
                         dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
+                    if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "Cancel")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.DarkBlue;
                     }
                 }
             }
@@ -266,7 +275,7 @@ namespace Restuarent
                  
                     CS.Price = reader["Price"].ToString();
                     CS.OrderTime = reader["OrderTime"].ToString();
-                    CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                    CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
                     CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
                     CS.Date = reader["Date"].ToString();
                     CS.Payment = reader["Payment"].ToString();
@@ -306,7 +315,7 @@ namespace Restuarent
                 
                 CS.Price = reader["Price"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
-                CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
                 CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
                 CS.Date = reader["Date"].ToString();
                 CS.Payment = reader["Payment"].ToString();
@@ -461,7 +470,7 @@ namespace Restuarent
         {
             panel1.Visible = true;
             timer1.Enabled = false;
-            label4.Visible = label5.Visible = label7.Visible = false;
+            label4.Visible = label5.Visible = label7.Visible =label8.Visible= false;
         }
 
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
@@ -477,8 +486,13 @@ namespace Restuarent
             button12.Visible = false;
             button14.Visible = false;
             panel1.Visible = false;
-            label4.Visible = label5.Visible = label7.Visible = true ;
+            label4.Visible = label5.Visible = label7.Visible= label8.Visible = true ;
             axWindowsMediaPlayer1.URL = "";
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

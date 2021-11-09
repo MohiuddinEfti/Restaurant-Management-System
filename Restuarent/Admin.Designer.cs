@@ -64,6 +64,7 @@ namespace Restuarent
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -325,7 +326,7 @@ namespace Restuarent
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.Movies);
             this.panel1.Controls.Add(this.button9);
-            this.panel1.Location = new System.Drawing.Point(229, 80);
+            this.panel1.Location = new System.Drawing.Point(229, 97);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1027, 508);
             this.panel1.TabIndex = 35;
@@ -496,6 +497,19 @@ namespace Restuarent
             this.label7.TabIndex = 38;
             this.label7.Text = "* Food Is Ready";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.DarkBlue;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(615, 136);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(109, 16);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "* Order Cancel";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -504,6 +518,7 @@ namespace Restuarent
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -565,5 +580,6 @@ namespace Restuarent
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

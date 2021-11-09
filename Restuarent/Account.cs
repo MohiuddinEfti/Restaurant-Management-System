@@ -40,7 +40,7 @@ namespace Restuarent
                 CS.Date = reader2["Date"].ToString();
                 CS.Time = reader2["Time"].ToString();
                 CS.UpdatedTime = reader2["UpdatedTime"].ToString();
-
+                Chart1.Series["Daily Income"].Points.AddXY(reader2["Date"].ToString(), (int)reader2["TotalCash"]);
                 list2.Add(CS);
             }
             dataGridView1.DataSource = list2;
@@ -110,6 +110,11 @@ namespace Restuarent
             Bkash bk = new Bkash();
             bk.ShowDialog();
             
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

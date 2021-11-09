@@ -30,6 +30,9 @@ namespace Restuarent
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Account));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button21 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -38,14 +41,16 @@ namespace Restuarent
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.Chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -79,7 +84,7 @@ namespace Restuarent
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(105, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(64, 42);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(169, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -93,7 +98,7 @@ namespace Restuarent
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(114, 213);
+            this.label7.Location = new System.Drawing.Point(76, 209);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(19, 25);
             this.label7.TabIndex = 45;
@@ -104,7 +109,7 @@ namespace Restuarent
             this.button4.BackColor = System.Drawing.Color.HotPink;
             this.button4.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button4.Location = new System.Drawing.Point(148, 260);
+            this.button4.Location = new System.Drawing.Point(111, 239);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(83, 38);
             this.button4.TabIndex = 46;
@@ -121,9 +126,9 @@ namespace Restuarent
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.HotPink;
-            this.groupBox1.Location = new System.Drawing.Point(742, 134);
+            this.groupBox1.Location = new System.Drawing.Point(787, 349);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(365, 346);
+            this.groupBox1.Size = new System.Drawing.Size(273, 283);
             this.groupBox1.TabIndex = 47;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bkash";
@@ -134,7 +139,7 @@ namespace Restuarent
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(66, 78);
+            this.groupBox2.Location = new System.Drawing.Point(182, 60);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(600, 283);
             this.groupBox2.TabIndex = 48;
@@ -148,12 +153,21 @@ namespace Restuarent
             this.groupBox3.Controls.Add(this.dataGridView3);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(66, 386);
+            this.groupBox3.Location = new System.Drawing.Point(787, 60);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(273, 283);
             this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Income In a Day";
+            this.groupBox3.Text = "Todays Income";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(69, 257);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 16);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "label1";
             // 
             // dataGridView3
             // 
@@ -173,14 +187,23 @@ namespace Restuarent
             this.dataGridView3.Size = new System.Drawing.Size(214, 224);
             this.dataGridView3.TabIndex = 50;
             // 
-            // label1
+            // Chart1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 257);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 16);
-            this.label1.TabIndex = 50;
-            this.label1.Text = "label1";
+            chartArea1.Name = "ChartArea1";
+            this.Chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.Chart1.Legends.Add(legend1);
+            this.Chart1.Location = new System.Drawing.Point(182, 349);
+            this.Chart1.Name = "Chart1";
+            this.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Daily Income";
+            this.Chart1.Series.Add(series1);
+            this.Chart1.Size = new System.Drawing.Size(599, 283);
+            this.Chart1.TabIndex = 50;
+            this.Chart1.Text = "Chart1";
+            this.Chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // Account
             // 
@@ -190,6 +213,7 @@ namespace Restuarent
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.Chart1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -208,6 +232,7 @@ namespace Restuarent
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,5 +249,6 @@ namespace Restuarent
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart Chart1;
     }
 }

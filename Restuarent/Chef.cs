@@ -215,7 +215,7 @@ namespace Restuarent
         {
             DateTime time = DateTime.Now;
             string abcd = "by " + abc;
-            string ab = time.ToString("h:mm tt" + " Done ");
+            string ab = time.ToString("h:mm tt" + " Cancel ");
             string done = "Cancel";
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();

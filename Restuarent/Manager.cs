@@ -78,7 +78,7 @@ namespace Restuarent
                 CS.TotalOrder = reader["TotalOrder"].ToString();
                 CS.Price = reader["Price"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
-                CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
                 CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
                 CS.Date = reader["Date"].ToString();
                 CS.Payment = reader["Payment"].ToString();
@@ -101,6 +101,10 @@ namespace Restuarent
                 if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() != "")
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "Cancel")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.DarkBlue;
                 }
             }
 
@@ -187,7 +191,7 @@ namespace Restuarent
                 CS.TotalOrder = reader["TotalOrder"].ToString();
                 CS.Price = reader["Price"].ToString();
                 CS.OrderTime = reader["OrderTime"].ToString();
-                CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
                 CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
                 CS.Date = reader["Date"].ToString();
                 CS.Payment = reader["Payment"].ToString();
@@ -211,6 +215,10 @@ namespace Restuarent
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
                 }
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "Cancel")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.DarkBlue;
+                }
             }
 
             connection.Close();
@@ -218,7 +226,26 @@ namespace Restuarent
 
         private void Manager_Load(object sender, EventArgs e)
         {
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
 
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "" && dataGridView1.Rows[i].Cells[7].Value.ToString() == "")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() == "")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
+                }
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() != "")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+                if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "Cancel")
+                {
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.DarkBlue;
+                }
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -241,7 +268,7 @@ namespace Restuarent
                     CS.TotalOrder = reader["TotalOrder"].ToString();
                     CS.Price = reader["Price"].ToString();
                     CS.OrderTime = reader["OrderTime"].ToString();
-                    CS.ChefOrderDone = reader["ChefOrderDoneTime"].ToString();
+                    CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
                     CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
                     CS.Date = reader["Date"].ToString();
                     CS.Payment = reader["Payment"].ToString();
@@ -264,6 +291,10 @@ namespace Restuarent
                     if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() != "")
                     {
                         dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
+                    if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "Cancel")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.DarkBlue;
                     }
                 }
             }
