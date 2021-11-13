@@ -46,7 +46,6 @@ namespace Restuarent
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.Food = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -65,10 +64,13 @@ namespace Restuarent
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.lbl_logo = new System.Windows.Forms.Label();
+            this.pnl_logo = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            this.pnl_logo.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -83,8 +85,10 @@ namespace Restuarent
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Image = global::Restuarent.Properties.Resources.users_25px;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(0, 203);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 47);
@@ -96,8 +100,10 @@ namespace Restuarent
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.Image = global::Restuarent.Properties.Resources.box_25px;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(0, 157);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(200, 47);
@@ -109,8 +115,10 @@ namespace Restuarent
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Image = global::Restuarent.Properties.Resources.user_male_25px;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(0, 112);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 47);
@@ -122,8 +130,10 @@ namespace Restuarent
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = global::Restuarent.Properties.Resources.restaurant_menu_25px;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 68);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 47);
@@ -157,18 +167,20 @@ namespace Restuarent
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(225, 29);
+            this.label6.Location = new System.Drawing.Point(282, 29);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(178, 24);
+            this.label6.Size = new System.Drawing.Size(72, 24);
             this.label6.TabIndex = 30;
-            this.label6.Text = "Restuarent Details";
+            this.label6.Text = "Details";
             // 
             // Logoutbutton1
             // 
             this.Logoutbutton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Logoutbutton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Logoutbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logoutbutton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.Logoutbutton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Logoutbutton1.Image = global::Restuarent.Properties.Resources.logout_rounded_left_25px;
+            this.Logoutbutton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Logoutbutton1.Location = new System.Drawing.Point(0, 590);
             this.Logoutbutton1.Name = "Logoutbutton1";
             this.Logoutbutton1.Size = new System.Drawing.Size(200, 45);
@@ -195,12 +207,12 @@ namespace Restuarent
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.pnl_logo);
             this.groupBox1.Controls.Add(this.button8);
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.Food);
-            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.Logoutbutton1);
@@ -215,8 +227,10 @@ namespace Restuarent
             // button8
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button8.Image = global::Restuarent.Properties.Resources.settings_25px;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.Location = new System.Drawing.Point(-1, 295);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(200, 47);
@@ -228,8 +242,10 @@ namespace Restuarent
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button7.Image = global::Restuarent.Properties.Resources.erase_25px;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.Location = new System.Drawing.Point(1, 433);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(200, 47);
@@ -241,8 +257,10 @@ namespace Restuarent
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.Location = new System.Drawing.Point(0, 387);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(200, 47);
@@ -254,8 +272,10 @@ namespace Restuarent
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(0, 341);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(200, 47);
@@ -267,8 +287,10 @@ namespace Restuarent
             // Food
             // 
             this.Food.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Food.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Food.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.Food.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Food.Image = global::Restuarent.Properties.Resources.restaurant_25px;
+            this.Food.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Food.Location = new System.Drawing.Point(0, 249);
             this.Food.Name = "Food";
             this.Food.Size = new System.Drawing.Size(200, 47);
@@ -276,20 +298,6 @@ namespace Restuarent
             this.Food.Text = "Food Items";
             this.Food.UseVisualStyleBackColor = true;
             this.Food.Click += new System.EventHandler(this.Food_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(0, 7);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(200, 61);
-            this.textBox2.TabIndex = 32;
-            this.textBox2.Text = "ADMIN";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // timer1
             // 
@@ -408,9 +416,7 @@ namespace Restuarent
             // 
             // axWindowsMediaPlayer1
             // 
-            this.axWindowsMediaPlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.axWindowsMediaPlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(80, 5);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
@@ -510,6 +516,28 @@ namespace Restuarent
             this.label8.Text = "* Order Cancel";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // lbl_logo
+            // 
+            this.lbl_logo.AutoSize = true;
+            this.lbl_logo.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_logo.ForeColor = System.Drawing.Color.White;
+            this.lbl_logo.Image = global::Restuarent.Properties.Resources.dinner_35px;
+            this.lbl_logo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_logo.Location = new System.Drawing.Point(3, 13);
+            this.lbl_logo.Name = "lbl_logo";
+            this.lbl_logo.Size = new System.Drawing.Size(201, 32);
+            this.lbl_logo.TabIndex = 0;
+            this.lbl_logo.Text = "      Restaurant";
+            // 
+            // pnl_logo
+            // 
+            this.pnl_logo.BackColor = System.Drawing.Color.Black;
+            this.pnl_logo.Controls.Add(this.lbl_logo);
+            this.pnl_logo.Location = new System.Drawing.Point(1, 7);
+            this.pnl_logo.Name = "pnl_logo";
+            this.pnl_logo.Size = new System.Drawing.Size(198, 55);
+            this.pnl_logo.TabIndex = 40;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -537,10 +565,11 @@ namespace Restuarent
             this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            this.pnl_logo.ResumeLayout(false);
+            this.pnl_logo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -557,7 +586,6 @@ namespace Restuarent
         private System.Windows.Forms.Button Logoutbutton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button Food;
         private System.Windows.Forms.Button button5;
         public System.Windows.Forms.Timer timer1;
@@ -581,5 +609,7 @@ namespace Restuarent
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel pnl_logo;
+        private System.Windows.Forms.Label lbl_logo;
     }
 }

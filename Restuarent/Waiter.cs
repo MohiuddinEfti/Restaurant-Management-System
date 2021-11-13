@@ -41,6 +41,7 @@ namespace Restuarent
        
         private void Waiter_Load(object sender, EventArgs e)
         {
+            label1.Visible = comboBox1.Visible = button2.Visible = false;
             string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
             string cancel = "Cancel";
             dataGridView3.Visible = false;
@@ -162,7 +163,8 @@ namespace Restuarent
 
                 if (diary > 0)
                 {
-
+                    label1.Visible = comboBox1.Visible = button2.Visible = false;
+                    button4.Visible = true;
                     int a = 0;
                     for (int i = 0; i < dataGridView3.RowCount; i++)
                     {
@@ -193,7 +195,7 @@ namespace Restuarent
                         if (diary1 > 0)
                         {
 
-                            MessageBox.Show("Order is Succefully false");
+                           // MessageBox.Show("Order is Succefully false");
                         }
                         else
                         {
@@ -215,7 +217,7 @@ namespace Restuarent
                         if (diary1 > 0)
                         {
                             DATA.Clear();
-                            MessageBox.Show("Order is Succefully true");
+                            //MessageBox.Show("Order is Succefully true");
                             SqlConnection connection2 = new SqlConnection(ConfigurationManager.ConnectionStrings["Accounts"].ConnectionString);
                             connection2.Open();
                             string sq2s = "SELECT * FROM Accounts";
@@ -361,6 +363,8 @@ namespace Restuarent
 
             if (diary > 0)
             {
+                label1.Visible = comboBox1.Visible = button2.Visible = true;
+                button4.Visible = false;
                 string rr = "Ready";
                 comboBox1.Text = String.Empty;
                 MessageBox.Show("Order is Succefully Done");

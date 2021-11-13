@@ -66,7 +66,7 @@ namespace Restuarent
             this.dataGridView1.Location = new System.Drawing.Point(28, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(661, 358);
+            this.dataGridView1.Size = new System.Drawing.Size(661, 514);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -74,7 +74,7 @@ namespace Restuarent
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(235, 119);
+            this.button2.Location = new System.Drawing.Point(116, 143);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 38);
             this.button2.TabIndex = 7;
@@ -89,7 +89,7 @@ namespace Restuarent
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(102, 63);
+            this.label1.Location = new System.Drawing.Point(84, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 8;
@@ -98,11 +98,12 @@ namespace Restuarent
             // comboBox1
             // 
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "By Cash",
             "By Bkash"});
-            this.comboBox1.Location = new System.Drawing.Point(163, 60);
+            this.comboBox1.Location = new System.Drawing.Point(145, 83);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
@@ -117,18 +118,18 @@ namespace Restuarent
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(28, 462);
+            this.groupBox1.Location = new System.Drawing.Point(942, 85);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(430, 181);
+            this.groupBox1.Size = new System.Drawing.Size(316, 270);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Waiter";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(79, 119);
+            this.button4.Location = new System.Drawing.Point(116, 143);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(123, 38);
+            this.button4.Size = new System.Drawing.Size(115, 38);
             this.button4.TabIndex = 15;
             this.button4.Text = "Ready";
             this.button4.UseVisualStyleBackColor = true;
@@ -156,7 +157,7 @@ namespace Restuarent
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(919, 99);
+            this.label2.Location = new System.Drawing.Point(774, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 33);
             this.label2.TabIndex = 14;
@@ -166,10 +167,10 @@ namespace Restuarent
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(832, 135);
+            this.richTextBox1.Location = new System.Drawing.Point(695, 85);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(241, 270);
+            this.richTextBox1.Size = new System.Drawing.Size(241, 514);
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
             // 

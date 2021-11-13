@@ -1762,12 +1762,7 @@ namespace Restuarent
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            Menu mn = new Menu();
-            mn.Show();
-            
-        }
+        
 
         private void Signinbutton_Click(object sender, EventArgs e)
         {

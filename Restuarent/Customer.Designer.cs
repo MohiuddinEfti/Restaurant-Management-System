@@ -37,7 +37,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.taka = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.Signinbutton = new System.Windows.Forms.Button();
             this.Burgerpic = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -1448,21 +1447,6 @@
             this.button9.Text = "Take Payment";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightGreen;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(29, 32);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(62, 60);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "MENU";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Signinbutton
             // 
@@ -14062,7 +14046,6 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Signinbutton);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.taka);
             this.Controls.Add(this.label6);
@@ -14579,7 +14562,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label taka;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Signinbutton;
         private System.Windows.Forms.PictureBox Burgerpic;
         private System.Windows.Forms.Button button2;
