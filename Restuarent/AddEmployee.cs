@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -109,7 +110,7 @@ namespace Restuarent
                 pictureBox1.ImageLocation = null;
                 
                 abc = string.Empty;
-            }
+            }          
             else
             {
                
@@ -650,6 +651,18 @@ namespace Restuarent
                 textBox1.ForeColor = Color.LightGray;
             }
         }
+
+        private void NameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void EmailTextBox_TextChanged(object sender, EventArgs e)
+        {
+            
+           
+        }
     }
 }
+
 
