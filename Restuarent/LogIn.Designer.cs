@@ -73,6 +73,7 @@ namespace Restuarent
             // Signinbutton
             // 
             this.Signinbutton.BackColor = System.Drawing.Color.Coral;
+            this.Signinbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Signinbutton.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
             this.Signinbutton.Location = new System.Drawing.Point(832, 497);
             this.Signinbutton.Name = "Signinbutton";
@@ -111,6 +112,7 @@ namespace Restuarent
             // icon_restore
             // 
             this.icon_restore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_restore.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icon_restore.Image = global::Restuarent.Properties.Resources.maximize_window_25px;
             this.icon_restore.Location = new System.Drawing.Point(1173, 19);
             this.icon_restore.Name = "icon_restore";
@@ -123,6 +125,7 @@ namespace Restuarent
             // icon_minimize
             // 
             this.icon_minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icon_minimize.Image = global::Restuarent.Properties.Resources.minimize_window_25px;
             this.icon_minimize.Location = new System.Drawing.Point(1142, 19);
             this.icon_minimize.Name = "icon_minimize";
@@ -144,6 +147,7 @@ namespace Restuarent
             // icon_close
             // 
             this.icon_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icon_close.Image = global::Restuarent.Properties.Resources.close_window_25px;
             this.icon_close.Location = new System.Drawing.Point(1204, 19);
             this.icon_close.Name = "icon_close";

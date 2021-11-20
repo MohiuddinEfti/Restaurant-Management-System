@@ -19,10 +19,9 @@ namespace Restuarent
 
         private void TableNo_Load(object sender, EventArgs e)
         {
-           
-            
+            this.WindowState = FormWindowState.Normal;
 
-            for (int i = 1; i <= 10; i += 1)
+            for (int i = 1; i <= 50; i += 1)
             {
                 comboBox1.Items.Add(i);
             }
@@ -42,6 +41,36 @@ namespace Restuarent
                 this.Hide();
             }
             
+        }
+
+        private void TableNo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void icon_minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void icon_restore_Click(object sender, EventArgs e)
+        {
+
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void icon_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
         }
     }
 }
