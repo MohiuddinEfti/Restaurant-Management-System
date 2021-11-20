@@ -21,7 +21,7 @@ namespace Restuarent
         {
             this.WindowState = FormWindowState.Normal;
 
-            for (int i = 1; i <= 50; i += 1)
+            for (int i = 1; i <= 30; i += 1)
             {
                 comboBox1.Items.Add(i);
             }
