@@ -99,6 +99,12 @@ namespace Restuarent
                     cf.Show();
                     this.Hide();
                 }
+                else if (Position == "Admin")
+                {
+                    Admin ad = new Admin(Names, Position);
+                    ad.Show();
+                    this.Hide();
+                }
                 else if (Position == "Waiter")
                 {
                     Waiter wt = new Waiter(Names);
@@ -191,6 +197,11 @@ namespace Restuarent
             }
 
 
+        }
+
+        private void Attendance_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }      
 

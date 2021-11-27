@@ -66,7 +66,8 @@ namespace Restuarent
 
 
             connections1.Close();
-
+            Regex mRegxExpression;
+            mRegxExpression = new Regex(@"^([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])$");
 
             if (comboBox2.Text=="")
             {
@@ -83,10 +84,22 @@ namespace Restuarent
                 MessageBox.Show("ERROR Email is Blank");
 
             }
+            else if (!mRegxExpression.IsMatch(EmailTextBox.Text.Trim()))           
+            {
+                    MessageBox.Show("E-mail address format is not correct.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    EmailTextBox.Text=String.Empty;
+                
+            }
             else if(Phonetextbox.Text=="")
             {
                 MessageBox.Show("ERROR Phone Number is Blank");
 
+            }
+            else if (Phonetextbox.Text.Length != 11)
+            {
+
+                MessageBox.Show("Phone number must be 11 digits");
+                Phonetextbox.Text = String.Empty;
             }
             else if(comboBox1.Text=="")
             {
@@ -102,7 +115,13 @@ namespace Restuarent
             {
                 MessageBox.Show("ERROR Password is Blank");
 
-            } 
+            }
+            else if (PasswordtextBox2.Text.Length != 6)
+            {
+
+                MessageBox.Show("Password number must be 6 digits");
+                PasswordtextBox2.Text = String.Empty;
+            }
             else if (ManagerPos == "Manager" && comboBox2.Text=="Manager"&&positions=="Manager")
             {
                 MessageBox.Show("Unauthorised\nThere Is Already A Manager\nNew Manager Only Can Be Added By ADMIN");
@@ -123,7 +142,7 @@ namespace Restuarent
                     {
                         gen = "Male";
                     }
-                    string ac = "Active";
+                    string ac = "Yes";
                     string count = (dataGridView1.RowCount + 1).ToString();
                     string myid = dateTimePicker1.Value.ToString("yyyy-" + count + "-dd"); 
                     SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
@@ -302,6 +321,7 @@ namespace Restuarent
             pictureBox1.ImageLocation = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
             comboBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             Salarytextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+            PasswordtextBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[11].Value.ToString();
             //textBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
 
@@ -385,7 +405,7 @@ namespace Restuarent
 
                     connection.Open();
 
-                    string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "',Email='" + EmailTextBox.Text + "',Phone='" + Phonetextbox.Text + "',DateOfBirth='" + dateTimePicker1.Text + "',Picture='" + pictureBox1.ImageLocation.ToString() + "',Position='" + comboBox2.Text + "',Salary='" + Salarytextbox.Text + "'WHERE Id=" + id1;
+                    string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "',Email='" + EmailTextBox.Text + "',Phone='" + Phonetextbox.Text + "',DateOfBirth='" + dateTimePicker1.Text + "',Picture='" + pictureBox1.ImageLocation.ToString() + "',Position='" + comboBox2.Text + "',Salary='" + Salarytextbox.Text + "',Password='" + PasswordtextBox2.Text + "'WHERE Id=" + id1;
 
 
 
@@ -654,13 +674,35 @@ namespace Restuarent
 
         private void NameTextBox_TextChanged(object sender, EventArgs e)
         {
-            
+            if (System.Text.RegularExpressions.Regex.IsMatch(NameTextBox.Text, @"[^a-zA-Z]"))
+            {
+                MessageBox.Show("Please enter only charecter.");
+                NameTextBox.Text = String.Empty;
+            }
         }
 
         private void EmailTextBox_TextChanged(object sender, EventArgs e)
         {
             
            
+        }
+
+        private void Salarytextbox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(Salarytextbox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                Salarytextbox.Text = String.Empty;
+            }
+        }
+
+        private void Phonetextbox_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(Phonetextbox.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                Phonetextbox.Text = String.Empty;
+            }
         }
     }
 }

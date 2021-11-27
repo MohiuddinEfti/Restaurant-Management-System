@@ -39,8 +39,9 @@ namespace Restuarent
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.Logoutbutton1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pnl_logo = new System.Windows.Forms.Panel();
+            this.lbl_logo = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -64,13 +65,12 @@ namespace Restuarent
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lbl_logo = new System.Windows.Forms.Label();
-            this.pnl_logo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.pnl_logo.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            this.pnl_logo.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -189,19 +189,6 @@ namespace Restuarent
             this.Logoutbutton1.UseVisualStyleBackColor = true;
             this.Logoutbutton1.Click += new System.EventHandler(this.Logoutbutton1_Click);
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(1143, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 20);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Search Name";
-            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -223,6 +210,28 @@ namespace Restuarent
             this.groupBox1.Size = new System.Drawing.Size(200, 636);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
+            // 
+            // pnl_logo
+            // 
+            this.pnl_logo.BackColor = System.Drawing.Color.Black;
+            this.pnl_logo.Controls.Add(this.lbl_logo);
+            this.pnl_logo.Location = new System.Drawing.Point(1, 7);
+            this.pnl_logo.Name = "pnl_logo";
+            this.pnl_logo.Size = new System.Drawing.Size(198, 55);
+            this.pnl_logo.TabIndex = 40;
+            // 
+            // lbl_logo
+            // 
+            this.lbl_logo.AutoSize = true;
+            this.lbl_logo.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_logo.ForeColor = System.Drawing.Color.White;
+            this.lbl_logo.Image = global::Restuarent.Properties.Resources.dinner_35px;
+            this.lbl_logo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_logo.Location = new System.Drawing.Point(3, 13);
+            this.lbl_logo.Name = "lbl_logo";
+            this.lbl_logo.Size = new System.Drawing.Size(201, 32);
+            this.lbl_logo.TabIndex = 0;
+            this.lbl_logo.Text = "      Restaurant";
             // 
             // button8
             // 
@@ -516,27 +525,17 @@ namespace Restuarent
             this.label8.Text = "* Order Cancel";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // lbl_logo
+            // label1
             // 
-            this.lbl_logo.AutoSize = true;
-            this.lbl_logo.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_logo.ForeColor = System.Drawing.Color.White;
-            this.lbl_logo.Image = global::Restuarent.Properties.Resources.dinner_35px;
-            this.lbl_logo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbl_logo.Location = new System.Drawing.Point(3, 13);
-            this.lbl_logo.Name = "lbl_logo";
-            this.lbl_logo.Size = new System.Drawing.Size(201, 32);
-            this.lbl_logo.TabIndex = 0;
-            this.lbl_logo.Text = "      Restaurant";
-            // 
-            // pnl_logo
-            // 
-            this.pnl_logo.BackColor = System.Drawing.Color.Black;
-            this.pnl_logo.Controls.Add(this.lbl_logo);
-            this.pnl_logo.Location = new System.Drawing.Point(1, 7);
-            this.pnl_logo.Name = "pnl_logo";
-            this.pnl_logo.Size = new System.Drawing.Size(198, 55);
-            this.pnl_logo.TabIndex = 40;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(1143, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 20);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "Table Number";
             // 
             // Admin
             // 
@@ -546,6 +545,7 @@ namespace Restuarent
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -553,7 +553,6 @@ namespace Restuarent
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
@@ -565,11 +564,11 @@ namespace Restuarent
             this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.pnl_logo.ResumeLayout(false);
+            this.pnl_logo.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            this.pnl_logo.ResumeLayout(false);
-            this.pnl_logo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -584,7 +583,6 @@ namespace Restuarent
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button Logoutbutton1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button Food;
         private System.Windows.Forms.Button button5;
@@ -611,5 +609,6 @@ namespace Restuarent
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel pnl_logo;
         private System.Windows.Forms.Label lbl_logo;
+        private System.Windows.Forms.Label label1;
     }
 }

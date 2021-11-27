@@ -88,6 +88,7 @@ namespace Restuarent
 
         private void Admin_Load(object sender, EventArgs e)
         {
+            button7.Visible = false;
             label8.Visible = true;
             label3.Visible = false;
             panel1.Visible = false;
@@ -298,34 +299,63 @@ namespace Restuarent
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
-            connection.Open();
-            string sq1 = "SELECT * FROM CustomerOrders WHERE CustomerName LIKE '" + textBox1.Text + "%'  ";
-
-            SqlCommand command = new SqlCommand(sq1, connection);
-            SqlDataReader reader = command.ExecuteReader();
-            List<CustomerOrders> list = new List<CustomerOrders>();
-            while (reader.Read())
+            if (textBox1.Text == "Clear All Order" || textBox1.Text == "clear all order") 
             {
-                CustomerOrders CS = new CustomerOrders();
-
-                CS.Id = (int)reader["Id"];
-                CS.CustomerName = reader["CustomerName"].ToString();
-                CS.TableNo = (int)reader["TableNo"];
-                
-                CS.Price = reader["Price"].ToString();
-                CS.OrderTime = reader["OrderTime"].ToString();
-                CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
-                CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
-                CS.Date = reader["Date"].ToString();
-                CS.Payment = reader["Payment"].ToString();
-
-
-                list.Add(CS);
+                button7.Visible = true;
             }
-            dataGridView1.DataSource = list;
+            else
+            {
 
-            connection.Close();
+                button7.Visible = false;
+                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+                connection.Open();
+                string sq1 = "SELECT * FROM CustomerOrders WHERE TableNo LIKE '" + textBox1.Text + "%'  ";
+
+                SqlCommand command = new SqlCommand(sq1, connection);
+                SqlDataReader reader = command.ExecuteReader();
+                List<CustomerOrders> list = new List<CustomerOrders>();
+                while (reader.Read())
+                {
+                    CustomerOrders CS = new CustomerOrders();
+
+                    CS.Id = (int)reader["Id"];
+                    CS.CustomerName = reader["CustomerName"].ToString();
+                    CS.TableNo = (int)reader["TableNo"];
+
+                    CS.Price = reader["Price"].ToString();
+                    CS.OrderTime = reader["OrderTime"].ToString();
+                    CS.ChefOrderDone = reader["ChefOrderDone"].ToString();
+                    CS.CustomerRecievedTime = reader["CustomerRecieved"].ToString();
+                    CS.Date = reader["Date"].ToString();
+                    CS.Payment = reader["Payment"].ToString();
+
+
+                    list.Add(CS);
+                }
+                dataGridView1.DataSource = list;
+
+                connection.Close();
+                for (int i = 0; i < dataGridView1.RowCount; i++)
+                {
+
+                    if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "" && dataGridView1.Rows[i].Cells[7].Value.ToString() == "")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    }
+                    if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() == "")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
+                    }
+                    if (dataGridView1.Rows[i].Cells[6].Value.ToString() != "" && dataGridView1.Rows[i].Cells[7].Value.ToString() != "")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
+                    if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "Cancel")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.DarkBlue;
+                    }
+                }
+            }
         }
         public string movie;
         public string kidmovie;
