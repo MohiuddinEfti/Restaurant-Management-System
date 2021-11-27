@@ -152,8 +152,10 @@ namespace Restuarent
                     SqlCommand command = new SqlCommand(sq1, connection);
                     int diary = command.ExecuteNonQuery();
                    
-                    if (diary > 0)
-                    {
+                    
+                if (diary > 0)
+                    
+                {
                         MessageBox.Show("Employee Added");
 
                        comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
@@ -165,8 +167,9 @@ namespace Restuarent
                         SqlCommand command1 = new SqlCommand(sq2, connection);
                         SqlDataReader reader2 = command1.ExecuteReader();
                         List<EmployeeAdding> list2 = new List<EmployeeAdding>();
-                        while (reader2.Read())
-                        {
+                       
+                    while (reader2.Read())                       
+                    {
                             EmployeeAdding CS = new EmployeeAdding();
 
                             CS.ID = (int)reader2["Id"];
@@ -183,10 +186,33 @@ namespace Restuarent
                             CS.Password = reader2["Password"].ToString();
                             CS.Status = reader2["Active"].ToString();
                             list2.Add(CS);
-                        }
+                        
+                    }
                         dataGridView1.DataSource = list2;
-                        for (int i = 0; i < dataGridView1.RowCount; i++)
+                    for (int i = 0; i < dataGridView1.RowCount; i++)
+                    {
+
+                        if (positions == "Manager")
                         {
+                            if (dataGridView1.Rows[i].Cells[1].Value.ToString() == "Admin")
+                            {
+
+
+                                dataGridView1.Rows[i].Cells[1].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[2].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[3].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[4].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[5].Value = 0;
+
+                                dataGridView1.Rows[i].Cells[7].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[8].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[9].Value = 0;
+                                dataGridView1.Rows[i].Cells[10].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[11].Value = "Unauthorized";
+
+
+
+                            }
 
                             if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
                             {
@@ -197,12 +223,30 @@ namespace Restuarent
                                 dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
                             }
                         }
+                        else if (positions == "Admin")
+                        {
+
+                            if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            }
+                            else
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                            }
+
+                        
+                        }
+                    
                     }
-                    else
-                    {
+                
+                }                   
+                else   
+                {
                         MessageBox.Show("Error");
                         
-                    }
+                    
+                }
                 
 
                
@@ -267,15 +311,51 @@ namespace Restuarent
             for (int i = 0; i < dataGridView1.RowCount; i++)
             {
 
-                if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                if (positions == "Manager")
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    if (dataGridView1.Rows[i].Cells[1].Value.ToString() == "Admin")
+                    {
+                        
+                        
+                        dataGridView1.Rows[i].Cells[1].Value = "Unauthorized";
+                        dataGridView1.Rows[i].Cells[2].Value = "Unauthorized";
+                        dataGridView1.Rows[i].Cells[3].Value = "Unauthorized";
+                        dataGridView1.Rows[i].Cells[4].Value = "Unauthorized";
+                        dataGridView1.Rows[i].Cells[5].Value = 0;
+                        
+                        dataGridView1.Rows[i].Cells[7].Value = "Unauthorized";
+                        dataGridView1.Rows[i].Cells[8].Value = "Unauthorized";
+                        dataGridView1.Rows[i].Cells[9].Value = 0;
+                        dataGridView1.Rows[i].Cells[10].Value = "Unauthorized";
+                        dataGridView1.Rows[i].Cells[11].Value = "Unauthorized";
+
+
+
+                    }
+
+                    if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
                 }
-                else
+                else if (positions == "Admin")
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+
+                    if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
                 }
             }
+
         }
         public string abc;
         private void button3_Click(object sender, EventArgs e)
@@ -314,14 +394,23 @@ namespace Restuarent
         {
             if (e.RowIndex == -1) return;
             id1 = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
-            NameTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            EmailTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-            Phonetextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-            dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-            pictureBox1.ImageLocation = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
-            comboBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            Salarytextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
-            PasswordtextBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[11].Value.ToString();
+            if(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString() == "Unauthorized")
+            {
+                MessageBox.Show("Unauthorized Cell", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = pictureBox1.ImageLocation = comboBox2.Text = Salarytextbox.Text = PasswordtextBox2.Text = String.Empty;
+            }
+            else
+            {
+                NameTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                EmailTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                Phonetextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                pictureBox1.ImageLocation = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
+                comboBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                Salarytextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+                PasswordtextBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[11].Value.ToString();
+            }
+            
             //textBox2.Text= dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
 
@@ -382,13 +471,49 @@ namespace Restuarent
                     for (int i = 0; i < dataGridView1.RowCount; i++)
                     {
 
-                        if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                        if (positions == "Manager")
                         {
-                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            if (dataGridView1.Rows[i].Cells[1].Value.ToString() == "Admin")
+                            {
+
+
+                                dataGridView1.Rows[i].Cells[1].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[2].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[3].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[4].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[5].Value = 0;
+
+                                dataGridView1.Rows[i].Cells[7].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[8].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[9].Value = 0;
+                                dataGridView1.Rows[i].Cells[10].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[11].Value = "Unauthorized";
+
+
+
+                            }
+
+                            if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            }
+                            else
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                            }
                         }
-                        else
+                        else if (positions == "Admin")
                         {
-                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+
+                            if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            }
+                            else
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                            }
+
                         }
                     }
                 }
@@ -398,8 +523,6 @@ namespace Restuarent
         private void button1_Click(object sender, EventArgs e)
         {
 
-
-            
 
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
 
@@ -419,8 +542,10 @@ namespace Restuarent
 
 
 
-                    if (diary3 > 0)
-                    {
+                    
+            if (diary3 > 0)
+                    
+            {
 
                         MessageBox.Show("Updated");
 
@@ -459,18 +584,55 @@ namespace Restuarent
                         }
 
                         dataGridView1.DataSource = list2;
-                        for (int i = 0; i < dataGridView1.RowCount; i++)
+                        
+                for (int i = 0; i < dataGridView1.RowCount; i++)                       
+                {
+
+                    if (positions == "Manager")
+                    {
+                        if (dataGridView1.Rows[i].Cells[1].Value.ToString() == "Admin")
                         {
 
-                            if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
-                            {
-                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                            }
-                            else
-                            {
-                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
-                            }
+
+                            dataGridView1.Rows[i].Cells[1].Value = "Unauthorized";
+                            dataGridView1.Rows[i].Cells[2].Value = "Unauthorized";
+                            dataGridView1.Rows[i].Cells[3].Value = "Unauthorized";
+                            dataGridView1.Rows[i].Cells[4].Value = "Unauthorized";
+                            dataGridView1.Rows[i].Cells[5].Value = 0;
+
+                            dataGridView1.Rows[i].Cells[7].Value = "Unauthorized";
+                            dataGridView1.Rows[i].Cells[8].Value = "Unauthorized";
+                            dataGridView1.Rows[i].Cells[9].Value = 0;
+                            dataGridView1.Rows[i].Cells[10].Value = "Unauthorized";
+                            dataGridView1.Rows[i].Cells[11].Value = "Unauthorized";
+
+
+
                         }
+
+                        if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                        }
+                        else
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                    }
+                    else if (positions == "Admin")
+                    {
+
+                        if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                        }
+                        else
+                        {
+                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                        }
+                    
+                    }
+                }
 
                      comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
 
@@ -478,7 +640,8 @@ namespace Restuarent
 
 
 
-                }
+               
+            }
 
                     connection.Close();
                 
