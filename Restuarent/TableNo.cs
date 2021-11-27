@@ -20,7 +20,8 @@ namespace Restuarent
         private void TableNo_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
-
+            label2.Visible = false;
+            timer1.Enabled = true;
             for (int i = 1; i <= 30; i += 1)
             {
                 comboBox1.Items.Add(i);
@@ -36,9 +37,13 @@ namespace Restuarent
             }
             else
             {
+
+              
                 Customer cm = new Customer(Int32.Parse(comboBox1.Text));
                 cm.Show();
                 this.Hide();
+                
+                
             }
             
         }
@@ -69,8 +74,40 @@ namespace Restuarent
 
         private void icon_close_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(label2.Text=="Loading")
+            {
+                label2.Text = "Loading.";
+            }
+            if (label2.Text == "Loading.")
+            {
+                label2.Text = "Loading..";
+            }
+            if (label2.Text == "Loading..")
+            {
+                label2.Text = "Loading...";
+            }
+            if (label2.Text == "Loading...")
+            {
+                label2.Text = "Loading....";
+            }
+            if (label2.Text == "Loading....")
+            {
+                label2.Text = "Loading";
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBox1.Text!="")
+            {
+                label2.Visible = true;
+            }
         }
     }
 }

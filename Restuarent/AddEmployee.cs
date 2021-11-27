@@ -405,6 +405,7 @@ namespace Restuarent
             }
             else
             {
+                textBox2.Text = String.Empty;
                 NameTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
                 EmailTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
                 Phonetextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();

@@ -29,6 +29,7 @@ namespace Restuarent
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TableNo));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,6 +38,8 @@ namespace Restuarent
             this.icon_minimize = new System.Windows.Forms.PictureBox();
             this.icon_maximize = new System.Windows.Forms.PictureBox();
             this.icon_close = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.icon_restore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_maximize)).BeginInit();
@@ -56,6 +59,7 @@ namespace Restuarent
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(123, 27);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -134,6 +138,23 @@ namespace Restuarent
             this.icon_close.TabStop = false;
             this.icon_close.Click += new System.EventHandler(this.icon_close_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(544, 495);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 32);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Loading";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // TableNo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +162,7 @@ namespace Restuarent
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1154, 676);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.icon_restore);
             this.Controls.Add(this.icon_minimize);
             this.Controls.Add(this.icon_maximize);
@@ -172,5 +194,7 @@ namespace Restuarent
         private System.Windows.Forms.PictureBox icon_minimize;
         private System.Windows.Forms.PictureBox icon_maximize;
         private System.Windows.Forms.PictureBox icon_close;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
