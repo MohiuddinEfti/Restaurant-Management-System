@@ -45,8 +45,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(230, 71);
             this.dataGridView1.Name = "dataGridView1";
@@ -57,35 +56,40 @@
             // 
             // FoodReadyButton
             // 
+            this.FoodReadyButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FoodReadyButton.BackColor = System.Drawing.Color.White;
             this.FoodReadyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FoodReadyButton.Location = new System.Drawing.Point(544, 497);
             this.FoodReadyButton.Name = "FoodReadyButton";
             this.FoodReadyButton.Size = new System.Drawing.Size(176, 41);
             this.FoodReadyButton.TabIndex = 1;
             this.FoodReadyButton.Text = "Food is ready";
-            this.FoodReadyButton.UseVisualStyleBackColor = true;
+            this.FoodReadyButton.UseVisualStyleBackColor = false;
             this.FoodReadyButton.Click += new System.EventHandler(this.FoodReadyButton_Click);
             // 
             // Logoutbutton1
             // 
             this.Logoutbutton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Logoutbutton1.Location = new System.Drawing.Point(1141, 6);
+            this.Logoutbutton1.BackColor = System.Drawing.Color.White;
+            this.Logoutbutton1.Location = new System.Drawing.Point(1177, 12);
             this.Logoutbutton1.Name = "Logoutbutton1";
             this.Logoutbutton1.Size = new System.Drawing.Size(75, 23);
             this.Logoutbutton1.TabIndex = 7;
             this.Logoutbutton1.Text = "Log out";
-            this.Logoutbutton1.UseVisualStyleBackColor = true;
+            this.Logoutbutton1.UseVisualStyleBackColor = false;
             this.Logoutbutton1.Click += new System.EventHandler(this.Logoutbutton1_Click);
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(341, 497);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 39);
             this.button1.TabIndex = 8;
             this.button1.Text = "Stock";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // timer1
@@ -94,28 +98,33 @@
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.BackColor = System.Drawing.Color.LightGreen;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(138, 497);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(176, 39);
             this.button2.TabIndex = 9;
             this.button2.Text = "Live";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.BackColor = System.Drawing.Color.LightCoral;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(942, 499);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(176, 39);
             this.button3.TabIndex = 10;
             this.button3.Text = "Stop Live";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(824, 121);
@@ -127,6 +136,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,13 +148,15 @@
             // 
             // button4
             // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(744, 497);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(176, 41);
             this.button4.TabIndex = 13;
             this.button4.Text = "Cancel Order ";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Chef
@@ -164,7 +176,6 @@
             this.Controls.Add(this.FoodReadyButton);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "Chef";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chef";

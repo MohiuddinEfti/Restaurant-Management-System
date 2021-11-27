@@ -168,46 +168,50 @@
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(849, 438);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(178, 47);
             this.button4.TabIndex = 17;
             this.button4.Text = "Attendance";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(636, 438);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(178, 47);
             this.button3.TabIndex = 16;
             this.button3.Text = "Stock";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(423, 438);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(178, 47);
             this.button2.TabIndex = 15;
             this.button2.Text = "Employee";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(213, 438);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 47);
             this.button1.TabIndex = 14;
             this.button1.Text = "Accounts";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
@@ -243,12 +247,13 @@
             // Logoutbutton1
             // 
             this.Logoutbutton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Logoutbutton1.BackColor = System.Drawing.Color.White;
             this.Logoutbutton1.Location = new System.Drawing.Point(1177, 12);
             this.Logoutbutton1.Name = "Logoutbutton1";
             this.Logoutbutton1.Size = new System.Drawing.Size(75, 23);
             this.Logoutbutton1.TabIndex = 6;
             this.Logoutbutton1.Text = "Log out";
-            this.Logoutbutton1.UseVisualStyleBackColor = true;
+            this.Logoutbutton1.UseVisualStyleBackColor = false;
             this.Logoutbutton1.Click += new System.EventHandler(this.Logoutbutton1_Click);
             // 
             // timer1

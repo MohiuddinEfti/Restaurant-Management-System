@@ -50,12 +50,13 @@ namespace Restuarent
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1121, 31);
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1177, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
             this.button1.Text = "Log Out";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
@@ -72,6 +73,7 @@ namespace Restuarent
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(116, 143);
@@ -79,7 +81,7 @@ namespace Restuarent
             this.button2.Size = new System.Drawing.Size(115, 38);
             this.button2.TabIndex = 7;
             this.button2.Text = "Served";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.button2_Paint);
             // 
@@ -127,12 +129,13 @@ namespace Restuarent
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(116, 143);
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(116, 144);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(115, 38);
             this.button4.TabIndex = 15;
             this.button4.Text = "Ready";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // timer1

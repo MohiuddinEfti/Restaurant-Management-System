@@ -4415,7 +4415,8 @@ namespace Restuarent
             }
             else if (chef == "Cancel")
             {
-                button330.Text = "Sorry Your Ordered item\nIs Out Of STOCK";
+                label4.Text = "Processing------Order Cancel";
+                button330.Text = "Sorry Your Ordered item\nIs Out Of STOCK\nOrder Something else";
                 button330.Visible = true;
 
             }
