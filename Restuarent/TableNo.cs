@@ -21,7 +21,7 @@ namespace Restuarent
         {
             this.WindowState = FormWindowState.Normal;
             label2.Visible = false;
-            timer1.Enabled = false;
+            loading.Enabled = false;
             panel1.Visible = panel2.Visible = false;
             for (int i = 1; i <= 30; i += 1)
             {
@@ -40,8 +40,8 @@ namespace Restuarent
             {
                 label2.Visible = true;
                 panel1.Visible = panel2.Visible = true;
-                timer1.Start();
-                
+                loading.Enabled = true;
+
             }
             
         }
@@ -58,7 +58,7 @@ namespace Restuarent
             panel2.Width += 5;
             if(panel2.Width>=1166)
             {
-                timer1.Stop();
+                loading.Enabled=false;
                 Customer cm = new Customer(Int32.Parse(comboBox1.Text));
                 cm.Show();
                 this.Hide();

@@ -80,13 +80,14 @@
             this.button11 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.numberbox = new System.Windows.Forms.TextBox();
+            this.Paid = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.button23 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button24 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -1996,22 +1997,57 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.button22);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.numberbox);
+            this.groupBox1.Controls.Add(this.Paid);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.button23);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button24);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.groupBox1.Location = new System.Drawing.Point(30, 29);
+            this.groupBox1.Location = new System.Drawing.Point(463, 83);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1185, 595);
             this.groupBox1.TabIndex = 41;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bkash Payment";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(37, 59);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(163, 178);
+            this.button1.TabIndex = 42;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // numberbox
+            // 
+            this.numberbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberbox.Location = new System.Drawing.Point(532, 134);
+            this.numberbox.Name = "numberbox";
+            this.numberbox.Size = new System.Drawing.Size(241, 26);
+            this.numberbox.TabIndex = 46;
+            this.numberbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // Paid
+            // 
+            this.Paid.BackColor = System.Drawing.Color.DeepPink;
+            this.Paid.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Paid.Location = new System.Drawing.Point(587, 471);
+            this.Paid.Name = "Paid";
+            this.Paid.Size = new System.Drawing.Size(75, 29);
+            this.Paid.TabIndex = 45;
+            this.Paid.Text = "Pay";
+            this.Paid.UseVisualStyleBackColor = false;
+            this.Paid.Click += new System.EventHandler(this.Paid_Click);
             // 
             // label13
             // 
@@ -2056,19 +2092,6 @@
             this.label15.TabIndex = 41;
             this.label15.Text = "Scan Using Bkash app";
             // 
-            // button23
-            // 
-            this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button23.Location = new System.Drawing.Point(802, 134);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 23);
-            this.button23.TabIndex = 40;
-            this.button23.Text = "Insert";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -2095,17 +2118,6 @@
             this.label16.Size = new System.Drawing.Size(182, 20);
             this.label16.TabIndex = 38;
             this.label16.Text = "Bkash Phone Number";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(517, 130);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 31);
-            this.textBox1.TabIndex = 37;
             // 
             // button24
             // 
@@ -14006,19 +14018,16 @@
             // 
             // button22
             // 
-            this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button22.BackColor = System.Drawing.Color.HotPink;
-            this.button22.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button22.Location = new System.Drawing.Point(582, 466);
+            this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button22.BackColor = System.Drawing.Color.Transparent;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Location = new System.Drawing.Point(780, 134);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(83, 38);
-            this.button22.TabIndex = 45;
-            this.button22.Text = "Paid";
+            this.button22.Size = new System.Drawing.Size(75, 23);
+            this.button22.TabIndex = 47;
+            this.button22.Text = "Close";
             this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button22_Click_1);
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // Customer
             // 
@@ -14614,10 +14623,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button23;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel3;
@@ -15555,6 +15562,9 @@
         private System.Windows.Forms.Button button330;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button Paid;
+        private System.Windows.Forms.TextBox numberbox;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button22;
     }
 }
