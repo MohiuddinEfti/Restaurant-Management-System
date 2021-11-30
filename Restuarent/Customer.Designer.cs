@@ -80,6 +80,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.button22 = new System.Windows.Forms.Button();
             this.numberbox = new System.Windows.Forms.TextBox();
             this.Paid = new System.Windows.Forms.Button();
@@ -87,7 +88,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.button24 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -1995,6 +1995,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.button22);
             this.groupBox1.Controls.Add(this.numberbox);
             this.groupBox1.Controls.Add(this.Paid);
@@ -2002,16 +2003,29 @@
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.button24);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.groupBox1.Location = new System.Drawing.Point(30, 14);
+            this.groupBox1.Location = new System.Drawing.Point(31, 28);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1185, 595);
             this.groupBox1.TabIndex = 41;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bkash Payment";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(344, 137);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(182, 20);
+            this.label16.TabIndex = 38;
+            this.label16.Text = "Bkash Phone Number";
             // 
             // button22
             // 
@@ -2103,26 +2117,12 @@
             this.pictureBox2.TabIndex = 39;
             this.pictureBox2.TabStop = false;
             // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(326, 137);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(182, 20);
-            this.label16.TabIndex = 38;
-            this.label16.Text = "Bkash Phone Number";
-            // 
             // button24
             // 
             this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button24.BackColor = System.Drawing.Color.Transparent;
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Location = new System.Drawing.Point(1099, 19);
+            this.button24.Location = new System.Drawing.Point(1099, 35);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 36;
@@ -5235,7 +5235,7 @@
             this.panel9.Controls.Add(this.button13);
             this.panel9.Controls.Add(this.Waters);
             this.panel9.Controls.Add(this.Waterlab);
-            this.panel9.Location = new System.Drawing.Point(498, 758);
+            this.panel9.Location = new System.Drawing.Point(3, 5741);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(159, 145);
             this.panel9.TabIndex = 8;
@@ -5397,7 +5397,7 @@
             this.panel13.Controls.Add(this.button33);
             this.panel13.Controls.Add(this.textBox7);
             this.panel13.Controls.Add(this.label20);
-            this.panel13.Location = new System.Drawing.Point(333, 758);
+            this.panel13.Location = new System.Drawing.Point(3, 5590);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(159, 145);
             this.panel13.TabIndex = 12;
@@ -5622,7 +5622,7 @@
             this.panel17.Controls.Add(this.button41);
             this.panel17.Controls.Add(this.textBox11);
             this.panel17.Controls.Add(this.label24);
-            this.panel17.Location = new System.Drawing.Point(168, 758);
+            this.panel17.Location = new System.Drawing.Point(3, 5439);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(159, 145);
             this.panel17.TabIndex = 16;
@@ -5847,7 +5847,7 @@
             this.panel21.Controls.Add(this.button49);
             this.panel21.Controls.Add(this.textBox15);
             this.panel21.Controls.Add(this.label28);
-            this.panel21.Location = new System.Drawing.Point(3, 758);
+            this.panel21.Location = new System.Drawing.Point(3, 5288);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(159, 145);
             this.panel21.TabIndex = 20;
@@ -6072,7 +6072,7 @@
             this.panel25.Controls.Add(this.button57);
             this.panel25.Controls.Add(this.textBox19);
             this.panel25.Controls.Add(this.label32);
-            this.panel25.Location = new System.Drawing.Point(993, 607);
+            this.panel25.Location = new System.Drawing.Point(3, 5137);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(159, 145);
             this.panel25.TabIndex = 24;
@@ -6222,7 +6222,7 @@
             this.panel29.Controls.Add(this.button65);
             this.panel29.Controls.Add(this.textBox23);
             this.panel29.Controls.Add(this.label36);
-            this.panel29.Location = new System.Drawing.Point(828, 607);
+            this.panel29.Location = new System.Drawing.Point(3, 4986);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(159, 145);
             this.panel29.TabIndex = 28;
@@ -6372,7 +6372,7 @@
             this.panel32.Controls.Add(this.button71);
             this.panel32.Controls.Add(this.textBox26);
             this.panel32.Controls.Add(this.label39);
-            this.panel32.Location = new System.Drawing.Point(663, 607);
+            this.panel32.Location = new System.Drawing.Point(3, 4835);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(159, 145);
             this.panel32.TabIndex = 31;
@@ -6597,7 +6597,7 @@
             this.panel36.Controls.Add(this.button79);
             this.panel36.Controls.Add(this.textBox30);
             this.panel36.Controls.Add(this.label43);
-            this.panel36.Location = new System.Drawing.Point(498, 607);
+            this.panel36.Location = new System.Drawing.Point(3, 4684);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(159, 145);
             this.panel36.TabIndex = 35;
@@ -6822,7 +6822,7 @@
             this.panel40.Controls.Add(this.button87);
             this.panel40.Controls.Add(this.textBox34);
             this.panel40.Controls.Add(this.label47);
-            this.panel40.Location = new System.Drawing.Point(333, 607);
+            this.panel40.Location = new System.Drawing.Point(3, 4533);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(159, 145);
             this.panel40.TabIndex = 39;
@@ -7047,7 +7047,7 @@
             this.panel44.Controls.Add(this.button95);
             this.panel44.Controls.Add(this.textBox38);
             this.panel44.Controls.Add(this.label51);
-            this.panel44.Location = new System.Drawing.Point(168, 607);
+            this.panel44.Location = new System.Drawing.Point(3, 4382);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(159, 145);
             this.panel44.TabIndex = 43;
@@ -7272,7 +7272,7 @@
             this.panel48.Controls.Add(this.button103);
             this.panel48.Controls.Add(this.textBox42);
             this.panel48.Controls.Add(this.label55);
-            this.panel48.Location = new System.Drawing.Point(3, 607);
+            this.panel48.Location = new System.Drawing.Point(3, 4231);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(159, 145);
             this.panel48.TabIndex = 47;
@@ -7497,7 +7497,7 @@
             this.panel52.Controls.Add(this.button111);
             this.panel52.Controls.Add(this.textBox46);
             this.panel52.Controls.Add(this.label59);
-            this.panel52.Location = new System.Drawing.Point(993, 456);
+            this.panel52.Location = new System.Drawing.Point(3, 4080);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(159, 145);
             this.panel52.TabIndex = 51;
@@ -7722,7 +7722,7 @@
             this.panel56.Controls.Add(this.button119);
             this.panel56.Controls.Add(this.textBox50);
             this.panel56.Controls.Add(this.label63);
-            this.panel56.Location = new System.Drawing.Point(828, 456);
+            this.panel56.Location = new System.Drawing.Point(3, 3929);
             this.panel56.Name = "panel56";
             this.panel56.Size = new System.Drawing.Size(159, 145);
             this.panel56.TabIndex = 55;
@@ -7947,7 +7947,7 @@
             this.panel60.Controls.Add(this.button127);
             this.panel60.Controls.Add(this.textBox54);
             this.panel60.Controls.Add(this.label67);
-            this.panel60.Location = new System.Drawing.Point(663, 456);
+            this.panel60.Location = new System.Drawing.Point(3, 3778);
             this.panel60.Name = "panel60";
             this.panel60.Size = new System.Drawing.Size(159, 145);
             this.panel60.TabIndex = 59;
@@ -8172,7 +8172,7 @@
             this.panel64.Controls.Add(this.button135);
             this.panel64.Controls.Add(this.textBox58);
             this.panel64.Controls.Add(this.label71);
-            this.panel64.Location = new System.Drawing.Point(498, 456);
+            this.panel64.Location = new System.Drawing.Point(3, 3627);
             this.panel64.Name = "panel64";
             this.panel64.Size = new System.Drawing.Size(159, 145);
             this.panel64.TabIndex = 63;
@@ -8397,7 +8397,7 @@
             this.panel68.Controls.Add(this.button143);
             this.panel68.Controls.Add(this.textBox62);
             this.panel68.Controls.Add(this.label75);
-            this.panel68.Location = new System.Drawing.Point(333, 456);
+            this.panel68.Location = new System.Drawing.Point(3, 3476);
             this.panel68.Name = "panel68";
             this.panel68.Size = new System.Drawing.Size(159, 145);
             this.panel68.TabIndex = 67;
@@ -8621,7 +8621,7 @@
             this.panel72.Controls.Add(this.button151);
             this.panel72.Controls.Add(this.textBox66);
             this.panel72.Controls.Add(this.label79);
-            this.panel72.Location = new System.Drawing.Point(168, 456);
+            this.panel72.Location = new System.Drawing.Point(3, 3325);
             this.panel72.Name = "panel72";
             this.panel72.Size = new System.Drawing.Size(159, 145);
             this.panel72.TabIndex = 71;
@@ -8846,7 +8846,7 @@
             this.panel76.Controls.Add(this.button159);
             this.panel76.Controls.Add(this.textBox70);
             this.panel76.Controls.Add(this.label83);
-            this.panel76.Location = new System.Drawing.Point(3, 456);
+            this.panel76.Location = new System.Drawing.Point(3, 3174);
             this.panel76.Name = "panel76";
             this.panel76.Size = new System.Drawing.Size(159, 145);
             this.panel76.TabIndex = 75;
@@ -9071,7 +9071,7 @@
             this.panel80.Controls.Add(this.button167);
             this.panel80.Controls.Add(this.textBox74);
             this.panel80.Controls.Add(this.label87);
-            this.panel80.Location = new System.Drawing.Point(993, 305);
+            this.panel80.Location = new System.Drawing.Point(3, 3023);
             this.panel80.Name = "panel80";
             this.panel80.Size = new System.Drawing.Size(159, 145);
             this.panel80.TabIndex = 79;
@@ -9296,7 +9296,7 @@
             this.panel84.Controls.Add(this.button175);
             this.panel84.Controls.Add(this.textBox78);
             this.panel84.Controls.Add(this.label95);
-            this.panel84.Location = new System.Drawing.Point(828, 305);
+            this.panel84.Location = new System.Drawing.Point(3, 2872);
             this.panel84.Name = "panel84";
             this.panel84.Size = new System.Drawing.Size(159, 145);
             this.panel84.TabIndex = 83;
@@ -9521,7 +9521,7 @@
             this.panel88.Controls.Add(this.button183);
             this.panel88.Controls.Add(this.textBox82);
             this.panel88.Controls.Add(this.label99);
-            this.panel88.Location = new System.Drawing.Point(663, 305);
+            this.panel88.Location = new System.Drawing.Point(3, 2721);
             this.panel88.Name = "panel88";
             this.panel88.Size = new System.Drawing.Size(159, 145);
             this.panel88.TabIndex = 87;
@@ -9746,7 +9746,7 @@
             this.panel92.Controls.Add(this.button191);
             this.panel92.Controls.Add(this.textBox86);
             this.panel92.Controls.Add(this.label103);
-            this.panel92.Location = new System.Drawing.Point(498, 305);
+            this.panel92.Location = new System.Drawing.Point(3, 2570);
             this.panel92.Name = "panel92";
             this.panel92.Size = new System.Drawing.Size(159, 145);
             this.panel92.TabIndex = 91;
@@ -9971,7 +9971,7 @@
             this.panel96.Controls.Add(this.button199);
             this.panel96.Controls.Add(this.textBox90);
             this.panel96.Controls.Add(this.label107);
-            this.panel96.Location = new System.Drawing.Point(333, 305);
+            this.panel96.Location = new System.Drawing.Point(3, 2419);
             this.panel96.Name = "panel96";
             this.panel96.Size = new System.Drawing.Size(159, 145);
             this.panel96.TabIndex = 95;
@@ -10196,7 +10196,7 @@
             this.panel100.Controls.Add(this.button207);
             this.panel100.Controls.Add(this.textBox94);
             this.panel100.Controls.Add(this.label111);
-            this.panel100.Location = new System.Drawing.Point(168, 305);
+            this.panel100.Location = new System.Drawing.Point(3, 2268);
             this.panel100.Name = "panel100";
             this.panel100.Size = new System.Drawing.Size(159, 145);
             this.panel100.TabIndex = 99;
@@ -10421,7 +10421,7 @@
             this.panel104.Controls.Add(this.button215);
             this.panel104.Controls.Add(this.textBox98);
             this.panel104.Controls.Add(this.label115);
-            this.panel104.Location = new System.Drawing.Point(3, 305);
+            this.panel104.Location = new System.Drawing.Point(3, 2117);
             this.panel104.Name = "panel104";
             this.panel104.Size = new System.Drawing.Size(159, 145);
             this.panel104.TabIndex = 103;
@@ -10646,7 +10646,7 @@
             this.panel108.Controls.Add(this.button223);
             this.panel108.Controls.Add(this.textBox102);
             this.panel108.Controls.Add(this.label119);
-            this.panel108.Location = new System.Drawing.Point(993, 154);
+            this.panel108.Location = new System.Drawing.Point(3, 1966);
             this.panel108.Name = "panel108";
             this.panel108.Size = new System.Drawing.Size(159, 145);
             this.panel108.TabIndex = 107;
@@ -10871,7 +10871,7 @@
             this.panel112.Controls.Add(this.button231);
             this.panel112.Controls.Add(this.textBox106);
             this.panel112.Controls.Add(this.label123);
-            this.panel112.Location = new System.Drawing.Point(828, 154);
+            this.panel112.Location = new System.Drawing.Point(3, 1815);
             this.panel112.Name = "panel112";
             this.panel112.Size = new System.Drawing.Size(159, 145);
             this.panel112.TabIndex = 111;
@@ -11096,7 +11096,7 @@
             this.panel116.Controls.Add(this.button239);
             this.panel116.Controls.Add(this.textBox110);
             this.panel116.Controls.Add(this.label127);
-            this.panel116.Location = new System.Drawing.Point(663, 154);
+            this.panel116.Location = new System.Drawing.Point(3, 1664);
             this.panel116.Name = "panel116";
             this.panel116.Size = new System.Drawing.Size(159, 145);
             this.panel116.TabIndex = 115;
@@ -11246,7 +11246,7 @@
             this.panel119.Controls.Add(this.button245);
             this.panel119.Controls.Add(this.textBox113);
             this.panel119.Controls.Add(this.label130);
-            this.panel119.Location = new System.Drawing.Point(498, 154);
+            this.panel119.Location = new System.Drawing.Point(3, 1513);
             this.panel119.Name = "panel119";
             this.panel119.Size = new System.Drawing.Size(159, 145);
             this.panel119.TabIndex = 118;
@@ -11396,7 +11396,7 @@
             this.panel122.Controls.Add(this.button251);
             this.panel122.Controls.Add(this.textBox116);
             this.panel122.Controls.Add(this.label133);
-            this.panel122.Location = new System.Drawing.Point(333, 154);
+            this.panel122.Location = new System.Drawing.Point(3, 1362);
             this.panel122.Name = "panel122";
             this.panel122.Size = new System.Drawing.Size(159, 145);
             this.panel122.TabIndex = 121;
@@ -11621,7 +11621,7 @@
             this.panel126.Controls.Add(this.button259);
             this.panel126.Controls.Add(this.textBox120);
             this.panel126.Controls.Add(this.label137);
-            this.panel126.Location = new System.Drawing.Point(168, 154);
+            this.panel126.Location = new System.Drawing.Point(3, 1211);
             this.panel126.Name = "panel126";
             this.panel126.Size = new System.Drawing.Size(159, 145);
             this.panel126.TabIndex = 125;
@@ -11846,7 +11846,7 @@
             this.panel130.Controls.Add(this.button267);
             this.panel130.Controls.Add(this.textBox124);
             this.panel130.Controls.Add(this.label141);
-            this.panel130.Location = new System.Drawing.Point(3, 154);
+            this.panel130.Location = new System.Drawing.Point(3, 1060);
             this.panel130.Name = "panel130";
             this.panel130.Size = new System.Drawing.Size(159, 145);
             this.panel130.TabIndex = 129;
@@ -12071,7 +12071,7 @@
             this.panel134.Controls.Add(this.button275);
             this.panel134.Controls.Add(this.textBox128);
             this.panel134.Controls.Add(this.label145);
-            this.panel134.Location = new System.Drawing.Point(993, 3);
+            this.panel134.Location = new System.Drawing.Point(3, 909);
             this.panel134.Name = "panel134";
             this.panel134.Size = new System.Drawing.Size(159, 145);
             this.panel134.TabIndex = 133;
@@ -12296,7 +12296,7 @@
             this.panel138.Controls.Add(this.button283);
             this.panel138.Controls.Add(this.textBox132);
             this.panel138.Controls.Add(this.label149);
-            this.panel138.Location = new System.Drawing.Point(828, 3);
+            this.panel138.Location = new System.Drawing.Point(3, 758);
             this.panel138.Name = "panel138";
             this.panel138.Size = new System.Drawing.Size(159, 145);
             this.panel138.TabIndex = 137;
@@ -12521,7 +12521,7 @@
             this.panel142.Controls.Add(this.button291);
             this.panel142.Controls.Add(this.textBox136);
             this.panel142.Controls.Add(this.label153);
-            this.panel142.Location = new System.Drawing.Point(663, 3);
+            this.panel142.Location = new System.Drawing.Point(3, 607);
             this.panel142.Name = "panel142";
             this.panel142.Size = new System.Drawing.Size(159, 145);
             this.panel142.TabIndex = 141;
@@ -12746,7 +12746,7 @@
             this.panel146.Controls.Add(this.button299);
             this.panel146.Controls.Add(this.textBox140);
             this.panel146.Controls.Add(this.label157);
-            this.panel146.Location = new System.Drawing.Point(498, 3);
+            this.panel146.Location = new System.Drawing.Point(3, 456);
             this.panel146.Name = "panel146";
             this.panel146.Size = new System.Drawing.Size(159, 145);
             this.panel146.TabIndex = 145;
@@ -12971,7 +12971,7 @@
             this.panel150.Controls.Add(this.button307);
             this.panel150.Controls.Add(this.textBox144);
             this.panel150.Controls.Add(this.label161);
-            this.panel150.Location = new System.Drawing.Point(333, 3);
+            this.panel150.Location = new System.Drawing.Point(3, 305);
             this.panel150.Name = "panel150";
             this.panel150.Size = new System.Drawing.Size(159, 145);
             this.panel150.TabIndex = 149;
@@ -13196,7 +13196,7 @@
             this.panel154.Controls.Add(this.button315);
             this.panel154.Controls.Add(this.textBox148);
             this.panel154.Controls.Add(this.label165);
-            this.panel154.Location = new System.Drawing.Point(168, 3);
+            this.panel154.Location = new System.Drawing.Point(3, 154);
             this.panel154.Name = "panel154";
             this.panel154.Size = new System.Drawing.Size(159, 145);
             this.panel154.TabIndex = 153;
@@ -13917,7 +13917,7 @@
             this.panel28.Controls.Add(this.button63);
             this.panel28.Controls.Add(this.textBox156);
             this.panel28.Controls.Add(this.label174);
-            this.panel28.Location = new System.Drawing.Point(663, 758);
+            this.panel28.Location = new System.Drawing.Point(3, 5892);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(159, 145);
             this.panel28.TabIndex = 158;

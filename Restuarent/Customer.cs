@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
+
 namespace Restuarent
 {
     public partial class Customer : Form
@@ -86,7 +87,7 @@ namespace Restuarent
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            label16.Visible = true;
             label8.Text =tbno.ToString();
             label4.Visible = false;
             pics.Clear();
@@ -1917,12 +1918,8 @@ namespace Restuarent
 
         private void Bkash_Click_1(object sender, EventArgs e)
         {
-            pictureBox2.Visible = true;
-            label14.Visible = true;
-            label16.Visible = true;
-            label15.Visible = true;
-            label13.Visible = true;
-            Paid.Visible = true;
+            Paid.Visible = label14.Visible= label15.Visible = label13.Visible = pictureBox2.Visible = false;
+            
             groupBox1.Visible = true;
         }
 
@@ -4385,7 +4382,7 @@ namespace Restuarent
             string ab = grab = time.ToString("h:mm:ss tt ");
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
-            string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + data + "','" + ab + "','" + tk + "','" + Today + "','" + bkash + "','" + numberbox.Text.ToString() + "')";
+            string sq1 = "INSERT INTO CustomerOrders(CustomerName,TableNo,TotalOrder,OrderTime,Price,Date,Payment,Reference) VALUES('" + textBox2.Text + "','" + tbno + "','" + data + "','" + ab + "','" + tk + "','" + Today + "','" + bkash + "','" + numberbox.Text + "')";
             SqlCommand command = new SqlCommand(sq1,connection);
             int diary = command.ExecuteNonQuery();
             connection.Close();
@@ -4432,7 +4429,22 @@ namespace Restuarent
 
         private void button22_Click(object sender, EventArgs e)
         {
-            Paid.Visible = label14.Visible = label13.Visible = pictureBox2.Visible = true;
+            if(numberbox.Text=="")
+            {
+                MessageBox.Show("Enter Number","Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+               
+            }
+            else if (numberbox.Text.Length != 11)
+            {
+
+                MessageBox.Show("Phone number must be 11 digits", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                numberbox.Text = String.Empty;
+            }
+            else
+            {
+                Paid.Visible = label14.Visible = label15.Visible = label13.Visible = pictureBox2.Visible = true;
+            }
+            
         }
     }
 
