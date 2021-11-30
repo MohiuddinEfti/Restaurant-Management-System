@@ -66,17 +66,25 @@ namespace Restuarent
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.icon_restore = new System.Windows.Forms.PictureBox();
+            this.icon_minimize = new System.Windows.Forms.PictureBox();
+            this.icon_maximize = new System.Windows.Forms.PictureBox();
+            this.icon_close = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pnl_logo.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_restore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_minimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_maximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_close)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(861, 29);
+            this.textBox1.Location = new System.Drawing.Point(861, 44);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(276, 20);
             this.textBox1.TabIndex = 28;
@@ -167,7 +175,7 @@ namespace Restuarent
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(282, 29);
+            this.label6.Location = new System.Drawing.Point(282, 44);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 24);
             this.label6.TabIndex = 30;
@@ -531,11 +539,62 @@ namespace Restuarent
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1143, 28);
+            this.label1.Location = new System.Drawing.Point(1143, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 20);
             this.label1.TabIndex = 40;
             this.label1.Text = "Table Number";
+            // 
+            // icon_restore
+            // 
+            this.icon_restore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_restore.BackColor = System.Drawing.Color.Transparent;
+            this.icon_restore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icon_restore.Image = global::Restuarent.Properties.Resources.maximize_window_25px;
+            this.icon_restore.Location = new System.Drawing.Point(1209, 3);
+            this.icon_restore.Name = "icon_restore";
+            this.icon_restore.Size = new System.Drawing.Size(25, 25);
+            this.icon_restore.TabIndex = 44;
+            this.icon_restore.TabStop = false;
+            this.icon_restore.Visible = false;
+            this.icon_restore.Click += new System.EventHandler(this.icon_restore_Click);
+            // 
+            // icon_minimize
+            // 
+            this.icon_minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_minimize.BackColor = System.Drawing.Color.Transparent;
+            this.icon_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icon_minimize.Image = global::Restuarent.Properties.Resources.minimize_window_25px;
+            this.icon_minimize.Location = new System.Drawing.Point(1182, 3);
+            this.icon_minimize.Name = "icon_minimize";
+            this.icon_minimize.Size = new System.Drawing.Size(25, 25);
+            this.icon_minimize.TabIndex = 43;
+            this.icon_minimize.TabStop = false;
+            this.icon_minimize.Click += new System.EventHandler(this.icon_minimize_Click);
+            // 
+            // icon_maximize
+            // 
+            this.icon_maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_maximize.BackColor = System.Drawing.Color.Transparent;
+            this.icon_maximize.Location = new System.Drawing.Point(1205, 3);
+            this.icon_maximize.Name = "icon_maximize";
+            this.icon_maximize.Size = new System.Drawing.Size(25, 25);
+            this.icon_maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.icon_maximize.TabIndex = 42;
+            this.icon_maximize.TabStop = false;
+            // 
+            // icon_close
+            // 
+            this.icon_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_close.BackColor = System.Drawing.Color.Transparent;
+            this.icon_close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icon_close.Image = global::Restuarent.Properties.Resources.close_window_25px;
+            this.icon_close.Location = new System.Drawing.Point(1236, 3);
+            this.icon_close.Name = "icon_close";
+            this.icon_close.Size = new System.Drawing.Size(25, 25);
+            this.icon_close.TabIndex = 41;
+            this.icon_close.TabStop = false;
+            this.icon_close.Click += new System.EventHandler(this.icon_close_Click);
             // 
             // Admin
             // 
@@ -545,6 +604,10 @@ namespace Restuarent
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.icon_restore);
+            this.Controls.Add(this.icon_minimize);
+            this.Controls.Add(this.icon_maximize);
+            this.Controls.Add(this.icon_close);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -556,6 +619,7 @@ namespace Restuarent
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
@@ -569,6 +633,10 @@ namespace Restuarent
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_restore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_minimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_maximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -610,5 +678,9 @@ namespace Restuarent
         private System.Windows.Forms.Panel pnl_logo;
         private System.Windows.Forms.Label lbl_logo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox icon_restore;
+        private System.Windows.Forms.PictureBox icon_minimize;
+        private System.Windows.Forms.PictureBox icon_maximize;
+        private System.Windows.Forms.PictureBox icon_close;
     }
 }

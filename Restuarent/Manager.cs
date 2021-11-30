@@ -226,6 +226,8 @@ namespace Restuarent
 
         private void Manager_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Normal; 
+            icon_restore.Visible = true;
             for (int i = 0; i < dataGridView1.RowCount; i++)
             {
 
@@ -310,6 +312,29 @@ namespace Restuarent
         {
             MessageBox.Show("Live Order Viewer Is On");
             timer1.Enabled = true;
+
+        }
+
+        private void icon_minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void icon_restore_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void icon_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
 
         }
     }

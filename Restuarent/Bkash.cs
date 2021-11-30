@@ -135,5 +135,10 @@ namespace Restuarent
         {
             
         }
+
+        private void icon_close_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

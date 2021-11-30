@@ -138,7 +138,7 @@ namespace Restuarent
             // button21
             // 
             this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button21.Location = new System.Drawing.Point(1158, 12);
+            this.button21.Location = new System.Drawing.Point(1176, 642);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(76, 27);
             this.button21.TabIndex = 41;
@@ -156,6 +156,7 @@ namespace Restuarent
             this.ControlBox = false;
             this.Controls.Add(this.button21);
             this.Controls.Add(this.groupBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Accounts";

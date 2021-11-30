@@ -36,7 +36,9 @@ namespace Restuarent
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.icon_close = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_close)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -121,6 +123,19 @@ namespace Restuarent
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // icon_close
+            // 
+            this.icon_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_close.BackColor = System.Drawing.Color.Red;
+            this.icon_close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icon_close.Image = global::Restuarent.Properties.Resources.close_window_25px;
+            this.icon_close.Location = new System.Drawing.Point(775, -2);
+            this.icon_close.Name = "icon_close";
+            this.icon_close.Size = new System.Drawing.Size(25, 25);
+            this.icon_close.TabIndex = 53;
+            this.icon_close.TabStop = false;
+            this.icon_close.Click += new System.EventHandler(this.icon_close_Click);
+            // 
             // Bkash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,6 +143,7 @@ namespace Restuarent
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.icon_close);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -135,12 +151,14 @@ namespace Restuarent
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label7);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Bkash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bkash";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Bkash_FormClosing);
             this.Load += new System.EventHandler(this.Bkash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +172,6 @@ namespace Restuarent
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox icon_close;
     }
 }

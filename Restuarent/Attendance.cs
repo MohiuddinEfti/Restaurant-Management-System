@@ -41,7 +41,8 @@ namespace Restuarent
 
         private void Attendance_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Normal;
+            icon_restore.Visible = true;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Attendance"].ConnectionString);
             connection.Open();
             string sql = "SELECT * FROM Attendance";
@@ -202,6 +203,30 @@ namespace Restuarent
         private void Attendance_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void icon_minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void icon_restore_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void icon_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
         }
     }      
 

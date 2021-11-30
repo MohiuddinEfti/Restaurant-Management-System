@@ -21,7 +21,8 @@ namespace Restuarent
         {
             this.WindowState = FormWindowState.Normal;
             label2.Visible = false;
-            timer1.Enabled = true;
+            timer1.Enabled = false;
+            panel1.Visible = panel2.Visible = false;
             for (int i = 1; i <= 30; i += 1)
             {
                 comboBox1.Items.Add(i);
@@ -37,12 +38,9 @@ namespace Restuarent
             }
             else
             {
-
-              
-                Customer cm = new Customer(Int32.Parse(comboBox1.Text));
-                cm.Show();
-                this.Hide();
-                
+                label2.Visible = true;
+                panel1.Visible = panel2.Visible = true;
+                timer1.Start();
                 
             }
             
@@ -53,52 +51,17 @@ namespace Restuarent
             Application.Exit();
         }
 
-        private void icon_minimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-
-        }
-
-        private void icon_restore_Click(object sender, EventArgs e)
-        {
-
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-        }
-
-        private void icon_close_Click(object sender, EventArgs e)
-        {
-            
-
-        }
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(label2.Text=="Loading")
+            panel2.Width += 5;
+            if(panel2.Width>=1166)
             {
-                label2.Text = "Loading.";
-            }
-            if (label2.Text == "Loading.")
-            {
-                label2.Text = "Loading..";
-            }
-            if (label2.Text == "Loading..")
-            {
-                label2.Text = "Loading...";
-            }
-            if (label2.Text == "Loading...")
-            {
-                label2.Text = "Loading....";
-            }
-            if (label2.Text == "Loading....")
-            {
-                label2.Text = "Loading";
+                timer1.Stop();
+                Customer cm = new Customer(Int32.Parse(comboBox1.Text));
+                cm.Show();
+                this.Hide();
             }
         }
 

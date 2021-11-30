@@ -88,6 +88,8 @@ namespace Restuarent
 
         private void Admin_Load(object sender, EventArgs e)
         {
+            icon_restore.Visible = true;
+            this.WindowState = FormWindowState.Normal;
             button7.Visible = false;
             label8.Visible = true;
             label3.Visible = false;
@@ -530,6 +532,27 @@ namespace Restuarent
 
         }
 
-       
+        private void icon_minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void icon_restore_Click(object sender, EventArgs e)
+        {
+
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void icon_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

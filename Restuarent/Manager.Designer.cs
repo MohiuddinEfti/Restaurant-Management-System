@@ -47,13 +47,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.Logoutbutton1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.icon_restore = new System.Windows.Forms.PictureBox();
+            this.icon_minimize = new System.Windows.Forms.PictureBox();
+            this.icon_maximize = new System.Windows.Forms.PictureBox();
+            this.icon_close = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_restore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_minimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_maximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_close)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
@@ -69,7 +77,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 60);
+            this.groupBox1.Location = new System.Drawing.Point(12, 78);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1240, 563);
             this.groupBox1.TabIndex = 0;
@@ -233,12 +241,11 @@
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(524, 21);
+            this.label6.Location = new System.Drawing.Point(524, 39);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(178, 24);
             this.label6.TabIndex = 13;
@@ -246,9 +253,10 @@
             // 
             // Logoutbutton1
             // 
-            this.Logoutbutton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Logoutbutton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Logoutbutton1.BackColor = System.Drawing.Color.White;
-            this.Logoutbutton1.Location = new System.Drawing.Point(1177, 12);
+            this.Logoutbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.Logoutbutton1.Location = new System.Drawing.Point(1177, 645);
             this.Logoutbutton1.Name = "Logoutbutton1";
             this.Logoutbutton1.Size = new System.Drawing.Size(75, 23);
             this.Logoutbutton1.TabIndex = 6;
@@ -260,6 +268,57 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // icon_restore
+            // 
+            this.icon_restore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_restore.BackColor = System.Drawing.Color.Transparent;
+            this.icon_restore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icon_restore.Image = global::Restuarent.Properties.Resources.maximize_window_25px;
+            this.icon_restore.Location = new System.Drawing.Point(1210, 1);
+            this.icon_restore.Name = "icon_restore";
+            this.icon_restore.Size = new System.Drawing.Size(25, 25);
+            this.icon_restore.TabIndex = 48;
+            this.icon_restore.TabStop = false;
+            this.icon_restore.Visible = false;
+            this.icon_restore.Click += new System.EventHandler(this.icon_restore_Click);
+            // 
+            // icon_minimize
+            // 
+            this.icon_minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_minimize.BackColor = System.Drawing.Color.Transparent;
+            this.icon_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icon_minimize.Image = global::Restuarent.Properties.Resources.minimize_window_25px;
+            this.icon_minimize.Location = new System.Drawing.Point(1183, 1);
+            this.icon_minimize.Name = "icon_minimize";
+            this.icon_minimize.Size = new System.Drawing.Size(25, 25);
+            this.icon_minimize.TabIndex = 47;
+            this.icon_minimize.TabStop = false;
+            this.icon_minimize.Click += new System.EventHandler(this.icon_minimize_Click);
+            // 
+            // icon_maximize
+            // 
+            this.icon_maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_maximize.BackColor = System.Drawing.Color.Transparent;
+            this.icon_maximize.Location = new System.Drawing.Point(1204, -1);
+            this.icon_maximize.Name = "icon_maximize";
+            this.icon_maximize.Size = new System.Drawing.Size(25, 25);
+            this.icon_maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.icon_maximize.TabIndex = 46;
+            this.icon_maximize.TabStop = false;
+            // 
+            // icon_close
+            // 
+            this.icon_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_close.BackColor = System.Drawing.Color.Transparent;
+            this.icon_close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icon_close.Image = global::Restuarent.Properties.Resources.close_window_25px;
+            this.icon_close.Location = new System.Drawing.Point(1237, 1);
+            this.icon_close.Name = "icon_close";
+            this.icon_close.Size = new System.Drawing.Size(25, 25);
+            this.icon_close.TabIndex = 45;
+            this.icon_close.TabStop = false;
+            this.icon_close.Click += new System.EventHandler(this.icon_close_Click);
+            // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,9 +326,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.icon_restore);
+            this.Controls.Add(this.icon_minimize);
+            this.Controls.Add(this.icon_maximize);
+            this.Controls.Add(this.icon_close);
             this.Controls.Add(this.Logoutbutton1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Manager";
@@ -280,6 +344,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_restore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_minimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_maximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +372,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox icon_restore;
+        private System.Windows.Forms.PictureBox icon_minimize;
+        private System.Windows.Forms.PictureBox icon_maximize;
+        private System.Windows.Forms.PictureBox icon_close;
     }
 }

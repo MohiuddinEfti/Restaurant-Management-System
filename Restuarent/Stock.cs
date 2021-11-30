@@ -29,6 +29,8 @@ namespace Restuarent
 
         private void Stock_Load(object sender, EventArgs e)
         {
+            icon_restore.Visible = true;
+            this.WindowState = FormWindowState.Normal;
             dataGridView1.ReadOnly = true;
 
 
@@ -372,9 +374,28 @@ namespace Restuarent
             }
         }
 
-        
+        private void icon_minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
 
+        }
 
+        private void icon_restore_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
 
+        private void icon_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }
