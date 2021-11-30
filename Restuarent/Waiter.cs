@@ -44,7 +44,7 @@ namespace Restuarent
             label1.Visible = comboBox1.Visible = button2.Visible = false;
             string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
             string cancel = "Cancel";
-            dataGridView3.Visible = false;
+          //  dataGridView3.Visible = false;
             SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connections.Open();
             string sqls = "SELECT * FROM CustomerOrders Where Date LIKE '" + Today + "%' AND ChefOrderDone !='" + cancel + "' OR Date LIKE '" + Today + "%' AND ChefOrderDone IS NULL";
@@ -145,14 +145,14 @@ namespace Restuarent
                 MessageBox.Show("First make your item ready");
             }
             else
-            {
-                DateTime time = DateTime.Now;
+            {string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
+                DateTime time = DateTime.Today;
                 string ab = time.ToString("h:mm tt ");
                 string ba = "Served by " + abd;
                 string Ready = "Served";
                 SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
                 connections.Open();
-                string sqls = "UPDATE CustomerOrders SET Payment='" + comboBox1.Text + "',CustomerRecieved='" + Ready+"', WaiterOrderDoneTime='" + ab + ba + "'WHERE Id=" + Id;
+                string sqls = "UPDATE CustomerOrders SET Payment='" + comboBox1.Text + "',CustomerRecieved='" + Ready+"', WaiterOrderDoneTime='" + ab + ba + "',Date='" + Today + "'WHERE Id=" + Id;
 
 
                 SqlCommand commands = new SqlCommand(sqls, connections);
@@ -176,7 +176,7 @@ namespace Restuarent
 
 
                     }
-                    string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
+                    
 
                     bool con = DATA.Contains(Today);
 
