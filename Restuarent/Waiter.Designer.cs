@@ -130,7 +130,7 @@ namespace Restuarent
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(116, 144);
+            this.button4.Location = new System.Drawing.Point(116, 143);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(115, 38);
             this.button4.TabIndex = 15;
