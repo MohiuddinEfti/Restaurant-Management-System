@@ -4408,32 +4408,7 @@ namespace Restuarent
 
         
 
-        private void button22_Click(object sender, EventArgs e)
-        {
-            if(numberbox.Text=="")
-            {
-                MessageBox.Show("Enter Number","Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-               
-            }
-            else if (numberbox.Text.Length != 11)
-            {
-
-                MessageBox.Show("Phone number must be 11 digits", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                numberbox.Text = String.Empty;
-            }
-            else
-            {
-                DateTime time = DateTime.Now;
-                grab = time.ToString("h:mm:ss tt ");
-                Paid.Visible = label14.Visible = label15.Visible = label13.Visible = pictureBox2.Visible = true;
-                BkashScan bs = new BkashScan(textBox2.Text, tbno, richTextBox1.Text, grab, Int32.Parse(taka.Text), numberbox.Text);
-                bs.ShowDialog();
-                timer1.Enabled = true;
-                panel1.Visible = false;
-                groupBox1.Visible = false;
-            }
-            
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {

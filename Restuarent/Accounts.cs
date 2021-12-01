@@ -33,7 +33,8 @@ namespace Restuarent
             dataGridView2.ReadOnly = true;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();
-            string sql = "SELECT * FROM CustomerOrders";
+            string Ready = "Served";
+            string sql = "SELECT * FROM CustomerOrders Where CustomerRecieved='" + Ready + "'";
             SqlCommand command = new SqlCommand(sql, connection);
             SqlDataReader reader = command.ExecuteReader();
             List<AccountsCash> list = new List<AccountsCash>();
