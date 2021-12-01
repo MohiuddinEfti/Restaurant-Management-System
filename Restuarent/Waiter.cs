@@ -41,13 +41,16 @@ namespace Restuarent
        
         private void Waiter_Load(object sender, EventArgs e)
         {
+            label3.Visible = textBox1.Visible = false;
+            string Ready = "Served";
+
             label1.Visible = comboBox1.Visible = button2.Visible = false;
             string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
             string cancel = "Cancel";
           //  dataGridView3.Visible = false;
             SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connections.Open();
-            string sqls = "SELECT * FROM CustomerOrders Where Date LIKE '" + Today + "%' AND ChefOrderDone !='" + cancel + "' OR Date LIKE '" + Today + "%' AND ChefOrderDone IS NULL";
+            string sqls = "SELECT * FROM CustomerOrders Where Date LIKE '" + Today + "%' AND ChefOrderDone !='" + cancel + "' AND CustomerRecieved='" + Ready + "' OR CustomerRecieved='" + Ready + "'AND Date LIKE '" + Today + "%' AND ChefOrderDone IS NULL";
             SqlCommand commands = new SqlCommand(sqls, connections);
             SqlDataReader readers = commands.ExecuteReader();
             List<AccountsCash> lists = new List<AccountsCash>();
@@ -140,6 +143,10 @@ namespace Restuarent
             {
                 MessageBox.Show("Please Select The Payment Type");
             }
+            else if(comboBox1.Text== "By Bkash" && textBox1.Text=="")
+            {
+                MessageBox.Show("Please Insert Customer Bkash Number");
+            }
             else if(rec!="Ready")
             {
                 MessageBox.Show("First make your item ready");
@@ -159,11 +166,31 @@ namespace Restuarent
 
 
                 int diary = commands.ExecuteNonQuery();
+                string cancel = "Cancel";
+                SqlConnection connections1 = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+                connections1.Open();
+                string sqls1 = "SELECT * FROM CustomerOrders Where Date LIKE '" + Today + "%' AND ChefOrderDone !='" + cancel + "' AND CustomerRecieved='" + Ready + "' OR CustomerRecieved='" + Ready + "'AND Date LIKE '" + Today + "%' AND ChefOrderDone IS NULL";
+                SqlCommand commands1 = new SqlCommand(sqls1, connections1);
+                SqlDataReader readers1 = commands1.ExecuteReader();
+                List<AccountsCash> lists = new List<AccountsCash>();
+                while (readers1.Read())
+                {
+                    AccountsCash CS = new AccountsCash();
 
+
+                    CS.Cash = (int)readers1["Price"];
+                    CS.Date = readers1["Date"].ToString();
+
+                    lists.Add(CS);
+                }
+                dataGridView3.DataSource = lists;
+                connections1.Close();
 
                 if (diary > 0)
                 {
                     label1.Visible = comboBox1.Visible = button2.Visible = false;
+                    label3.Visible = textBox1.Visible = false;
+                    textBox1.Text = String.Empty;
                     button4.Visible = true;
                     int a = 0;
                     for (int i = 0; i < dataGridView3.RowCount; i++)
@@ -396,7 +423,17 @@ namespace Restuarent
                 dataGridView1.DataSource = list;
             }
         }
-        
-        
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBox1.Text== "By Bkash")
+            {
+                label3.Visible = textBox1.Visible = true;
+            }
+            else
+            {
+                label3.Visible = textBox1.Visible = false;
+            }
+        }
     }
 }

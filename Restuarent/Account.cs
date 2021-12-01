@@ -63,9 +63,10 @@ namespace Restuarent
             pictureBox1.ImageLocation = picture;
             string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
             string cancel = "Cancel";
+            string Ready = "Served";
             SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connections.Open();
-            string sqls = "SELECT * FROM CustomerOrders Where Date LIKE '" + Today + "%' AND ChefOrderDone !='" + cancel+ "' OR Date LIKE '" + Today + "%' AND ChefOrderDone IS NULL";
+            string sqls = "SELECT * FROM CustomerOrders Where Date LIKE '" + Today + "%' AND ChefOrderDone !='" + cancel+ "' And CustomerRecieved='" + Ready + "' OR CustomerRecieved='" + Ready + "' AND Date LIKE '" + Today + "%' AND ChefOrderDone IS NULL";
             SqlCommand commands = new SqlCommand(sqls, connections);
             SqlDataReader readers = commands.ExecuteReader();
             List<AccountsCash> list = new List<AccountsCash>();

@@ -2160,7 +2160,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(608, 136);
+            this.label12.Location = new System.Drawing.Point(49, 33);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(130, 57);
             this.label12.TabIndex = 37;

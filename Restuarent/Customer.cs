@@ -4490,9 +4490,6 @@ namespace Restuarent
                 label92.Visible = true;
                 cathcer= richTextBox1.Text = String.Empty;
                 label12.Text = "Pay by";
-
-
-
             }
             else
             {
