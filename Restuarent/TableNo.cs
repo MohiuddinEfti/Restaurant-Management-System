@@ -55,7 +55,7 @@ namespace Restuarent
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            panel2.Width += 5;
+            panel2.Width += 15;
             if(panel2.Width>=1166)
             {
                 loading.Enabled=false;

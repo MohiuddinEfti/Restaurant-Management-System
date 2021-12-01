@@ -79,6 +79,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button22 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Paid = new System.Windows.Forms.Button();
@@ -1030,7 +1031,6 @@
             this.button330 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label4 = new System.Windows.Forms.Label();
-            this.button22 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Burgerpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pizzapic)).BeginInit();
@@ -1989,6 +1989,18 @@
             this.panel1.Size = new System.Drawing.Size(1240, 648);
             this.panel1.TabIndex = 69;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.HotPink;
+            this.button22.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Location = new System.Drawing.Point(463, 218);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(413, 236);
+            this.button22.TabIndex = 42;
+            this.button22.Text = "Bkash";
+            this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click_1);
             // 
             // groupBox1
             // 
@@ -13998,18 +14010,6 @@
             this.label4.Size = new System.Drawing.Size(57, 20);
             this.label4.TabIndex = 82;
             this.label4.Text = "label4";
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.HotPink;
-            this.button22.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(463, 218);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(413, 236);
-            this.button22.TabIndex = 42;
-            this.button22.Text = "Bkash";
-            this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button22_Click_1);
             // 
             // Customer
             // 

@@ -1973,7 +1973,9 @@ namespace Restuarent
                  Paid.Visible = false;
                  panel1.Visible = false;
                  string to = numberbox.Text;
-                 flowLayoutPanel1.Visible = true;
+                button9.Visible = false;
+
+                flowLayoutPanel1.Visible = true;
                   flowLayoutPanel2.Visible = true;
                   flowLayoutPanel3.Visible = true;
                   flowLayoutPanel4.Visible = true;
@@ -4298,6 +4300,8 @@ namespace Restuarent
         private void button330_Click(object sender, EventArgs e)
         {
             button330.Visible = false;
+            button9.Visible = true;
+
             label4.Visible = false;
             timer1.Enabled=false;
             textBox2.Text = grab=String.Empty;
@@ -4454,6 +4458,7 @@ namespace Restuarent
                 label13.Visible = false;
                 Paid.Visible = false;
                 panel1.Visible = false;
+                button9.Visible = false;
                 string to = numberbox.Text;
                 flowLayoutPanel1.Visible = true;
                 flowLayoutPanel2.Visible = true;
