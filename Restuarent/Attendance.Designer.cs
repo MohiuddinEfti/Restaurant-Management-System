@@ -36,11 +36,13 @@ namespace Restuarent
             this.icon_minimize = new System.Windows.Forms.PictureBox();
             this.icon_maximize = new System.Windows.Forms.PictureBox();
             this.icon_close = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_restore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_maximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_close)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -49,7 +51,7 @@ namespace Restuarent
             this.button1.BackColor = System.Drawing.Color.LightGreen;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(387, 526);
+            this.button1.Location = new System.Drawing.Point(388, 536);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(501, 60);
             this.button1.TabIndex = 0;
@@ -66,11 +68,11 @@ namespace Restuarent
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(197, 97);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(868, 405);
+            this.dataGridView1.Size = new System.Drawing.Size(1251, 478);
             this.dataGridView1.TabIndex = 24;
             // 
             // icon_restore
@@ -124,6 +126,18 @@ namespace Restuarent
             this.icon_close.TabStop = false;
             this.icon_close.Click += new System.EventHandler(this.icon_close_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(-2, 24);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1263, 506);
+            this.groupBox1.TabIndex = 53;
+            this.groupBox1.TabStop = false;
+            // 
             // Attendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,11 +145,11 @@ namespace Restuarent
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.icon_restore);
             this.Controls.Add(this.icon_minimize);
             this.Controls.Add(this.icon_maximize);
             this.Controls.Add(this.icon_close);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -150,6 +164,7 @@ namespace Restuarent
             ((System.ComponentModel.ISupportInitialize)(this.icon_minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_maximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_close)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -162,5 +177,6 @@ namespace Restuarent
         private System.Windows.Forms.PictureBox icon_minimize;
         private System.Windows.Forms.PictureBox icon_maximize;
         private System.Windows.Forms.PictureBox icon_close;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
