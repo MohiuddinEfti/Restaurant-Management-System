@@ -1030,6 +1030,7 @@
             this.button330 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label4 = new System.Windows.Forms.Label();
+            this.button22 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Burgerpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pizzapic)).BeginInit();
@@ -1975,6 +1976,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.button22);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.button21);
             this.panel1.Controls.Add(this.label10);
@@ -2002,7 +2004,7 @@
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.button24);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.groupBox1.Location = new System.Drawing.Point(30, 17);
+            this.groupBox1.Location = new System.Drawing.Point(30, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1185, 595);
             this.groupBox1.TabIndex = 41;
@@ -2029,9 +2031,9 @@
             this.Paid.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Paid.Location = new System.Drawing.Point(587, 471);
             this.Paid.Name = "Paid";
-            this.Paid.Size = new System.Drawing.Size(81, 38);
+            this.Paid.Size = new System.Drawing.Size(98, 36);
             this.Paid.TabIndex = 45;
-            this.Paid.Text = "Payed";
+            this.Paid.Text = "Process";
             this.Paid.UseVisualStyleBackColor = false;
             this.Paid.Click += new System.EventHandler(this.Paid_Click);
             // 
@@ -13997,6 +13999,18 @@
             this.label4.TabIndex = 82;
             this.label4.Text = "label4";
             // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.HotPink;
+            this.button22.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Location = new System.Drawing.Point(463, 218);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(413, 236);
+            this.button22.TabIndex = 42;
+            this.button22.Text = "Bkash";
+            this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click_1);
+            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -15533,6 +15547,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Paid;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button22;
     }
 }
 
