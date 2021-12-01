@@ -119,6 +119,12 @@
     <Compile Include="Bkash.Designer.cs">
       <DependentUpon>Bkash.cs</DependentUpon>
     </Compile>
+    <Compile Include="BkashScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BkashScan.Designer.cs">
+      <DependentUpon>BkashScan.cs</DependentUpon>
+    </Compile>
     <Compile Include="CheckAttendance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bkash.resx">
       <DependentUpon>Bkash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BkashScan.resx">
+      <DependentUpon>BkashScan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckAttendance.resx">
       <DependentUpon>CheckAttendance.cs</DependentUpon>
