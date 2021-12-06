@@ -351,9 +351,9 @@ namespace Restuarent
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.Movies);
             this.panel1.Controls.Add(this.button9);
-            this.panel1.Location = new System.Drawing.Point(229, 97);
+            this.panel1.Location = new System.Drawing.Point(234, 34);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1027, 513);
+            this.panel1.Size = new System.Drawing.Size(1027, 580);
             this.panel1.TabIndex = 35;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -363,7 +363,7 @@ namespace Restuarent
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(819, 82);
+            this.label3.Location = new System.Drawing.Point(819, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 22);
             this.label3.TabIndex = 6;
@@ -386,7 +386,7 @@ namespace Restuarent
             this.button14.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.Black;
-            this.button14.Location = new System.Drawing.Point(840, 257);
+            this.button14.Location = new System.Drawing.Point(840, 291);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(72, 30);
             this.button14.TabIndex = 4;
@@ -397,7 +397,7 @@ namespace Restuarent
             // button13
             // 
             this.button13.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button13.Location = new System.Drawing.Point(329, 458);
+            this.button13.Location = new System.Drawing.Point(329, 525);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(156, 23);
             this.button13.TabIndex = 4;
@@ -410,7 +410,7 @@ namespace Restuarent
             this.button12.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(922, 182);
+            this.button12.Location = new System.Drawing.Point(922, 216);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(60, 23);
             this.button12.TabIndex = 3;
@@ -423,7 +423,7 @@ namespace Restuarent
             this.button11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(922, 127);
+            this.button11.Location = new System.Drawing.Point(922, 161);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(60, 23);
             this.button11.TabIndex = 2;
@@ -433,19 +433,21 @@ namespace Restuarent
             // 
             // axWindowsMediaPlayer1
             // 
-            this.axWindowsMediaPlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.axWindowsMediaPlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(80, 7);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(80, 41);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(645, 361);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(645, 424);
             this.axWindowsMediaPlayer1.TabIndex = 2;
             this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
             // Kidmovies
             // 
             this.Kidmovies.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Kidmovies.Location = new System.Drawing.Point(786, 183);
+            this.Kidmovies.Location = new System.Drawing.Point(786, 217);
             this.Kidmovies.Name = "Kidmovies";
             this.Kidmovies.ReadOnly = true;
             this.Kidmovies.Size = new System.Drawing.Size(126, 20);
@@ -455,7 +457,7 @@ namespace Restuarent
             // button10
             // 
             this.button10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button10.Location = new System.Drawing.Point(410, 419);
+            this.button10.Location = new System.Drawing.Point(410, 486);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 1;
@@ -467,7 +469,7 @@ namespace Restuarent
             // 
             this.Movies.AccessibleName = "";
             this.Movies.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Movies.Location = new System.Drawing.Point(786, 128);
+            this.Movies.Location = new System.Drawing.Point(786, 162);
             this.Movies.Name = "Movies";
             this.Movies.ReadOnly = true;
             this.Movies.Size = new System.Drawing.Size(126, 20);
@@ -477,7 +479,7 @@ namespace Restuarent
             // button9
             // 
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button9.Location = new System.Drawing.Point(329, 419);
+            this.button9.Location = new System.Drawing.Point(329, 486);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 0;
@@ -535,6 +537,7 @@ namespace Restuarent
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -608,7 +611,6 @@ namespace Restuarent
             this.Controls.Add(this.icon_minimize);
             this.Controls.Add(this.icon_maximize);
             this.Controls.Add(this.icon_close);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -619,6 +621,7 @@ namespace Restuarent
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

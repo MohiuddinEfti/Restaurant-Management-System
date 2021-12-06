@@ -12,10 +12,12 @@ namespace Restuarent
     public partial class Customer : Form
     {
         public int tbno;
+ 
         public Customer(int a)
         {
             tbno = a;
             InitializeComponent();
+            
         }
         
        

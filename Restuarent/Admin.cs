@@ -88,6 +88,7 @@ namespace Restuarent
 
         private void Admin_Load(object sender, EventArgs e)
         {
+            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15);
             icon_restore.Visible = true;
             this.WindowState = FormWindowState.Normal;
             button7.Visible = false;

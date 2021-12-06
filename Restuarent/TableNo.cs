@@ -12,14 +12,18 @@ namespace Restuarent
 {
     public partial class TableNo : Form
     {
+       
         public TableNo()
         {
+
             InitializeComponent();
+            
         }
 
         private void TableNo_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            
+            
             label2.Visible = false;
             loading.Enabled = false;
             panel1.Visible = panel2.Visible = false;
@@ -55,8 +59,13 @@ namespace Restuarent
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            panel2.Width += 15;
-            if(panel2.Width>=1166)
+            int speed, size;
+            
+                speed = 15;
+                size = 1166;
+           
+            panel2.Width += speed;
+            if(panel2.Width>=size)
             {
                 loading.Enabled=false;
                 Customer cm = new Customer(Int32.Parse(comboBox1.Text));
