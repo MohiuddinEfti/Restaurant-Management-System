@@ -23,7 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>13</ApplicationRevision>
+    <SupportUrl>https://github.com/MohiuddinEfti</SupportUrl>
+    <ProductName>Restuarent Management System</ProductName>
+    <PublisherName>Md. Mohiuddin Ahmed Efti</PublisherName>
+    <SuiteName>Efti</SuiteName>
+    <ApplicationRevision>14</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -61,6 +65,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Graphicloads-Colorful-Long-Shadow-Restaurant.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Siticone.Desktop.UI, Version=2.0.8.0, Culture=neutral, PublicKeyToken=422d444a8a9fa6db, processorArchitecture=MSIL">
@@ -424,6 +431,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\users_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Graphicloads-Colorful-Long-Shadow-Restaurant.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

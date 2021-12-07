@@ -198,6 +198,7 @@ namespace Restuarent
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Restuarent.Properties.Resources.food;
             this.pictureBox1.Location = new System.Drawing.Point(2, 93);
             this.pictureBox1.Name = "pictureBox1";
@@ -217,11 +218,11 @@ namespace Restuarent
             this.Controls.Add(this.lbl_username);
             this.Controls.Add(this.lbl_info);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Signinbutton);
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.Namebox);
+            this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
