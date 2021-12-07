@@ -282,6 +282,25 @@ namespace Restuarent
                 textBox1.ForeColor = Color.LightGray;
             }
 
+            if (positions == "admin")
+            {
+                comboBox2.Items.Add("Admin");
+                comboBox2.Items.Add("Manager");
+                comboBox2.Items.Add("Chef");
+                comboBox2.Items.Add("Waiter");
+                comboBox2.Items.Add("Cleaner");
+                comboBox2.Items.Add("Guard");
+
+            }
+            else
+            {
+                comboBox2.Items.Add("Manager");
+                comboBox2.Items.Add("Chef");
+                comboBox2.Items.Add("Waiter");
+                comboBox2.Items.Add("Cleaner");
+                comboBox2.Items.Add("Guard");
+            }
+
             activation = "Yes";
 
             textBox2.Visible = false;
