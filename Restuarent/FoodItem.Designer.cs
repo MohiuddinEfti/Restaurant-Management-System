@@ -601,7 +601,7 @@ namespace Restuarent
             // 
             // groupbox1
             // 
-            this.groupbox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.groupbox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupbox1.BackColor = System.Drawing.Color.Transparent;
             this.groupbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupbox1.BackgroundImage")));
             this.groupbox1.Controls.Add(this.label2);
@@ -728,6 +728,7 @@ namespace Restuarent
             // 
             // button11
             // 
+            this.button11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button11.Location = new System.Drawing.Point(450, 468);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(126, 43);
@@ -738,6 +739,7 @@ namespace Restuarent
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
@@ -2371,6 +2373,7 @@ namespace Restuarent
             // 
             // panel18
             // 
+            this.panel18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel18.BackColor = System.Drawing.Color.Transparent;
             this.panel18.Controls.Add(this.dataGridView1);
             this.panel18.Controls.Add(this.textBox32);

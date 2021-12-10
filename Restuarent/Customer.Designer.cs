@@ -1976,7 +1976,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.button22);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.button21);
             this.panel1.Controls.Add(this.label10);
@@ -1992,9 +1991,10 @@
             // 
             // button22
             // 
+            this.button22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button22.BackColor = System.Drawing.Color.HotPink;
             this.button22.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(463, 218);
+            this.button22.Location = new System.Drawing.Point(416, 196);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(413, 236);
             this.button22.TabIndex = 42;
@@ -2008,6 +2008,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.button22);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.Paid);
             this.groupBox1.Controls.Add(this.label13);
@@ -2039,9 +2040,10 @@
             // 
             // Paid
             // 
+            this.Paid.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Paid.BackColor = System.Drawing.Color.DeepPink;
             this.Paid.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Paid.Location = new System.Drawing.Point(587, 471);
+            this.Paid.Location = new System.Drawing.Point(586, 467);
             this.Paid.Name = "Paid";
             this.Paid.Size = new System.Drawing.Size(98, 36);
             this.Paid.TabIndex = 45;
@@ -2051,9 +2053,7 @@
             // 
             // label13
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2066,9 +2066,7 @@
             // 
             // label14
             // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2080,9 +2078,7 @@
             // 
             // label15
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2094,9 +2090,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(541, 211);
             this.pictureBox2.Name = "pictureBox2";
@@ -2133,9 +2127,7 @@
             // 
             // label10
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2149,9 +2141,7 @@
             // 
             // label11
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2165,9 +2155,7 @@
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2181,9 +2169,7 @@
             // 
             // Cash
             // 
-            this.Cash.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cash.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Cash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Cash.BackgroundImage")));
             this.Cash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Cash.Location = new System.Drawing.Point(686, 237);
@@ -2195,6 +2181,7 @@
             // 
             // Bkash
             // 
+            this.Bkash.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Bkash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bkash.BackgroundImage")));
             this.Bkash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bkash.Location = new System.Drawing.Point(496, 237);

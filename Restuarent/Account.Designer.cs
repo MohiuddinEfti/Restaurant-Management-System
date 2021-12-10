@@ -119,7 +119,7 @@ namespace Restuarent
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.button4);
@@ -135,6 +135,7 @@ namespace Restuarent
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -148,6 +149,7 @@ namespace Restuarent
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.dataGridView3);
@@ -189,6 +191,7 @@ namespace Restuarent
             // 
             // Chart1
             // 
+            this.Chart1.Anchor = System.Windows.Forms.AnchorStyles.None;
             chartArea1.Name = "ChartArea1";
             this.Chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";

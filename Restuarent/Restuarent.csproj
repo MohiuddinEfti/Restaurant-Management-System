@@ -27,7 +27,7 @@
     <ProductName>Restuarent Management System</ProductName>
     <PublisherName>Md. Mohiuddin Ahmed Efti</PublisherName>
     <SuiteName>Efti</SuiteName>
-    <ApplicationRevision>14</ApplicationRevision>
+    <ApplicationRevision>15</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -67,7 +67,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Graphicloads-Colorful-Long-Shadow-Restaurant.ico</ApplicationIcon>
+    <ApplicationIcon>ress.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Siticone.Desktop.UI, Version=2.0.8.0, Culture=neutral, PublicKeyToken=422d444a8a9fa6db, processorArchitecture=MSIL">
@@ -434,6 +434,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Graphicloads-Colorful-Long-Shadow-Restaurant.ico" />
+    <Content Include="ress.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
