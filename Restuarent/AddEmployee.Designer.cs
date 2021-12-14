@@ -151,13 +151,15 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(409, 352);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(130, 27);
             this.button3.TabIndex = 43;
             this.button3.Text = "Upload Picture";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
@@ -318,12 +320,16 @@
             // AddEmployeeButton
             // 
             this.AddEmployeeButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.AddEmployeeButton.Location = new System.Drawing.Point(717, 436);
+            this.AddEmployeeButton.BackColor = System.Drawing.Color.White;
+            this.AddEmployeeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddEmployeeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddEmployeeButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.AddEmployeeButton.Location = new System.Drawing.Point(637, 408);
             this.AddEmployeeButton.Name = "AddEmployeeButton";
-            this.AddEmployeeButton.Size = new System.Drawing.Size(125, 60);
+            this.AddEmployeeButton.Size = new System.Drawing.Size(182, 60);
             this.AddEmployeeButton.TabIndex = 16;
             this.AddEmployeeButton.Text = "ADD EMPLOYEE";
-            this.AddEmployeeButton.UseVisualStyleBackColor = true;
+            this.AddEmployeeButton.UseVisualStyleBackColor = false;
             this.AddEmployeeButton.Click += new System.EventHandler(this.AddEmployeeButton_Click);
             // 
             // dataGridView1
@@ -343,34 +349,42 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.Location = new System.Drawing.Point(855, 436);
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(842, 409);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 60);
+            this.button1.Size = new System.Drawing.Size(182, 60);
             this.button1.TabIndex = 22;
             this.button1.Text = "UPDATE EMPLOYEE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.Location = new System.Drawing.Point(995, 436);
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1048, 408);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 60);
+            this.button2.Size = new System.Drawing.Size(181, 60);
             this.button2.TabIndex = 23;
             this.button2.Text = "DELETE EMPLOYEE";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button21
             // 
             this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button21.BackColor = System.Drawing.Color.White;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button21.Location = new System.Drawing.Point(1153, 12);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(76, 27);
             this.button21.TabIndex = 42;
             this.button21.Text = "Back";
-            this.button21.UseVisualStyleBackColor = true;
+            this.button21.UseVisualStyleBackColor = false;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // comboBox3

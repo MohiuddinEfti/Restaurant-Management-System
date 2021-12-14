@@ -648,7 +648,7 @@ namespace Restuarent
             // 
             // Update1
             // 
-            this.Update1.BackColor = System.Drawing.Color.OldLace;
+            this.Update1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.Update1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Update1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Update1.Location = new System.Drawing.Point(188, 471);
@@ -695,6 +695,8 @@ namespace Restuarent
             // 
             // button9
             // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button9.Location = new System.Drawing.Point(148, 227);
@@ -702,7 +704,7 @@ namespace Restuarent
             this.button9.Size = new System.Drawing.Size(172, 29);
             this.button9.TabIndex = 1;
             this.button9.Text = "Choose Image";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // pictureBox9
@@ -718,6 +720,7 @@ namespace Restuarent
             // button10
             // 
             this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Location = new System.Drawing.Point(1148, 13);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
@@ -729,12 +732,14 @@ namespace Restuarent
             // button11
             // 
             this.button11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button11.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button11.Location = new System.Drawing.Point(450, 468);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(126, 43);
             this.button11.TabIndex = 7;
             this.button11.Text = "Add New Item";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // flowLayoutPanel1
@@ -2408,22 +2413,26 @@ namespace Restuarent
             // 
             // button34
             // 
+            this.button34.BackColor = System.Drawing.Color.LightCoral;
+            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button34.Location = new System.Drawing.Point(252, 252);
             this.button34.Name = "button34";
             this.button34.Size = new System.Drawing.Size(90, 43);
             this.button34.TabIndex = 46;
             this.button34.Text = "Deactivate";
-            this.button34.UseVisualStyleBackColor = true;
+            this.button34.UseVisualStyleBackColor = false;
             this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button33
             // 
+            this.button33.BackColor = System.Drawing.Color.LightGreen;
+            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button33.Location = new System.Drawing.Point(147, 252);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(90, 43);
             this.button33.TabIndex = 45;
             this.button33.Text = "Activate";
-            this.button33.UseVisualStyleBackColor = true;
+            this.button33.UseVisualStyleBackColor = false;
             this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // FoodItem

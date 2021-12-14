@@ -99,6 +99,7 @@ namespace Restuarent
             // 
             // button18
             // 
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button18.Location = new System.Drawing.Point(190, 414);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(132, 33);
@@ -138,6 +139,7 @@ namespace Restuarent
             // button21
             // 
             this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button21.Location = new System.Drawing.Point(1176, 642);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(76, 27);

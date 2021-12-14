@@ -72,6 +72,7 @@ namespace Restuarent
             // button21
             // 
             this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button21.ForeColor = System.Drawing.Color.Black;
             this.button21.Location = new System.Drawing.Point(1143, 25);
             this.button21.Name = "button21";
@@ -107,6 +108,7 @@ namespace Restuarent
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.HotPink;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button4.Location = new System.Drawing.Point(111, 239);

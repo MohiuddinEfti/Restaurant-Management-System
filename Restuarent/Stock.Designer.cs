@@ -67,7 +67,7 @@
             // ChickenTextBox
             // 
             this.ChickenTextBox.ForeColor = System.Drawing.Color.Black;
-            this.ChickenTextBox.Location = new System.Drawing.Point(12, 122);
+            this.ChickenTextBox.Location = new System.Drawing.Point(18, 164);
             this.ChickenTextBox.Name = "ChickenTextBox";
             this.ChickenTextBox.Size = new System.Drawing.Size(115, 22);
             this.ChickenTextBox.TabIndex = 1;
@@ -77,7 +77,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(20, 103);
+            this.label1.Location = new System.Drawing.Point(15, 145);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 16);
             this.label1.TabIndex = 10;
@@ -86,25 +86,29 @@
             // AddStockButton
             // 
             this.AddStockButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AddStockButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.AddStockButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AddStockButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddStockButton.Location = new System.Drawing.Point(407, 516);
             this.AddStockButton.Name = "AddStockButton";
             this.AddStockButton.Size = new System.Drawing.Size(137, 38);
             this.AddStockButton.TabIndex = 19;
             this.AddStockButton.Text = "Add Stock";
-            this.AddStockButton.UseVisualStyleBackColor = true;
+            this.AddStockButton.UseVisualStyleBackColor = false;
             this.AddStockButton.Click += new System.EventHandler(this.AddStockButton_Click);
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.LightGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(570, 516);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 38);
             this.button1.TabIndex = 20;
             this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
@@ -127,7 +131,7 @@
             // textBox1
             // 
             this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(12, 61);
+            this.textBox1.Location = new System.Drawing.Point(18, 103);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(115, 22);
             this.textBox1.TabIndex = 11;
@@ -136,7 +140,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(20, 42);
+            this.label2.Location = new System.Drawing.Point(15, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 16);
             this.label2.TabIndex = 12;
@@ -145,6 +149,7 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Location = new System.Drawing.Point(1178, 646);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -156,13 +161,15 @@
             // DeleteButton
             // 
             this.DeleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DeleteButton.BackColor = System.Drawing.Color.LightCoral;
+            this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteButton.Location = new System.Drawing.Point(738, 516);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(137, 38);
             this.DeleteButton.TabIndex = 23;
             this.DeleteButton.Text = "Delete";
-            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.UseVisualStyleBackColor = false;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // icon_restore

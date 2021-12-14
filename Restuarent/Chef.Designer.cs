@@ -57,7 +57,8 @@
             // FoodReadyButton
             // 
             this.FoodReadyButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.FoodReadyButton.BackColor = System.Drawing.Color.White;
+            this.FoodReadyButton.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.FoodReadyButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.FoodReadyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FoodReadyButton.Location = new System.Drawing.Point(544, 497);
             this.FoodReadyButton.Name = "FoodReadyButton";
@@ -71,6 +72,7 @@
             // 
             this.Logoutbutton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Logoutbutton1.BackColor = System.Drawing.Color.White;
+            this.Logoutbutton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Logoutbutton1.Location = new System.Drawing.Point(1177, 12);
             this.Logoutbutton1.Name = "Logoutbutton1";
             this.Logoutbutton1.Size = new System.Drawing.Size(75, 23);
@@ -82,7 +84,8 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(341, 497);
             this.button1.Name = "button1";
@@ -100,6 +103,7 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.LightGreen;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(138, 497);
             this.button2.Name = "button2";
@@ -113,6 +117,7 @@
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.BackColor = System.Drawing.Color.LightCoral;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(942, 499);
             this.button3.Name = "button3";
@@ -149,7 +154,8 @@
             // button4
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(744, 497);
             this.button4.Name = "button4";
