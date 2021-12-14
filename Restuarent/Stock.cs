@@ -321,45 +321,50 @@ namespace Restuarent
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-           
-            
-            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Stock"].ConnectionString);
-            connection.Open();
-            string sql = "DELETE FROM Stock WHERE ID='" + ID + "' ";
-
-
-            SqlCommand command = new SqlCommand(sql, connection);
-            int diary = command.ExecuteNonQuery();
-
-            if (diary > 0)
+            if (ID == 0)
             {
-                MessageBox.Show("Stock Deleted");
+                MessageBox.Show("Please Select a specific row from the table");
+            }
+            else
+            {
+                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Stock"].ConnectionString);
+                connection.Open();
+                string sql = "DELETE FROM Stock WHERE ID='" + ID + "' ";
 
-                ChickenTextBox.Text = textBox1.Text= string.Empty;
-               
-                string sq2 = "SELECT * FROM Stock";
-                SqlCommand command1 = new SqlCommand(sq2, connection);
-                SqlDataReader reader2 = command1.ExecuteReader();
-                List<Stocks> list2 = new List<Stocks>();
-                while (reader2.Read())
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                int diary = command.ExecuteNonQuery();
+
+                if (diary > 0)
                 {
-                    Stocks S = new Stocks();
+                    MessageBox.Show("Stock Deleted");
+
+                    ChickenTextBox.Text = textBox1.Text = string.Empty;
+
+                    string sq2 = "SELECT * FROM Stock";
+                    SqlCommand command1 = new SqlCommand(sq2, connection);
+                    SqlDataReader reader2 = command1.ExecuteReader();
+                    List<Stocks> list2 = new List<Stocks>();
+                    while (reader2.Read())
+                    {
+                        Stocks S = new Stocks();
 
 
-                    S.ID = (int)reader2["ID"];
-                    S.Item_Name = reader2["Item_Name"].ToString();
-                    S.Item_Weight = reader2["Item_Weight"].ToString();
-                    S.AddingDate = reader2["AddingDate"].ToString();
-                    S.UpdateDate = reader2["UpdateDate"].ToString();
+                        S.ID = (int)reader2["ID"];
+                        S.Item_Name = reader2["Item_Name"].ToString();
+                        S.Item_Weight = reader2["Item_Weight"].ToString();
+                        S.AddingDate = reader2["AddingDate"].ToString();
+                        S.UpdateDate = reader2["UpdateDate"].ToString();
 
 
 
-                    list2.Add(S);
+                        list2.Add(S);
 
+
+                    }
+                    dataGridView1.DataSource = list2;
 
                 }
-                dataGridView1.DataSource = list2;
-
             }
         }
 

@@ -18,8 +18,7 @@ namespace Restuarent
         public string names;
         public string positions;
         public string ManagerPos;
-        
-        
+
         public AddEmployee(string a ,string b)
         {
             InitializeComponent();
@@ -275,6 +274,7 @@ namespace Restuarent
 
         private void AddEmployee_Load(object sender, EventArgs e)
         {
+            comboBox3.Text = "Active Member";
             dataGridView1.ReadOnly = true;
             if (textBox1.Text == "")
             {
@@ -462,6 +462,10 @@ namespace Restuarent
                 NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = pictureBox1.ImageLocation = comboBox2.Text = Salarytextbox.Text = PasswordtextBox2.Text = String.Empty;
 
             }
+            else if (id1 == 0)
+            {
+                MessageBox.Show("ERROR\nPlease Select a Employee");
+            }
             else
             {
 
@@ -569,46 +573,51 @@ namespace Restuarent
             {
                 a = comboBox2.Text;
             }
-
-            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
-
-                    connection.Open();
-
-                    string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "',Email='" + EmailTextBox.Text + "',Phone='" + Phonetextbox.Text + "',DateOfBirth='" + dateTimePicker1.Text + "',Picture='" + pictureBox1.ImageLocation.ToString() + "',Position='" + a + "',Salary='" + Salarytextbox.Text + "',Password='" + PasswordtextBox2.Text + "'WHERE Id=" + id1;
-
-
-
-
-                    SqlCommand command3 = new SqlCommand(sq3, connection);
-
-
-
-                    int diary3 = command3.ExecuteNonQuery();
-
-
-
-
-                    
-            if (diary3 > 0)
-                    
+            if(id1==0)
             {
+                MessageBox.Show("ERROR\nPlease Select a Employee");
+            }
+            else
+            {
+                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Employee"].ConnectionString);
 
-                        MessageBox.Show("Updated");
-                textBox2.Text = String.Empty;
-                        string active = "Yes";
-                        string sq2 = "SELECT * FROM Employee Where Active='" + active + "'";
+                connection.Open();
 
-                        SqlCommand command1 = new SqlCommand(sq2, connection);
+                string sq3 = "UPDATE Employee SET Name='" + NameTextBox.Text + "',Email='" + EmailTextBox.Text + "',Phone='" + Phonetextbox.Text + "',DateOfBirth='" + dateTimePicker1.Text + "',Picture='" + pictureBox1.ImageLocation.ToString() + "',Position='" + a + "',Salary='" + Salarytextbox.Text + "',Password='" + PasswordtextBox2.Text + "'WHERE Id=" + id1;
 
-                        SqlDataReader reader2 = command1.ExecuteReader();
 
-                        List<EmployeeAdding> list2 = new List<EmployeeAdding>();
 
-                        while (reader2.Read())
 
-                        {
+                SqlCommand command3 = new SqlCommand(sq3, connection);
 
-                            EmployeeAdding CS = new EmployeeAdding();
+
+
+                int diary3 = command3.ExecuteNonQuery();
+
+
+
+
+
+                if (diary3 > 0)
+
+                {
+
+                    MessageBox.Show("Updated");
+                    textBox2.Text = String.Empty;
+                    string active = "Yes";
+                    string sq2 = "SELECT * FROM Employee Where Active='" + active + "'";
+
+                    SqlCommand command1 = new SqlCommand(sq2, connection);
+
+                    SqlDataReader reader2 = command1.ExecuteReader();
+
+                    List<EmployeeAdding> list2 = new List<EmployeeAdding>();
+
+                    while (reader2.Read())
+
+                    {
+
+                        EmployeeAdding CS = new EmployeeAdding();
 
 
                         CS.ID = (int)reader2["Id"];
@@ -627,72 +636,74 @@ namespace Restuarent
 
                         list2.Add(CS);
 
-                        }
-
-                        dataGridView1.DataSource = list2;
-                        
-                for (int i = 0; i < dataGridView1.RowCount; i++)                       
-                {
-
-                    if (positions == "Manager")
-                    {
-                        if (dataGridView1.Rows[i].Cells[1].Value.ToString() == "Admin")
-                        {
-
-
-                            dataGridView1.Rows[i].Cells[1].Value = "Unauthorized";
-                            dataGridView1.Rows[i].Cells[2].Value = "Unauthorized";
-                            dataGridView1.Rows[i].Cells[3].Value = "Unauthorized";
-                            dataGridView1.Rows[i].Cells[4].Value = "Unauthorized";
-                            dataGridView1.Rows[i].Cells[5].Value = 0;
-
-                            dataGridView1.Rows[i].Cells[7].Value = "Unauthorized";
-                            dataGridView1.Rows[i].Cells[8].Value = "Unauthorized";
-                            dataGridView1.Rows[i].Cells[9].Value = 0;
-                            dataGridView1.Rows[i].Cells[10].Value = "Unauthorized";
-                            dataGridView1.Rows[i].Cells[11].Value = "Unauthorized";
-
-
-
-                        }
-
-                        if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
-                        {
-                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                        }
-                        else
-                        {
-                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
-                        }
                     }
-                    else if (positions == "Admin")
+
+                    dataGridView1.DataSource = list2;
+
+                    for (int i = 0; i < dataGridView1.RowCount; i++)
                     {
 
-                        if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                        if (positions == "Manager")
                         {
-                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                        }
-                        else
-                        {
-                            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
-                        }
-                    
-                    }
-                }
+                            if (dataGridView1.Rows[i].Cells[1].Value.ToString() == "Admin")
+                            {
 
-                     comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
+
+                                dataGridView1.Rows[i].Cells[1].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[2].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[3].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[4].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[5].Value = 0;
+
+                                dataGridView1.Rows[i].Cells[7].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[8].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[9].Value = 0;
+                                dataGridView1.Rows[i].Cells[10].Value = "Unauthorized";
+                                dataGridView1.Rows[i].Cells[11].Value = "Unauthorized";
+
+
+
+                            }
+
+                            if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            }
+                            else
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                            }
+                        }
+                        else if (positions == "Admin")
+                        {
+
+                            if (dataGridView1.Rows[i].Cells[12].Value.ToString() == "No")
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            }
+                            else
+                            {
+                                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGreen;
+                            }
+
+                        }
+                    }
+
+                    comboBox2.Text = dateTimePicker1.Text = NameTextBox.Text = EmailTextBox.Text = Phonetextbox.Text = comboBox1.Text = Salarytextbox.Text = PasswordtextBox2.Text = string.Empty;
 
                     pictureBox1.ImageLocation = null;
 
 
 
-               
+
+                }
+
+                connection.Close();
+
             }
 
-                    connection.Close();
-                
 
-            
+
 
         }
         public string activation;
