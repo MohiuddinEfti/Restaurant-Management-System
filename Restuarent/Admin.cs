@@ -90,7 +90,7 @@ namespace Restuarent
         {
             this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15);
             icon_restore.Visible = true;
-            this.WindowState = FormWindowState.Normal;
+            
             button7.Visible = false;
             label8.Visible = true;
             label3.Visible = false;
@@ -554,6 +554,23 @@ namespace Restuarent
         private void icon_close_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void icon_restore_Click_1(object sender, EventArgs e)
+        {
+            
+            if (Size == new Size(1920, 1080))
+            {
+                Size = new Size(1280, 720);
+                this.StartPosition = FormStartPosition.CenterScreen;
+                this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 10);
+            }
+            else
+            {
+                Size = new Size(1920, 1080);
+               
+                this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 20);
+            }
         }
     }
 }

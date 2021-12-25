@@ -41,6 +41,8 @@ namespace Restuarent
        
         private void Waiter_Load(object sender, EventArgs e)
         {
+            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 15); 
+            this.WindowState = FormWindowState.Maximized;
             label3.Visible = textBox1.Visible = false;
             string Ready = "Served";
 
@@ -434,6 +436,23 @@ namespace Restuarent
             {
                 label3.Visible = textBox1.Visible = false;
             }
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1) return;
+            pp = (string)dataGridView1.Rows[e.RowIndex].Cells[6].Value;
+            rec = (string)dataGridView1.Rows[e.RowIndex].Cells[5].Value;
+            Id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+
+            richTextBox1.Text = String.Empty;
+            richTextBox1.Text = "Table No: " + (int)dataGridView1.Rows[e.RowIndex].Cells[2].Value + "\n" + "Customer Name: " + (string)dataGridView1.Rows[e.RowIndex].Cells[1].Value + "\n\n" + (string)dataGridView1.Rows[e.RowIndex].Cells[3].Value;
+
         }
     }
 }

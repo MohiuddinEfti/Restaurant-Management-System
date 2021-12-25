@@ -44,7 +44,7 @@ namespace Restuarent
 
         private void Chef_Load(object sender, EventArgs e)
         {
-            
+            this.WindowState = FormWindowState.Maximized;
             dataGridView1.ReadOnly = true;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
             connection.Open();

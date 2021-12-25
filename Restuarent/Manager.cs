@@ -226,7 +226,7 @@ namespace Restuarent
 
         private void Manager_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal; 
+            this.WindowState = FormWindowState.Maximized;
             icon_restore.Visible = true;
             for (int i = 0; i < dataGridView1.RowCount; i++)
             {

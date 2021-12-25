@@ -29,8 +29,9 @@ namespace Restuarent
 
         private void Stock_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             icon_restore.Visible = true;
-            this.WindowState = FormWindowState.Normal;
+            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 20);
             dataGridView1.ReadOnly = true;
 
 
@@ -45,14 +46,12 @@ namespace Restuarent
             if ( Position == "admin")
             {
                 AddStockButton.Visible = true;
-                button1.Location = new System.Drawing.Point(570, 516);
-                DeleteButton.Location = new System.Drawing.Point(738, 516);
+                
             }
             else
             { 
                 AddStockButton.Visible = false; 
-                button1.Location = new System.Drawing.Point(506, 516);
-                DeleteButton.Location = new System.Drawing.Point(674, 516);
+                
                 DeleteButton.Visible = false;
             }
                 SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Stock"].ConnectionString);
@@ -390,10 +389,12 @@ namespace Restuarent
             if (this.WindowState == FormWindowState.Maximized)
             {
                 this.WindowState = FormWindowState.Normal;
+                this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 10);
             }
             else
             {
                 this.WindowState = FormWindowState.Maximized;
+                this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 20);
             }
         }
 
@@ -401,6 +402,23 @@ namespace Restuarent
         {
             Application.Exit();
 
+        }
+
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1) return;
+            ID = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+
+            if (Position == "Chef")
+            {
+                ChickenTextBox.Text = String.Empty;
+            }
+            else
+            {
+                ChickenTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+
+            }
         }
     }
 }

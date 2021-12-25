@@ -41,7 +41,7 @@ namespace Restuarent
 
         private void Attendance_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            this.WindowState = FormWindowState.Maximized;
             icon_restore.Visible = true;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Attendance"].ConnectionString);
             connection.Open();

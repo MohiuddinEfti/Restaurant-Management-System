@@ -25,7 +25,7 @@ namespace Restuarent
 
         private void CheckAttendance_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            this.WindowState = FormWindowState.Maximized;
             icon_restore.Visible = true; 
             dataGridView1.ReadOnly = true;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Attendance"].ConnectionString);

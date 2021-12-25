@@ -66,25 +66,25 @@ namespace Restuarent
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.icon_restore = new System.Windows.Forms.PictureBox();
             this.icon_minimize = new System.Windows.Forms.PictureBox();
             this.icon_maximize = new System.Windows.Forms.PictureBox();
             this.icon_close = new System.Windows.Forms.PictureBox();
+            this.icon_restore = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pnl_logo.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icon_restore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_maximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_close)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_restore)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(861, 44);
+            this.textBox1.Location = new System.Drawing.Point(1517, 44);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(276, 20);
             this.textBox1.TabIndex = 28;
@@ -92,6 +92,7 @@ namespace Restuarent
             // 
             // button4
             // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -107,6 +108,7 @@ namespace Restuarent
             // 
             // button3
             // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -122,6 +124,7 @@ namespace Restuarent
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -137,6 +140,7 @@ namespace Restuarent
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -165,7 +169,7 @@ namespace Restuarent
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(945, 296);
+            this.dataGridView1.Size = new System.Drawing.Size(1601, 695);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -184,12 +188,13 @@ namespace Restuarent
             // Logoutbutton1
             // 
             this.Logoutbutton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Logoutbutton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Logoutbutton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Logoutbutton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.Logoutbutton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Logoutbutton1.Image = global::Restuarent.Properties.Resources.logout_rounded_left_25px;
             this.Logoutbutton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Logoutbutton1.Location = new System.Drawing.Point(0, 590);
+            this.Logoutbutton1.Location = new System.Drawing.Point(0, 989);
             this.Logoutbutton1.Name = "Logoutbutton1";
             this.Logoutbutton1.Size = new System.Drawing.Size(200, 45);
             this.Logoutbutton1.TabIndex = 31;
@@ -215,7 +220,7 @@ namespace Restuarent
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 636);
+            this.groupBox1.Size = new System.Drawing.Size(200, 1035);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             // 
@@ -243,6 +248,7 @@ namespace Restuarent
             // 
             // button8
             // 
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -258,6 +264,7 @@ namespace Restuarent
             // 
             // button7
             // 
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -273,6 +280,7 @@ namespace Restuarent
             // 
             // button6
             // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -288,6 +296,7 @@ namespace Restuarent
             // 
             // button5
             // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -303,6 +312,7 @@ namespace Restuarent
             // 
             // Food
             // 
+            this.Food.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Food.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.Food.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -323,11 +333,12 @@ namespace Restuarent
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(1210, 120);
+            this.label2.Location = new System.Drawing.Point(1825, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 29);
             this.label2.TabIndex = 34;
@@ -351,9 +362,9 @@ namespace Restuarent
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.Movies);
             this.panel1.Controls.Add(this.button9);
-            this.panel1.Location = new System.Drawing.Point(234, 34);
+            this.panel1.Location = new System.Drawing.Point(234, 44);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1027, 580);
+            this.panel1.Size = new System.Drawing.Size(1683, 979);
             this.panel1.TabIndex = 35;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -363,7 +374,7 @@ namespace Restuarent
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(819, 116);
+            this.label3.Location = new System.Drawing.Point(1475, 315);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 22);
             this.label3.TabIndex = 6;
@@ -372,7 +383,8 @@ namespace Restuarent
             // button15
             // 
             this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button15.Location = new System.Drawing.Point(943, 14);
+            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button15.Location = new System.Drawing.Point(1599, 14);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(75, 23);
             this.button15.TabIndex = 5;
@@ -384,9 +396,10 @@ namespace Restuarent
             // 
             this.button14.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button14.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.Black;
-            this.button14.Location = new System.Drawing.Point(840, 291);
+            this.button14.Location = new System.Drawing.Point(1496, 490);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(72, 30);
             this.button14.TabIndex = 4;
@@ -397,9 +410,11 @@ namespace Restuarent
             // button13
             // 
             this.button13.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button13.Location = new System.Drawing.Point(329, 525);
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button13.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Location = new System.Drawing.Point(657, 924);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(156, 23);
+            this.button13.Size = new System.Drawing.Size(156, 36);
             this.button13.TabIndex = 4;
             this.button13.Text = "Upload New Movie";
             this.button13.UseVisualStyleBackColor = true;
@@ -408,9 +423,10 @@ namespace Restuarent
             // button12
             // 
             this.button12.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(922, 216);
+            this.button12.Location = new System.Drawing.Point(1578, 415);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(60, 23);
             this.button12.TabIndex = 3;
@@ -421,9 +437,10 @@ namespace Restuarent
             // button11
             // 
             this.button11.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(922, 161);
+            this.button11.Location = new System.Drawing.Point(1578, 360);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(60, 23);
             this.button11.TabIndex = 2;
@@ -440,14 +457,14 @@ namespace Restuarent
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(80, 41);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(645, 424);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(1301, 823);
             this.axWindowsMediaPlayer1.TabIndex = 2;
             this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
             // Kidmovies
             // 
             this.Kidmovies.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Kidmovies.Location = new System.Drawing.Point(786, 217);
+            this.Kidmovies.Location = new System.Drawing.Point(1442, 416);
             this.Kidmovies.Name = "Kidmovies";
             this.Kidmovies.ReadOnly = true;
             this.Kidmovies.Size = new System.Drawing.Size(126, 20);
@@ -457,9 +474,11 @@ namespace Restuarent
             // button10
             // 
             this.button10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button10.Location = new System.Drawing.Point(410, 486);
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(738, 880);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.Size = new System.Drawing.Size(75, 38);
             this.button10.TabIndex = 1;
             this.button10.Text = "Kids Movie";
             this.button10.UseVisualStyleBackColor = true;
@@ -469,7 +488,7 @@ namespace Restuarent
             // 
             this.Movies.AccessibleName = "";
             this.Movies.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Movies.Location = new System.Drawing.Point(786, 162);
+            this.Movies.Location = new System.Drawing.Point(1442, 361);
             this.Movies.Name = "Movies";
             this.Movies.ReadOnly = true;
             this.Movies.Size = new System.Drawing.Size(126, 20);
@@ -479,9 +498,11 @@ namespace Restuarent
             // button9
             // 
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button9.Location = new System.Drawing.Point(329, 486);
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(657, 880);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.Size = new System.Drawing.Size(75, 38);
             this.button9.TabIndex = 0;
             this.button9.Text = "Movie";
             this.button9.UseVisualStyleBackColor = true;
@@ -542,25 +563,11 @@ namespace Restuarent
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1143, 43);
+            this.label1.Location = new System.Drawing.Point(1799, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 20);
             this.label1.TabIndex = 40;
             this.label1.Text = "Table Number";
-            // 
-            // icon_restore
-            // 
-            this.icon_restore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.icon_restore.BackColor = System.Drawing.Color.Transparent;
-            this.icon_restore.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.icon_restore.Image = global::Restuarent.Properties.Resources.maximize_window_25px;
-            this.icon_restore.Location = new System.Drawing.Point(1209, 3);
-            this.icon_restore.Name = "icon_restore";
-            this.icon_restore.Size = new System.Drawing.Size(25, 25);
-            this.icon_restore.TabIndex = 44;
-            this.icon_restore.TabStop = false;
-            this.icon_restore.Visible = false;
-            this.icon_restore.Click += new System.EventHandler(this.icon_restore_Click);
             // 
             // icon_minimize
             // 
@@ -568,7 +575,7 @@ namespace Restuarent
             this.icon_minimize.BackColor = System.Drawing.Color.Transparent;
             this.icon_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icon_minimize.Image = global::Restuarent.Properties.Resources.minimize_window_25px;
-            this.icon_minimize.Location = new System.Drawing.Point(1182, 3);
+            this.icon_minimize.Location = new System.Drawing.Point(1831, 3);
             this.icon_minimize.Name = "icon_minimize";
             this.icon_minimize.Size = new System.Drawing.Size(25, 25);
             this.icon_minimize.TabIndex = 43;
@@ -579,7 +586,8 @@ namespace Restuarent
             // 
             this.icon_maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.icon_maximize.BackColor = System.Drawing.Color.Transparent;
-            this.icon_maximize.Location = new System.Drawing.Point(1205, 3);
+            this.icon_maximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icon_maximize.Location = new System.Drawing.Point(1861, 3);
             this.icon_maximize.Name = "icon_maximize";
             this.icon_maximize.Size = new System.Drawing.Size(25, 25);
             this.icon_maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -592,12 +600,26 @@ namespace Restuarent
             this.icon_close.BackColor = System.Drawing.Color.Transparent;
             this.icon_close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icon_close.Image = global::Restuarent.Properties.Resources.close_window_25px;
-            this.icon_close.Location = new System.Drawing.Point(1236, 3);
+            this.icon_close.Location = new System.Drawing.Point(1892, 3);
             this.icon_close.Name = "icon_close";
             this.icon_close.Size = new System.Drawing.Size(25, 25);
             this.icon_close.TabIndex = 41;
             this.icon_close.TabStop = false;
             this.icon_close.Click += new System.EventHandler(this.icon_close_Click);
+            // 
+            // icon_restore
+            // 
+            this.icon_restore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_restore.BackColor = System.Drawing.Color.Transparent;
+            this.icon_restore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icon_restore.Image = global::Restuarent.Properties.Resources.maximize_window_25px;
+            this.icon_restore.Location = new System.Drawing.Point(1862, 3);
+            this.icon_restore.Name = "icon_restore";
+            this.icon_restore.Size = new System.Drawing.Size(25, 25);
+            this.icon_restore.TabIndex = 44;
+            this.icon_restore.TabStop = false;
+            this.icon_restore.Visible = false;
+            this.icon_restore.Click += new System.EventHandler(this.icon_restore_Click_1);
             // 
             // Admin
             // 
@@ -606,7 +628,7 @@ namespace Restuarent
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.icon_restore);
             this.Controls.Add(this.icon_minimize);
             this.Controls.Add(this.icon_maximize);
@@ -636,10 +658,10 @@ namespace Restuarent
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icon_restore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_maximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_close)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_restore)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -681,9 +703,9 @@ namespace Restuarent
         private System.Windows.Forms.Panel pnl_logo;
         private System.Windows.Forms.Label lbl_logo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox icon_restore;
         private System.Windows.Forms.PictureBox icon_minimize;
         private System.Windows.Forms.PictureBox icon_maximize;
         private System.Windows.Forms.PictureBox icon_close;
+        private System.Windows.Forms.PictureBox icon_restore;
     }
 }

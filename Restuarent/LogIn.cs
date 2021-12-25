@@ -117,7 +117,7 @@ namespace Restuarent
 
         private void LogIn_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void icon_minimize_Click(object sender, EventArgs e)

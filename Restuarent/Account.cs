@@ -25,6 +25,8 @@ namespace Restuarent
         public int id = 1;
         private void Account_Load(object sender, EventArgs e)
         {
+            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 20);
+            this.WindowState = FormWindowState.Maximized;
             SqlConnection connection2 = new SqlConnection(ConfigurationManager.ConnectionStrings["Accounts"].ConnectionString);
             connection2.Open();
             string sq2 = "SELECT * FROM Accounts";

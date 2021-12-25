@@ -29,6 +29,8 @@ namespace Restuarent
 
         private void Accounts_Load(object sender, EventArgs e)
         {
+            this.dataGridView2.DefaultCellStyle.Font = new Font("Tahoma", 20);
+            this.WindowState = FormWindowState.Maximized;
             dataGridView1.ReadOnly = true;
             dataGridView2.ReadOnly = true;
             SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
@@ -137,14 +139,7 @@ namespace Restuarent
             }
         }
 
-        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex == -1) return;
-            id1 = (int)dataGridView2.Rows[e.RowIndex].Cells[0].Value;
-            int cash = (int)dataGridView2.Rows[e.RowIndex].Cells[1].Value;
-            textBox3.Text = cash.ToString();
-            
-        }
+       
 
         
 
@@ -160,11 +155,14 @@ namespace Restuarent
 
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         
+
+        private void dataGridView2_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1) return;
+            id1 = (int)dataGridView2.Rows[e.RowIndex].Cells[0].Value;
+            int cash = (int)dataGridView2.Rows[e.RowIndex].Cells[1].Value;
+            textBox3.Text = cash.ToString();
+        }
     }
 }

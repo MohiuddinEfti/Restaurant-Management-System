@@ -39,6 +39,7 @@ namespace Restuarent
         List<string> names = new List<string>();
         public void FoodItem_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             dataGridView1.ReadOnly = true;
             groupbox1.Visible = false;
             Namelab1.Visible = false;

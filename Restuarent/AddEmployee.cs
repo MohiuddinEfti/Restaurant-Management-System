@@ -274,6 +274,7 @@ namespace Restuarent
 
         private void AddEmployee_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             comboBox3.Text = "Active Member";
             dataGridView1.ReadOnly = true;
             if (textBox1.Text == "")

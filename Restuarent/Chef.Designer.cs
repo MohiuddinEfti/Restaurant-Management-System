@@ -70,7 +70,7 @@
             // 
             // Logoutbutton1
             // 
-            this.Logoutbutton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Logoutbutton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Logoutbutton1.BackColor = System.Drawing.Color.White;
             this.Logoutbutton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Logoutbutton1.Location = new System.Drawing.Point(1177, 12);
