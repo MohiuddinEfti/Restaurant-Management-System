@@ -33,25 +33,27 @@ namespace Restuarent
             this.WindowState = FormWindowState.Maximized;
             dataGridView1.ReadOnly = true;
             dataGridView2.ReadOnly = true;
-            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
-            connection.Open();
+            string Today = DateTime.Today.ToString("dddd , MMM dd yyyy");
+            string cancel = "Cancel";
             string Ready = "Served";
-            string sql = "SELECT * FROM CustomerOrders Where CustomerRecieved='" + Ready + "'";
-            SqlCommand command = new SqlCommand(sql, connection);
-            SqlDataReader reader = command.ExecuteReader();
+            SqlConnection connections = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerOrders"].ConnectionString);
+            connections.Open();
+            string sqls = "SELECT * FROM CustomerOrders Where Date LIKE '" + Today + "%' AND ChefOrderDone !='" + cancel + "' And CustomerRecieved='" + Ready + "' OR CustomerRecieved='" + Ready + "' AND Date LIKE '" + Today + "%' AND ChefOrderDone IS NULL";
+            SqlCommand commands = new SqlCommand(sqls, connections);
+            SqlDataReader readers = commands.ExecuteReader();
             List<AccountsCash> list = new List<AccountsCash>();
-            while (reader.Read())
+            while (readers.Read())
             {
                 AccountsCash CS = new AccountsCash();
 
-                
-                CS.Cash = (int)reader["Price"];
-                CS.Date = reader["Date"].ToString();
+
+                CS.Cash = (int)readers["Price"];
+                CS.Date = readers["Date"].ToString();
 
                 list.Add(CS);
             }
             dataGridView1.DataSource = list;
-            connection.Close();
+            connections.Close();
 
             SqlConnection connection2 = new SqlConnection(ConfigurationManager.ConnectionStrings["Accounts"].ConnectionString);
             connection2.Open();
